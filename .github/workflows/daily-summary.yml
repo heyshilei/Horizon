@@ -1,8 +1,10 @@
+
 name: Daily Horizon Summary
 
 on:
   schedule:
-    - cron: '0 23 * * *' # 每天北京时间 07:00 自动运行
+    - cron: '0 0 * * *'  # 每天北京时间 08:00 自动运行
+    - cron: '0 4 * * *'  # 每天北京时间 12:00 自动运行
     - cron: '0 11 * * *' # 每天北京时间 19:00 自动运行
   workflow_dispatch:     # 支持随时手动点击运行
 
