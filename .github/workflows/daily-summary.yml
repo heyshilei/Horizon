@@ -40,81 +40,97 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Inject X 48h Top-Likes & Reddit Global Search Rules
+      - name: Prepare X 48h Filter & Reddit Search Feed
         run: |
-          python3 - << 'EOF'
+          uv run python - << 'EOF'
           import json
+          import html
+          import httpx
           from datetime import datetime, timedelta, timezone
 
-          # 1. 自动给 Twitter 搜索词注入 48 小时内 since:YYYY-MM-DD，防止 Apify Top 模式抓回几年前的老推文
+          # 1. Inject 48h since:YYYY-MM-DD into X search query so Apify Top tab only returns recent viral tweets
           since_date = (datetime.now(timezone.utc) - timedelta(hours=48)).strftime("%Y-%m-%d")
           with open("data/config.github.json", "r", encoding="utf-8") as f:
               cfg = json.load(f)
           cfg["sources"]["twitter"]["keywords"] = [
-              f'{kw} since:{since_date}' for kw in cfg["sources"]["twitter"]["keywords"]
+              f"{kw} since:{since_date}" for kw in cfg["sources"]["twitter"]["keywords"]
           ]
           with open("data/config.github.json", "w", encoding="utf-8") as f:
               json.dump(cfg, f, ensure_ascii=False, indent=2)
+          print("Injected X since_date:", since_date)
 
-          # 2. 注入 Reddit 全站搜索补丁 (搜索关键词列表 + 帖子/相关性/今天 + 优先 1000票&100评 + 自动兜底 Top 6)
-          #    以及 Twitter 48h 点赞量最高 Top 6 预筛选补丁 (大幅降低 Gemini API 调用次数至 ~35 次/轮)
-          orch_path = "src/orchestrator.py"
-          with open(orch_path, "r", encoding="utf-8") as f:
-              code = f.read()
+          # 2. Search Reddit globally (posts, relevance, today, votes>=1000 & comments>=100 with top fallback)
+          queries = ["ai", "ai agent", "Claude OR Gemini OR DeepSeek OR ChatGPT", "Bitcoin OR crypto OR Solana"]
+          headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+          seen, strict_pool, backup_pool = set(), [], []
 
-          patch_code = '''
-          # --- CUSTOM VIRAL PRE-FILTER & REDDIT GLOBAL SEARCH PATCH ---
-          import httpx as _httpx
-          from datetime import datetime as _dt, timezone as _tz
-          from src.models import ContentItem as _CI, SourceType as _ST
+          for q in queries:
+              for host in ["https://www.reddit.com", "https://old.reddit.com"]:
+                  try:
+                      r = httpx.get(
+                          f"{host}/search.json",
+                          params={"q": q, "type": "link", "sort": "relevance", "t": "day", "limit": 25},
+                          headers=headers,
+                          timeout=15.0,
+                          follow_redirects=True,
+                      )
+                      if r.status_code == 200:
+                          children = r.json().get("data", {}).get("children", [])
+                          for child in children:
+                              d = child.get("data", {})
+                              permalink = d.get("permalink", "")
+                              url = "https://www.reddit.com" + permalink
+                              if not permalink or url in seen:
+                                  continue
+                              seen.add(url)
+                              score = int(d.get("score", 0) or 0)
+                              comms = int(d.get("num_comments", 0) or 0)
+                              created = datetime.fromtimestamp(
+                                  d.get("created_utc", datetime.now(timezone.utc).timestamp()),
+                                  tz=timezone.utc,
+                              ).isoformat()
+                              entry = {
+                                  "title": f"[r/{d.get('subreddit')}] {d.get('title', '')} ({score} votes, {comms} comments)",
+                                  "url": url,
+                                  "summary": (d.get("selftext", "") or d.get("title", ""))[:1500],
+                                  "updated": created,
+                              }
+                              if score >= 1000 and comms >= 100:
+                                  strict_pool.append((score + comms * 5, entry))
+                              elif score >= 100 and comms >= 20:
+                                  backup_pool.append((score + comms * 5, entry))
+                          break
+                  except Exception as e:
+                      print("Reddit search warn:", e)
 
-          def _fetch_reddit_global_search():
-              queries = ["ai", "ai agent", "Claude OR Gemini OR DeepSeek OR CHATGPT", "Bitcoin OR crypto OR Solana"]
-              headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-              seen, strict_pool, backup_pool = set(), [], []
-              for q in queries:
-                  for host in ["https://www.reddit.com", "https://old.reddit.com"]:
-                      try:
-                          r = _httpx.get(
-                              f"{host}/search.json",
-                              params={"q": q, "type": "link", "sort": "relevance", "t": "day", "limit": 25},
-                              headers=headers, timeout=15.0, follow_redirects=True
-                          )
-                          if r.status_code == 200:
-                              for child in r.json().get("data", {}).get("children", []):
-                                  d = child.get("data", {})
-                                  url = "https://www.reddit.com" + d.get("permalink", "")
-                                  if not d.get("permalink") or url in seen:
-                                      continue
-                                  seen.add(url)
-                                  score = int(d.get("score", 0) or 0)
-                                  comms = int(d.get("num_comments", 0) or 0)
-                                  item = _CI(
-                                      id=f"reddit-{d.get('id')}",
-                                      source_type=_ST.REDDIT,
-                                      title=f"[r/{d.get('subreddit')}] {d.get('title', '')} ({score} votes, {comms} comments)",
-                                      url=url,
-                                      content=(d.get("selftext", "") or d.get("title", ""))[:1500],
-                                      author=d.get("author", "reddit"),
-                                      published_at=_dt.fromtimestamp(d.get("created_utc", _dt.now(_tz.utc).timestamp()), tz=_tz.utc),
-                                      metadata={"score": score, "comments": comms, "category": "reddit-top", "profile": "ai-creator"}
-                                  )
-                                  if score >= 1000 and comms >= 100:
-                                      strict_pool.append((score + comms * 5, item))
-                                  elif score >= 100 and comms >= 20:
-                                      backup_pool.append((score + comms * 5, item))
-                              break
-                      except Exception:
-                          continue
-              strict_pool.sort(key=lambda x: x[0], reverse=True)
-              backup_pool.sort(key=lambda x: x[0], reverse=True)
-              selected = [x[1] for x in strict_pool[:6]]
-              if len(selected) < 6:
-                  selected.extend([x[1] for x in backup_pool[:(6 - len(selected))]])
-              return selected
-          '''
-          '''
-          print("Config since_date injected:", since_date)
+          strict_pool.sort(key=lambda x: x[0], reverse=True)
+          backup_pool.sort(key=lambda x: x[0], reverse=True)
+          selected = [x[1] for x in strict_pool[:6]]
+          if len(selected) < 6:
+              selected.extend([x[1] for x in backup_pool[: (6 - len(selected))]])
+
+          now_iso = datetime.now(timezone.utc).isoformat()
+          items_xml = []
+          for idx, item in enumerate(selected):
+              t = html.escape(item["title"])
+              u = html.escape(item["url"])
+              s = html.escape(item["summary"])
+              up = item["updated"]
+              items_xml.append(
+                  f"<entry><id>urn:reddit:{idx}</id><title>{t}</title><link href=\"{u}\"/><updated>{up}</updated><summary>{s}</summary></entry>"
+              )
+
+          feed_xml = (
+              "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+              "<feed xmlns=\"http://www.w3.org/2005/Atom\">"
+              "<title>Reddit Global Search Top</title>"
+              f"<updated>{now_iso}</updated>"
+              + "".join(items_xml)
+              + "</feed>"
+          )
+          with open("/tmp/reddit_search.xml", "w", encoding="utf-8") as f:
+              f.write(feed_xml)
+          print(f"Generated /tmp/reddit_search.xml with {len(selected)} Reddit top posts")
           EOF
 
       - name: Run Horizon Radar with config.github.json
@@ -122,7 +138,12 @@ jobs:
           TZ: Asia/Shanghai
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-        run: uv run horizon -c data/config.github.json
+        run: |
+          python3 -m http.server 18765 --directory /tmp &
+          SERVER_PID=$!
+          sleep 1
+          uv run horizon -c data/config.github.json
+          kill $SERVER_PID || true
 
       - name: Commit and Push generated docs to main
         env:
