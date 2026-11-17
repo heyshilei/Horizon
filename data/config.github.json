@@ -24,11 +24,8 @@
       "fetch_reply_text": false
     },
     "reddit": {
-      "enabled": true,
-      "fetch_comments": 3,
-      "subreddits": [
-        { "subreddit": "all", "sort": "top", "fetch_limit": 10, "min_score": 100, "category": "reddit-top", "profile": "ai-creator" }
-      ]
+      "enabled": false,
+      "subreddits": []
     },
     "hackernews": {
       "enabled": true,
@@ -55,6 +52,7 @@
       ]
     },
     "rss": [
+      { "name": "Reddit Global Search", "url": "http://127.0.0.1:18765/reddit_search.xml", "enabled": true, "category": "reddit-top", "profile": "ai-creator" },
       { "name": "Google DeepMind Blog", "url": "https://deepmind.google/blog/rss.xml", "enabled": true, "category": "other-top", "profile": "ai-creator" },
       { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "enabled": true, "category": "other-top", "profile": "ai-creator" },
       { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "enabled": true, "category": "other-top", "profile": "ai-creator" },
