@@ -48,6 +48,7 @@ jobs:
           import os
           import html
           import httpx
+          import primp
           from datetime import datetime, timedelta, timezone
 
           X_TOP_LIMIT = 5       # X 筛选 48h 内点赞最高的 TOP 5（想改 10 条可直接把 5 改成 10）
@@ -58,30 +59,29 @@ jobs:
           since_date = (now_utc - timedelta(hours=48)).strftime("%Y-%m-%d")
 
           # ==========================================
-          # 1. 抓取 X (Twitter)：热门(Top) + 48h 内 + 按点赞量排序取 TOP 5
+          # 1. 抓取 X (Twitter)：严格按 altimis/scweet 官方结构化字段传参
           # ==========================================
           x_entries = []
           apify_token = os.environ.get("APIFY_TOKEN", "").strip()
           if apify_token:
-              x_query = (
-                  '("ai agent" OR Claude OR Gemini OR DeepSeek OR ChatGPT OR GPT OR Grok '
-                  'OR Bitcoin OR BTC OR Solana OR crypto) '
-                  f'min_faves:100 -filter:replies lang:en since:{since_date}'
-              )
               run_input = {
                   "source_mode": "search",
-                  "search_query": x_query,
+                  "search_query": '("ai agent" OR Claude OR Gemini OR DeepSeek OR ChatGPT OR GPT OR Grok OR Bitcoin OR BTC OR Solana OR crypto) -filter:replies',
                   "search_sort": "Top",
+                  "since": since_date,
+                  "lang": "en",
+                  "min_likes": 50,
                   "max_items": 100
               }
               try:
-                  print("Calling Apify altimis/scweet for X Top tweets...")
+                  print(f"Calling Apify altimis/scweet (since={since_date}, min_likes=50)...")
                   resp = httpx.post(
                       "https://api.apify.com/v2/acts/altimis~scweet/run-sync-get-dataset-items",
                       params={"token": apify_token},
                       json=run_input,
                       timeout=180.0
                   )
+                  print("Apify HTTP status:", resp.status_code)
                   if resp.status_code in (200, 201):
                       tweets = resp.json()
                       print(f"Apify returned {len(tweets)} raw tweets")
@@ -114,12 +114,12 @@ jobs:
                       x_entries = [item[1] for item in parsed_x[:X_TOP_LIMIT]]
                       print(f"Selected Top {len(x_entries)} X tweets by likes.")
                   else:
-                      print("Apify HTTP status:", resp.status_code, resp.text[:300])
+                      print("Apify error body:", resp.text[:400])
               except Exception as e:
                   print("Apify fetch error:", e)
 
           # ==========================================
-          # 2. 抓取 Reddit 全站搜索：关键词 + 帖子 + 相关性 + 今天 + 翻页(100条/词) + 票数>=1000 & 评论>=100 + 展开前5神评
+          # 2. 抓取 Reddit 全站搜索：用 primp 伪装 Chrome TLS 指纹绕过 403 拦截
           # ==========================================
           reddit_queries = [
               "ai",
@@ -127,28 +127,23 @@ jobs:
               "Claude OR Gemini OR DeepSeek OR GPT",
               "Bitcoin OR BTC OR crypto OR Solana"
           ]
-          headers = {
-              "User-Agent": "linux:horizon.viral.radar:v2.0 (by /u/heyshilei)",
-              "Accept": "application/json"
-          }
+          client = primp.Client(impersonate="chrome_131", timeout=20.0, follow_redirects=True)
           seen_r = set()
           strict_r = []
           backup_r = []
 
           for q in reddit_queries:
               fetched_for_q = False
-              for host in ["https://old.reddit.com", "https://www.reddit.com"]:
+              for host in ["https://www.reddit.com", "https://old.reddit.com"]:
                   try:
-                      r = httpx.get(
+                      r = client.get(
                           f"{host}/search.json",
-                          params={"q": q, "type": "link", "sort": "relevance", "t": "day", "limit": 100},
-                          headers=headers,
-                          timeout=20.0,
-                          follow_redirects=True
+                          params={"q": q, "type": "link", "sort": "relevance", "t": "day", "limit": "100"}
                       )
+                      print(f"Reddit [{host}] query '{q}' -> HTTP {r.status_code}")
                       if r.status_code == 200:
                           children = r.json().get("data", {}).get("children", [])
-                          print(f"Reddit [{host}] query '{q}' returned {len(children)} posts")
+                          print(f"  -> got {len(children)} posts")
                           for child in children:
                               d = child.get("data", {})
                               permalink = d.get("permalink", "")
@@ -181,7 +176,7 @@ jobs:
                           fetched_for_q = True
                           break
                   except Exception as e:
-                      print(f"Reddit {host} error for '{q}':", e)
+                      print(f"Reddit {host} exception for '{q}':", e)
 
               if not fetched_for_q:
                   try:
@@ -190,8 +185,11 @@ jobs:
                           params={"q": q, "after": int((now_utc - timedelta(hours=36)).timestamp()), "size": 100, "sort_type": "score", "sort": "desc"},
                           timeout=20.0
                       )
+                      print(f"PullPush query '{q}' -> HTTP {r2.status_code}")
                       if r2.status_code == 200:
-                          for d in r2.json().get("data", []):
+                          rows = r2.json().get("data", [])
+                          print(f"  -> PullPush got {len(rows)} posts")
+                          for d in rows:
                               permalink = d.get("permalink") or f"/r/{d.get('subreddit','all')}/comments/{d.get('id','')}/"
                               url = "https://www.reddit.com" + permalink
                               if url in seen_r:
@@ -229,14 +227,11 @@ jobs:
           reddit_entries = []
           for p in chosen_r:
               top_comments_text = ""
-              for host in ["https://old.reddit.com", "https://www.reddit.com"]:
+              for host in ["https://www.reddit.com", "https://old.reddit.com"]:
                   try:
-                      cr = httpx.get(
+                      cr = client.get(
                           f"{host}{p['permalink']}.json",
-                          params={"sort": "top", "limit": 10},
-                          headers=headers,
-                          timeout=10.0,
-                          follow_redirects=True
+                          params={"sort": "top", "limit": "10"}
                       )
                       if cr.status_code == 200 and isinstance(cr.json(), list) and len(cr.json()) > 1:
                           c_children = cr.json()[1].get("data", {}).get("children", [])
