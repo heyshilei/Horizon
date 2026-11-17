@@ -1,7 +1,6 @@
 """Content analysis using AI."""
 
 import asyncio
-import json
 import logging
 from typing import List, Optional
 from pydantic import ValidationError
@@ -49,18 +48,26 @@ class ContentAnalyzer:
         return parse_json_response(response)
 
     async def analyze_batch(self, items: List[ContentItem]) -> List[ContentItem]:
-        """
-        【已适配 Gemini 免费版优化的批量分析方法】
-        将所有抓取到的资讯按每批 130 条切片打包，通过极少次数的 API 请求完成全部数据的打分与摘要。
-        """
-        if not items:
-            return []
+        semaphore = asyncio.Semaphore(self.concurrency)
 
-        batch_size = 130  # 每批 130 条，300条左右的内容仅需分 2 批发送
-        all_analyzed_results = []
-        
-        # 1. 按照 batch_size 对 items 进行切片
-        batches = [items[i:i + batch_size] for i in range(0, len(items), batch_size)]
+        async def _process(item: ContentItem, index: int, progress_task) -> ContentItem:
+            async with semaphore:
+                try:
+                    await self._analyze_item(item)
+                except AIProviderUnavailableError:
+                    raise
+                except Exception as e:
+                    logger.error("Error analyzing item %s: %s", item.id, e)
+                    if item.processing:
+                        item.processing.analysis = ContentAnalysis(
+                            score=None,
+                            reason="Analysis failed",
+                            summary=item.title,
+                        )
+                if self.throttle_sec > 0 and index < len(items) - 1:
+                    await asyncio.sleep(self.throttle_sec)
+            progress.advance(progress_task)
+            return item
 
         with Progress(
             SpinnerColumn(),
@@ -70,101 +77,13 @@ class ContentAnalyzer:
             transient=True,
             console=self.console,
         ) as progress:
-            task = progress.add_task("Analyzing Batches", total=len(batches))
+            task = progress.add_task("Analyzing", total=len(items))
+            coros = [
+                _process(item, i, task) for i, item in enumerate(items)
+            ]
+            analyzed_items = await gather_ai_tasks(coros)
 
-            for batch_idx, batch in enumerate(batches):
-                # 2. 预先为每个 item 解析好对应的 profile（适配原项目的分类逻辑）
-                for item in batch:
-                    try:
-                        await self.classifier.resolve(item)
-                        if item.processing:
-                            item.processing.artifacts.clear()
-                    except Exception as e:
-                        logger.error("Error resolving profile for item %s: %s", item.id, e)
-
-                # 3. 构造轻量级 Payload 数组
-                payload_list = []
-                for idx, item in enumerate(batch):
-                    content_text = ""
-                    if item.content:
-                        content_text = item.content[:200]
-                    payload_list.append({
-                        "id": f"{batch_idx}_{idx}",
-                        "title": item.title,
-                        "snippet": content_text
-                    })
-
-                # 4. 构造批量提示词
-                system_prompt = "你是一个严谨的信息过滤与摘要助手。请严格返回一个合法的 JSON 数组，不要包含任何 markdown 代码块标记，直接输出 JSON。"
-                user_prompt = f"""
-下面是一批互联网资讯列表（共 {len(payload_list)} 条）。请逐条评估其价值，并严格输出一个 JSON 数组，格式如下：
-[
-  {{"id": "0_0", "score": 8.5, "summary": "这里写20-30字的中文精炼总结"}},
-  {{"id": "0_1", "score": 4.0, "summary": "无价值内容打低分"}}
-]
-
-待评估数据：
-{json.dumps(payload_list, ensure_ascii=False)}
-"""
-
-                try:
-                    # 5. 调用 AI 客户端获取批量响应
-                    response = await self.client.complete(
-                        system=system_prompt,
-                        user=user_prompt,
-                    )
-                    
-                    # 解析返回的 JSON 结果
-                    parsed_result = self._parse_json_response(response)
-                    if isinstance(parsed_result, list):
-                        result_map = {res.get("id"): res for res in parsed_result if isinstance(res, dict) and "id" in res}
-                    else:
-                        result_map = {}
-
-                    # 6. 将分析结果写回每个 ContentItem 对象
-                    for idx, item in enumerate(batch):
-                        item_id = f"{batch_idx}_{idx}"
-                        if not hasattr(item, 'processing') or item.processing is None:
-                            from ..models import ContentProcessing
-                            item.processing = ContentProcessing()
-
-                        if item_id in result_map:
-                            res_data = result_map[item_id]
-                            try:
-                                score_val = float(res_data.get("score", 5.0))
-                            except (TypeError, ValueError):
-                                score_val = 5.0
-                                
-                            item.processing.analysis = ContentAnalysis(
-                                score=score_val,
-                                reason=res_data.get("reason", "Batch analyzed"),
-                                summary=res_data.get("summary", item.title),
-                            )
-                        else:
-                            item.processing.analysis = ContentAnalysis(
-                                score=5.0,
-                                reason="Missing in batch response",
-                                summary=item.title,
-                            )
-                        all_analyzed_results.append(item)
-
-                except Exception as e:
-                    logger.error("Error in batch analysis batch %d: %s", batch_idx, e)
-                    # 异常降级兜底：确保整批数据不丢失
-                    for item in batch:
-                        if not hasattr(item, 'processing') or item.processing is None:
-                            from ..models import ContentProcessing
-                            item.processing = ContentProcessing()
-                        item.processing.analysis = ContentAnalysis(
-                            score=5.0,
-                            reason="Batch analysis failed",
-                            summary=item.title,
-                        )
-                        all_analyzed_results.append(item)
-
-                progress.advance(task)
-
-        return all_analyzed_results
+        return analyzed_items
 
     @retry(
         retry=retry_if_exception_type(Exception) & retry_if_not_exception_type(AIProviderUnavailableError),
@@ -172,7 +91,11 @@ class ContentAnalyzer:
         wait=wait_exponential(min=2, max=10)
     )
     async def _analyze_item(self, item: ContentItem) -> None:
-        """保留单条分析方法作为备用兼容接口。"""
+        """Analyze a single content item.
+
+        Args:
+            item: Content item to analyze (modified in-place)
+        """
         profile = await self.classifier.resolve(item)
         if item.processing:
             item.processing.artifacts.clear()
@@ -185,6 +108,7 @@ class ContentAnalyzer:
         )
         content_section = f"Content: {selected_content}" if selected_content else ""
 
+        # Prepare discussion section (comments, engagement)
         discussion_parts = []
         if content_parts.comments:
             discussion_parts.append(
@@ -218,8 +142,10 @@ class ContentAnalyzer:
 
         discussion_section = "\n".join(discussion_parts) if discussion_parts else ""
 
+        # Generate user prompt
         user_prompt = analysis_user_prompt(item, content_section, discussion_section)
 
+        # Get AI completion
         response = await self.client.complete(
             system=analysis_system_prompt(profile),
             user=user_prompt,
