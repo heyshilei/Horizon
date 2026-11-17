@@ -3,7 +3,7 @@
     "provider": "gemini",
     "model": "gemini-3.5-flash-lite",
     "api_key_env": "GOOGLE_API_KEY",
-    "throttle_sec": 5.0,
+    "throttle_sec": 4.8,
     "analysis_concurrency": 1,
     "enrichment_concurrency": 1,
     "languages": ["zh"]
@@ -13,81 +13,61 @@
   },
   "sources": {
     "twitter": {
-      "enabled": true,
-      "users": [],
-      "keywords": [
-        "(\"ai agent\" OR Claude OR Gemini OR DeepSeek OR GPT OR Grok OR Bitcoin OR BTC OR Solana OR crypto) min_faves:100 -filter:replies lang:en"
-      ],
-      "fetch_limit": 100,
-      "category": "x-top",
-      "profile": "ai-creator",
-      "fetch_reply_text": false
+      "enabled": false
     },
     "reddit": {
-      "enabled": false,
-      "subreddits": []
+      "enabled": false
     },
     "hackernews": {
-      "enabled": true,
-      "fetch_top_stories": 12,
-      "min_score": 80,
-      "category": "other-top",
-      "profile": "ai-creator"
+      "enabled": false
     },
     "ossinsight": {
-      "enabled": true,
-      "period": "past_24_hours",
-      "languages": ["All", "Python", "TypeScript"],
-      "min_stars": 50,
-      "max_items": 6,
-      "category": "other-top",
-      "profile": "ai-creator"
+      "enabled": false
     },
     "github": [],
     "telegram": {
-      "enabled": true,
-      "channels": [
-        { "channel": "watcher_guru", "enabled": true, "fetch_limit": 6, "category": "other-top", "profile": "ai-creator" },
-        { "channel": "zaihuapd", "enabled": true, "fetch_limit": 6, "category": "other-top", "profile": "ai-creator" }
-      ]
+      "enabled": false,
+      "channels": []
     },
     "rss": [
-      { "name": "Reddit Global Search", "url": "http://127.0.0.1:18765/reddit_search.xml", "enabled": true, "category": "reddit-top", "profile": "ai-creator" },
-      { "name": "Google DeepMind Blog", "url": "https://deepmind.google/blog/rss.xml", "enabled": true, "category": "other-top", "profile": "ai-creator" },
-      { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "enabled": true, "category": "other-top", "profile": "ai-creator" },
-      { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "enabled": true, "category": "other-top", "profile": "ai-creator" },
-      { "name": "CoinDesk", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/", "enabled": true, "category": "other-top", "profile": "ai-creator" },
-      { "name": "Cointelegraph", "url": "https://cointelegraph.com/rss", "enabled": true, "category": "other-top", "profile": "ai-creator" }
+      {
+        "name": "X Viral Top",
+        "url": "https://x-viral.local/feed.xml",
+        "enabled": true,
+        "category": "x-top",
+        "profile": "ai-creator"
+      },
+      {
+        "name": "Reddit Viral Top",
+        "url": "https://reddit-viral.local/feed.xml",
+        "enabled": true,
+        "category": "reddit-top",
+        "profile": "ai-creator"
+      }
     ]
   },
   "processing": {
     "profiles_dir": "profiles",
     "default_profile": "ai-creator",
     "profile_settings": {
-      "ai-creator": { "threshold": null, "topic_dedup": true },
-      "tech-news": { "threshold": null, "topic_dedup": true }
+      "ai-creator": { "threshold": null, "topic_dedup": true }
     }
   },
   "digest": {
-    "max_items": 25,
+    "max_items": 20,
     "category_groups": {
       "x_viral": {
-        "name": "X / Twitter Top",
-        "limit": 6,
+        "name": "X (Twitter) 48h Top Likes",
+        "limit": 10,
         "categories": ["x-top"]
       },
       "reddit_viral": {
-        "name": "Reddit Search Top",
-        "limit": 6,
+        "name": "Reddit 24h Top (1000+ Votes & 100+ Comments)",
+        "limit": 10,
         "categories": ["reddit-top"]
-      },
-      "other_platforms": {
-        "name": "Other Platforms Top",
-        "limit": 12,
-        "categories": ["other-top"]
       }
     },
     "default_group": "other",
-    "default_group_limit": 3
+    "default_group_limit": 1
   }
 }
