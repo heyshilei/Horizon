@@ -2,7 +2,7 @@ name: Daily Horizon Summary
 
 on:
   schedule:
-    # 每天运行 3 次：北京时间 07:50 (UTC 23:50)、13:50 (UTC 05:50)、19:50 (UTC 11:50)
+    # 每天自动运行 3 次：北京时间 07:50、13:50、19:50
     - cron: '50 23 * * *'
     - cron: '50 5 * * *'
     - cron: '50 11 * * *'
@@ -13,7 +13,7 @@ env:
 
 jobs:
   daily-summary:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
 
@@ -29,111 +29,49 @@ jobs:
           git fetch upstream main
           git checkout upstream/main -- src/ profiles/
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install uv
-        uses: astral-sh/setup-uv@v4
-
-      - name: Install dependencies
-        run: uv sync
-
-      - name: Scrape X (48h Top Likes) & Reddit (1000+ Votes & 100+ Comments + Top 5 Comments)
-        env:
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+      - name: Install dependencies via uv
         run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv sync
+
+      - name: Prepare X 48h Top-5 Likes & Scrape Reddit Global Top-10 (+ Top 5 Comments)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
           import os
+          import json
           import html
-          import httpx
           import primp
           from datetime import datetime, timedelta, timezone
 
-          X_TOP_LIMIT = 5       # X 筛选 48h 内点赞最高的 TOP 5（想改 10 条可直接把 5 改成 10）
-          REDDIT_TOP_LIMIT = 10 # Reddit 筛选 24h 内高票高评 TOP 10
-          COMMENTS_PER_POST = 5 # 每个 Reddit 帖子展开前 5 条高赞神评
-
+          REDDIT_TOP_LIMIT = 10
+          COMMENTS_PER_POST = 5
           now_utc = datetime.now(timezone.utc)
           since_date = (now_utc - timedelta(hours=48)).strftime("%Y-%m-%d")
 
-          # ==========================================
-          # 1. 抓取 X (Twitter)：严格按 altimis/scweet 官方结构化字段传参
-          # ==========================================
-          x_entries = []
-          apify_token = os.environ.get("APIFY_TOKEN", "").strip()
-          if apify_token:
-              run_input = {
-                  "source_mode": "search",
-                  "search_query": '("ai agent" OR Claude OR Gemini OR DeepSeek OR ChatGPT OR GPT OR Grok OR Bitcoin OR BTC OR Solana OR crypto) -filter:replies',
-                  "search_sort": "Top",
-                  "since": since_date,
-                  "lang": "en",
-                  "min_likes": 50,
-                  "max_items": 100
-              }
-              try:
-                  print(f"Calling Apify altimis/scweet (since={since_date}, min_likes=50)...")
-                  resp = httpx.post(
-                      "https://api.apify.com/v2/acts/altimis~scweet/run-sync-get-dataset-items",
-                      params={"token": apify_token},
-                      json=run_input,
-                      timeout=180.0
-                  )
-                  print("Apify HTTP status:", resp.status_code)
-                  if resp.status_code in (200, 201):
-                      tweets = resp.json()
-                      print(f"Apify returned {len(tweets)} raw tweets")
-                      seen_x = set()
-                      parsed_x = []
-                      for tw in tweets:
-                          t_obj = tw.get("tweet") if isinstance(tw.get("tweet"), dict) else tw
-                          u_obj = tw.get("user") if isinstance(tw.get("user"), dict) else {}
-                          rest_id = str(t_obj.get("rest_id") or tw.get("id") or "")
-                          handle = u_obj.get("handle") or tw.get("username") or tw.get("screen_name") or "x_user"
-                          url = t_obj.get("tweet_url") or tw.get("url") or (f"https://x.com/{handle}/status/{rest_id}" if rest_id else "")
-                          text = (t_obj.get("text") or tw.get("full_text") or tw.get("text") or "").strip()
-                          if not url or not text or url in seen_x:
-                              continue
-                          seen_x.add(url)
-                          likes = int(t_obj.get("favorite_count") or tw.get("favorite_count") or tw.get("likes") or 0)
-                          rts = int(t_obj.get("retweet_count") or tw.get("retweet_count") or tw.get("retweets") or 0)
-                          replies = int(t_obj.get("reply_count") or tw.get("reply_count") or tw.get("replies") or 0)
-                          short_title = text.replace("\n", " ")[:90]
-                          parsed_x.append((
-                              likes,
-                              {
-                                  "title": f"[X @{handle} | ❤️ {likes} 🔄 {rts}] {short_title}",
-                                  "url": url,
-                                  "summary": f"Author: @{handle}\nMetrics: {likes} Likes, {rts} Retweets, {replies} Replies\n\nTweet Content:\n{text}",
-                                  "updated": now_utc.isoformat()
-                              }
-                          ))
-                      parsed_x.sort(key=lambda x: x[0], reverse=True)
-                      x_entries = [item[1] for item in parsed_x[:X_TOP_LIMIT]]
-                      print(f"Selected Top {len(x_entries)} X tweets by likes.")
-                  else:
-                      print("Apify error body:", resp.text[:400])
-              except Exception as e:
-                  print("Apify fetch error:", e)
+          # 1. 给 X 关键词自动加上 48h since:YYYY-MM-DD
+          with open("data/config.github.json", "r", encoding="utf-8") as f:
+              cfg = json.load(f)
+          cfg["sources"]["twitter"]["keywords"] = [
+              f"{kw} since:{since_date}" for kw in cfg["sources"]["twitter"]["keywords"]
+          ]
+          with open("data/config.github.json", "w", encoding="utf-8") as f:
+              json.dump(cfg, f, ensure_ascii=False, indent=2)
+          print("Injected X since_date:", since_date)
 
-          # ==========================================
-          # 2. 抓取 Reddit 全站搜索：用 primp 伪装 Chrome TLS 指纹绕过 403 拦截
-          # ==========================================
+          # 2. 用甲骨文原生 IP 搜索 Reddit（帖子 + 相关性 + 今天 + 翻页100条/词 + 票数>=1000 & 评论>=100 + 展开前5神评）
           reddit_queries = [
               "ai",
               "ai agent",
               "Claude OR Gemini OR DeepSeek OR GPT",
               "Bitcoin OR BTC OR crypto OR Solana"
           ]
-          client = primp.Client(impersonate="chrome_131", timeout=20.0, follow_redirects=True)
+          client = primp.Client(impersonate="random", timeout=20.0, follow_redirects=True)
           seen_r = set()
           strict_r = []
           backup_r = []
 
           for q in reddit_queries:
-              fetched_for_q = False
               for host in ["https://www.reddit.com", "https://old.reddit.com"]:
                   try:
                       r = client.get(
@@ -171,52 +109,11 @@ jobs:
                               }
                               if score >= 1000 and comms >= 100:
                                   strict_r.append((viral_rank, post_obj))
-                              elif score >= 150 and comms >= 30:
+                              elif score >= 100 and comms >= 20:
                                   backup_r.append((viral_rank, post_obj))
-                          fetched_for_q = True
                           break
                   except Exception as e:
                       print(f"Reddit {host} exception for '{q}':", e)
-
-              if not fetched_for_q:
-                  try:
-                      r2 = httpx.get(
-                          "https://api.pullpush.io/reddit/search/submission/",
-                          params={"q": q, "after": int((now_utc - timedelta(hours=36)).timestamp()), "size": 100, "sort_type": "score", "sort": "desc"},
-                          timeout=20.0
-                      )
-                      print(f"PullPush query '{q}' -> HTTP {r2.status_code}")
-                      if r2.status_code == 200:
-                          rows = r2.json().get("data", [])
-                          print(f"  -> PullPush got {len(rows)} posts")
-                          for d in rows:
-                              permalink = d.get("permalink") or f"/r/{d.get('subreddit','all')}/comments/{d.get('id','')}/"
-                              url = "https://www.reddit.com" + permalink
-                              if url in seen_r:
-                                  continue
-                              seen_r.add(url)
-                              score = int(d.get("score") or 0)
-                              comms = int(d.get("num_comments") or 0)
-                              sub = d.get("subreddit") or "reddit"
-                              title_raw = d.get("title") or ""
-                              selftext = (d.get("selftext") or "").strip()
-                              viral_rank = score + comms * 5
-                              post_obj = {
-                                  "permalink": permalink,
-                                  "sub": sub,
-                                  "score": score,
-                                  "comms": comms,
-                                  "title": f"[r/{sub} | ⬆️ {score} 💬 {comms}] {title_raw}",
-                                  "url": url,
-                                  "selftext": selftext[:1200] if selftext else title_raw,
-                                  "updated": now_utc.isoformat()
-                              }
-                              if score >= 1000 and comms >= 100:
-                                  strict_r.append((viral_rank, post_obj))
-                              elif score >= 50:
-                                  backup_r.append((viral_rank, post_obj))
-                  except Exception as e:
-                      print("PullPush fallback warn:", e)
 
           strict_r.sort(key=lambda x: x[0], reverse=True)
           backup_r.sort(key=lambda x: x[0], reverse=True)
@@ -258,32 +155,25 @@ jobs:
               })
           print(f"Selected Top {len(reddit_entries)} Reddit posts (strict >=1000/100 count: {len(strict_r)}).")
 
-          # ==========================================
-          # 3. 生成本地 XML 并在 Horizon 内部放行读取
-          # ==========================================
-          def write_atom(filepath, feed_title, entries):
-              items_xml = []
-              for idx, item in enumerate(entries):
-                  t = html.escape(item["title"])
-                  u = html.escape(item["url"])
-                  s = html.escape(item["summary"])
-                  up = item["updated"]
-                  items_xml.append(
-                      f"<entry><id>urn:viral:{idx}:{u}</id><title>{t}</title><link href=\"{u}\"/><updated>{up}</updated><summary>{s}</summary></entry>"
-                  )
-              xml_str = (
-                  "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
-                  "<feed xmlns=\"http://www.w3.org/2005/Atom\">"
-                  f"<title>{html.escape(feed_title)}</title>"
-                  f"<updated>{now_utc.isoformat()}</updated>"
-                  + "".join(items_xml)
-                  + "</feed>"
+          items_xml = []
+          for idx, item in enumerate(reddit_entries):
+              t = html.escape(item["title"])
+              u = html.escape(item["url"])
+              s = html.escape(item["summary"])
+              up = item["updated"]
+              items_xml.append(
+                  f"<entry><id>urn:viral:{idx}:{u}</id><title>{t}</title><link href=\"{u}\"/><updated>{up}</updated><summary>{s}</summary></entry>"
               )
-              with open(filepath, "w", encoding="utf-8") as f:
-                  f.write(xml_str)
-
-          write_atom("/tmp/x_viral.xml", "X Viral Top", x_entries)
-          write_atom("/tmp/reddit_viral.xml", "Reddit Viral Top", reddit_entries)
+          xml_str = (
+              "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+              "<feed xmlns=\"http://www.w3.org/2005/Atom\">"
+              "<title>Reddit Viral Top</title>"
+              f"<updated>{now_utc.isoformat()}</updated>"
+              + "".join(items_xml)
+              + "</feed>"
+          )
+          with open("/tmp/reddit_viral.xml", "w", encoding="utf-8") as f:
+              f.write(xml_str)
 
           sec_py = "src/url_security.py"
           if os.path.exists(sec_py):
@@ -293,26 +183,37 @@ jobs:
                   f.write(sec_code + "\nvalidate_url = lambda u, *a, **kw: u\n")
           EOF
 
-      - name: Run Horizon Radar with config.github.json
+      - name: Run Horizon Radar (Pre-Filter X to Top 5 by Likes to Save Gemini API)
         env:
           TZ: Asia/Shanghai
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: |
+          export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
           import httpx
           _orig_get = httpx.AsyncClient.get
           async def _local_get(self, url, *a, **kw):
               u = str(url)
-              req = httpx.Request("GET", u)
-              if "x-viral.local" in u:
-                  with open("/tmp/x_viral.xml", "rb") as f:
-                      return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"}, request=req)
               if "reddit-viral.local" in u:
+                  req = httpx.Request("GET", u)
                   with open("/tmp/reddit_viral.xml", "rb") as f:
                       return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"}, request=req)
               return await _orig_get(self, url, *a, **kw)
           httpx.AsyncClient.get = _local_get
+
+          # 拦截 TwitterScraper 返回结果：在送给 Gemini 打分前，先按点赞量从高到低只取 Top 5（省掉 95 次 AI 调用！）
+          from src.scrapers.twitter import TwitterScraper
+          _orig_tw_scrape = TwitterScraper.scrape
+          async def _top5_tw_scrape(self, *a, **kw):
+              items = await _orig_tw_scrape(self, *a, **kw)
+              def _get_likes(it):
+                  m = getattr(it, "metadata", {}) or {}
+                  return int(m.get("likes") or m.get("favorite_count") or m.get("faves") or 0)
+              items.sort(key=_get_likes, reverse=True)
+              print(f"Pre-filtered X tweets from {len(items)} down to Top 5 by likes.")
+              return items[:5]
+          TwitterScraper.scrape = _top5_tw_scrape
 
           import sys
           from src.main import main
