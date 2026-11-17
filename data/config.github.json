@@ -3,89 +3,91 @@
     "provider": "gemini",
     "model": "gemini-3.5-flash-lite",
     "api_key_env": "GOOGLE_API_KEY",
-    "throttle_sec": 4.5,
+    "throttle_sec": 4.2,
     "analysis_concurrency": 1,
     "enrichment_concurrency": 1,
     "languages": ["en", "zh"]
   },
   "collection": {
-    "time_window_hours": 36
+    "time_window_hours": 48
   },
   "sources": {
     "twitter": {
       "enabled": true,
       "users": [
-        "0xLuxi",
-        "xi99ol",
-        "ryangrowthh",
-        "karpathy",
+        "OpenAI",
+        "AnthropicAI",
+        "GoogleDeepMind",
+        "xai",
+        "deepseek_ai",
         "sama",
-        "aixbt_agent",
+        "karpathy",
+        "elonmusk",
         "VitalikButerin",
-        "levelsio",
-        "rauchg",
-        "garrytan"
+        "aixbt_agent",
+        "0xLuxi",
+        "xi99ol"
       ],
       "keywords": [
-        "(AI OR LLM OR OpenAI OR Claude OR Gemini OR ChatGPT) min_faves:20 -filter:replies lang:en",
-        "(Bitcoin OR BTC OR Solana OR Ethereum OR Crypto OR DeFi) min_faves:20 -filter:replies lang:en"
+        "(Claude OR Gemini OR DeepSeek OR GPT OR OpenAI OR Grok) min_faves:20 -filter:replies lang:en",
+        "(Bitcoin OR BTC OR Solana OR Ethereum OR Crypto) min_faves:20 -filter:replies lang:en"
       ],
       "fetch_limit": 100,
-      "category": "x-hot",
+      "category": "x-top",
       "profile": "ai-creator",
       "fetch_reply_text": true,
       "max_replies_per_tweet": 3,
-      "max_tweets_to_expand": 2,
+      "max_tweets_to_expand": 3,
       "reply_min_likes": 5
     },
     "reddit": {
       "enabled": true,
       "fetch_comments": 5,
       "subreddits": [
-        { "subreddit": "singularity", "sort": "hot", "fetch_limit": 25, "min_score": 20, "category": "reddit-ai", "profile": "ai-creator" },
-        { "subreddit": "LocalLLaMA", "sort": "hot", "fetch_limit": 25, "min_score": 20, "category": "reddit-ai", "profile": "ai-creator" },
-        { "subreddit": "ChatGPT", "sort": "hot", "fetch_limit": 25, "min_score": 20, "category": "reddit-ai", "profile": "ai-creator" },
-        { "subreddit": "ClaudeAI", "sort": "hot", "fetch_limit": 20, "min_score": 20, "category": "reddit-ai", "profile": "ai-creator" },
-        { "subreddit": "ArtificialIntelligence", "sort": "hot", "fetch_limit": 20, "min_score": 20, "category": "reddit-ai", "profile": "ai-creator" },
-        { "subreddit": "CryptoCurrency", "sort": "hot", "fetch_limit": 30, "min_score": 20, "category": "reddit-crypto", "profile": "ai-creator" },
-        { "subreddit": "solana", "sort": "hot", "fetch_limit": 20, "min_score": 20, "category": "reddit-crypto", "profile": "ai-creator" },
-        { "subreddit": "ethfinance", "sort": "hot", "fetch_limit": 20, "min_score": 20, "category": "reddit-crypto", "profile": "ai-creator" }
+        { "subreddit": "LocalLLaMA", "sort": "top", "fetch_limit": 12, "min_score": 20, "category": "reddit-top", "profile": "ai-creator" },
+        { "subreddit": "singularity", "sort": "top", "fetch_limit": 12, "min_score": 20, "category": "reddit-top", "profile": "ai-creator" },
+        { "subreddit": "ClaudeAI", "sort": "top", "fetch_limit": 10, "min_score": 20, "category": "reddit-top", "profile": "ai-creator" },
+        { "subreddit": "OpenAI", "sort": "top", "fetch_limit": 10, "min_score": 20, "category": "reddit-top", "profile": "ai-creator" },
+        { "subreddit": "CryptoCurrency", "sort": "top", "fetch_limit": 12, "min_score": 20, "category": "reddit-top", "profile": "ai-creator" },
+        { "subreddit": "solana", "sort": "top", "fetch_limit": 8, "min_score": 20, "category": "reddit-top", "profile": "ai-creator" }
       ]
     },
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 40,
+      "fetch_top_stories": 25,
       "min_score": 20,
-      "category": "tech-hn",
+      "category": "other-top",
       "profile": "ai-creator"
     },
     "ossinsight": {
       "enabled": true,
       "period": "past_24_hours",
-      "languages": ["All", "Python", "TypeScript", "Rust"],
+      "languages": ["All", "Python", "TypeScript"],
       "min_stars": 20,
-      "max_items": 20,
-      "category": "oss-trending",
+      "max_items": 12,
+      "category": "other-top",
       "profile": "ai-creator"
     },
     "github": [
-      { "type": "repo_releases", "owner": "ollama", "repo": "ollama", "enabled": true, "category": "gh-release", "profile": "ai-creator" },
-      { "type": "repo_releases", "owner": "langchain-ai", "repo": "langgraph", "enabled": true, "category": "gh-release", "profile": "ai-creator" }
+      { "type": "repo_releases", "owner": "ollama", "repo": "ollama", "enabled": true, "category": "other-top", "profile": "ai-creator" },
+      { "type": "repo_releases", "owner": "deepseek-ai", "repo": "DeepSeek-V3", "enabled": true, "category": "other-top", "profile": "ai-creator" },
+      { "type": "repo_releases", "owner": "vllm-project", "repo": "vllm", "enabled": true, "category": "other-top", "profile": "ai-creator" }
     ],
     "telegram": {
       "enabled": true,
       "channels": [
-        { "channel": "watcher_guru", "enabled": true, "fetch_limit": 20, "category": "crypto-news", "profile": "ai-creator" },
-        { "channel": "cointelegraph", "enabled": true, "fetch_limit": 20, "category": "crypto-news", "profile": "ai-creator" },
-        { "channel": "zaihuapd", "enabled": true, "fetch_limit": 20, "category": "ai-news", "profile": "ai-creator" }
+        { "channel": "watcher_guru", "enabled": true, "fetch_limit": 12, "category": "other-top", "profile": "ai-creator" },
+        { "channel": "cointelegraph", "enabled": true, "fetch_limit": 12, "category": "other-top", "profile": "ai-creator" },
+        { "channel": "zaihuapd", "enabled": true, "fetch_limit": 12, "category": "other-top", "profile": "ai-creator" }
       ]
     },
     "rss": [
-      { "name": "OpenAI News", "url": "https://openai.com/news/rss.xml", "enabled": true, "category": "ai-news", "profile": "ai-creator" },
-      { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "enabled": true, "category": "ai-news", "profile": "ai-creator" },
-      { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "enabled": true, "category": "ai-news", "profile": "ai-creator" },
-      { "name": "CoinDesk", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/", "enabled": true, "category": "crypto-news", "profile": "ai-creator" },
-      { "name": "Cointelegraph", "url": "https://cointelegraph.com/rss", "enabled": true, "category": "crypto-news", "profile": "ai-creator" }
+      { "name": "OpenAI News", "url": "https://openai.com/news/rss.xml", "enabled": true, "category": "other-top", "profile": "ai-creator" },
+      { "name": "Google DeepMind Blog", "url": "https://deepmind.google/blog/rss.xml", "enabled": true, "category": "other-top", "profile": "ai-creator" },
+      { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "enabled": true, "category": "other-top", "profile": "ai-creator" },
+      { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "enabled": true, "category": "other-top", "profile": "ai-creator" },
+      { "name": "CoinDesk", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/", "enabled": true, "category": "other-top", "profile": "ai-creator" },
+      { "name": "Cointelegraph", "url": "https://cointelegraph.com/rss", "enabled": true, "category": "other-top", "profile": "ai-creator" }
     ]
   },
   "processing": {
@@ -97,15 +99,25 @@
     }
   },
   "digest": {
-    "max_items": 15,
+    "max_items": 30,
     "category_groups": {
-      "x_viral": { "name": "X Viral Trends", "limit": 5, "categories": ["x-hot"] },
-      "tech_oss": { "name": "Hacker News & GitHub Trending", "limit": 3, "categories": ["tech-hn", "oss-trending"] },
-      "reddit_hot": { "name": "Reddit Hot", "limit": 3, "categories": ["reddit-ai", "reddit-crypto"] },
-      "news_feeds": { "name": "AI & Crypto News", "limit": 3, "categories": ["ai-news", "crypto-news"] },
-      "gh_releases": { "name": "GitHub Releases", "limit": 1, "categories": ["gh-release"] }
+      "x_viral": {
+        "name": "X / Twitter Top",
+        "limit": 8,
+        "categories": ["x-top"]
+      },
+      "reddit_viral": {
+        "name": "Reddit Top",
+        "limit": 8,
+        "categories": ["reddit-top"]
+      },
+      "other_platforms": {
+        "name": "Other Platforms Top",
+        "limit": 14,
+        "categories": ["other-top"]
+      }
     },
     "default_group": "other",
-    "default_group_limit": 2
+    "default_group_limit": 5
   }
 }
