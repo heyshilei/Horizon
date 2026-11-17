@@ -2,9 +2,10 @@ name: Daily Horizon Summary
 
 on:
   schedule:
-    # 北京时间 07:50 (UTC 23:50) 与 17:50 (UTC 09:50) 自动运行
+    # 每天运行 3 次：北京时间 07:50 (UTC 23:50)、13:50 (UTC 05:50)、19:50 (UTC 11:50)
     - cron: '50 23 * * *'
-    - cron: '50 9 * * *'
+    - cron: '50 5 * * *'
+    - cron: '50 11 * * *'
   workflow_dispatch:
 
 env:
@@ -22,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Restore official scoring engine (fix 5.0 score bug)
+      - name: Restore official scoring engine
         run: |
           git remote add upstream https://github.com/Thysrael/Horizon.git || true
           git fetch upstream main
@@ -39,6 +40,83 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
+      - name: Inject X 48h Top-Likes & Reddit Global Search Rules
+        run: |
+          python3 - << 'EOF'
+          import json
+          from datetime import datetime, timedelta, timezone
+
+          # 1. 自动给 Twitter 搜索词注入 48 小时内 since:YYYY-MM-DD，防止 Apify Top 模式抓回几年前的老推文
+          since_date = (datetime.now(timezone.utc) - timedelta(hours=48)).strftime("%Y-%m-%d")
+          with open("data/config.github.json", "r", encoding="utf-8") as f:
+              cfg = json.load(f)
+          cfg["sources"]["twitter"]["keywords"] = [
+              f'{kw} since:{since_date}' for kw in cfg["sources"]["twitter"]["keywords"]
+          ]
+          with open("data/config.github.json", "w", encoding="utf-8") as f:
+              json.dump(cfg, f, ensure_ascii=False, indent=2)
+
+          # 2. 注入 Reddit 全站搜索补丁 (搜索关键词列表 + 帖子/相关性/今天 + 优先 1000票&100评 + 自动兜底 Top 6)
+          #    以及 Twitter 48h 点赞量最高 Top 6 预筛选补丁 (大幅降低 Gemini API 调用次数至 ~35 次/轮)
+          orch_path = "src/orchestrator.py"
+          with open(orch_path, "r", encoding="utf-8") as f:
+              code = f.read()
+
+          patch_code = '''
+          # --- CUSTOM VIRAL PRE-FILTER & REDDIT GLOBAL SEARCH PATCH ---
+          import httpx as _httpx
+          from datetime import datetime as _dt, timezone as _tz
+          from src.models import ContentItem as _CI, SourceType as _ST
+
+          def _fetch_reddit_global_search():
+              queries = ["ai", "ai agent", "Claude OR Gemini OR DeepSeek OR CHATGPT", "Bitcoin OR crypto OR Solana"]
+              headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+              seen, strict_pool, backup_pool = set(), [], []
+              for q in queries:
+                  for host in ["https://www.reddit.com", "https://old.reddit.com"]:
+                      try:
+                          r = _httpx.get(
+                              f"{host}/search.json",
+                              params={"q": q, "type": "link", "sort": "relevance", "t": "day", "limit": 25},
+                              headers=headers, timeout=15.0, follow_redirects=True
+                          )
+                          if r.status_code == 200:
+                              for child in r.json().get("data", {}).get("children", []):
+                                  d = child.get("data", {})
+                                  url = "https://www.reddit.com" + d.get("permalink", "")
+                                  if not d.get("permalink") or url in seen:
+                                      continue
+                                  seen.add(url)
+                                  score = int(d.get("score", 0) or 0)
+                                  comms = int(d.get("num_comments", 0) or 0)
+                                  item = _CI(
+                                      id=f"reddit-{d.get('id')}",
+                                      source_type=_ST.REDDIT,
+                                      title=f"[r/{d.get('subreddit')}] {d.get('title', '')} ({score} votes, {comms} comments)",
+                                      url=url,
+                                      content=(d.get("selftext", "") or d.get("title", ""))[:1500],
+                                      author=d.get("author", "reddit"),
+                                      published_at=_dt.fromtimestamp(d.get("created_utc", _dt.now(_tz.utc).timestamp()), tz=_tz.utc),
+                                      metadata={"score": score, "comments": comms, "category": "reddit-top", "profile": "ai-creator"}
+                                  )
+                                  if score >= 1000 and comms >= 100:
+                                      strict_pool.append((score + comms * 5, item))
+                                  elif score >= 100 and comms >= 20:
+                                      backup_pool.append((score + comms * 5, item))
+                              break
+                      except Exception:
+                          continue
+              strict_pool.sort(key=lambda x: x[0], reverse=True)
+              backup_pool.sort(key=lambda x: x[0], reverse=True)
+              selected = [x[1] for x in strict_pool[:6]]
+              if len(selected) < 6:
+                  selected.extend([x[1] for x in backup_pool[:(6 - len(selected))]])
+              return selected
+          '''
+          '''
+          print("Config since_date injected:", since_date)
+          EOF
+
       - name: Run Horizon Radar with config.github.json
         env:
           TZ: Asia/Shanghai
@@ -52,6 +130,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -- src/ profiles/
+          git checkout -- src/ profiles/ data/config.github.json
           git add -f docs/_posts/ docs/ data/summaries/
           git diff --staged --quiet || (git commit -m "chore: update daily summary $(date +'%Y-%m-%d %H:%M')" && git push origin main)
