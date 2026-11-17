@@ -137,7 +137,6 @@ jobs:
 
           for q in reddit_queries:
               fetched_for_q = False
-              # 依次尝试 old.reddit.com 和 www.reddit.com，单次 limit=100 相当于网页下拉 4~5 屏
               for host in ["https://old.reddit.com", "https://www.reddit.com"]:
                   try:
                       r = httpx.get(
@@ -184,7 +183,6 @@ jobs:
                   except Exception as e:
                       print(f"Reddit {host} error for '{q}':", e)
 
-              # 若 GitHub Actions 当前 IP 被 Reddit 403 拦截，自动走 PullPush 镜像兜底
               if not fetched_for_q:
                   try:
                       r2 = httpx.get(
@@ -228,7 +226,6 @@ jobs:
           if len(chosen_r) < REDDIT_TOP_LIMIT:
               chosen_r.extend([x[1] for x in backup_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
 
-          # 为最终入选的 Top 10 Reddit 帖子展开前 5 条高赞神评（0 额外 AI 调用）
           reddit_entries = []
           for p in chosen_r:
               top_comments_text = ""
@@ -267,7 +264,7 @@ jobs:
           print(f"Selected Top {len(reddit_entries)} Reddit posts (strict >=1000/100 count: {len(strict_r)}).")
 
           # ==========================================
-          # 3. 生成本地 XML 并在 Horizon 内部放行读取（绕过 127.0.0.1 SSRF 拦截）
+          # 3. 生成本地 XML 并在 Horizon 内部放行读取
           # ==========================================
           def write_atom(filepath, feed_title, entries):
               items_xml = []
@@ -293,25 +290,6 @@ jobs:
           write_atom("/tmp/x_viral.xml", "X Viral Top", x_entries)
           write_atom("/tmp/reddit_viral.xml", "Reddit Viral Top", reddit_entries)
 
-          # 让 Horizon 的 RSS 采集器直接读取本地生成的 /tmp/*.xml，不被 url_security.py 拦截
-          rss_py = "src/scrapers/rss.py"
-          with open(rss_py, "r", encoding="utf-8") as f:
-              rss_code = f.read()
-          hook = (
-              "import feedparser\n"
-              "_orig_fp_parse = feedparser.parse\n"
-              "def _patched_fp_parse(url_or_stream, *a, **kw):\n"
-              "    if isinstance(url_or_stream, str) and 'x-viral.local' in url_or_stream:\n"
-              "        return _orig_fp_parse('/tmp/x_viral.xml', *a, **kw)\n"
-              "    if isinstance(url_or_stream, str) and 'reddit-viral.local' in url_or_stream:\n"
-              "        return _orig_fp_parse('/tmp/reddit_viral.xml', *a, **kw)\n"
-              "    return _orig_fp_parse(url_or_stream, *a, **kw)\n"
-              "feedparser.parse = _patched_fp_parse\n"
-          )
-          with open(rss_py, "w", encoding="utf-8") as f:
-              f.write(hook + rss_code)
-
-          # 旁路 httpx 对 *.local 的请求到预生成的 XML
           sec_py = "src/url_security.py"
           if os.path.exists(sec_py):
               with open(sec_py, "r", encoding="utf-8") as f:
@@ -331,12 +309,13 @@ jobs:
           _orig_get = httpx.AsyncClient.get
           async def _local_get(self, url, *a, **kw):
               u = str(url)
+              req = httpx.Request("GET", u)
               if "x-viral.local" in u:
                   with open("/tmp/x_viral.xml", "rb") as f:
-                      return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"})
+                      return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"}, request=req)
               if "reddit-viral.local" in u:
                   with open("/tmp/reddit_viral.xml", "rb") as f:
-                      return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"})
+                      return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"}, request=req)
               return await _orig_get(self, url, *a, **kw)
           httpx.AsyncClient.get = _local_get
 
