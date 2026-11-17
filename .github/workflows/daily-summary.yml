@@ -49,7 +49,6 @@ jobs:
           now_utc = datetime.now(timezone.utc)
           since_date = (now_utc - timedelta(hours=48)).strftime("%Y-%m-%d")
 
-          # 1. 给 X 关键词自动加上 48h since:YYYY-MM-DD
           with open("data/config.github.json", "r", encoding="utf-8") as f:
               cfg = json.load(f)
           cfg["sources"]["twitter"]["keywords"] = [
@@ -59,7 +58,6 @@ jobs:
               json.dump(cfg, f, ensure_ascii=False, indent=2)
           print("Injected X since_date:", since_date)
 
-          # 2. 用甲骨文原生 IP 搜索 Reddit（帖子 + 相关性 + 今天 + 翻页100条/词 + 票数>=1000 & 评论>=100 + 展开前5神评）
           reddit_queries = [
               "ai",
               "ai agent",
@@ -202,18 +200,20 @@ jobs:
               return await _orig_get(self, url, *a, **kw)
           httpx.AsyncClient.get = _local_get
 
-          # 拦截 TwitterScraper 返回结果：在送给 Gemini 打分前，先按点赞量从高到低只取 Top 5（省掉 95 次 AI 调用！）
+          # 自动识别 TwitterScraper 抓取方法并在送入 AI 前只取点赞最高的 Top 5
           from src.scrapers.twitter import TwitterScraper
-          _orig_tw_scrape = TwitterScraper.scrape
-          async def _top5_tw_scrape(self, *a, **kw):
-              items = await _orig_tw_scrape(self, *a, **kw)
-              def _get_likes(it):
-                  m = getattr(it, "metadata", {}) or {}
-                  return int(m.get("likes") or m.get("favorite_count") or m.get("faves") or 0)
-              items.sort(key=_get_likes, reverse=True)
-              print(f"Pre-filtered X tweets from {len(items)} down to Top 5 by likes.")
-              return items[:5]
-          TwitterScraper.scrape = _top5_tw_scrape
+          _method_name = next((m for m in ("fetch", "fetch_items", "scrape", "collect") if hasattr(TwitterScraper, m)), None)
+          if _method_name:
+              _orig_tw = getattr(TwitterScraper, _method_name)
+              async def _top5_tw(self, *a, **kw):
+                  items = await _orig_tw(self, *a, **kw)
+                  def _get_likes(it):
+                      m = getattr(it, "metadata", {}) or {}
+                      return int(m.get("likes") or m.get("favorite_count") or m.get("faves") or 0)
+                  items.sort(key=_get_likes, reverse=True)
+                  print(f"Pre-filtered X tweets ({_method_name}) from {len(items)} down to Top 5 by likes.")
+                  return items[:5]
+              setattr(TwitterScraper, _method_name, _top5_tw)
 
           import sys
           from src.main import main
