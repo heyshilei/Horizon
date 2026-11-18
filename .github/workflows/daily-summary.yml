@@ -34,21 +34,23 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
           uv sync
 
-      - name: Prepare X 48h Top-5 Likes & Scrape Reddit Global Top-10 (+ Top 5 Comments)
+      - name: Prepare X 48h Top-5 Likes & Scrape Reddit via Free Arctic Shift API
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
           import os
           import json
           import html
-          import primp
+          import httpx
           from datetime import datetime, timedelta, timezone
 
           REDDIT_TOP_LIMIT = 10
           COMMENTS_PER_POST = 5
           now_utc = datetime.now(timezone.utc)
           since_date = (now_utc - timedelta(hours=48)).strftime("%Y-%m-%d")
+          after_ts = int((now_utc - timedelta(hours=36)).timestamp())
 
+          # 1. 给 X 关键词自动加上 48h since:YYYY-MM-DD
           with open("data/config.github.json", "r", encoding="utf-8") as f:
               cfg = json.load(f)
           cfg["sources"]["twitter"]["keywords"] = [
@@ -58,60 +60,62 @@ jobs:
               json.dump(cfg, f, ensure_ascii=False, indent=2)
           print("Injected X since_date:", since_date)
 
-          reddit_queries = [
-              "ai",
-              "ai agent",
-              "Claude OR Gemini OR DeepSeek OR GPT",
-              "Bitcoin OR BTC OR crypto OR Solana"
+          # 2. 通过免费公开接口 Arctic Shift 抓取 Reddit 最近 36h 热门帖子（无需代理、无需 App、不封机房 IP）
+          subs_ai_crypto = [
+              "singularity", "LocalLLaMA", "ClaudeAI", "OpenAI", "artificial",
+              "CryptoCurrency", "Bitcoin", "solana"
           ]
-          client = primp.Client(impersonate="random", timeout=20.0, follow_redirects=True)
+          subs_general = ["technology", "wallstreetbets"] # 大版块自动按 AI/Crypto 关键词过滤
+          kw_filter = ("ai", "agent", "llm", "gpt", "claude", "gemini", "deepseek", "grok", "openai", "nvidia", "bitcoin", "btc", "crypto", "solana", "eth")
+
+          ua = "horizon-viral-radar/2.0"
           seen_r = set()
           strict_r = []
           backup_r = []
 
-          for q in reddit_queries:
-              for host in ["https://www.reddit.com", "https://old.reddit.com"]:
-                  try:
-                      r = client.get(
-                          f"{host}/search.json",
-                          params={"q": q, "type": "link", "sort": "relevance", "t": "day", "limit": "100"}
-                      )
-                      print(f"Reddit [{host}] query '{q}' -> HTTP {r.status_code}")
-                      if r.status_code == 200:
-                          children = r.json().get("data", {}).get("children", [])
-                          print(f"  -> got {len(children)} posts")
-                          for child in children:
-                              d = child.get("data", {})
-                              permalink = d.get("permalink", "")
-                              if not permalink:
+          for sub in subs_ai_crypto + subs_general:
+              try:
+                  r = httpx.get(
+                      "https://arctic-shift.photon-reddit.com/api/posts/search",
+                      params={"subreddit": sub, "after": after_ts, "limit": 100},
+                      headers={"User-Agent": ua},
+                      timeout=20.0
+                  )
+                  print(f"ArcticShift r/{sub} -> HTTP {r.status_code}")
+                  if r.status_code == 200:
+                      rows = r.json().get("data", [])
+                      for d in rows:
+                          pid = d.get("id", "")
+                          if not pid or pid in seen_r:
+                              continue
+                          title_raw = (d.get("title") or "").strip()
+                          selftext = (d.get("selftext") or "").strip()
+                          if sub in subs_general:
+                              blob = (title_raw + " " + selftext).lower()
+                              if not any(k in blob for k in kw_filter):
                                   continue
-                              url = "https://www.reddit.com" + permalink
-                              if url in seen_r:
-                                  continue
-                              seen_r.add(url)
-                              score = int(d.get("score") or 0)
-                              comms = int(d.get("num_comments") or 0)
-                              sub = d.get("subreddit") or "reddit"
-                              title_raw = d.get("title") or ""
-                              selftext = (d.get("selftext") or "").strip()
-                              viral_rank = score + comms * 5
-                              post_obj = {
-                                  "permalink": permalink,
-                                  "sub": sub,
-                                  "score": score,
-                                  "comms": comms,
-                                  "title": f"[r/{sub} | ⬆️ {score} 💬 {comms}] {title_raw}",
-                                  "url": url,
-                                  "selftext": selftext[:1200] if selftext else title_raw,
-                                  "updated": now_utc.isoformat()
-                              }
-                              if score >= 1000 and comms >= 100:
-                                  strict_r.append((viral_rank, post_obj))
-                              elif score >= 100 and comms >= 20:
-                                  backup_r.append((viral_rank, post_obj))
-                          break
-                  except Exception as e:
-                      print(f"Reddit {host} exception for '{q}':", e)
+                          seen_r.add(pid)
+                          score = int(d.get("score") or 0)
+                          comms = int(d.get("num_comments") or 0)
+                          permalink = d.get("permalink") or f"/r/{sub}/comments/{pid}/"
+                          url = "https://www.reddit.com" + permalink
+                          viral_rank = score + comms * 5
+                          post_obj = {
+                              "id": pid,
+                              "sub": sub,
+                              "score": score,
+                              "comms": comms,
+                              "title": f"[r/{sub} | ⬆️ {score} 💬 {comms}] {title_raw}",
+                              "url": url,
+                              "selftext": selftext[:1200] if selftext else title_raw,
+                              "updated": now_utc.isoformat()
+                          }
+                          if score >= 1000 and comms >= 100:
+                              strict_r.append((viral_rank, post_obj))
+                          elif score >= 80 and comms >= 15:
+                              backup_r.append((viral_rank, post_obj))
+              except Exception as e:
+                  print(f"ArcticShift r/{sub} warn:", e)
 
           strict_r.sort(key=lambda x: x[0], reverse=True)
           backup_r.sort(key=lambda x: x[0], reverse=True)
@@ -119,31 +123,32 @@ jobs:
           if len(chosen_r) < REDDIT_TOP_LIMIT:
               chosen_r.extend([x[1] for x in backup_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
 
+          # 为 Top 10 Reddit 帖子展开前 5 条高赞神评
           reddit_entries = []
           for p in chosen_r:
               top_comments_text = ""
-              for host in ["https://www.reddit.com", "https://old.reddit.com"]:
-                  try:
-                      cr = client.get(
-                          f"{host}{p['permalink']}.json",
-                          params={"sort": "top", "limit": "10"}
-                      )
-                      if cr.status_code == 200 and isinstance(cr.json(), list) and len(cr.json()) > 1:
-                          c_children = cr.json()[1].get("data", {}).get("children", [])
-                          c_lines = []
-                          for c in c_children:
-                              cd = c.get("data", {})
-                              body = (cd.get("body") or "").strip().replace("\n", " ")
-                              c_score = cd.get("score") or 0
-                              if body and body not in ("[deleted]", "[removed]") and len(body) > 10:
-                                  c_lines.append(f"- (⬆️ {c_score}) {body[:240]}")
-                              if len(c_lines) >= COMMENTS_PER_POST:
-                                  break
-                          if c_lines:
-                              top_comments_text = "\n\n--- Top Viral Comments ---\n" + "\n".join(c_lines)
-                          break
-                  except Exception:
-                      continue
+              try:
+                  cr = httpx.get(
+                      "https://arctic-shift.photon-reddit.com/api/comments/search",
+                      params={"link_id": f"t3_{p['id']}", "limit": 30},
+                      headers={"User-Agent": ua},
+                      timeout=15.0
+                  )
+                  if cr.status_code == 200:
+                      c_rows = cr.json().get("data", [])
+                      c_rows.sort(key=lambda c: int(c.get("score") or 0), reverse=True)
+                      c_lines = []
+                      for cd in c_rows:
+                          body = (cd.get("body") or "").strip().replace("\n", " ")
+                          c_score = int(cd.get("score") or 0)
+                          if body and body not in ("[deleted]", "[removed]") and len(body) > 10:
+                              c_lines.append(f"- (⬆️ {c_score}) {body[:240]}")
+                          if len(c_lines) >= COMMENTS_PER_POST:
+                              break
+                      if c_lines:
+                          top_comments_text = "\n\n--- Top Viral Comments ---\n" + "\n".join(c_lines)
+              except Exception:
+                  pass
 
               reddit_entries.append({
                   "title": p["title"],
@@ -200,18 +205,22 @@ jobs:
               return await _orig_get(self, url, *a, **kw)
           httpx.AsyncClient.get = _local_get
 
-          # 自动识别 TwitterScraper 抓取方法并在送入 AI 前只取点赞最高的 Top 5
+          # 修复 FetchResult.items 排序与截断
           from src.scrapers.twitter import TwitterScraper
           _method_name = next((m for m in ("fetch", "fetch_items", "scrape", "collect") if hasattr(TwitterScraper, m)), None)
           if _method_name:
               _orig_tw = getattr(TwitterScraper, _method_name)
               async def _top5_tw(self, *a, **kw):
-                  items = await _orig_tw(self, *a, **kw)
+                  res = await _orig_tw(self, *a, **kw)
+                  items = res.items if hasattr(res, "items") else res
                   def _get_likes(it):
                       m = getattr(it, "metadata", {}) or {}
                       return int(m.get("likes") or m.get("favorite_count") or m.get("faves") or 0)
                   items.sort(key=_get_likes, reverse=True)
                   print(f"Pre-filtered X tweets ({_method_name}) from {len(items)} down to Top 5 by likes.")
+                  if hasattr(res, "items"):
+                      res.items = items[:5]
+                      return res
                   return items[:5]
               setattr(TwitterScraper, _method_name, _top5_tw)
 
