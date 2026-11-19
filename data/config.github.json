@@ -16,8 +16,8 @@
       "enabled": true,
       "users": [],
       "keywords": [
-        "(AI OR Claude OR Gemini OR DeepSeek OR ChatGPT OR Grok) min_faves:50 -filter:replies lang:en",
-        "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:50 -filter:replies lang:en"
+        "(AI OR AI Agent OR Claude OR Gemini OR DeepSeek OR ChatGPT OR Grok) min_faves:30 -filter:replies lang:en",
+        "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:30 -filter:replies lang:en"
       ],
       "fetch_limit": 100,
       "category": "x-top",
