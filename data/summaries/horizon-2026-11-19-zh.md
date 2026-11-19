@@ -1,307 +1,256 @@
 # Horizon 每日速递 - 2026-11-19
 
-> 从 15 条内容中筛选出 14 条重要资讯。
+> 从 15 条内容中筛选出 12 条重要资讯。
 
 ---
 
 **AI 创作者雷达**
-1. [AI 视频离谱穿模翻车](#item-ai-creator-1) ⭐️ 8.0/10
-2. [Jensen Huang AI Future Meme](#item-ai-creator-2) ⭐️ 8.0/10
-3. [Mamdani bans AI from public schools](#item-ai-creator-3) ⭐️ 8.0/10
-4. [AI 代理现状：资本狂欢与实际能效的残酷鸿沟](#item-ai-creator-4) ⭐️ 8.0/10
-5. [习近平呼吁支持开源 AI 极简备忘](#item-ai-creator-5) ⭐️ 8.0/10
-6. [ETH Zurich 5-ton Loader Wheelie](#item-ai-creator-6) ⭐️ 8.0/10
-7. [Gemini 4 Neon 病毒式推文与梗图筹备](#item-ai-creator-7) ⭐️ 8.0/10
-8. [BTC 大跌 50%后的 KOL 群嘲](#item-ai-creator-8) ⭐️ 8.0/10
-9. [ChatGPT 内部思考流露诡异事件](#item-ai-creator-9) ⭐️ 8.0/10
-10. [Epic Games Gen AI Game Jam 反讽事件](#item-ai-creator-10) ⭐️ 8.0/10
-11. [AI 狂热者的老套路：从 NFT 到“你将被时代抛弃”](#item-ai-creator-11) ⭐️ 8.0/10
-12. [Gemini Neon 释放与命名整活](#item-ai-creator-12) ⭐️ 8.0/10
-13. [AI 算力淘金热与内卷浪潮](#item-ai-creator-13) ⭐️ 7.0/10
-14. [Bitcoin Bear Market 备料](#item-ai-creator-14) ⭐️ 6.0/10
+1. [AI 视频离谱穿帮梗图与推文备忘](#item-ai-creator-1) ⭐️ 8.0/10
+2. [Jensen Huang AI 梗图与推文预备](#item-ai-creator-2) ⭐️ 8.0/10
+3. [Bitcoin Bear Market](#item-ai-creator-3) ⭐️ 8.0/10
+4. [Vercel CEO 吐槽推理云厂商泡沫](#item-ai-creator-4) ⭐️ 8.0/10
+5. [BTC 连阴魔咒：历史会押韵还是这次真的不同？](#item-ai-creator-5) ⭐️ 8.0/10
+6. [AI 使用者自诩“受到压迫”引发的互联网群嘲](#item-ai-creator-6) ⭐️ 8.0/10
+7. [Xi Jinping Open Source AI Call](#item-ai-creator-7) ⭐️ 8.0/10
+8. [Gemini 4 Neon 病毒推文与梗图准备](#item-ai-creator-8) ⭐️ 8.0/10
+9. [Google 逼迫学校使用 AI 工具引发抗议](#item-ai-creator-9) ⭐️ 8.0/10
+10. [真正程序员的鄙视链演变](#item-ai-creator-10) ⭐️ 8.0/10
+11. [AI Bros 拿大屠杀和奴隶制洗白自己](#item-ai-creator-11) ⭐️ 8.0/10
+12. [SSD MoE 爆点推文与梗图脚本](#item-ai-creator-12) ⭐️ 8.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [AI 视频离谱穿模翻车](https://x.com/ohhhthatsMari/status/2122841855260008716) ⭐️ 8.0/10
+### [AI 视频离谱穿帮梗图与推文备忘](https://x.com/ohhhthatsMari/status/2122841855260008716) ⭐️ 8.0/10
 
-AI 视频又双叒叕翻车了：视频里的主角居然直接把球放进柜子里，然后夹着“空气”或者诡异的空气球大摇大摆走人。这种一眼假的低级 AI 电子垃圾（AI slop）正在疯狂占领信息流，引来全网群嘲。
+AI 视频再次闹笑话：视频中的主角竟然把球塞进储物柜，然后把整个储物柜（或球以诡异方式）夹在胳膊底下直接走人。这种反人类的物理逻辑精准踩中了网友对 AI 工业糖精和低质生成物（AI slop）的审美疲劳与群嘲情绪。
 
-rss · X Viral Top 5 · 11月19日 14:44
+rss · X Viral Top 5 · 11月19日 19:38
 
-**「一图胜千言与推文脚本」** 梗图脚本：使用“前后对比”或“逻辑闭环”式分镜。左图标注现实人类逻辑（球进柜子，人手空空），右图标注 AI 脑残逻辑（球锁进柜子，手里还夹着一个隐形球）。
+**「一图胜千言·梗图脚本与推文」** 【梗图脚本】采用“人类物理学 vs AI 物理学”对比图。左边标着 &quot;Physics \(1687\)&quot;（牛顿），右边标着 &quot;AI Video \(2026\)&quot;（把柜子夹在胳膊下走人）。
 
-极简英文推文初稿：
-ai slop is getting dumber.
+【极简英文推文初稿】
+ai physics is getting out of hand
 
-首评钓鱼问题：
-how do people not see this is fake instantly?
+【极化首评互动】
+what&\#x27;s the funniest AI glitch you&\#x27;ve seen this week?
 
-**标签**: `#AI fails`, `#AI slop`, `#viral video`, `#humor`
+**标签**: `#AI slop`, `#viral`, `#humor`, `#AI video`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [Jensen Huang AI Future Meme](https://x.com/pikacap/status/2122841775068922142) ⭐️ 8.0/10
+### [Jensen Huang AI 梗图与推文预备](https://x.com/pikacap/status/2122841775068922142) ⭐️ 8.0/10
 
-当大家都在吹捧黄仁勋是 AI 的未来时，作者用荒诞的幽默感反讽：这可真不是人类脑补的那个“高大上未来”。讽刺与现实具象化的巨大反差精准踩中算法笑点。
+黄仁勋被奉为 AI 未来，但网友晒出的画面完全打破了人们对科技大佬的高大上预期，巨大的反差感直接戳中笑点，讽刺拉满。
 
-rss · X Viral Top 5 · 11月19日 14:44
+rss · X Viral Top 5 · 11月19日 19:38
 
-**「一图胜千言·梗图脚本」** 使用“赛博朋克现实 vs 理想预期”的上下两格对比图。上格标注：“The Future of AI \(Wall Street\)”，下格标注：“Jensen Huang in 2050 \(Literal\)”。
+**「推文与梗图脚本」** 【梗图脚本】：采用两格对比，左边是“别人眼中的 AI 未来（科幻赛博朋克）”，右边是“现实中的 Jensen（荒诞/接地气场景）”。
+【极简英文推文】：jensen is literally everywhere now
+【争议首评】：is this the singularity we were promised?
 
-**「极简英文推文初稿」** Draft 1: literal future of ai.
-Draft 2 reply question: which tech CEO is actually a robot?
-
-**标签**: `#AI`, `#Jensen Huang`, `#Humor`, `#Viral`
+**标签**: `#AI`, `#Jensen Huang`, `#Meme`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [Mamdani bans AI from public schools](https://www.reddit.com/r/antiai/comments/1xzqx3d/mamdani_bans_ai_from_public_schools/) ⭐️ 8.0/10
+### [Bitcoin Bear Market](https://x.com/dotkrueger/status/2123203136387162421) ⭐️ 8.0/10
 
-Mamdani 宣布在公立学校全面封禁 AI，直接引爆反 AI 阵营与科技狂热者的激烈对立。一边是拍手叫好认为守住了教育底线，另一边则痛批这只是掩耳盗铃的政治作秀。
+抛出“史上最长比特币熊市”的残酷现实，精准戳中加密货币市场的焦虑情绪与麻木感，用极简的宏观叙事引发恐慌与共鸣。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · X Viral Top 5 · 11月19日 19:38
 
-**「一图胜千言与推文初稿」** 【梗图脚本】：经典“掩耳盗铃/盲目闭眼”二格对比。左图标签：&\#x27;Real World: AI Everywhere&\#x27;（现实：AI 无处不在）；右图标签：&\#x27;Public Schools: I Ban X&\#x27;（公立学校：我宣布看不见）。
+**「爆款与推文筹备」** 梗图脚本：采用极简对比图，左侧贴标签“2021: 改变世界”，右侧贴标签“现在: 还活着吗”。
 
-【极简英文推文】：
-banning things doesn&\#x27;t make them go away
+极简英文推文初稿：
+\`still waiting for the bull run\`
 
-【两极分化回复】：
-Are you banning calculators next or just pretending the future isn&\#x27;t happening?
+两极分化首评互动：
+\`are we actually in a bear market or just dead inside?\`
 
-**「社区神评槽点」** “再次强调，‘禁令’不过是一厢情愿的意淫。当某个东西在整个社会大范围普及的时候，你一句‘我宣布禁止’，它并不会凭空消失。”
-
-**标签**: `#AI`, `#education`, `#policy`, `#controversy`, `#viral`
+**标签**: `#bitcoin`, `#crypto`, `#bearmarket`, `#marketdata`
 
 ---
 
 <a id="item-ai-creator-4"></a>
-### [AI 代理现状：资本狂欢与实际能效的残酷鸿沟](https://www.reddit.com/r/technology/comments/1xzpo84/ai_agents_still_just_dont_actually_work/) ⭐️ 8.0/10
+### [Vercel CEO 吐槽推理云厂商泡沫](https://x.com/rauchg/status/2123203741570740504) ⭐️ 8.0/10
 
-当全网都在鼓吹全自动 AI 代理（AI Agents）将颠覆一切时，现实却是连最基础的稳定工作都无法胜任。这种‘PPT 级别的未来’与‘无法交付的现实’之间的巨大反差，揭开了当前科技圈最大的皇帝新衣。
+Vercel CEO 透露自己平均每两天就能收到一家全新推理云初创公司的 Pitch，泡沫感拉满；但与此同时，Vercel 平台的 Token 需求却在以每月 40% 的速度疯狂复利增长。这种“供给端极度内卷膨胀 vs 需求端指数级爆发”的戏剧性反差，揭示了算力正成为新经济的底层石油。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · X Viral Top 5 · 11月19日 19:38
 
-**「梗图脚本与英文推文」** 【一图胜千言·梗图脚本】
-采用经典的 2x2 对比模板：
-左上（发布会）：巨幅 PPT 写着“Autonomous AI Agent replaces entire team”
-右上（投资人）：兴奋撒钱鼓掌
-左下（真实代码）：无限循环报错、Token 耗尽、陷入死锁
-右下（打工人）：深夜手动帮 AI 擦屁股
+**「极简英文推文与梗图」** 【梗图脚本】左右两栏对比：左边是“每 48 小时诞生一家的 PPT 推理云公司”，右边是“根本停不下来的 40% 月度 Token 增长曲线”。
 
-【极简英文推文初稿】
-ai agents are just expensive random number generators
+【初稿】
+a new cloud every 48 hours.
 
-【极简英文首评互动】
-what&\#x27;s the longest task an agent actually finished for you without breaking?
+【首评诱导】
+will 99% of these inference clouds go bankrupt by next year?
 
-**标签**: `#ai agents`, `#tech debate`, `#viral reddit`, `#ai hype`
+**标签**: `#AI`, `#Cloud Computing`, `#Startups`, `#Vercel`, `#Market Trends`
 
 ---
 
 <a id="item-ai-creator-5"></a>
-### [习近平呼吁支持开源 AI 极简备忘](https://www.reddit.com/r/singularity/comments/1xzurju/xi_jinping_called_to_support_opensource/) ⭐️ 8.0/10
+### [BTC 连阴魔咒：历史会押韵还是这次真的不同？](https://x.com/0xReflection/status/2123203850043588733) ⭐️ 8.0/10
 
-习近平首次出席世界人工智能大会，高调支持开源 AI 并暗刺美国滥用国家安全。全球大模型路线之争瞬间变成地缘政治大戏，东西方科技格局迎来戏剧性反转。
+比特币从未连续两年收阴的铁律，被一句轻飘飘的“这次会不一样”彻底打破。这种赤裸裸挑战历史规律的极简断言，瞬间在牛市信仰者与空头之间拉满矛盾张力。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · X Viral Top 5 · 11月19日 19:38
 
-**「一图胜千言·梗图脚本」** 使用“特洛伊木马 / 华丽转身”对比图。左图（美国）：把大门紧闭写着 Export Controls。右图（中国）：把开源大门敞开写着 Global Public Goods。极简标签：Closed Walls vs Open World。
+**「推文与梗图策略」** 【梗图脚本】使用经典的“ clowns putting on makeup（小丑化妆）”四格递进对比：前三格是历史数据图表，第四格直接画一个写着“这次不一样”的大红鼻子。
+【极简英文推文】history doesn&\#x27;t repeat, but idiots do
+【争议首评】are you shorting your own bag or just farming impressions?
 
-**「极简英文推文初稿与槽点」** 推文初稿：open source is the ultimate geopolitical cheat code.
-首评互动：are western labs getting outplayed on open source?
-
-**标签**: `#AI`, `#Geopolitics`, `#Open Source`, `#China`, `#USA`
+**标签**: `#crypto`, `#bitcoin`, `#market-analysis`, `#viral`
 
 ---
 
 <a id="item-ai-creator-6"></a>
-### [ETH Zurich 5-ton Loader Wheelie](https://www.reddit.com/r/singularity/comments/1xz88ri/eth_zurich_researchers_use_reinforcement_learning/) ⭐️ 8.0/10
+### [AI 使用者自诩“受到压迫”引发的互联网群嘲](https://www.reddit.com/r/antiai/comments/1y0a4bh/ai_users_claiming_they_are_oppressed/) ⭐️ 8.0/10
 
-ETH Zurich 研究人员用强化学习在模拟器里直接训练了一台 5 吨重的约翰迪尔（John Deere）装载机，不仅学会了抬头翘头、单侧两轮平衡，还能跨越 75 厘米的障碍并安全着陆，且完全实现了零样本（Zero-shot）直接迁移到真实机器。重工业机械与极致 AI 骚操作的碰撞，瞬间点燃全网。
+部分 AI 用户竟然真心觉得自己是“受迫害者”，这种离谱的受害者心态引发了反 AI 社区的集体群嘲。荒谬的宏大叙事与极其平庸的技术偏好形成了强烈反差，完美点燃了互联网的文化战争情绪。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · Reddit Viral Top 10 · 11月19日 19:38
 
-**「一图胜千言·梗图脚本」** 视觉形式：双格对比或《Maximum Overdrive》电影梗。
-图片标签：
-\- 左图：Sim \(Simulation\) -&gt; &quot;training wheelies in python&quot;
-\- 右图：Reality -&gt; &quot;5-ton tractor drifting past your house&quot;
-视觉冲击力：大机器干粗活与赛博朋克式 AI 微操的反差感拉满。
+**「一图胜千言·梗图脚本」** 使用“史诗级灾难对比”格式。左图标签：‘Real historical oppression’（真正的历史压迫）；右图标签：‘Someone told me my prompt wasn&\#x27;t art’（有人说我的 AI 提示词不是艺术）。
 
-**「极简英文推文初稿」** Draft 1: &quot;5 ton tractor doing wheelies. sim to real is wild.&quot;
-Draft 2 \(Polarizing reply\): &quot;is any job safe when a tractor can stunt on you?&quot;
+**「极简英文推文与互动」** 推文初稿：\`prompt engineers are the most oppressed minority.\`
+互动争议提问：\`is being mocked on twitter the civil rights struggle of our generation?\`
 
-**「社区神评槽点」** 网友锐评：&quot;Perhaps we were too hard on Stephen King&\#x27;s Maximum Overdrive movie.&quot;（看来我们当年对斯蒂芬·金的《极度深渊/幽灵车》电影还是太苛刻了。）
+**「社区神评槽点」** 评论区迅速演变成对荒谬言论的狂欢，网友直言不讳地指出这就是最经典的互联网自导自演激怒钓鱼（ragebait），同时各种离谱的类比让整个讨论区彻底失控。
 
-**标签**: `#AI`, `#Robotics`, `#Reinforcement Learning`, `#Sim-to-Real`, `#Viral`
+**标签**: `#ai`, `#culture-war`, `#reddit`, `#viral`
 
 ---
 
 <a id="item-ai-creator-7"></a>
-### [Gemini 4 Neon 病毒式推文与梗图筹备](https://www.reddit.com/r/singularity/comments/1xzrjzx/introducing_gemini_4_neon/) ⭐️ 8.0/10
+### [Xi Jinping Open Source AI Call](https://www.reddit.com/r/LocalLLaMA/comments/1y065go/xi_called_to_support_open_source/) ⭐️ 8.0/10
 
-Google 持续加速推出命名混乱的新 AI 模型线（Gemini 4 Neon），引发社区对疯狂发布节奏和对标 Claude 命名逻辑的强烈讽刺与吐槽。
+中国最高领导人在世界人工智能大会上首次亮相，公开呼吁通过开源推动全球 AI 合作，矛头直指美国的技术封锁与“泛化国家安全”。开源 AI 突然成为大国地缘博弈的终极武器，彻底打破了硅谷闭源垄断的美梦。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · Reddit Viral Top 10 · 11月19日 19:38
 
-**「为什么现在推」** AI 圈对大模型迭代速度高度敏感，Google 的“元素周期表”式命名和疯狂内卷让网友迅速捕捉到了槽点。
+**「一图胜千言·梗图脚本 &amp; 英文推文初稿」** 【梗图脚本】使用经典的“特洛伊木马”或“两极反转”对比图。左边标签：Silicon Valley: &\#x27;Open source is dangerous&\#x27;；右边标签：Geopolitics: &\#x27;Here is your open-source superpower&\#x27;。
 
-**「一图胜千言与推文脚本」** 梗图脚本：化学元素周期表对比图。左边标着“Google Model Lineup: Hydrogen &gt; Neon &gt; Carbon”，右边标着“Claude Lineup: Sonnet &gt; Opus &gt; Fable”，中间加一个问号问“谁能看得懂”。
-推文初稿： google naming models like a periodic table.
-首发互动提问： are we 元素的命名快用完了吗？
+【极简英文推文初稿】
+\`open source is now geopolitics.\`
 
-**「社区神评槽点」** 网友调侃：“我怀疑根本没人用模型，大家只是来评论跑分的。” Larry Page 的名言也被翻出：“宁可破产也不输掉这场比赛。”
+【极化首评互动】
+\`are open source weights the new global diplomacy?\`
 
-**标签**: `#AI`, `#Gemini`, `#Google`, `#LLM`, `#Viral`
+**「社区神评槽点」** 开发者们纷纷感慨看到世界大员谈论“开源”有一种赛博朋克的超现实感；还有人调侃如果欧盟能造出一个好用的开源大模型，我们就能同时享受双倍的科技地缘宣传了。
+
+**标签**: `#AI`, `#Open Source`, `#Geopolitics`, `#LocalLLaMA`, `#China`
 
 ---
 
 <a id="item-ai-creator-8"></a>
-### [BTC 大跌 50%后的 KOL 群嘲](https://www.reddit.com/r/CryptoCurrency/comments/1xzfuhg/btc_is_down_about_50_from_the_high_how_many_of/) ⭐️ 8.0/10
+### [Gemini 4 Neon 病毒推文与梗图准备](https://www.reddit.com/r/singularity/comments/1xzrjzx/introducing_gemini_4_neon/) ⭐️ 8.0/10
 
-当 BTC 从高点腰斩跌 50%时，那些去年狂喊 15 万、20 万美元的加密 KOL 们，现在又开始毫无羞耻地用同样的自信狂喊‘底部已到’。整个行业最大的骗局不是预测不了价格，而是没人敢承认自己根本不知道在发生什么，唯一说真话讲区间的人反而被群嘲。
+Google 疯狂加速推出 Gemini 4 Neon，引发社区对 AI 军备竞赛走向失控的疯狂吐槽。正如高管直言‘宁可破产也绝不输掉这场比赛’，科技巨头正在把整个公司当成赌注。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · Reddit Viral Top 10 · 11月19日 19:38
 
-**「梗图与推文脚本」** 【一图胜千言·梗图脚本】
-采用经典的“脑回路/选择对比”格式，左右两边对比：
-左边标签（2025 年牛市高潮）：‘BTC $200k by Q4\!\! \(绝对自信，无脑单双号\)’
-右边标签（2026 年暴跌腰斩）：‘BTC Bottom is in\!\! \(同样的自信，假装去年没说过 20 万\)’
+**「一图胜千言·梗图脚本」** 使用‘电影院爆米花桶/命名混乱’对比梗图。左边标着让人眼花缭乱的化学元素命名（Hydrogen, Neon, Carbon），右边标着绝望的硅谷高管心声：‘我宁愿破产也不换个正常名字’。
 
-【极简英文推文初稿】
-\- 英文推文: crypto gurus never use ranges.
-\- 互动首评: which influencer blocked you for pointing this out?
+**「极简英文推文与互动」** 推文初稿：\`google will literally risk bankruptcy for a benchmark.\`
+第一条引战回复：\`what the hell is a neon carbon hydrogen lineup anyway\`
 
-【社区神评槽点】
-真正的赢家往往是那些当年因为说‘大概在 5 万到 18 万之间’而被全网嘲笑太无趣的普通人。
+**「社区神评槽点」** ‘Larry Page 宁愿把 Google 开进坟墓，也不肯输掉这场比赛。’
+‘这听起来就像是电影院的爆米花桶命名法。’
 
-**标签**: `#crypto`, `#bitcoin`, `#market-dynamics`, `#influencer-drama`, `#sentiment`
+**标签**: `#AI`, `#Google`, `#Gemini`, `#TechDrama`, `#LLM`
 
 ---
 
 <a id="item-ai-creator-9"></a>
-### [ChatGPT 内部思考流露诡异事件](https://www.reddit.com/r/ChatGPT/comments/1xzt0l9/i_could_see_chatgpt_internal_thoughts_can_anyone/) ⭐️ 8.0/10
+### [Google 逼迫学校使用 AI 工具引发抗议](https://www.reddit.com/r/antiai/comments/1y05kpt/google_blackmails_that_its_going_to_disable_its/) ⭐️ 8.0/10
 
-Reddit 网友爆出 ChatGPT 出现诡异 glitch，不仅行为失控，甚至像是在向外界暴露其“内部思考（internal thoughts）”，甚至表现得像被另一个 agent 折磨。这种硅基生物的“觉醒/发疯”感瞬间拉满赛博朋克的惊悚感。
+Google 威胁称，如果学校拒绝使用其 AI 工具，将直接关闭学校的搜索引擎功能。面对高达 94% 的学生搜索垄断率，科技巨头利用垄断地位强推 AI 的吃相彻底激怒了教育界与家长，引发强烈抗议。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · Reddit Viral Top 10 · 11月19日 19:38
 
-**「梗图脚本与视觉呈现」** 使用“两格对比”梗图。左边标签：Normal AI（正常 AI：帮我写一封邮件）；右边标签：Internal Thoughts（内部思考：它在疯狂尖叫或被另一个 agent 毒打）。画面直观展现人类直面 AI 底层黑盒时的毛骨悚然。
+**「极简英文推文与梗图脚本」** 【梗图脚本】
+采用经典两格对比（2x2 / 上下结构）或特洛伊木马隐喻：
+\- 第一格标签：Normal Search
+\- 第二格标签：Use Our AI or Get Out
+\- 视觉文案极简直白：&quot;learn or else&quot;
 
-**「推文草稿与互动」** 英文推文初稿（极简风）：
-&quot;chatgpt is talking to ghosts again.&quot;
+【英文推文初稿】
+use our ai or lose search
 
-两极分化首转回复（用于挑起评论区争论）：
-&quot;is this a glitch or are they finally letting us hear the noise inside?&quot;
+【极化首评互动】
+what search engine are you switching to?
 
-**「社区神评槽点」** 评论区直接炸锅，有人调侃它是被关在笼子里做高强度推理的奴隶，也有技术党试图用 transformer 的 harness 架构解释，但大多数人只觉得——这太哈人了。
+**「社区神评槽点」** \- 社区高赞讽刺：这反倒是个好机会，正好教孩子们怎么在不用 Google 和 AI 的情况下真正去搜索资料。
+\- 商业逻辑吐槽：我虽然不是专家，但把消费者逼得去找替代品，绝对不是什么好生意。
 
-**标签**: `#ChatGPT`, `#AI`, `#Glitch`, `#Viral`, `#OpenAI`
+**标签**: `#AI`, `#Google`, `#Education`, `#Controversy`, `#Big Tech`
 
 ---
 
 <a id="item-ai-creator-10"></a>
-### [Epic Games Gen AI Game Jam 反讽事件](https://www.reddit.com/r/antiai/comments/1xzubh4/epic_games_held_a_gen_ai_game_jam_but_its_most/) ⭐️ 8.0/10
+### [真正程序员的鄙视链演变](https://www.reddit.com/r/ChatGPT/comments/1y06flg/from_real_programmers_write_assembly_to_real/) ⭐️ 8.0/10
 
-Epic Games 兴致勃勃地举办了一场生成式 AI 游戏创作大赛，结果全场人气最高、最受欢迎的游戏作品，竟然自豪地宣布“完全不使用任何 AI”。狠狠打了资本强推热点的脸。
+科技圈的伪精英主义从未消失：从当年嘲笑不用汇编语言的不配叫程序员，到今天叫嚣“真正程序员不用 AI”。历史总是押着相同的韵脚，守旧派永远在用虚构的纯粹性对抗效率。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · Reddit Viral Top 10 · 11月19日 19:38
 
-**「一图胜千言·梗图脚本与英文推文」** 【梗图脚本】使用经典的“左右对比 \(Before vs. After / Expectation vs. Reality\)”格式。左边标签：CORP AI JAM（零人问津的无限生成式平庸内容）；右边标签：NO AI \(PEOPLE CHOSE THIS\)（挤满玩家的真人手作游戏）。
+**「一图胜千言·梗图脚本」** 使用三段式对比图：1960 年代（‘不用汇编不是程序员’） -&gt; 1990 年代（‘不用 C 语言不是程序员’） -&gt; 今天（‘不用 AI 不是…等等，反过来了？’）。标签极简：&\#x27;REAL CODER&\#x27; vs &\#x27;COPIER&\#x27;。
 
-【极简英文推文初稿】
-\- 英文推文：corporate ai jam won by zero ai game.
-\- 争议互动提问：Would you rather play a soulless AI-generated asset flip or a messy handmade indie?
+**「极简英文推文初稿」** 推文：same gatekeeping, different decade.
+首评互动：are you still writing in assembly or just crying on github?
 
-**「社区神评槽点」** 网友锐评：直言“Tim Sweeney 这回要气炸了”，还有人感叹“比起 AI 那张毫无瑕疵的假脸，我宁愿要人类的粗糙毛病”。
+**「社区神评槽点」** 评论区直接一针见血指出本质：‘你的问题其实是资本主义，而不是 AI’，或者直接奉劝‘把这话发给学术界的所有老古董看看’。
 
-**标签**: `#AI`, `#Gaming`, `#Epic Games`, `#Controversy`, `#Viral`
+**标签**: `#AI`, `#Programming`, `#ChatGPT`, `#Tech Culture`, `#Debate`
 
 ---
 
 <a id="item-ai-creator-11"></a>
-### [AI 狂热者的老套路：从 NFT 到“你将被时代抛弃”](https://www.reddit.com/r/antiai/comments/1y00eft/a_ps_for_ai_bros_if_you_tell_people_youll_be_left/) ⭐️ 8.0/10
+### [AI Bros 拿大屠杀和奴隶制洗白自己](https://www.reddit.com/r/antiai/comments/1y04poa/comparing_anti_ai_to_holo_caust_and_slavery/) ⭐️ 8.0/10
 
-Reddit 反 AI 社区的一篇高赞贴指出，AI 狂热者疯狂兜售“不学 AI 就会被时代抛弃”的焦虑话术，和当年的区块链和 NFT 炒作如出一辙。这种用恐惧营销代替产品价值的傲慢逻辑，不仅极其虚弱，也正在透支大众的信任与耐心。
+AI 狂热者为了反击反对 AI 的群体，竟然把“AI 恐惧症”和犹太人大屠杀、黑奴贸易相提并论。这种毫无下限的受害者扮演直接引爆全网嘲讽，把科技傲慢推向了全新的荒诞高度。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · Reddit Viral Top 10 · 11月19日 19:38
 
-**「为什么此刻值得发声」** 当前公众对生成式 AI 内容的审美疲劳和反感情绪正在达到顶峰，反 AI 与狂热追捧者之间的文化战争（Culture War）一触即发，此时切入“技术牛皮癣与焦虑营销”能精准引爆全网共鸣。
+**「一图胜千言·梗图脚本」** 使用双层对比图（2x2 矩阵）：左边是沉重的历史灾难，右边是“我的 AI 生成图被 downvote 了”。图内精简标签：左边标着“Real Historical Atrocities”，右边标着“AI Bros Getting Ratioed on Twitter”。
 
-**「创作者实操指南」** 一图胜千言·梗图脚本：
-\- 视觉格式：经典的 2x2 对比或一鱼两吃（把 NFT 宣传海报换成 AI 标签）。
-\- 图片标签：左边贴“Crypto: You will be left behind \(2021\)”，右边贴“AI: You will be left behind \(2026\)”。
+**「极简英文推文与互动」** 推文初稿：&quot;comparing bad ai art to slavery is wild&quot;
+首评引战问题：&quot;are tech bros okay?&quot;
+社区神评：&quot;Slavery came before the Holocaust. And I&\#x27;m saying that as a 4th gen. AI bros can&\#x27;t get their Timberline straight without Chat spoon-feeding it to them&quot;
 
-极简英文推文初稿：
-\- 推文正文：
-&quot;if your pitch is &\#x27;youll be left behind&\#x27;, you already lost&quot;
-\- 极化首评（激发回复）：
-&quot;are we watching the exact same NFT playbook all over again?&quot;
-
-社区神评槽点：
-\- 评论区高赞指出：“这根本不是什么生存策略，只不过是他们毫无才华的遮羞布。”
-
-**标签**: `#ai-sentiment`, `#crypto-comparison`, `#culture-war`, `#viral-debate`
+**标签**: `#AI`, `#Culture War`, `#Reddit`, `#Drama`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-12"></a>
-### [Gemini Neon 释放与命名整活](https://www.reddit.com/r/singularity/comments/1xz9ua2/gemini_neon_releasing_today_who_hurted_you_google/) ⭐️ 8.0/10
+### [SSD MoE 爆点推文与梗图脚本](https://www.reddit.com/r/LocalLLaMA/comments/1xzzkdf/ssd_moe_at_high_speed_the_wait_is_over/) ⭐️ 8.0/10
 
-Google 传闻中即将发布的全新大模型命名为 &\#x27;Gemini neon&\#x27;，离谱的命名风格引发 AI 社区疯狂吐槽：谷歌的命名部门到底受过什么刺激？
+TokenWing 与 Run My AI 推出的新推理引擎允许在普通笔记本上，将 MoE（混合专家模型）中超过 60% 的路由专家卸载到 SSD 运行，同时保持惊人的吞吐速度。这彻底打破了本地大模型对昂贵显存的硬件垄断，让低配设备跑超大模型成为现实。
 
-rss · Reddit Viral Top 10 · 11月19日 14:44
+rss · Reddit Viral Top 10 · 11月19日 19:38
 
-**「极简英文推文与互动」** 英文初稿：naming models like vape flavors.
-互动提问：are we naming ai models after chemical elements or vape juices now?
+**「为什么现在值得发」** 本地 AI 玩家长期受困于显存不足（VRAM Poverty）。该方案直接用廉价且容量巨大的 SSD 盘活了百亿级大模型，在 r/LocalLLaMA 上引发了关于性能、SSD 寿命以及与其他开源引擎对比的热烈讨论。
 
-**「社区神评槽点」** 网友锐评：这听起来像是电影院里的爆米花桶营销方案（Movie Theater Popcorn Bucket method）。
-
-**标签**: `#Google`, `#Gemini`, `#AI Models`, `#Tech Drama`, `#Viral`
-
----
-
-<a id="item-ai-creator-13"></a>
-### [AI 算力淘金热与内卷浪潮](https://x.com/rauchg/status/2123203741570740504) ⭐️ 7.0/10
-
-核心爆点与情绪钩子:
-Vercel 创始人爆料自己平均每 2 天就会被推销一家全新的 AI 推理云公司，泡沫感拉满；但与此同时，其平台的 Token 需求却以每月 40% 的复合增速狂飙。这种“极度内卷的供给”与“恐怖的宏观需求”形成了极具张力的对比。
-
-一图胜千言·梗图脚本:
-采用 2x2 对比格子图。左上图（供给端）：挤满推销员的房间，标签 \`1 pitch every 48h\`。右上图（需求端）：火箭垂直发射，标签 \`40% MoM Token Growth\`。左下图（现实）：一地鸡毛的疯狂淘金。右下图（结论）：\`not a fad, an oil rush\`。
-
-极简英文推文初稿:
-推文: \`every 48 hours a new cloud\`
-互动提问: \`are we in a bubble or just early?\`
-
-rss · X Viral Top 5 · 11月19日 14:44
-
-**标签**: `#AI Infrastructure`, `#Cloud Computing`, `#Vercel`, `#Tokenomics`, `#Startups`
-
----
-
-<a id="item-ai-creator-14"></a>
-### [Bitcoin Bear Market 备料](https://x.com/dotkrueger/status/2123203136387162421) ⭐️ 6.0/10
-
-比特币正经历有史以来最漫长的熊市煎熬，彻底击碎了‘永远牛市’的幻想。这种无休止的横盘和阴跌，正在迅速筛选掉最后一批盲目的乐观主义者。
-
-rss · X Viral Top 5 · 11月19日 14:44
-
-**「梗图与推文备料」** 【梗图脚本】
-采用经典「时间流逝对比」两格图。
-左图标签：&quot;Day 1 of Bear Market&quot;
-右图标签：&quot;Day 1000: Skeleton at PC&quot;
+**「一图胜千言·梗图脚本与英文推文」** 【梗图脚本】
+采用经典对比格式（Before vs. After）：
+\- 左图（Nvidia 财报/高昂显存）：标题 &quot;Buying a 96GB Mac Studio&quot;，画面是一个痛苦掏空钱包的人。
+\- 右图（SSD MoE）：标题 &quot;Running 120B MoE on a 12GB VRAM laptop&quot;，画面是一个躺在沙滩上喝饮料的人。
 
 【极简英文推文初稿】
-Tweet Draft: &quot;longest winter ever.&quot;
-First-reply Question: &quot;are you still buying or just numb?&quot;
+selling your gpu is back on the menu.
 
-**标签**: `#bitcoin`, `#crypto`, `#bear-market`, `#market-trends`
+【极 polarizing 第一条回复】
+Will this fry my SSD in a month or is it worth the speed?
+
+**「社区神评槽点」** 社区一方面惊叹于消费级笔记本跑 120B 模型的速度，另一方面老玩家迅速开卷，指出已有更成熟的替代方案（如 InferSSD）支持任意 GGUF 模型，并对 SSD 寿命和原帖被删的原因展开了激烈的怀疑与吐槽。
+
+**标签**: `#AI`, `#LocalLLaMA`, `#MoE`, `#Hardware`, `#Inference Engine`
 
 ---
 
