@@ -5,247 +5,244 @@ date: 2026-11-19
 lang: zh
 ---
 
-> 从 10 条内容中筛选出 10 条重要资讯。
+> 从 15 条内容中筛选出 10 条重要资讯。
 
 ---
 
 **AI 创作者雷达**
-1. [20 岁亏光 11.5 万美元 WSB 名场面](#item-ai-creator-1) ⭐️ 8.0/10
-2. [乌克兰利用中继无人机绕过 Starlink 限制炸毁普京大桥](#item-ai-creator-2) ⭐️ 8.0/10
-3. [宾州高中 AI 武器探测器乌龙事件](#item-ai-creator-3) ⭐️ 8.0/10
-4. [ETH Zurich 5-ton John Deere Loader Stunt](#item-ai-creator-4) ⭐️ 8.0/10
-5. [Bitcoin 散户绝望时刻](#item-ai-creator-5) ⭐️ 8.0/10
-6. [AI 代理依然完全不好用](#item-ai-creator-6) ⭐️ 8.0/10
-7. [人形机器人煎汉堡：全靠人类远程代打](#item-ai-creator-7) ⭐️ 6.0/10
-8. [Wake me up 爆梗推文备战](#item-ai-creator-8) ⭐️ 3.0/10
-9. [Gemini 命名梗：互联网大厂的起名艺术](#item-ai-creator-9) ⭐️ 3.0/10
-10. [r/wallstreetbets: 新 FAANG 组合](#item-ai-creator-10) ⭐️ 3.0/10
+1. [俄亥俄州拟赋予 AI 数据中心征地特权](#item-ai-creator-1) ⭐️ 9.0/10
+2. [AI 搞笑视频翻车爆点](#item-ai-creator-2) ⭐️ 8.0/10
+3. [Jensen Huang AI Viral Tweet Prep](#item-ai-creator-3) ⭐️ 8.0/10
+4. [宾州高中 AI 武器检测仪乌龙事件](#item-ai-creator-4) ⭐️ 8.0/10
+5. [AI 代理依然没法实际干活](#item-ai-creator-5) ⭐️ 8.0/10
+6. [5 吨重约翰迪尔拖拉机玩翘头](#item-ai-creator-6) ⭐️ 8.0/10
+7. [AI 社区：别再用破折号抓 AI 答辩了，2026 年的 AI 废话文学早就变异了](#item-ai-creator-7) ⭐️ 8.0/10
+8. [BTC 50% 暴跌与价格预测账号打脸](#item-ai-creator-8) ⭐️ 8.0/10
+9. [Gemini Neon 释放与命名混乱](#item-ai-creator-9) ⭐️ 8.0/10
+10. [Guillermo Rauch 关于推理云与 AI 工业革命的观察](#item-ai-creator-10) ⭐️ 7.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [20 岁亏光 11.5 万美元 WSB 名场面](https://www.reddit.com/r/wallstreetbets/comments/1xznc5n/lost_115k_at_20yrs_old/) ⭐️ 8.0/10
+### [俄亥俄州拟赋予 AI 数据中心征地特权](https://www.reddit.com/r/technology/comments/1xzkww5/leaked_ohio_bill_could_allow_ai_data_center/) ⭐️ 9.0/10
 
-一个 20 岁的年轻人把自己的账户从 11.5 万美元炒到只剩 3 千美元，清仓退市并宣布永远退出激进交易。最讽刺的是，他把 100%的亏损全部归咎于“AI 股票和期权太不理性”，完美演绎了韭菜的自我修养。
+俄亥俄州泄露草案显示，州政府拟允许 AI 数据中心公司动用原本属于公共设施的“迫夺权”（eminent domain），强行征用私人土地来扩建机房。赛博巨头与地方私有产权的直接冲突瞬间引爆民愤，被痛骂是赤裸裸的权力寻租。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · Reddit Viral Top 10 · 11月19日 04:12
 
-**「推文及梗图方案」** 一图胜千言·梗图脚本：使用经典对比图。左边标签：Age 20 \($115k AI portfolio\)；右边标签：Age 20.5 \($3k and wisdom\)。
+**「极简推文与梗图脚本」** 【梗图脚本】
+两格对比图：
+\- 左图 \(标签：Founding Fathers\): “保护公民私有财产不受侵犯”
+\- 右图 \(标签：Ohio Politicians\): “把你的祖屋铲平用来跑大模型”
 
-极简英文推文初稿：
-ai stocks took my entire youth.
+【极简英文推文初稿】
+Your home for a chatbot.
 
-极具争议的第一条评论（用于钓鱼互动）：
-&\#x27;the market was irrational&\#x27; or you just bought 0DTE options?
+【极化首评互动】
+How much is Big Tech paying local politicians for your backyard?
 
-**标签**: `#WallStreetBets`, `#AI Stocks`, `#Options Trading`, `#Market Loss`, `#Retail Trading`
+**「社区神评槽点」** \- “这绝对是政治自杀，不过考虑到大厂给的钱，政客们下台后也直接财富自由了。”
+\- “我建议直接用巴祖卡轰数据中心，这绝对是美国国父们最初的设想。”
+
+**标签**: `#ai`, `#eminent-domain`, `#ohio`, `#big-tech`, `#viral-outrage`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [乌克兰利用中继无人机绕过 Starlink 限制炸毁普京大桥](https://www.reddit.com/r/technology/comments/1xzttqq/ukraine_blew_up_putins_bridge_using_relay_drones/) ⭐️ 8.0/10
+### [AI 搞笑视频翻车爆点](https://x.com/ohhhthatsMari/status/2122841855260008716) ⭐️ 8.0/10
 
-乌克兰为了炸毁克里米亚大桥，不得不使用中继无人机来绕过 Starlink 的通信限制。科技巨头对战局的微操干预与前线生死实操的对抗，将地缘政治与赛博战争的荒诞感拉满。
+AI 生成的视频离谱穿模，把球塞进柜子里却直接夹在胳膊底下带走了。这种毫无物理逻辑的智障画面精准踩中了大众对低质 AI 泛滥的审美疲劳与嘲讽欲。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · X Viral Top 5 · 11月19日 04:12
 
-**「推文与梗图筹备」** 【梗图脚本】
-三格对比图：
-\1. 标签：&quot;Starlink Terms of Service&quot;（卫星服务条款限制）
-\2. 标签：&quot;US Geopolitics&quot;（大国地缘博弈）
-\3. 标签：&quot;Ukraine with relay drones: fine, i&\#x27;ll do it myself&quot;（乌克兰中继无人机：我自己来）
+**「极简英文推文与梗图脚本」** 【梗图脚本】
+对比图：左边标注 &quot;physics&quot;（物理规律），右边标注 &quot;ai video generators&quot;（AI 视频生成），画面为荒谬的穿模瞬间。
 
-【极简英文推文初稿】
-Draft: bypassed starlink just to blow it up.
-First-reply question: is tech monopoly a bigger bottleneck than the enemy now?
+【英文推文初稿】
+physics left the chat
 
-**「社区神评槽点」** 评论区直指核心矛盾：前线作战不仅要对付敌人，还要被迫对付盟友为了控制局势而人为加设的通信限速和带宽枷锁。
+【极化首评互动】
+what&\#x27;s the funniest ai physics fail you&\#x27;ve seen this week?
 
-**标签**: `#AI Tech &amp; Crypto`, `#Drones`, `#Starlink`, `#Geopolitics`, `#Ukraine`
+**标签**: `#ai`, `#ai-generated`, `#meme`, `#viral`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [宾州高中 AI 武器探测器乌龙事件](https://www.reddit.com/r/technology/comments/1xzfwwb/pennsylvania_high_school_disables_ai_weapons/) ⭐️ 8.0/10
+### [Jensen Huang AI Viral Tweet Prep](https://x.com/pikacap/status/2122841775068922142) ⭐️ 8.0/10
 
-宾州一所高中被迫紧急关闭了其高价引进的“AI 武器探测系统”——因为它把学生随身携带的日常用品全当成了突击步枪。讽刺的是，本想用来防范校园暴力的 AI，最终因为智商太低成了全校最大的安全隐患和笑话。
+利用大众对黄仁勋（Jensen Huang）和 AI 无孔不入的审美疲劳，通过反直觉的视觉或荒诞联想，瞬间解构神坛上的 AI 教主。核心反差在于：人们炒 AI 是为了颠覆世界，结果现实只是让黄仁勋变成了某种赛博神明或离谱的日常生活符号。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · X Viral Top 5 · 11月19日 04:12
 
-**「一图胜千言·梗图脚本与推文」** 【梗图脚本】
-采用经典对比图（2 列）：
-\- 左图：三明治 / 笔记本电脑 / 铅笔盒
-\- 右图：标有“AR-15 Warning”的 AI 判定红框
-\- 顶部大字：AI security at school
+**「推文与创意执行」** 【梗图脚本】
+两格对比图 \(Before vs After\)
+\- 左图标签: &quot;What they promised \(AGI &amp; World Peace\)&quot;
+\- 右图标签: &quot;What we got \(Just more Jensen\)&quot;
 
 【极简英文推文初稿】
-AI security banned for attacking sandwiches.
+Tweet:
+jensen is everywhere except my bank account.
 
-【两极分化首评互动】
-What everyday item would the AI falsely accuse you of carrying first?
+First-reply question:
+what&\#x27;s the over/under on jensen cloning himself next?
 
-**「社区神评槽点」** 评论区高赞吐槽：如果按 John Wick 的逻辑，身边的一切本来就全都是武器。
-
-**标签**: `#AI`, `#Failures`, `#TechHumor`, `#Security`, `#Viral`
+**标签**: `#AI`, `#Jensen Huang`, `#Humor`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-4"></a>
-### [ETH Zurich 5-ton John Deere Loader Stunt](https://www.reddit.com/r/singularity/comments/1xz88ri/eth_zurich_researchers_use_reinforcement_learning/) ⭐️ 8.0/10
+### [宾州高中 AI 武器检测仪乌龙事件](https://www.reddit.com/r/technology/comments/1xzfwwb/pennsylvania_high_school_disables_ai_weapons/) ⭐️ 8.0/10
 
-ETH Zurich 的研究员用强化学习把一台 5 吨重的约翰迪尔装载机调教成了“杂技演员”：不仅能原地翘头、两轮平衡，还能过 75 厘米障碍并平稳着陆。最离谱的是，整个 AI 策略完全在模拟器里训练，零样本直接搬到真车上，甚至跑在一台普通的 Intel i7 笔记本 CPU 上连 GPU 都不需要。重工业机械瞬间变身赛博大玩具，反差感拉满。
+宾州一所高中被迫关闭刚上线的 AI 武器检测系统——因为它把学生随身带的日常用品（比如螺旋笔记本和眼镜盒）全当成了真枪。典型的科技安全剧场（Security Theater），花大钱买了个只会瞎报警的电子废铁。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · Reddit Viral Top 10 · 11月19日 04:12
 
-**「一图胜千言·梗图脚本与推文」** 【梗图脚本】
-推荐 2x2 四宫格对比：
-\- 左上图: OpenAI 烧了几百万美元集群训练的机器人走路
-\- 右上图: 波士顿动力花十年研发的后空翻人形机
-\- 左下图: 农民伯伯开着 5 吨重翻斗车在田里玩两轮平衡
-\- 右下图: 跑在破旧笔记本 CPU 上的 ETH Zurich 强化学习模型
-图片文字标签：
-\- Top: Billion Dollar Labs
-\- Bottom: 5-Ton John Deere Doing Wheelies on Laptop CPU
+**「极简英文推文与梗图」** 【梗图脚本】左右两格对比。左边写着：&\#x27;What it&\#x27;s trained to find: Gun&\#x27;；右边写着：&\#x27;What it actually alarms on: Spiral notebook&\#x27;。
 
-【极简英文推文初稿】
-5-ton tractor doing wheelies via sim-to-real ai.
+【英文推文初稿】
+AI gun detector spots weapon: spiral notebook
 
-【第一条高互动回复】
-runs on a laptop cpu. why are we still building humanoid robots?
+【互动首评】
+are we saving kids or fighting office supplies?
 
-**「社区神评槽点」** \- “也许我们当年对斯蒂芬·金的电影《极度深寒/银线骇星 \(Maximum Overdrive\)》太严苛了……”
-\- “草：我做错了什么要被 5 吨重的挖掘机漂移压过去？”
-\- “没有任何实质突破，倒立摆平衡在计算机里早就彻底解决了，只不过这次是装在了一台 5 吨重的重型机械上，看起来太酷了而已。”
+**「社区神评槽点」** 评论区指出这就是纯粹的‘安全剧场’（Security Theater），学校只是为了假装自己干了实事。它抓不到烟弹、抓不到刀，但绝对能精准引爆你的眼镜盒。
 
-**标签**: `#AI`, `#Reinforcement Learning`, `#Robotics`, `#Sim-to-Real`, `#Viral`
+**标签**: `#AI`, `#Surveillance`, `#TechFail`, `#SecurityTheater`
 
 ---
 
 <a id="item-ai-creator-5"></a>
-### [Bitcoin 散户绝望时刻](https://www.reddit.com/r/Bitcoin/comments/1xzkxli/thats_it_now_im_losing_hope/) ⭐️ 8.0/10
+### [AI 代理依然没法实际干活](https://www.reddit.com/r/technology/comments/1xzpo84/ai_agents_still_just_dont_actually_work/) ⭐️ 8.0/10
 
-币圈散户在行情回撤时公开哀叹“失去希望、怀疑人生”，完美的经典割肉前夜情绪，直接点燃评论区对信仰与恐慌的群嘲狂欢。
+AI 代理炒得震天响，但在实际落地中依然无法稳定干活。当所有人都在鼓吹自主生产力时，现实却是连最基础的自动化工作流都频繁翻车。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · Reddit Viral Top 10 · 11月19日 04:12
 
-**「一图胜千言·梗图脚本与推文初稿」** 梗图脚本：经典两格对比，第一格标着“把比特币当货币 \(I thought bitcoin was money\)”，第二格标着“每天看财报和 K 线哭泣 \(Crying over earnings and charts\)”。标签超短：btc / reality。
+**「一图胜千言·梗图脚本」** 采用 2x2 对比网格。左上：营销文案里的 AI 代理（万能、全自动）。右上：实际运行中的 AI 代理（卡在死循环或疯狂报错）。内部标签：Marketing vs Reality。
 
-极简英文推文初稿：
-first time?
+**「极简英文推文与互动」** 推文初稿：AI agents still just don’t work. 
+互动提问：what is the most useless agent you&\#x27;ve wasted money on?
 
-争议首评互动：
-are you selling at the bottom yet?
+**「社区神评槽点」** 网友犀利指出：AI 就像当年的维基百科，拿来当个速查工具还行，指望它代替人类干活纯属想多。甚至有人吐槽：这压根不是工具，是需要你全天候伺候的赛博巨婴。
 
-**「社区神评槽点」** 评论区冷嘲热讽直接拉满：“我以为比特币是货币呢”、“它以后肯定会有越来越好看的财报收益报告”、“跌了 23%就开始争家产了”，完美呈现币圈见跌不见理性的黑色幽默。
-
-**标签**: `#bitcoin`, `#crypto`, `#market-sentiment`, `#retail-investors`
+**标签**: `#AI`, `#AI Agents`, `#Tech Debate`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-6"></a>
-### [AI 代理依然完全不好用](https://www.reddit.com/r/technology/comments/1xzpo84/ai_agents_still_just_dont_actually_work/) ⭐️ 8.0/10
+### [5 吨重约翰迪尔拖拉机玩翘头](https://www.reddit.com/r/singularity/comments/1xz88ri/eth_zurich_researchers_use_reinforcement_learning/) ⭐️ 8.0/10
 
-核心爆点：全网都在吹的 AI 代理（AI agents）在现实中依然完全跑不通。科技圈的宏大叙事与用户面对脆弱、疯狂报错的工具之间的巨大反差，瞬间引发围观。
+ETH 苏黎世研究人员用强化学习让一辆 5 吨重的约翰迪尔（John Deere）装载机学会了“前轮离地翘头”、两轮平衡和翻越 75 厘米障碍，而且完全是从仿真环境直接无缝迁移到真车。荒谬的重型工业机械与离谱的杂技动作形成巨大反差，甚至全程仅靠普通笔记本电脑运行、不需要独立显卡，直接把赛博朋克照进现实。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · Reddit Viral Top 10 · 11月19日 04:12
 
-**「梗图与英文推文脚本」** 一图胜千言·梗图脚本：
-\- 推荐版式：经典 3 阶段阶梯对比（理想 vs 现实 vs 财报）。
-\- 图内标签：Row 1: &quot;Autonomous Agent / AI does everything&quot; \| Row 2: &quot;You spend 4 hours reprompting&quot; \| Row 3: &quot;VCs still funding it&quot;
+**「一图胜千言与推文初稿」** 【梗图脚本】左右对比的 2 格漫画。左图：“人类逻辑：用 5 吨铲车运土”；右图：“AI 逻辑：让 5 吨铲车玩街头滑板翘头”。标签简写：Left: Human \(Dirt\) / Right: AI \(Wheelie\)。
 
-极简英文推文初稿：
-\- 推文：ai agents still just don&\#x27;t actually work
-\- 互动首评：are you reprompting wrong or are they just a scam?
+【极简英文推文】
+5-ton tractor doing wheelies.
 
-**「社区神评槽点」** 精选槽点：“这其实是你的使用问题，你需要随着时间变得越来越 token 高效——不断重复提示说明你根本不懂怎么和它们交互。”（高级黑：把产品不好用甩锅给用户的标准傲慢话术）
+【两极分化回复】
+Is this peak engineering or are we officially fucked?
 
-**标签**: `#ai`, `#ai agents`, `#tech debate`, `#viral reddit`
+**「社区神评槽点」** 评论区神吐槽：“或许我们之前对斯蒂芬·金的电影《极度深寒/狂载》太严苛了”、“可怜的草坪：那我呢？”以及最让人震惊的——全程竟然不需要 GPU，仅靠老旧的 i7 笔记本就能跑。
+
+**标签**: `#AI`, `#Reinforcement Learning`, `#Robotics`, `#Viral`, `#Sim-to-Real`
 
 ---
 
 <a id="item-ai-creator-7"></a>
-### [人形机器人煎汉堡：全靠人类远程代打](https://www.reddit.com/r/singularity/comments/1xyxbej/someone_asked_their_teleoperated_humanoid_robot/) ⭐️ 6.0/10
+### [AI 社区：别再用破折号抓 AI 答辩了，2026 年的 AI 废话文学早就变异了](https://www.reddit.com/r/LocalLLaMA/comments/1xz6tv9/yalls_idea_of_slop_is_stuck_in_2025/) ⭐️ 8.0/10
 
-科技公司疯狂宣传人形机器人即将接管世界，结果网友发视频一测：这台名为 TAU 的机器人煎汉堡居然是靠人类远程遥控（Teleoperated）的。最讽刺的是，这不仅暴露了机器人那难用到爆的机械手，还让大家猛然惊觉——原来所谓的‘AI 自主劳动’，本质上只是披着机器外壳的远程打工人。
+还在拿破折号和 &quot;load-bearing&quot; 当 AI 答辩（slop）的标志？太逊了。2026 年的顶流模型早就进化出了更高级的废话话术——从无意义的集合论句式（&quot;every X is a Y&quot;）、强行同义词替换、到万物皆可 &quot;One honest caveat&quot;，全方位污染人类眼球。嘲讽拉满，直击每一个每天被 AI 文本轰炸的开发者痛点。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · Reddit Viral Top 10 · 11月19日 04:12
 
-**「一图胜千言·梗图脚本」** 使用‘买家秀 vs 买家血泪’对比图。
-\- 左图标签: AI FUTURE \(人形机器人自主做饭\)
-\- 右图标签: 4X SPEED TELEOPERATED \(实际上是后台躲着个汗流浃背的程序员在遥控\)
+**「推文与梗图脚本」** 【一图胜千言·梗图脚本】
+格式：左右对比的 2x2 结构图（Evolution of AI Slop）
+左边标签：&quot;2024 Slop: — \(em-dashes\)&quot;
+右边标签：&quot;2026 Slop: One honest caveat: every X is a Y, no A is a B&quot;
 
-**「极简英文推文初稿」** future of ai is just remote work with extra steps.
+【极简英文推文初稿】
+&quot;stop looking for em-dashes. modern ai slop is a massive wall of useless caveats.&quot;
 
-首评互动：
-Would you pay 50k for a robot that just needs a human to play video games with its hands?
+【最具攻击性的首评互动】
+&quot;what&\#x27;s the one phrase that immediately makes you close the tab? for me it&\#x27;s &\#x27;One thing to note:&\#x27;&quot;
 
-**「社区神评槽点」** 评论区直接笑死：‘所有这些机器人视频都在提醒我们，他们的机械手到底有多拉胯。’还有人指出‘远程遥控其实有商机，让身体不便的人能在日本当远程咖啡师’，结果被反驳‘这不就是高配版打工吗’。
 
-**标签**: `#robotics`, `#humanoid`, `#ai`, `#automation`, `#reddit`
+**「社区神评槽点」** 社区老哥最犀利的共识是：真正恶心人的不是什么语法结构，而是“用一海里的垃圾废话，把真正有用的信息埋在最底下”。还有人爆出模型在 thinking trace 里写出 “oh my god” 的黑色幽默，真实感拉满。
+
+**标签**: `#AI`, `#LLM`, `#LocalLLaMA`, `#Community`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-8"></a>
-### [Wake me up 爆梗推文备战](https://www.reddit.com/r/Bitcoin/comments/1xzcm5w/wake_me_up/) ⭐️ 3.0/10
+### [BTC 50% 暴跌与价格预测账号打脸](https://www.reddit.com/r/CryptoCurrency/comments/1xzfuhg/btc_is_down_about_50_from_the_high_how_many_of/) ⭐️ 8.0/10
 
-散户在横盘和震荡行情中彻底麻木，一句‘Wake me up’精准戳中了所有加密货币长期持有者‘看盘看到累、只想直接冬眠’的倦怠与无奈情绪。
+当 BTC 从高点大跌 50% 跌至 6 万美元时，去年满屏鼓吹“20 万美元顶峰”的加密 KOL 们集体装死。市场只容得下绝对的单一数字预测，而真正给出“5 万到 18 万区间”的清醒理智派反倒被群嘲。没人能预测未来，大家只是贩卖绝对的确信。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · Reddit Viral Top 10 · 11月19日 04:12
 
-**「一图胜千言与推文脚本」** 梗图脚本：采用对比图格式。左边是 2017/2021 年牛市疯狂盯着 K 线的亢奋自己（标签：&\#x27;bull run mode&\#x27;），右边是 2026 年在棺材里安详躺平的自己（标签：&\#x27;waking up in 2030&\#x27;）。
+**「极简英文推文与梗图」** 【梗图脚本】
+2x2 宫格对比图：
+左上标签: &quot;2025: 200k end of year\!&quot;
+右上标签: &quot;2026: bottom is in \(at -50%\)&quot;
+左下标签: &quot;Actual range given: 0&quot;
+右下标签: &quot;Clowns: 100% confidence&quot;
 
-极简英文推文初稿：
-wake me up when the cycle starts.
+【英文推文初稿】
+Draft:
+&quot;zero accounts predicted the 50% drop.&quot;
 
-两极分化回复诱导：
-five years or four years?
+【极化首评回复】
+&quot;did any of your favorite influencers ever use the word &\#x27;maybe&\#x27;?&quot;
 
-**「社区神评槽点」** 社区吵成一团：有人搬出经典的‘五年必涨论’，立刻被其他人狂喷‘不懂四年周期（4-year cycle）是个白痴’，还有人疯狂吐槽加拿大资本利得税和实际使用的痛苦。
+**「社区神评槽点」** “去年给区间的人被骂无聊，现在只有他们是对的。”
 
-**标签**: `#bitcoin`, `#crypto`, `#market-sentiment`, `#reddit`
+**标签**: `#crypto`, `#bitcoin`, `#price-prediction`, `#market-sentiment`
 
 ---
 
 <a id="item-ai-creator-9"></a>
-### [Gemini 命名梗：互联网大厂的起名艺术](https://www.reddit.com/r/singularity/comments/1xyxg84/the_new_gemini_names_are_very_cool/) ⭐️ 3.0/10
+### [Gemini Neon 释放与命名混乱](https://www.reddit.com/r/singularity/comments/1xz9ua2/gemini_neon_releasing_today_who_hurted_you_google/) ⭐️ 8.0/10
 
-Google 的 AI 命名混乱再次成为社区群嘲对象。网友辣评各家大厂的起名风格：星巴克杯型、OpenAI 走天文路线、Anthropic 玩诗歌，而 Google 则是毫无美感的元素周期表乱炖。
+谷歌突然整出个名为“Gemini Neon”的新模型发布，彻底把 AI 圈网友整不会了。这种阴间命名法再次引发群嘲：谷歌的产品命名部到底经历过什么创伤？
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · Reddit Viral Top 10 · 11月19日 04:12
 
-**「一图胜千言·梗图脚本」** 使用 4 格对比图格式（Starbucks / OpenAI / Anthropic / Google）。
-标签设计：
-\- 格 1: Starbucks \(Demi, Grande, Venti\)
-\- 格 2: OpenAI \(Sol, Astra\)
-\- 格 3: Anthropic \(Haiku, Opus\)
-\- 格 4: Google \(Hydrogen, Krypton\)
+**「梗图与推文脚本」** 一图胜千言·梗图脚本：采用化学元素周期表对比图。左边是正常的“Claude \(Opus/Sonnet/Haiku\)”，右边是谷歌的“Gemini 元素周期表混乱盲盒（Carbon/Neon/Hydrogen）”。
 
-**「极简英文推文与互动」** 推文初稿：naming AI models is pure comedy
-首评互动：which tech giant has the worst naming convention?
+极简英文推文初稿：
+gemini neon dropping today. who hurt you google
 
-**「社区神评槽点」** “grok furiously taking notes right now”（Grok 已经在疯狂抄笔记了）
+极具争议的第一条回复：
+is google&\#x27;s naming department just throwing darts at a periodic table now
 
-**标签**: `#AI`, `#Google`, `#Gemini`, `#Humor`
+**「社区神评槽点」** 网友锐评：这听起来像是电影院的爆米花桶命名法。还有人吐槽：碳、氖、氢都出来了，接下来是不是要出个氪星模型？
+
+**标签**: `#Google`, `#Gemini`, `#AI Drama`, `#Reddit`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-10"></a>
-### [r/wallstreetbets: 新 FAANG 组合](https://www.reddit.com/r/wallstreetbets/comments/1xzpta7/get_in_nerds_new_faang_just_dropped/) ⭐️ 3.0/10
+### [Guillermo Rauch 关于推理云与 AI 工业革命的观察](https://x.com/rauchg/status/2123203741570740504) ⭐️ 7.0/10
 
-当 OnlyFans 的现金流开始跟传统科技股混为一谈，散户们终于找到了属于新时代荒诞又真实的 FAANG 组合。
+每两天就有一家新的“推理云”公司找上门来推销，与此同时，Vercel 的 Token 需求却以每月 40% 的速度狂飙。狂热的淘金热背后，是一场不可持续的短期泡沫与真正工业级能源消耗的强烈对撞。
 
-rss · Reddit Viral Top · 11月19日 02:01
+rss · X Viral Top 5 · 11月19日 04:12
 
-**「推文与梗图脚本」** 一图胜千言·梗图脚本：使用经典三段式对比，标签分别为：&\#x27;2015: FAANG&\#x27;、&\#x27;2021: MEME&\#x27;、&\#x27;2026: ONLYFANS&\#x27;。
+**「极简英文推文与梗图脚本」** 【一图胜千言·梗图脚本】
+采用经典的“特洛伊木马 / 疯狂涌入”对比图或简单的两栏对比：
+\- 左图（现状）：100 家名不见经传的“推理 Neocloud”创业公司排队敲门
+\- 右图（现实）：贪婪吞噬算力的无底洞
+图片内文字标签：\`100+ inference clouds\` vs \`insatiable token demand\`
 
-极简英文推文初稿：
-\- 推文：get in nerds, new faang just dropped.
-\- 互动问题：which one are you buying first?
+【极简英文推文初稿】
+\- 推文：\`every two days a new cloud, yet tokens never stop.\`
+\- 互动首评：\`which of these 100 cloud startups survives the year?\`
 
-**「社区神评槽点」** 评论区最搞笑的吐槽直指其中有人疯狂夹带私货：&\#x27;Bro tried to sneak Tesla in there&\#x27;（兄弟试图把特斯拉偷偷塞进去）。
-
-**标签**: `#reddit`, `#wallstreetbets`, `#meme`, `#stocks`
+**标签**: `#AI Infrastructure`, `#Cloud Computing`, `#Tokens`, `#Vercel`, `#Market Trends`
 
 ---
