@@ -2,9 +2,8 @@ name: Daily Horizon Summary
 
 on:
   schedule:
-    # 每天自动运行 3 次：北京时间 07:50、13:50、19:50
+    # 每天自动运行 2 次：北京时间 07:50、19:50（2 条 X 搜索词，每月 Apify 仅 ~$4.32，严守 $5 免费额度）
     - cron: '50 23 * * *'
-    - cron: '50 5 * * *'
     - cron: '50 11 * * *'
   workflow_dispatch:
 
@@ -34,12 +33,12 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
           uv sync
 
-      - name: Prepare X 48h Top-5 Likes & Scrape Reddit via Free Arctic Shift API
+      - name: Scrape Reddit Global Top-10 (+ Top 5 Comments, Strict AI & Crypto Regex)
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
           import os
-          import json
+          import re
           import html
           import httpx
           from datetime import datetime, timedelta, timezone
@@ -47,26 +46,18 @@ jobs:
           REDDIT_TOP_LIMIT = 10
           COMMENTS_PER_POST = 5
           now_utc = datetime.now(timezone.utc)
-          since_date = (now_utc - timedelta(hours=48)).strftime("%Y-%m-%d")
           after_ts = int((now_utc - timedelta(hours=36)).timestamp())
 
-          # 1. 给 X 关键词自动加上 48h since:YYYY-MM-DD
-          with open("data/config.github.json", "r", encoding="utf-8") as f:
-              cfg = json.load(f)
-          cfg["sources"]["twitter"]["keywords"] = [
-              f"{kw} since:{since_date}" for kw in cfg["sources"]["twitter"]["keywords"]
-          ]
-          with open("data/config.github.json", "w", encoding="utf-8") as f:
-              json.dump(cfg, f, ensure_ascii=False, indent=2)
-          print("Injected X since_date:", since_date)
-
-          # 2. 通过免费公开接口 Arctic Shift 抓取 Reddit 最近 36h 热门帖子
           subs_ai_crypto = [
               "singularity", "LocalLLaMA", "ClaudeAI", "OpenAI", "artificial",
               "CryptoCurrency", "Bitcoin", "solana"
           ]
           subs_general = ["technology", "wallstreetbets"]
-          kw_filter = ("ai", "agent", "llm", "gpt", "claude", "gemini", "deepseek", "grok", "openai", "nvidia", "bitcoin", "btc", "crypto", "solana", "eth")
+          # 严格全词正则匹配：防止把 Ukraine(含ai) 或 ETH Zurich(含eth) 误抓进来
+          kw_regex = re.compile(
+              r"\b(ai|a\.i\.|agent|agents|llm|llms|chatgpt|gpt|claude|gemini|deepseek|openai|anthropic|grok|nvidia|bitcoin|btc|crypto|solana|ethereum|defi)\b",
+              re.IGNORECASE
+          )
 
           ua = "horizon-viral-radar/2.0"
           seen_r = set()
@@ -90,10 +81,8 @@ jobs:
                               continue
                           title_raw = (d.get("title") or "").strip()
                           selftext = (d.get("selftext") or "").strip()
-                          if sub in subs_general:
-                              blob = (title_raw + " " + selftext).lower()
-                              if not any(k in blob for k in kw_filter):
-                                  continue
+                          if sub in subs_general and not kw_regex.search(title_raw + " " + selftext):
+                              continue
                           seen_r.add(pid)
                           score = int(d.get("score") or 0)
                           comms = int(d.get("num_comments") or 0)
@@ -123,7 +112,6 @@ jobs:
           if len(chosen_r) < REDDIT_TOP_LIMIT:
               chosen_r.extend([x[1] for x in backup_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
 
-          # 为 Top 10 Reddit 帖子展开前 5 条高赞神评
           reddit_entries = []
           for p in chosen_r:
               top_comments_text = ""
@@ -205,7 +193,7 @@ jobs:
               return await _orig_get(self, url, *a, **kw)
           httpx.AsyncClient.get = _local_get
 
-          # 修复 FetchResult.items 排序与截断
+          # 在送入 Gemini 打分前，先按点赞量从高到低只取 X Top 5
           from src.scrapers.twitter import TwitterScraper
           _method_name = next((m for m in ("fetch", "fetch_items", "scrape", "collect") if hasattr(TwitterScraper, m)), None)
           if _method_name:
@@ -213,11 +201,11 @@ jobs:
               async def _top5_tw(self, *a, **kw):
                   res = await _orig_tw(self, *a, **kw)
                   items = res.items if hasattr(res, "items") else res
+                  print(f"TwitterScraper ({_method_name}) raw fetched: {len(items)} items")
                   def _get_likes(it):
                       m = getattr(it, "metadata", {}) or {}
                       return int(m.get("likes") or m.get("favorite_count") or m.get("faves") or 0)
                   items.sort(key=_get_likes, reverse=True)
-                  print(f"Pre-filtered X tweets ({_method_name}) from {len(items)} down to Top 5 by likes.")
                   if hasattr(res, "items"):
                       res.items = items[:5]
                       return res
