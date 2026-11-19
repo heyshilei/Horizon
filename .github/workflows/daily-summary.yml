@@ -23,11 +23,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Restore official scoring engine
+      - name: Sync official src only (keep custom profiles untouched)
         run: |
           git remote add upstream https://github.com/Thysrael/Horizon.git || true
           git fetch upstream main
-          git checkout upstream/main -- src/ profiles/
+          git checkout upstream/main -- src/
 
       - name: Install dependencies via uv
         run: |
@@ -60,12 +60,12 @@ jobs:
               json.dump(cfg, f, ensure_ascii=False, indent=2)
           print("Injected X since_date:", since_date)
 
-          # 2. 通过免费公开接口 Arctic Shift 抓取 Reddit 最近 36h 热门帖子（无需代理、无需 App、不封机房 IP）
+          # 2. 通过免费公开接口 Arctic Shift 抓取 Reddit 最近 36h 热门帖子
           subs_ai_crypto = [
               "singularity", "LocalLLaMA", "ClaudeAI", "OpenAI", "artificial",
               "CryptoCurrency", "Bitcoin", "solana"
           ]
-          subs_general = ["technology", "wallstreetbets"] # 大版块自动按 AI/Crypto 关键词过滤
+          subs_general = ["technology", "wallstreetbets"]
           kw_filter = ("ai", "agent", "llm", "gpt", "claude", "gemini", "deepseek", "grok", "openai", "nvidia", "bitcoin", "btc", "crypto", "solana", "eth")
 
           ua = "horizon-viral-radar/2.0"
@@ -236,6 +236,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -- src/ profiles/ data/config.github.json
+          git checkout -- src/ data/config.github.json
           git add -f docs/_posts/ docs/ data/summaries/
           git diff --staged --quiet || (git commit -m "chore: update daily summary $(date +'%Y-%m-%d %H:%M')" && git push origin main)
