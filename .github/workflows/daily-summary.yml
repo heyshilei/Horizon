@@ -51,6 +51,7 @@ jobs:
           REDDIT_KEYWORDS = [
               "AI",
               "AI agent",
+              "AI bubble",
               "Claude OR Gemini OR DeepSeek OR ChatGPT",
               "Bitcoin OR BTC OR Solana OR crypto"
           ]
