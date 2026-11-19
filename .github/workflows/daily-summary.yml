@@ -53,8 +53,8 @@ jobs:
           # 1. X (Twitter) 关键词列表 & 数量配置
           # ==========================================
           X_QUERIES = [
-              "(AI OR \"AI agent\" OR Claude OR Gemini OR DeepSeek OR ChatGPT OR Grok) min_faves:30 -filter:replies lang:en",
-              "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:30 -filter:replies lang:en"
+              "(AI OR \"AI agent\" OR Claude OR Gemini OR DeepSeek OR ChatGPT OR Grok) min_faves:30 -filter:replies lang:en -giveaway -airdrop",
+              "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:30 -filter:replies lang:en -giveaway -airdrop"
           ]
           X_TOP_LIMIT = 5
 
