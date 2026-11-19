@@ -213,8 +213,8 @@ jobs:
                   print("ArcticShift IDs warn:", e)
 
           live_pools = [
-              "technology", "wallstreetbets", "singularity", "LocalLLaMA",
-              "ClaudeAI", "OpenAI", "artificial", "CryptoCurrency", "Bitcoin", "solana"
+              "technology", "wallstreetbets", "antiai", "SipsTea", "pcmasterrace", "LocalLLaMA",
+              "singularity", "SipsTea", "ClaudeAI", "memes", "OpenAI", "ChatGPT", "artificial", "CryptoCurrency", "Bitcoin"
           ]
           for sub in live_pools:
               try:
