@@ -2,8 +2,9 @@ name: Daily Horizon Summary
 
 on:
   schedule:
-    # 每天自动运行 2 次：北京时间 07:50、19:50（2 条 X 搜索词，每月 Apify 仅 ~$4.32，严守 $5 免费额度）
+    # 彻底免费！每天自动运行 3 次：北京时间 07:50、13:50、19:50
     - cron: '50 23 * * *'
+    - cron: '50 5 * * *'
     - cron: '50 11 * * *'
   workflow_dispatch:
 
@@ -28,12 +29,15 @@ jobs:
           git fetch upstream main
           git checkout upstream/main -- src/
 
-      - name: Install dependencies via uv
+      - name: Install dependencies (Horizon + Free Local Scweet)
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv sync
+          uv pip install -U Scweet
 
-      - name: Search Reddit Globally by Keywords (No Subreddit List, Votes>=1000 & Comments>=100)
+      - name: Scrape X (Free Scweet 48h Top-5 Likes) & Reddit (Keywords Top-10 + Top 5 Comments)
+        env:
+          X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
@@ -46,93 +50,185 @@ jobs:
           from datetime import datetime, timedelta, timezone
 
           # ==========================================
-          # 你的 Reddit 全站搜索关键词列表（随时直接增删改这里）
+          # 1. X (Twitter) 关键词列表 & 数量配置
+          # ==========================================
+          X_QUERIES = [
+              "(AI OR \"AI agent\" OR Claude OR Gemini OR DeepSeek OR ChatGPT OR Grok) min_faves:30 -filter:replies lang:en",
+              "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:30 -filter:replies lang:en"
+          ]
+          X_TOP_LIMIT = 5
+
+          # ==========================================
+          # 2. Reddit 关键词列表 & 数量配置
           # ==========================================
           REDDIT_KEYWORDS = [
               "AI",
               "AI agent",
               "AI bubble",
-              "Claude OR Gemini OR DeepSeek OR ChatGPT",
-              "Bitcoin OR BTC OR Solana OR crypto"
+              "Claude",
+              "Gemini",
+              "DeepSeek",
+              "ChatGPT",
+              "OpenAI",
+              "Bitcoin",
+              "BTC",
+              "Solana",
+              "Ethereum",
+              "crypto"
           ]
           REDDIT_TOP_LIMIT = 10
           COMMENTS_PER_POST = 5
 
           now_utc = datetime.now(timezone.utc)
-          after_ts = int((now_utc - timedelta(hours=36)).timestamp())
+          since_date = (now_utc - timedelta(hours=48)).strftime("%Y-%m-%d")
+          after_36h = int((now_utc - timedelta(hours=36)).timestamp())
+          after_72h = int((now_utc - timedelta(hours=72)).timestamp())
           ua = "horizon-viral-radar/2.0"
 
-          # 1. 全站按关键词搜索 Reddit 帖子链接（不限任何 Subreddit）
-          post_ids = []
-          seen_ids = set()
-          id_re = re.compile(r"reddit\.com/r/[^/]+/comments/([a-z0-9]+)", re.IGNORECASE)
-
-          for kw in REDDIT_KEYWORDS:
-              query = f"site:reddit.com/r/ {kw}"
+          # ------------------------------------------
+          # A. 本地免费版 Scweet 抓取 X 48h 点赞最高 Top 5
+          # ------------------------------------------
+          x_entries = []
+          x_token = os.environ.get("X_AUTH_TOKEN", "").strip()
+          if x_token:
               try:
-                  # 用 timelimit="w" 防止搜索引擎索引延迟，后面用 Arctic Shift 精确时间戳严格卡死 36h 内
-                  results = DDGS().text(query=query, region="us-en", timelimit="w", max_results=40)
-                  found_kw = 0
-                  for item in (results or []):
-                      href = item.get("href") or ""
-                      m = id_re.search(href)
-                      if m:
-                          pid = m.group(1).lower()
-                          if pid not in seen_ids:
-                              seen_ids.add(pid)
-                              post_ids.append(pid)
-                              found_kw += 1
-                  print(f"DDGS global Reddit search '{kw}' -> found {found_kw} unique post IDs")
+                  from Scweet import Scweet
+                  sc = Scweet(auth_token=x_token, manifest_scrape_on_init=True)
+                  seen_x = set()
+                  parsed_x = []
+                  for xq in X_QUERIES:
+                      try:
+                          tweets = sc.search(xq, since=since_date, limit=50)
+                          print(f"Scweet query returned {len(tweets or [])} tweets")
+                          for tw in (tweets or []):
+                              if not isinstance(tw, dict):
+                                  continue
+                              t_obj = tw.get("tweet") if isinstance(tw.get("tweet"), dict) else tw
+                              u_obj = tw.get("user") if isinstance(tw.get("user"), dict) else {}
+                              tid = str(t_obj.get("tweet_id") or t_obj.get("rest_id") or tw.get("id") or "")
+                              handle = u_obj.get("screen_name") or u_obj.get("handle") or tw.get("username") or tw.get("screen_name") or "x_user"
+                              url = t_obj.get("tweet_url") or tw.get("url") or (f"https://x.com/{handle}/status/{tid}" if tid else "")
+                              text = (t_obj.get("text") or tw.get("full_text") or tw.get("text") or "").strip()
+                              if not url or not text or url in seen_x:
+                                  continue
+                              seen_x.add(url)
+                              likes = int(t_obj.get("likes") or t_obj.get("favorite_count") or tw.get("likes") or 0)
+                              rts = int(t_obj.get("retweets") or t_obj.get("retweet_count") or tw.get("retweets") or 0)
+                              comms = int(t_obj.get("comments") or t_obj.get("reply_count") or tw.get("comments") or 0)
+                              short_t = text.replace("\n", " ")[:90]
+                              parsed_x.append((
+                                  likes,
+                                  {
+                                      "title": f"[X @{handle} | ❤️ {likes} 🔄 {rts}] {short_t}",
+                                      "url": url,
+                                      "summary": f"Author: @{handle}\nMetrics: {likes} Likes, {rts} Retweets, {comms} Replies\n\nTweet Content:\n{text}",
+                                      "updated": now_utc.isoformat()
+                                  }
+                              ))
+                      except Exception as e:
+                          print("Scweet query warn:", e)
+                      time.sleep(2)
+                  parsed_x.sort(key=lambda x: x[0], reverse=True)
+                  x_entries = [x[1] for x in parsed_x[:X_TOP_LIMIT]]
+                  print(f"Selected Top {len(x_entries)} X tweets by likes (from {len(parsed_x)} unique).")
               except Exception as e:
-                  print(f"DDGS search warn for '{kw}':", e)
-              time.sleep(1.5)
+                  print("Scweet init/run error:", e)
+          else:
+              print("WARNING: X_AUTH_TOKEN secret is not set!")
 
-          print(f"Total unique Reddit post IDs discovered: {len(post_ids)}")
-
-          # 2. 批量通过 Arctic Shift 查出精确票数、评论数、正文与发布时间（无 403，单次最多 500 个 ID）
+          # ------------------------------------------
+          # B. 双路合流抓取 Reddit 关键词 Top 10 (+ 前 5 神评)
+          # ------------------------------------------
+          kw_regex = re.compile(
+              r"\b(" + "|".join(re.escape(k) for k in REDDIT_KEYWORDS) + r")\b",
+              re.IGNORECASE
+          )
+          seen_ids = set()
           strict_r = []
           backup_r = []
 
-          for i in range(0, len(post_ids), 100):
-              batch = post_ids[i:i + 100]
+          def process_post(d, min_ts):
+              pid = str(d.get("id") or "").lower()
+              if not pid or pid in seen_ids:
+                  return
+              created_utc = int(d.get("created_utc") or 0)
+              if created_utc < min_ts:
+                  return
+              title_raw = (d.get("title") or "").strip()
+              selftext = (d.get("selftext") or "").strip()
+              if not kw_regex.search(title_raw + " " + selftext):
+                  return
+              seen_ids.add(pid)
+              sub = d.get("subreddit") or "reddit"
+              score = int(d.get("score") or 0)
+              comms = int(d.get("num_comments") or 0)
+              permalink = d.get("permalink") or f"/r/{sub}/comments/{pid}/"
+              url = "https://www.reddit.com" + permalink
+              viral_rank = score + comms * 5
+              post_obj = {
+                  "id": pid,
+                  "sub": sub,
+                  "score": score,
+                  "comms": comms,
+                  "title": f"[r/{sub} | ⬆️ {score} 💬 {comms}] {title_raw}",
+                  "url": url,
+                  "selftext": selftext[:1200] if selftext else title_raw,
+                  "updated": now_utc.isoformat()
+              }
+              if score >= 1000 and comms >= 100:
+                  strict_r.append((viral_rank, post_obj))
+              elif score >= 100 and comms >= 20:
+                  backup_r.append((viral_rank, post_obj))
+
+          ddgs_queries = [
+              "AI OR \"AI agent\" OR \"AI bubble\"",
+              "Claude OR Gemini OR DeepSeek OR ChatGPT",
+              "Bitcoin OR BTC OR Solana OR crypto"
+          ]
+          ddgs_ids = []
+          id_re = re.compile(r"reddit\.com/r/[^/]+/comments/([a-z0-9]+)", re.IGNORECASE)
+          for dq in ddgs_queries:
+              try:
+                  res = DDGS().text(query=f"site:reddit.com/r/ {dq}", region="us-en", timelimit="w", max_results=30)
+                  for item in (res or []):
+                      m = id_re.search(item.get("href") or "")
+                      if m:
+                          ddgs_ids.append(m.group(1).lower())
+              except Exception as e:
+                  print(f"DDGS warn '{dq}':", e)
+              time.sleep(1.2)
+          ddgs_ids = list(dict.fromkeys(ddgs_ids))
+          if ddgs_ids:
               try:
                   r = httpx.get(
                       "https://arctic-shift.photon-reddit.com/api/posts/ids",
-                      params={"ids": ",".join(batch)},
+                      params={"ids": ",".join(ddgs_ids[:100])},
                       headers={"User-Agent": ua},
                       timeout=20.0
                   )
-                  print(f"ArcticShift batch {i // 100 + 1} -> HTTP {r.status_code}")
                   if r.status_code == 200:
                       for d in r.json().get("data", []):
-                          created_utc = int(d.get("created_utc") or 0)
-                          if created_utc < after_ts:
-                              continue
-                          pid = d.get("id", "")
-                          sub = d.get("subreddit") or "reddit"
-                          score = int(d.get("score") or 0)
-                          comms = int(d.get("num_comments") or 0)
-                          title_raw = (d.get("title") or "").strip()
-                          selftext = (d.get("selftext") or "").strip()
-                          permalink = d.get("permalink") or f"/r/{sub}/comments/{pid}/"
-                          url = "https://www.reddit.com" + permalink
-                          viral_rank = score + comms * 5
-                          post_obj = {
-                              "id": pid,
-                              "sub": sub,
-                              "score": score,
-                              "comms": comms,
-                              "title": f"[r/{sub} | ⬆️ {score} 💬 {comms}] {title_raw}",
-                              "url": url,
-                              "selftext": selftext[:1200] if selftext else title_raw,
-                              "updated": now_utc.isoformat()
-                          }
-                          if score >= 1000 and comms >= 100:
-                              strict_r.append((viral_rank, post_obj))
-                          elif score >= 100 and comms >= 20:
-                              backup_r.append((viral_rank, post_obj))
+                          process_post(d, after_72h)
               except Exception as e:
-                  print("ArcticShift batch lookup warn:", e)
+                  print("ArcticShift IDs warn:", e)
+
+          live_pools = [
+              "technology", "wallstreetbets", "singularity", "LocalLLaMA",
+              "ClaudeAI", "OpenAI", "artificial", "CryptoCurrency", "Bitcoin", "solana"
+          ]
+          for sub in live_pools:
+              try:
+                  r = httpx.get(
+                      "https://arctic-shift.photon-reddit.com/api/posts/search",
+                      params={"subreddit": sub, "after": after_36h, "limit": 100},
+                      headers={"User-Agent": ua},
+                      timeout=20.0
+                  )
+                  if r.status_code == 200:
+                      for d in r.json().get("data", []):
+                          process_post(d, after_36h)
+              except Exception as e:
+                  print(f"ArcticShift r/{sub} warn:", e)
 
           strict_r.sort(key=lambda x: x[0], reverse=True)
           backup_r.sort(key=lambda x: x[0], reverse=True)
@@ -140,7 +236,6 @@ jobs:
           if len(chosen_r) < REDDIT_TOP_LIMIT:
               chosen_r.extend([x[1] for x in backup_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
 
-          # 3. 为入选的 Top 10 Reddit 帖子展开前 5 条高赞神评
           reddit_entries = []
           for p in chosen_r:
               top_comments_text = ""
@@ -173,27 +268,34 @@ jobs:
                   "summary": f"Subreddit: r/{p['sub']} | {p['score']} Upvotes, {p['comms']} Comments\n\nPost Content:\n{p['selftext']}{top_comments_text}",
                   "updated": p["updated"]
               })
-          print(f"Selected Top {len(reddit_entries)} Reddit posts (strict >=1000/100 count: {len(strict_r)}).")
+          print(f"Selected Top {len(reddit_entries)} Reddit posts (strict >=1000/100 count: {len(strict_r)}, backup: {len(backup_r)}).")
 
-          items_xml = []
-          for idx, item in enumerate(reddit_entries):
-              t = html.escape(item["title"])
-              u = html.escape(item["url"])
-              s = html.escape(item["summary"])
-              up = item["updated"]
-              items_xml.append(
-                  f"<entry><id>urn:viral:{idx}:{u}</id><title>{t}</title><link href=\"{u}\"/><updated>{up}</updated><summary>{s}</summary></entry>"
+          # ------------------------------------------
+          # C. 写入双平台本地 XML 供 Horizon 评分精炼
+          # ------------------------------------------
+          def write_atom(filepath, feed_title, entries):
+              items_xml = []
+              for idx, item in enumerate(entries):
+                  t = html.escape(item["title"])
+                  u = html.escape(item["url"])
+                  s = html.escape(item["summary"])
+                  up = item["updated"]
+                  items_xml.append(
+                      f"<entry><id>urn:viral:{idx}:{u}</id><title>{t}</title><link href=\"{u}\"/><updated>{up}</updated><summary>{s}</summary></entry>"
+                  )
+              xml_str = (
+                  "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+                  "<feed xmlns=\"http://www.w3.org/2005/Atom\">"
+                  f"<title>{html.escape(feed_title)}</title>"
+                  f"<updated>{now_utc.isoformat()}</updated>"
+                  + "".join(items_xml)
+                  + "</feed>"
               )
-          xml_str = (
-              "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
-              "<feed xmlns=\"http://www.w3.org/2005/Atom\">"
-              "<title>Reddit Viral Top</title>"
-              f"<updated>{now_utc.isoformat()}</updated>"
-              + "".join(items_xml)
-              + "</feed>"
-          )
-          with open("/tmp/reddit_viral.xml", "w", encoding="utf-8") as f:
-              f.write(xml_str)
+              with open(filepath, "w", encoding="utf-8") as f:
+                  f.write(xml_str)
+
+          write_atom("/tmp/x_viral.xml", "X Viral Top 5", x_entries)
+          write_atom("/tmp/reddit_viral.xml", "Reddit Viral Top 10", reddit_entries)
 
           sec_py = "src/url_security.py"
           if os.path.exists(sec_py):
@@ -203,11 +305,10 @@ jobs:
                   f.write(sec_code + "\nvalidate_url = lambda u, *a, **kw: u\n")
           EOF
 
-      - name: Run Horizon Radar (Pre-Filter X to Top 5 by Likes to Save Gemini API)
+      - name: Run Horizon Radar
         env:
           TZ: Asia/Shanghai
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
@@ -215,31 +316,15 @@ jobs:
           _orig_get = httpx.AsyncClient.get
           async def _local_get(self, url, *a, **kw):
               u = str(url)
+              req = httpx.Request("GET", u)
+              if "x-viral.local" in u:
+                  with open("/tmp/x_viral.xml", "rb") as f:
+                      return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"}, request=req)
               if "reddit-viral.local" in u:
-                  req = httpx.Request("GET", u)
                   with open("/tmp/reddit_viral.xml", "rb") as f:
                       return httpx.Response(200, content=f.read(), headers={"content-type": "application/atom+xml"}, request=req)
               return await _orig_get(self, url, *a, **kw)
           httpx.AsyncClient.get = _local_get
-
-          # 在送入 Gemini 打分前，先按点赞量从高到低只取 X Top 5
-          from src.scrapers.twitter import TwitterScraper
-          _method_name = next((m for m in ("fetch", "fetch_items", "scrape", "collect") if hasattr(TwitterScraper, m)), None)
-          if _method_name:
-              _orig_tw = getattr(TwitterScraper, _method_name)
-              async def _top5_tw(self, *a, **kw):
-                  res = await _orig_tw(self, *a, **kw)
-                  items = res.items if hasattr(res, "items") else res
-                  print(f"TwitterScraper ({_method_name}) raw fetched: {len(items)} items")
-                  def _get_likes(it):
-                      m = getattr(it, "metadata", {}) or {}
-                      return int(m.get("likes") or m.get("favorite_count") or m.get("faves") or 0)
-                  items.sort(key=_get_likes, reverse=True)
-                  if hasattr(res, "items"):
-                      res.items = items[:5]
-                      return res
-                  return items[:5]
-              setattr(TwitterScraper, _method_name, _top5_tw)
 
           import sys
           from src.main import main
