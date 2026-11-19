@@ -33,59 +33,86 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
           uv sync
 
-      - name: Scrape Reddit Global Top-10 (+ Top 5 Comments, Strict AI & Crypto Regex)
+      - name: Search Reddit Globally by Keywords (No Subreddit List, Votes>=1000 & Comments>=100)
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
           import os
           import re
+          import time
           import html
           import httpx
+          from ddgs import DDGS
           from datetime import datetime, timedelta, timezone
 
+          # ==========================================
+          # 你的 Reddit 全站搜索关键词列表（随时直接增删改这里）
+          # ==========================================
+          REDDIT_KEYWORDS = [
+              "AI",
+              "AI agent",
+              "Claude OR Gemini OR DeepSeek OR ChatGPT",
+              "Bitcoin OR BTC OR Solana OR crypto"
+          ]
           REDDIT_TOP_LIMIT = 10
           COMMENTS_PER_POST = 5
+
           now_utc = datetime.now(timezone.utc)
           after_ts = int((now_utc - timedelta(hours=36)).timestamp())
-
-          subs_ai_crypto = [
-              "singularity", "LocalLLaMA", "ClaudeAI", "OpenAI", "artificial",
-              "CryptoCurrency", "Bitcoin", "solana"
-          ]
-          subs_general = ["technology", "wallstreetbets"]
-          # 严格全词正则匹配：防止把 Ukraine(含ai) 或 ETH Zurich(含eth) 误抓进来
-          kw_regex = re.compile(
-              r"\b(ai|a\.i\.|agent|agents|llm|llms|chatgpt|gpt|claude|gemini|deepseek|openai|anthropic|grok|nvidia|bitcoin|btc|crypto|solana|ethereum|defi)\b",
-              re.IGNORECASE
-          )
-
           ua = "horizon-viral-radar/2.0"
-          seen_r = set()
+
+          # 1. 全站按关键词搜索 Reddit 帖子链接（不限任何 Subreddit）
+          post_ids = []
+          seen_ids = set()
+          id_re = re.compile(r"reddit\.com/r/[^/]+/comments/([a-z0-9]+)", re.IGNORECASE)
+
+          for kw in REDDIT_KEYWORDS:
+              query = f"site:reddit.com/r/ {kw}"
+              try:
+                  # 用 timelimit="w" 防止搜索引擎索引延迟，后面用 Arctic Shift 精确时间戳严格卡死 36h 内
+                  results = DDGS().text(query=query, region="us-en", timelimit="w", max_results=40)
+                  found_kw = 0
+                  for item in (results or []):
+                      href = item.get("href") or ""
+                      m = id_re.search(href)
+                      if m:
+                          pid = m.group(1).lower()
+                          if pid not in seen_ids:
+                              seen_ids.add(pid)
+                              post_ids.append(pid)
+                              found_kw += 1
+                  print(f"DDGS global Reddit search '{kw}' -> found {found_kw} unique post IDs")
+              except Exception as e:
+                  print(f"DDGS search warn for '{kw}':", e)
+              time.sleep(1.5)
+
+          print(f"Total unique Reddit post IDs discovered: {len(post_ids)}")
+
+          # 2. 批量通过 Arctic Shift 查出精确票数、评论数、正文与发布时间（无 403，单次最多 500 个 ID）
           strict_r = []
           backup_r = []
 
-          for sub in subs_ai_crypto + subs_general:
+          for i in range(0, len(post_ids), 100):
+              batch = post_ids[i:i + 100]
               try:
                   r = httpx.get(
-                      "https://arctic-shift.photon-reddit.com/api/posts/search",
-                      params={"subreddit": sub, "after": after_ts, "limit": 100},
+                      "https://arctic-shift.photon-reddit.com/api/posts/ids",
+                      params={"ids": ",".join(batch)},
                       headers={"User-Agent": ua},
                       timeout=20.0
                   )
-                  print(f"ArcticShift r/{sub} -> HTTP {r.status_code}")
+                  print(f"ArcticShift batch {i // 100 + 1} -> HTTP {r.status_code}")
                   if r.status_code == 200:
-                      rows = r.json().get("data", [])
-                      for d in rows:
+                      for d in r.json().get("data", []):
+                          created_utc = int(d.get("created_utc") or 0)
+                          if created_utc < after_ts:
+                              continue
                           pid = d.get("id", "")
-                          if not pid or pid in seen_r:
-                              continue
-                          title_raw = (d.get("title") or "").strip()
-                          selftext = (d.get("selftext") or "").strip()
-                          if sub in subs_general and not kw_regex.search(title_raw + " " + selftext):
-                              continue
-                          seen_r.add(pid)
+                          sub = d.get("subreddit") or "reddit"
                           score = int(d.get("score") or 0)
                           comms = int(d.get("num_comments") or 0)
+                          title_raw = (d.get("title") or "").strip()
+                          selftext = (d.get("selftext") or "").strip()
                           permalink = d.get("permalink") or f"/r/{sub}/comments/{pid}/"
                           url = "https://www.reddit.com" + permalink
                           viral_rank = score + comms * 5
@@ -101,10 +128,10 @@ jobs:
                           }
                           if score >= 1000 and comms >= 100:
                               strict_r.append((viral_rank, post_obj))
-                          elif score >= 80 and comms >= 15:
+                          elif score >= 100 and comms >= 20:
                               backup_r.append((viral_rank, post_obj))
               except Exception as e:
-                  print(f"ArcticShift r/{sub} warn:", e)
+                  print("ArcticShift batch lookup warn:", e)
 
           strict_r.sort(key=lambda x: x[0], reverse=True)
           backup_r.sort(key=lambda x: x[0], reverse=True)
@@ -112,6 +139,7 @@ jobs:
           if len(chosen_r) < REDDIT_TOP_LIMIT:
               chosen_r.extend([x[1] for x in backup_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
 
+          # 3. 为入选的 Top 10 Reddit 帖子展开前 5 条高赞神评
           reddit_entries = []
           for p in chosen_r:
               top_comments_text = ""
