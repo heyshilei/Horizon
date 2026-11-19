@@ -13,16 +13,7 @@
   },
   "sources": {
     "twitter": {
-      "enabled": true,
-      "users": [],
-      "keywords": [
-        "(AI OR AI Agent OR Claude OR Gemini OR DeepSeek OR ChatGPT OR Grok) min_faves:30 -filter:replies lang:en",
-        "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:30 -filter:replies lang:en"
-      ],
-      "fetch_limit": 100,
-      "category": "x-top",
-      "profile": "ai-creator",
-      "fetch_reply_text": false
+      "enabled": false
     },
     "reddit": {
       "enabled": false,
@@ -41,7 +32,14 @@
     },
     "rss": [
       {
-        "name": "Reddit Viral Top",
+        "name": "X Viral Top 5",
+        "url": "https://x-viral.local/feed.xml",
+        "enabled": true,
+        "category": "x-top",
+        "profile": "ai-creator"
+      },
+      {
+        "name": "Reddit Viral Top 10",
         "url": "https://reddit-viral.local/feed.xml",
         "enabled": true,
         "category": "reddit-top",
