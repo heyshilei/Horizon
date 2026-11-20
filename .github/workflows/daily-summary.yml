@@ -455,7 +455,7 @@ jobs:
                   f.write(sec_code + "\nvalidate_url = lambda u, *a, **kw: u\n")
           EOF
 
-      - name: Run Horizon Radar & Archive Timestamped Batch
+      - name: Run Horizon Radar & Archive Numbered Batch
         env:
           TZ: Asia/Shanghai
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
@@ -486,22 +486,25 @@ jobs:
           sys.argv = ["horizon", "-c", "data/config.github.json"]
           main()
 
-          # 将本次生成的简报归档为带北京时间时分的独立批次页（不覆盖同日上一批）
+          # 按北京时间自动编号为 2026-11-20（1）、2026-11-20（2）、2026-11-20（3）
           bjt = datetime.now(timezone(timedelta(hours=8)))
           bjt_date = bjt.strftime("%Y-%m-%d")
-          bjt_hhmm = bjt.strftime("%H%M")
           bjt_clock = bjt.strftime("%H:%M")
 
           candidates = sorted(glob.glob("docs/_posts/*-summary-zh.md"))
           if candidates:
               latest_md = candidates[-1]
-              new_md = f"docs/_posts/{bjt_date}-summary-zh-{bjt_hhmm}.md"
+              existing_today = glob.glob(f"docs/_posts/{bjt_date}-summary-zh-*.md")
+              batch_num = len(existing_today) + 1
+              batch_label = f"{bjt_date}（{batch_num}）"
+              new_md = f"docs/_posts/{bjt_date}-summary-zh-{batch_num}.md"
+
               with open(latest_md, "r", encoding="utf-8") as f:
                   content = f.read()
 
               content = re.sub(
                   r'^(title:\s*["\']?)(.*?)(["\']?\s*)$',
-                  rf'\g<1>Horizon Summary: {bjt_date} {bjt_clock} (ZH)\g<3>',
+                  rf'\g<1>Horizon Summary: {batch_label} (ZH)\g<3>\nbatch_label: "{batch_label}"',
                   content,
                   count=1,
                   flags=re.MULTILINE
@@ -516,7 +519,7 @@ jobs:
                   )
               content = re.sub(
                   r'(summary-zh)(\.html|/)',
-                  rf'\g<1>-{bjt_hhmm}\g<2>',
+                  rf'\g<1>-{batch_num}\g<2>',
                   content
               )
 
@@ -524,7 +527,22 @@ jobs:
                   f.write(content)
               if os.path.abspath(latest_md) != os.path.abspath(new_md):
                   os.remove(latest_md)
-              print(f"Archived batch post to {new_md}")
+              print(f"Archived batch #{batch_num} to {new_md}")
+
+          # 自动升级首页模板，优先显示 batch_label（如 2026-11-20（1）），历史日期仍显示原日期
+          for idx_path in ["docs/index.md", "docs/zh/index.md"]:
+              if os.path.exists(idx_path):
+                  with open(idx_path, "r", encoding="utf-8") as f:
+                      idx_txt = f.read()
+                  patched = re.sub(
+                      r'\{\{\s*post\.date\s*\|\s*date:\s*["\']%Y-%m-%d["\']\s*\}\}',
+                      '{% assign d = post.date | date: "%Y-%m-%d" %}{{ post.batch_label | default: d }}',
+                      idx_txt
+                  )
+                  if patched != idx_txt:
+                      with open(idx_path, "w", encoding="utf-8") as f:
+                          f.write(patched)
+                      print(f"Patched {idx_path} to display batch_label")
           EOF
 
       - name: Commit and Push generated docs and dedup state to main
