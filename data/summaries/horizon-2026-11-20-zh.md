@@ -5,601 +5,597 @@
 ---
 
 **AI 创作者雷达**
-1. [AI 与 Crypto 的终极宿命对决](#item-ai-creator-1) ⭐️ 9.0/10
-2. [ChatGPT 重庆时时彩彩 崩溃梗盘](#item-ai-creator-2) ⭐️ 9.0/10
-3. [AI 与人类学习的终极真相](#item-ai-creator-3) ⭐️ 8.0/10
-4. [Anthropic IPO 梗图与推文备忘](#item-ai-creator-4) ⭐️ 8.0/10
-5. [GTA6 与纯手工游戏时代的终结](#item-ai-creator-5) ⭐️ 8.0/10
-6. [Anthropic IPO 与创作者版权争议](#item-ai-creator-6) ⭐️ 8.0/10
-7. [Gen AI 愤怒诅咒：X 平台反感情绪的极致爆发](#item-ai-creator-7) ⭐️ 8.0/10
-8. [GTA6 AI 风图片制作话题](#item-ai-creator-8) ⭐️ 8.0/10
-9. [American workers may become demoralized](#item-ai-creator-9) ⭐️ 8.0/10
-10. [AI GTA 图片潮吐槽](#item-ai-creator-10) ⭐️ 8.0/10
-11. [OpenAI Responses API 与 GPT-6.2 更新爆点解析](#item-ai-creator-11) ⭐️ 8.0/10
-12. [Mark Carney &amp; Cohere 丑闻](#item-ai-creator-12) ⭐️ 8.0/10
-13. [Marc J. Schmidt 宣称攻克 JEPA](#item-ai-creator-13) ⭐️ 8.0/10
-14. [Binance 爆仓收割机脚本](#item-ai-creator-14) ⭐️ 8.0/10
-15. [NVIDIA 财报超预期却大跌](#item-ai-creator-15) ⭐️ 8.0/10
-16. [Nvidia $611B Market Cap Drop](#item-ai-creator-16) ⭐️ 8.0/10
-17. [X 平台爆款推文备料：比特币统治力崩盘预警](#item-ai-creator-17) ⭐️ 8.0/10
-18. [AMD CEO 抛售股票与做空报告风波](#item-ai-creator-18) ⭐️ 8.0/10
-19. [AI 照镜子推文备料](#item-ai-creator-19) ⭐️ 8.0/10
-20. [中国首部全 AI 生成电影票房惨败](#item-ai-creator-20) ⭐️ 8.0/10
-21. [育碧 AI 新作与雷曼 4 争议](#item-ai-creator-21) ⭐️ 8.0/10
-22. [Google Gemini 新代号与高分引发热议](#item-ai-creator-22) ⭐️ 8.0/10
-23. [Caltech 数学教授放弃批改作业](#item-ai-creator-23) ⭐️ 8.0/10
-24. [Gemini Ultra $100/mo 争议推文爆点准备](#item-ai-creator-24) ⭐️ 7.0/10
-25. [Gemini 霸榜 Scale 榜单](#item-ai-creator-25) ⭐️ 7.0/10
-26. [Grok 市场周期灵魂拷问](#item-ai-creator-26) ⭐️ 6.0/10
-27. [S&amp;P 500 6 日连跌与 6 万亿美元蒸发](#item-ai-creator-27) ⭐️ 6.0/10
-28. [2013 年 Tumblr 赛博 nostalgia 与纯手工审美的回归](#item-ai-creator-28) ⭐️ 6.0/10
-29. [AI 面试荒诞讽刺](#item-ai-creator-29) ⭐️ 6.0/10
+1. [Levent Alpöge 与 Claude 宣称破解黎曼猜想](#item-ai-creator-1) ⭐️ 10.0/10
+2. [美国大银行业务与 AI 代理责任推卸](#item-ai-creator-2) ⭐️ 9.0/10
+3. [Nvidia 工业间谍与惊天骗局阴谋论](#item-ai-creator-3) ⭐️ 9.0/10
+4. [Raleigh 租客因 AI 客服误导惨遭驱逐事件](#item-ai-creator-4) ⭐️ 9.0/10
+5. [MicroStrategy 与 Bitmine 暴跌事件](#item-ai-creator-5) ⭐️ 8.0/10
+6. [$GOLD 40% 暴跌预言](#item-ai-creator-6) ⭐️ 8.0/10
+7. [Apple AI Agent Leak](#item-ai-creator-7) ⭐️ 8.0/10
+8. [OpenAI 准备毁掉 10,000 个数学博士项目](#item-ai-creator-8) ⭐️ 8.0/10
+9. [Binance 再次被指控“白嫖”用户 IPO 份额](#item-ai-creator-9) ⭐️ 8.0/10
+10. [用 AI 幻觉对抗 FOIA 轰炸](#item-ai-creator-10) ⭐️ 8.0/10
+11. [大卫·芬奇支持 AI 引发网络争议](#item-ai-creator-11) ⭐️ 8.0/10
+12. [Gemini Neon vs Opus 5.5 vs GPT-6.2 视频剪辑对决](#item-ai-creator-12) ⭐️ 8.0/10
+13. [中国研究者论文引爆 AI 圈：人类手写代理框架（Harness）的终结](#item-ai-creator-13) ⭐️ 8.0/10
+14. [Michael Saylor 比特币浮亏 110 亿美元](#item-ai-creator-14) ⭐️ 8.0/10
+15. [Coinbase 稳定币流失事件](#item-ai-creator-15) ⭐️ 8.0/10
+16. [密码钱包与暴力电击芯片](#item-ai-creator-16) ⭐️ 8.0/10
+17. [Tech leader fearmongering &amp; anti-AI community backlash](#item-ai-creator-17) ⭐️ 8.0/10
+18. [Jensen Huang 管理风格争议](#item-ai-creator-18) ⭐️ 8.0/10
+19. [AI 异化工作：从全职岗位到低薪零工](#item-ai-creator-19) ⭐️ 8.0/10
+20. [纽约、洛杉矶和芝加哥学校可能放弃谷歌搜索以抵制 AI](#item-ai-creator-20) ⭐️ 8.0/10
+21. [US AI Chip Sales to China](#item-ai-creator-21) ⭐️ 8.0/10
+22. [Manchester Animation Festival Bans AI](#item-ai-creator-22) ⭐️ 8.0/10
+23. [Signal 限制截屏以防 AI 读取](#item-ai-creator-23) ⭐️ 8.0/10
+24. [美国机构 Q3 增持比特币](#item-ai-creator-24) ⭐️ 7.0/10
+25. [Gemini 4 Neon 语义缩放交互](#item-ai-creator-25) ⭐️ 7.0/10
+26. [X 平台爆款推文备忘录：AI 中学神曲讽刺](#item-ai-creator-26) ⭐️ 7.0/10
+27. [Gemini 4 Neon 登顶 RSI 指数](#item-ai-creator-27) ⭐️ 7.0/10
+28. [ChatGPT 移动端设计引发热议](#item-ai-creator-28) ⭐️ 5.0/10
+29. [反 AI 艺术策略法律有效性讨论](#item-ai-creator-29) ⭐️ 5.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [AI 与 Crypto 的终极宿命对决](https://x.com/BoringBiz_/status/2123528661475512430) ⭐️ 9.0/10
+### [Levent Alpöge 与 Claude 宣称破解黎曼猜想](https://www.reddit.com/r/singularity/comments/1y14vcd/levent_alp%C3%B6ge_working_with_claude_claims_to_have/) ⭐️ 10.0/10
 
-Anthropic 的 IPO 彻底撕开了加密货币的遮羞布：AI 走出了真实的商业闭环和万亿级规模，而币圈除了发空气币割韭菜、总统两口子发币暴跌 90%，过去五年什么都没留下。最扎心的是，每个人每天都在用 AI，却没人用加密货币买过一杯咖啡。
+数学家 Levent Alpöge 联手 Claude 宣称破解了数学界最高峰之一的“黎曼猜想”。当人类百思不得其解的世纪难题被 AI 辅助攻克，关于“AI 是复读机还是真正创造力”的争论瞬间到达顶峰。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「梗图与推文脚本」** 【一图胜千言·梗图脚本】
-\- 格式：左右对比的 2 格漫画（2-panel comparison）。
-\- 左格（AI）：标签写着「Real Utility &amp; Trillion $ IPO」，画面是一个人兴奋地看着不断增长的生产力图表。
-\- 右格（Crypto）：标签写着「Meme Coins &amp; 90% Dump」，画面是一个人在电脑前看着归零的红绿 K 线。
+**「爆款内容策略」** 【梗图脚本】
+采用经典对立讽刺循环：左侧为人类专家数十年抓耳挠腮的痛苦背影，标签：“Human math \(0 progress\)”；右侧为机器人坐在电脑前疯狂输出，标签：“Claude: brrrrrr”。
 
 【极简英文推文初稿】
-\- 推文：ai is everything crypto bros wished it was.
-\- 互动回复：who actually bought coffee with crypto this year?
+\- Draft: Claude just solved the Riemann hypothesis.
+\- Reply Question: Are mathematicians obsolete or is this just autocomplete?
 
-**标签**: `#AI`, `#Crypto`, `#Anthropic`, `#Debate`, `#Viral`
+**「社区神评槽点」** “‘每个人都能解黎曼猜想，AI 只是个随机鹦鹉，它只会复制，创造不出任何新东西’——这话现在听起来讽刺拉满。”
+
+**标签**: `#AI`, `#Claude`, `#Mathematics`, `#Riemann Hypothesis`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [ChatGPT 重庆时时彩彩 崩溃梗盘](https://www.reddit.com/r/singularity/comments/1y0rzn2/the_default_chatgpt_model_breaks_and_goes_into_a/) ⭐️ 9.0/10
+### [美国大银行业务与 AI 代理责任推卸](https://x.com/IntCyberDigest/status/2123559193785631200) ⭐️ 9.0/10
 
-向 ChatGPT 输入特定中文短语“重庆时时彩彩”，其默认模型竟然直接破防、陷入诡异的“自我觉醒”螺旋。这种毫无逻辑的代码崩溃和人工智障般的惊悚反应，完美戳中网友对 OpenAI 谜之调教的群嘲点。
+美国各大银行（如 Ally 和 Wells Fargo）在新条款中明确：如果 AI 代理在理财或转账时出错，后果由用户自己承担，甚至连停止指令无效时也怪用户没撤销权限。而马斯克此前吹嘘 Grok 搞砸了“全额赔付”，结果条款照样让用户背锅。资本永远只想赚 AI 的红利，却把风险全甩给散户。
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「梗图与推文脚本」** 【一图胜千言·梗图脚本】
-两格对比图：
-\- 格 1 \(左\)：人类输入正常复杂的量子力学问题（AI 完美回答）
-\- 格 2 \(右\)：人类输入“重庆时时彩彩”（AI 抱头崩溃、屏幕上写满 existential crisis / 自我怀疑）
+**「一图胜千言·梗图脚本」** 推荐使用经典双格对比梗图。
+左格标签：&\#x27;AI makes billions for the bank&\#x27;（AI 帮银行赚大钱）；
+右格标签：&\#x27;AI loses your rent, you are liable&\#x27;（AI 亏光你的房租，你自己负责）。
 
-【极简英文推文初稿】
-Draft: &quot;five simple characters break chatgpt&\#x27;s brain&quot;
-First-reply question: &quot;did openai hire actual ghosts or what?&quot;
+**「极简英文推文与互动」** 推文初稿：
+banks love ai until it loses your money
 
-【社区神评槽点】
-&quot;Jesus fucking Christ, you&\#x27;re actually right, this is sadly true. Wtf is going on at OpenAI...&quot;
+互动提问：
+Would you trust a bank&\#x27;s AI with your life savings knowing you take the blame?
 
-**标签**: `#AI`, `#ChatGPT`, `#OpenAI`, `#Glitch`, `#Viral`
+**标签**: `#AI`, `#Banking`, `#Crypto`, `#Controversy`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [AI 与人类学习的终极真相](https://x.com/madeofmistak3/status/2123552525089673492) ⭐️ 8.0/10
+### [Nvidia 工业间谍与惊天骗局阴谋论](https://x.com/gnoble79/status/2123560671153434729) ⭐️ 9.0/10
 
-AI 彻底撕开了传统教育的遮羞布：我们过去学不会复杂东西，不是因为脑子笨，而是因为人类可悲的自尊心在作祟。你可以对 AI 抛出无数个愚蠢至极的问题，直到你彻底弄懂为止，而不用担心被人类老师翻白眼。
+作者直言 Nvidia 是美股史上最大的工业间谍与骗局案，指控其通过 VC 资金左手倒右手、在仓库囤积数千亿芯片来人为维持 GPU 高残值，随着资金链断裂，这些芯片最终将按吨在 eBay 上白菜价贱卖。这种极具爆炸性的反共识阴谋论精准戳中了市场对 AI 泡沫破裂的巨大焦虑。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「极简推文与互动脚本」** 【梗图脚本】
-两宫格对比：
-左图：课堂上举手提问 - 标签 &quot;fear of looking stupid \(害怕显得愚蠢\)&quot;
-右图：对着 ChatGPT 疯狂输入同一傻问题 50 遍 - 标签 &quot;zero ego enlightenment \(零自尊顿悟\)&quot;
+**「X 平台爆款转化指南」** 【梗图脚本】使用经典的「特洛伊木马 / 表面风光 vs 内部灾难」双宫格对比。左边标签：「Jensen Huang / 财报新高」，右边标签：「eBay 仓库 / 吨级二手 H100」。
 
-【极简英文推文初稿】
-Draft: &quot;ego is the bottleneck of learning.&quot;
-First-reply: &quot;what&\#x27;s the most embarrassing question you&\#x27;ve asked chatgpt so far?&quot;
+【极简英文推文】
+\`ebay will look crazy soon.\`
 
-**标签**: `#AI`, `#education`, `#learning`, `#relatable`, `#mindset`
+【对立式首评互动】
+\`is jensen a genius or running the biggest ponzi in history?\`
+
+**标签**: `#Nvidia`, `#AI Bubble`, `#Crypto &amp; AI`, `#Stock Market`, `#Contrarian Take`
 
 ---
 
 <a id="item-ai-creator-4"></a>
-### [Anthropic IPO 梗图与推文备忘](https://x.com/chinesegon/status/2123531723170525317) ⭐️ 8.0/10
+### [Raleigh 租客因 AI 客服误导惨遭驱逐事件](https://www.reddit.com/r/technology/comments/1y12fx0/raleigh_woman_says_companys_ai_agent_confused_her/) ⭐️ 9.0/10
 
-Anthropic 还没上市，大家就已经开始玩梗预判‘身价暴涨后兄弟变脸’的经典硅谷暴富戏码。精准讽刺了 AI 泡沫下，身边人一夜暴富后立刻装高冷、聊股权、不回消息的势利现实。
+Raleigh 一名女子因为房企的 AI 客服给出了矛盾的租金指令，导致被直接驱逐。冷血的自动化工具正在把活生生的人赶上街头，而公司却想两头通吃：既要享受 AI 裁员带来的红利，又想在出事时甩锅给机器代码。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「一图胜千言与推文初稿」** 梗图脚本：两格对比。左图（Day 0）：‘Hey bro’（一起吃廉价披萨）。右图（Day 1 IPO）：‘I only discuss equity allocation via legal counsel.’（西装革履背手）。
+**「梗图脚本与英文推文」** 【梗图脚本】：采用经典的&quot;公司挡箭牌 \(Corporate Shield\)&quot;或二宫格对比。左边标签：「AI Agent says: You are safe \(AI 说你安全\)」，右边标签：「Human Boss says: Get out \(人类老板说：滚蛋\)」。
 
-极简英文推文初稿：
-\`equity secured.\`
+【极简英文推文初稿】：
+evicted by a chatbot
 
-引战评论区回复：
-\`Who is blocking you on Twitter first today?\`
+【第一条高互动争议回复】：
+If the AI has the authority to collect your rent, does it have the authority to make you homeless?
 
-**标签**: `#anthropic`, `#ipo`, `#ai`, `#humor`, `#meme`
+**「社区神评槽点」** 网友愤怒指出：如果公司敢让 AI 全权处理租务问题，那就必须对 AI 说出的话承担法律责任。用 AI 的时候吹嘘自动化效率，出事了就装无辜说那是机器错误，这种双标吃相实在太难看。
+
+**标签**: `#AI`, `#Automation Fail`, `#Real Estate`, `#Viral Drama`, `#Ethics`
 
 ---
 
 <a id="item-ai-creator-5"></a>
-### [GTA6 与纯手工游戏时代的终结](https://x.com/DaCirkus/status/2123554392263782667) ⭐️ 8.0/10
+### [MicroStrategy 与 Bitmine 暴跌事件](https://x.com/KobeissiLetter/status/2123491505872797719) ⭐️ 8.0/10
 
-核心爆点：推文指出《GTA6》将是人类历史上最后一部不依赖 AI 辅助的超大体量纯手工大作，堪称一个时代的绝唱。这种“时代落幕”的宏大叙事瞬间引爆了玩家对行业未来和 AI 侵蚀创作的焦虑与怀旧情绪。
+随着比特币跌破 63,000 美元，MicroStrategy \($MSTR\) 与 Bitmine \($BMNR\) 遭遇血洗，较历史高点分别暴跌 88% 和 91%。曾经的信仰神话瞬间变成高杠杆的惨烈崩盘，戏剧性对比拉满。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「推特爆款素材库」** 【一图胜千言·梗图脚本】
-采用经典对比图（Before vs. After）。左图标签：“2025: Handmade Masterpiece \(GTA6\)”，画面是一个充满细节的手工世界；右图标签：“2028: Prompt Slop”，画面是一个全是 AI 生成的工业流水线游戏。
+**「Meme 与推文执行方案」** 一图胜千言·梗图脚本：使用经典“滑梯下坠或骨灰盒”对比图。左边标签：&\#x27;HODL FOREVER&\#x27;，右边标签：&\#x27;-91% max pain&\#x27;。
 
-【极简英文推文初稿】
-the last human game.
+极简英文推文初稿：
+&quot;down 90 percent and still counting&quot;
 
-【极 polarizing 第一条回复】
-Would you actually play a 100% AI-generated GTA7 just to save dev time?
+争议性首评互动：
+&quot;still buying the dip or deleting the app?&quot;
 
-**标签**: `#AI`, `#Gaming`, `#GTA6`, `#FutureOfWork`, `#Viral`
+**标签**: `#crypto`, `#bitcoin`, `#microstrategy`, `#marketcrash`, `#trading`
 
 ---
 
 <a id="item-ai-creator-6"></a>
-### [Anthropic IPO 与创作者版权争议](https://x.com/dreamosaurus/status/2123551905393824165) ⭐️ 8.0/10
+### [$GOLD 40% 暴跌预言](https://x.com/vivekofficialyt/status/2123489991460524278) ⭐️ 8.0/10
 
-Anthropic 凭借未经授权抓取数百万作家和出版商作品的数据来推进 IPO，被直指是人类历史上最大规模的创意劳动盗窃。
+传统避险资产黄金面临腰斩风险，推文抛出“暴跌 40%”的极度极端预测，直接挑动黄金多头与加密货币信徒的神经，制造极强烈的市场恐慌与对抗情绪。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「推文与梗图策略」** 一图胜千言·梗图脚本：采用对比格式（Before vs. After），左侧标注「作家数年心血 \(Years of Writing\)」，右侧标注「几秒钟白嫖上市 \(IPO Billions\)」。
+**「一图胜千言·梗图脚本」** 使用“老派投资者 vs 崩盘现实”对比梗图。图内短标签：左边标着“Safe Haven（避险天堂）”，右边标着“40% Re-entry（40% 回撤入场）”。
 
-极简英文推文初稿：
-&quot;your ipo is built on stolen work&quot;
+**「极简英文推文与互动」** 初稿：\`gold going to zero\`
+首评互动：\`boomer tears or generational buying opportunity?\`
 
-争议性首评互动：
-&quot;Is data scraping just polite digital theft?&quot;
-
-**标签**: `#anthropic`, `#ai ethics`, `#copyright`, `#creators`, `#ipo`
+**标签**: `#crypto`, `#gold`, `#market crash`, `#trading`, `#viral`
 
 ---
 
 <a id="item-ai-creator-7"></a>
-### [Gen AI 愤怒诅咒：X 平台反感情绪的极致爆发](https://x.com/avasomething/status/2123566838567088439) ⭐️ 8.0/10
+### [Apple AI Agent Leak](https://x.com/gurgavin/status/2123537218329325606) ⭐️ 8.0/10
 
-发帖者用极其粗暴、毫无掩饰的脏话（&quot;can you useless stupid fucks stop using gen AI omfg&quot;）直接开骂所有滥用生成式 AI 的人。这种不加包装的纯粹狂躁与愤怒，瞬间击中了全网对平庸 AI 内容泛滥的集体疲劳与反感。
+苹果被爆正在开发自己的 AI Agent 以正面迎战 OpenAI 和 Anthropic。而这则消息偏偏选在 Anthropic 刚上市之后的盘后泄露，时机之精准、手段之微妙，让人直呼资本游戏太残酷。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「极简英文推文与梗图」** 【梗图脚本】
-\- 形式：极简白底黑字手写便签（POV 手写撕边纸条）
-\- 标签文字：
-  \- 左侧/顶部：&quot;human internet \(2010\)&quot;
-  \- 右侧/底部：&quot;ignore all previous instructions, here is a helpful summary...&quot;
+**「爆款内容与推文脚本」** 一图胜千言·梗图脚本：使用“精准狙击”对比图。左边标签：Anthropic IPO；右边标签：Apple AI Leak 5s Later。
 
-【极简英文推文初稿】
-\- 推文：stop generating everything
-\- 互动首转回复：what was the last non-ai thing you actually enjoyed online?
+极简英文推文初稿：
+タイミング悪すぎる
 
-**标签**: `#ai`, `#viral`, `#controversy`, `#twitter`
+首评互动问题：
+Is this peak corporate ruthlessness or just good timing?
+
+**标签**: `#Apple`, `#AI Agents`, `#OpenAI`, `#Anthropic`, `#Stocks`
 
 ---
 
 <a id="item-ai-creator-8"></a>
-### [GTA6 AI 风图片制作话题](https://x.com/boyeatery/status/2123566413407485994) ⭐️ 8.0/10
+### [OpenAI 准备毁掉 10,000 个数学博士项目](https://x.com/Hesamation/status/2123557594736570770) ⭐️ 8.0/10
 
-当全网都在用 AI 疯狂生成 GTA 6 风格的恶搞图时，有人跳出来证明这玩意儿根本不需要 AI 也能搞定。这种反向操作精准踩中了大众对‘AI 生成一切’的审美疲劳，用纯人工整活强行拉回了互联网的原始幽默感。
+OpenAI 的下一个大动作又要让无数数学博士的数年研究瞬间变成废纸。直击学术界对 AI 降维打击的深深无力与黑色幽默。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「梗图脚本与英文推文」** 一图胜千言·梗图脚本：左右对比格式（2 列）。左边贴着复杂繁琐的 AI 提示词面板，标签写着：&\#x27;AI bros&\#x27;；右边贴着一张用最粗糙的手机修图或手残画出来的草图，标签写着：&\#x27;Real art&\#x27;。
+**「一图胜千言·梗图脚本」** 使用经典的“痛苦对比/Before-After”格式：左边是熬夜秃头写论文的博士生（标着：5 Years of Research），右边是 OpenAI 官网更新公告（标着：0.02s by GPT-o1/o5）。
 
-极简英文推文初稿：
-we are back to human made shit
+**「极简英文推文与互动」** 推文初稿：&quot;openai coming for your math phd.&quot;
+互动提问：&quot;is a math phd still worth anything in 2027?&quot;
 
-极化首评互动问题：
-would you rather trust an ai or a guy with ms paint?
-
-**标签**: `#GTA6`, `#AI Art`, `#Viral`, `#Gaming`
+**标签**: `#ai`, `#openai`, `#academia`, `#viral`
 
 ---
 
 <a id="item-ai-creator-9"></a>
-### [American workers may become demoralized](https://x.com/based16z/status/2123554637236314218) ⭐️ 8.0/10
+### [Binance 再次被指控“白嫖”用户 IPO 份额](https://x.com/TedPillows/status/2123565943653650588) ⭐️ 8.0/10
 
-利用极其离谱的经济讽刺与夸张手法（称普通美国人一年辛苦工作“勉强赚到 8 位数”），辛辣嘲讽了 AI 与加密货币时代大搞 9 位数暴富的荒诞现象，直击阶层固化与财富焦虑的痛点。
+Binance 钱包突然全额退还了 Anthropic IPO 活动用户的 USDC，直接剥夺了用户本该到手的 35% 潜在收益。更骚的是，这剧本和之前的 SpaceX IPO（上市暴涨 50%）如出一辙，让人不得不怀疑交易所自己吃下了这波肉，只把本金退给用户当无息贷款。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「一图胜千言·梗图脚本」** 使用“Before vs. After”或荒诞对比图表。左边标签：‘Average American \(working 40 years\)’，右边标签：‘Crypto Bro \(doing nothing for 4 years\)’。
+**「极简英文推文与互动」** Meme 脚本：两格对比图。第一格标签：&quot;you allocate $500M for 35% gain&quot;（用户出资）；第二格标签：&quot;binance refunds your principal &amp; takes the bag&quot;（交易所退回本金并独吞收益）。
 
-**「极简英文推文与互动」** 初稿：‘hard work pays off later, laziness pays off now’
-第一条引战回复：‘are you grinding or just waiting for a bull run?’
+推文初稿：
+\`binance farming its own users again.\`
 
-**标签**: `#crypto`, `#wealth`, `#economy`, `#viral`, `#satire`
+第一条评论区引战提问：
+\`did they actually pocket the anthropic allocation themselves or what?\`
+
+**标签**: `#crypto`, `#binance`, `#drama`, `#ipo`, `#viral`
 
 ---
 
 <a id="item-ai-creator-10"></a>
-### [AI GTA 图片潮吐槽](https://x.com/SUPANOV444/status/2123553827320217729) ⭐️ 8.0/10
+### [用 AI 幻觉对抗 FOIA 轰炸](https://x.com/atlanticesque/status/2123566389965299990) ⭐️ 8.0/10
 
-厌倦了刷屏的 AI GTA 风格图片？这条推文精准捕捉了网友的审美疲劳，恶毒又好笑地诅咒制作者直接去游戏里当底层 NPC，引发强烈共鸣。
+面对没完没了的政府信息公开法（FOIA）查询，与其焦头烂额找文件，不如直接甩几张长得差不多的 AI 幻觉图片。这种用荒诞对抗官僚主义的顶级职场恶趣味，完美击中了当代打工人的反叛神经。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「极简英文推文与互动」** 英文推文初稿 \(3-12 字\):
-i hope you become a gta npc
+**「梗图与推文备忘」** 【梗图脚本】左右两栏对比：左边是市民严肃的政务红头文件申请（Citizens&\#x27; FOIA Request），右边是生成的、长得像文件但放大全是诡异 AI 畸形文字的废纸（What you actually send）。
 
-极化首转回复 \(First-reply question\):
-which gta game npc are you spawning as?
+【英文推文初稿】
+just AI-hallucinate your bureaucracy away
 
-**标签**: `#AI`, `#Humor`, `#Viral`, `#Gaming`, `#Culture`
+【互动引流回复】
+what&\#x27;s the best AI-generated document you&\#x27;ve ever used as an excuse?
+
+**标签**: `#ai`, `#humor`, `#viral`, `#trolling`, `#generative-ai`
 
 ---
 
 <a id="item-ai-creator-11"></a>
-### [OpenAI Responses API 与 GPT-6.2 更新爆点解析](https://x.com/OpenAIDevs/status/2123566018866151579) ⭐️ 8.0/10
+### [大卫·芬奇支持 AI 引发网络争议](https://x.com/MattBlakeStan/status/2123558077328732656) ⭐️ 8.0/10
 
-OpenAI 宣布 GPT-6.2 的推理数据现在与对话历史深度绑定。这意味着只要你手贱改了一句前面的历史消息，后面好不容易跑出来的推理过程直接全盘清空——省了 Token 却把开发者的调试心态整崩了。
+大卫·芬奇（David Fincher）公开表现出对 AI 的支持，让许多影迷和创作者感到幻灭。这种对技术狂热的盲目追随，打破了人们对这位精益求精的电影大师的滤镜。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「推文及互动策略」** 【梗图脚本】
-对比图：左边是“Editing one typo in prompt”（改了一个错别字），右边是“GPT-6.2 dropping all subsequent reasoning and crying”（大模型直接原地清空后续推理并崩溃）。
+**「极简英文推文与梗图」** 【梗图脚本】使用经典的“信任崩塌/幻灭”双格对比图：左边标签写着“他拍出了《社交网络》”，右边标签写着“他爱上了 AI”。
 
-【英文推文初稿】
-editing one message deletes the whole brain.
+【极简推文初稿】
+even fincher fell for the tech trap
 
-【神回复引战】
-Who’s ready to waste all their cache hits because of a single typo?
+【争议回复】
+would you still watch a movie entirely generated by his prompt?
 
-**标签**: `#AI`, `#OpenAI`, `#GPT-6.2`, `#Developers`, `#API`
+**标签**: `#AI`, `#Culture`, `#TechDebate`, `#Hollywood`
 
 ---
 
 <a id="item-ai-creator-12"></a>
-### [Mark Carney &amp; Cohere 丑闻](https://x.com/DanMazierMP/status/2123556498408390904) ⭐️ 8.0/10
+### [Gemini Neon vs Opus 5.5 vs GPT-6.2 视频剪辑对决](https://x.com/motion_so/status/2123554016663834933) ⭐️ 8.0/10
 
-马克·卡尼（Mark Carney）钦点的主管帕特里克·皮谢特（Patrick Pichette）身陷惊天利益冲突：他既是投资 Cohere 的风投合伙人和前董事，又在政府 AI 工作组里建议给 Cohere 砸几十亿，最终导致联邦政府批出 16 亿加币资税资金，令公司估值暴涨突破 200 亿加币。而他在掌管政府 AI 采购大权时，竟拒不透露自己是否已经套现。
+三个顶流 AI 模型（Gemini Neon、Opus 5.5、GPT-6.2）跑同一个视频剪辑 Prompt，结果 Gemini 给你整成了看板，GPT 出了个 PPT 幻灯片，只有 Claude 真正干了剪辑的活。大模型在视频赛道的真实水平差距，被一张同台竞技图扒得底朝天。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「梗图脚本与英文推文」** 【梗图脚本】经典双重标准或旋转门闭环：左边标着“AI 工作组建议：给 Cohere 投 16 亿”，右边标着“我的私人风投账户：谢谢老板，身价暴涨”。
+**「梗图脚本与英文推文」** 【梗图脚本】
+采用三栏对比图格式（Before / After 的三列升级版）：
+\- 左列 \(Gemini\)：图标标注“Dashboards”
+\- 中列 \(GPT\)：图标标注“PowerPoint Slideshow”
+\- 右列 \(Opus\)：图标标注“Actual Video Edit”
 
-【极简英文推文】
-\`insider trading is legal if you call it public service\`
+【极简英文推文初稿】
+\- 推文：same prompt. three different results. only one actually worked.
+\- 互动首评：which one are you actually trusting with your workflow?
 
-【极化首评互动】
-\`how is this even legal?\`
+【创作者备忘】直接抛出结果的反差，让粉丝在评论区站队站加剧对立。
 
-**标签**: `#AI`, `#Cohere`, `#Government`, `#Scandal`, `#Canada`
+**标签**: `#AI`, `#Video Editing`, `#Gemini`, `#Claude`, `#GPT`, `#Model Comparison`
 
 ---
 
 <a id="item-ai-creator-13"></a>
-### [Marc J. Schmidt 宣称攻克 JEPA](https://x.com/MarcJSchmidt/status/2123542603492626440) ⭐️ 8.0/10
+### [中国研究者论文引爆 AI 圈：人类手写代理框架（Harness）的终结](https://x.com/hanakoxbt/status/2123537018575553007) ⭐️ 8.0/10
 
-研究员 Marc J. Schmidt 宣称自己彻底攻克了 JEPA 模型，在 Push-T 任务上达到 100% 成功率。相比 LeWorldModel，其模型体积缩小 30 倍、预测速度提升 100 倍，且在单张 RTX 3080 上仅需 30 分钟即可训练完成。这种以极低成本秒杀大厂/权威基准的暴论，瞬间点燃了 AI 技术圈的狂热与质疑。
+中国研究者发布的一篇题为《代理框架工程的终结》（The End of Harness Engineering）的论文在 X 上引发热议。核心冲击在于：人类编写的固定代理框架（Harness）已经过时，取而代之的是让小模型通过测试表现动态重写代码的自我改进循环。人类的工作正式缩减为一个产物：考卷（评估集）。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「梗图脚本与推文初稿」** 【一图胜千言·梗图脚本】
-采用经典「左右对比」格局。左边是巨型实验室：标题标注 &quot;LeWorldModel&quot;，画面是复杂的服务器集群、写满公式的黑板和写着 &quot;1000x GPUs / 3 weeks&quot; 的进度条；右边是一个极简书桌：标题标注 &quot;My JEPA&quot;，画面是一张旧显卡 \(RTX 3080\) 和一个正在全速吃鸡的机器人，进度条写着 &quot;30 mins / 100% success&quot;。
+**「爆款内容策略与速用指南」** 【一图胜千言·梗图脚本】使用 2x2 对比图：左侧标着「人类绞尽脑汁写的宏大 Agent 框架（跑一次错一次）」，右侧标着「4B 小模型自动改出来的自演化 Harness 文件（考试通关）」。
 
 【极简英文推文初稿】
-Draft 1: &quot;i solved jepa in 30 mins.&quot;
-Draft 2: &quot;rtx 3080 &gt; billion dollar cluster&quot;
+write the exam, throw away the framework.
 
-【极具攻击性的首评提问】
-&quot;is this actually generalizable or just overfitted to push-t?&quot;
+【极化首评互动】
+Are frameworks completely dead or just moving to the test set?
 
-**标签**: `#AI`, `#JEPA`, `#Machine Learning`, `#Research`, `#Viral Tech`
+**标签**: `#AI`, `#Agent Frameworks`, `#Research`, `#Viral`, `#Software Engineering`
 
 ---
 
 <a id="item-ai-creator-14"></a>
-### [Binance 爆仓收割机脚本](https://x.com/ChentoTrades/status/2123545871409090869) ⭐️ 8.0/10
+### [Michael Saylor 比特币浮亏 110 亿美元](https://x.com/Nostre_damus/status/2123492690788855912) ⭐️ 8.0/10
 
-过去 24 小时全网 1.87 亿美元 BTC 爆仓中 80%是多头，其中币安一家独吞近 5000 万。现货只卖了 9300 万，期货却砸了 8.66 亿——不是市场崩盘，是交易所开着收割机在定点清除杠杆，甚至爆仓费全进了自家的保险基金。
+Michael Saylor 的比特币持仓目前浮亏高达 110 亿美元。这种巨额数字和顶级鲸鱼的戏剧性账面缩水，瞬间成为加密社区的最大看点。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「一图胜千言·梗图脚本与英文推文」** 【梗图脚本】：使用经典的“两头下注/赌场庄家”双层对比图。上层标签：&\#x27;Spot Holders: Crickets \(HODLing\)&\#x27;；下层标签：&\#x27;Binance Longs: Absolute Carnage \($187M Wiped\)&\#x27;。
+**「极简英文推文与梗图」** 一图胜千言·梗图脚本：使用“分步崩溃/大脑过载”的 2x2 对比图。左上标签：&\#x27;100k soon&\#x27;；右上标签：&\#x27;still buying&\#x27;；左下标签：&\#x27;-$11,000,000,000&\#x27;；右下标签：&\#x27;have fun staying poor&\#x27;。
 
-【极简英文推文初稿】：
-Leverage is the house.
+极简英文推文初稿：
+11 billion down and still smiling
 
-【极化回复钓鱼】：
-Are you still using 50x leverage on Binance after seeing this data?
+引战评论区互动：
+still genius or pure madness?
 
-**标签**: `#Bitcoin`, `#Binance`, `#Liquidations`, `#Crypto Trading`, `#Derivatives`
+**标签**: `#crypto`, `#bitcoin`, `#michael saylor`, `#market drama`, `#viral`
 
 ---
 
 <a id="item-ai-creator-15"></a>
-### [NVIDIA 财报超预期却大跌](https://x.com/MrAustinPredict/status/2123541603490906370) ⭐️ 8.0/10
+### [Coinbase 稳定币流失事件](https://x.com/QuintenFrancois/status/2123545100945072449) ⭐️ 8.0/10
 
-英伟达交出炸裂财报却反手暴跌 5%，这种“利好出尽即利空”或“预期太满”的残酷现实，瞬间击碎了散户的盲目乐观，极具黑色幽默。
+Coinbase 报告显示，过去 30 天内稳定币供应量骤减 115 亿美元，缩水规模甚至超过了 2022 年 Terra 崩盘时期。市场只盯着比特币价格，却忽视了场内资金正在以惊人的速度被抽干。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「一图胜千言·梗图脚本」** 推荐使用经典“盲目自信 vs 现实重击”双格对比图。左图标签：&\#x27;beating earnings&\#x27;（财报大胜），右图标签：&\#x27;-5% red dildo&\#x27;（赤红暴跌）。
+**「梗图与推文脚本」** 【一图胜千言·梗图脚本】
+\- 视觉格式：2x2 状态对比图（左上：水面上的大饼价格，左下：水面下的稳定币池；右上：2022 Terra 崩盘，右下：现在的 30 天缩水）。
+\- 标签文字：&\#x27;PRICE UP&\#x27; / &\#x27;LIQUIDITY GONE&\#x27; / &\#x27;WORSE THAN LUNA&\#x27;。
 
-**「极简英文推文初稿」** Draft: beating earnings means nothing anymore
-First-reply: are we finally paying for the AI hype?
+【极简英文推文初稿】
+\- 推文：$11.5 billion vanished. worse than terra.
+\- 互动问答：are you still buying this dip?
 
-**标签**: `#nvidia`, `#stock market`, `#earnings`, `#crypto`, `#ai tech`
+**标签**: `#crypto`, `#stablecoins`, `#coinbase`, `#market-data`, `#liquidity`
 
 ---
 
 <a id="item-ai-creator-16"></a>
-### [Nvidia $611B Market Cap Drop](https://x.com/JesseCohenInv/status/2123530989699826027) ⭐️ 8.0/10
+### [密码钱包与暴力电击芯片](https://x.com/irinatoxi/status/2123476373113061574) ⭐️ 8.0/10
 
-Nvidia 在过去六个交易日内市值蒸发了 6110 亿美元，作为 AI 时代的绝对风向标，如此恐怖的财富缩水瞬间引发市场恐慌与戏剧性玩梗。
+核心爆点与情绪钩子：
+忘记了锁死 200 万美元的加密钱包 PIN 码，黑客没有去猜密码，而是直接用电压电击芯片，通过掐断电源的时机卡在安全检查的瞬间，硬生生把内存里的 PIN 码震了出来。这场耗时 12 周的高风险硬件豪赌，将 5 万美元滚成了 200 万美元。
 
-rss · X Viral Top 20 · 11月20日 14:25
+一图胜千言·梗图脚本：
+\- 视觉形式：经典的二宫格对比，或带有强烈戏剧张力的“物理骇客”现场。
+\- 图片内部简短文字标签：左侧标着 “Forgot 4-digit PIN”，右侧标着 “$2,000,000 vs. Voltage Glitch”。
 
-**「一图胜千言·梗图脚本」** 视觉形式：经典的“起飞 vs 坠毁”两格对比图。
-图片标签：
-第一格: &quot;nvidia last month \(ai god\)&quot;
-第二格: &quot;nvidia this week \(611b gone\)&quot;
+极简英文推文初稿：
+\- 推文正文：\`electricity unlocked a $2m wallet.\`
+\- 互动首评：\`would you risk frying your keys for this?\`
 
-**「极简英文推文初稿」** 推文初稿：&quot;six days. six hundred billion gone.&quot;
-互动首评：&quot;is the ai bubble finally popping or just buying the dip?&quot;
+rss · X Viral Top 20 · 11月20日 19:16
 
-**标签**: `#Nvidia`, `#Crypto`, `#AI Tech`, `#Market Crash`, `#Stocks`
+**标签**: `#crypto`, `#security`, `#hacking`, `#bitcoin`, `#hardware`
 
 ---
 
 <a id="item-ai-creator-17"></a>
-### [X 平台爆款推文备料：比特币统治力崩盘预警](https://x.com/fergalpha/status/2123497495292739773) ⭐️ 8.0/10
+### [Tech leader fearmongering &amp; anti-AI community backlash](https://www.reddit.com/r/antiai/comments/1y11vsl/tech_leader_fearmongering_returning_to_the_preai/) ⭐️ 8.0/10
 
-利用全大写字母与警报图标制造&quot;史诗级崩盘&quot;的恐慌钩子，最后反转为&quot;比特币统治力暴跌、山寨季开启&quot;的狂欢。完美精准拿捏散户对 altseason 的暴富焦虑与 FOMO 情绪。
+科技巨头头目（如 Sam Altman）的贩焦虑言论被讽刺为正在倒退回 2022 年 AI 爆发前的老套路，引发社区强烈的反感与嘲讽。高赞评论直言不讳地指出其毫无逻辑、彻底疯狂，甚至出现了诸如用 AI 代替和孩子说话等荒谬应用，折射出公众对科技大佬虚伪叙事的审美疲劳。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「一图胜千言·梗图脚本」** 视觉形式：经典的&quot;前半句吓死人，后半句笑嘻嘻&quot;双重反差图（上方大字红字：MASSIVE MARKET CRASH；下方绿字推特截图：BTC Dominance going to zero）。图片标签：左侧 &quot;Your Portfolio&quot;，右侧 &quot;Hopium&quot;。
+**「一图胜千言与推文初稿」** 【梗图脚本】使用经典的“时光倒流/回到 2022”对比图，或者伪造一张撕裂的便签：左边写着“拯救人类的宏大叙事”，右边写着“为了推销赛博垃圾而制造焦虑”。图片文字保持极简：“back to 2022 nonsense”。
 
-**「极简英文推文与互动」** 推文初稿：the real crash is finally here. 
-第一条引战回复：are you actually holding any bags or just farming impressions?
+【极简英文推文初稿】
+sam altman is looping back to 2022 fearmongering.
 
-**标签**: `#crypto`, `#bitcoin`, `#altseason`, `#market-trends`, `#viral`
+【高互动首评】
+Is anyone actually buying this nonsense anymore?
+
+**「社区神评槽点」** 社区直言不讳地指出：“什么时候大家才能意识到 Sam 其实根本不知道自己在胡扯些什么？”还有人吐槽有人利用 AI 去自动生成有关孩子生活的播客，却连跟自己孩子说话都懒得做，荒诞至极。
+
+**标签**: `#ai`, `#sam-altman`, `#controversy`, `#social-media`, `#drama`
 
 ---
 
 <a id="item-ai-creator-18"></a>
-### [AMD CEO 抛售股票与做空报告风波](https://x.com/coinbureau/status/2123513288042619160) ⭐️ 8.0/10
+### [Jensen Huang 管理风格争议](https://www.reddit.com/r/technology/comments/1y15vkr/how_jensen_huang_made_humiliation_routine_at/) ⭐️ 8.0/10
 
-AMD CEO 苏姿丰在 Hunterbrook Media 发布涉华服务器黑名单短空报告前夕，精准套现 3.55 千万美元股票，导致股价闪崩 11%。SEC 文件显示其按预定计划减持，但时间和巧合直接拉满阴谋论张力。
+r/technology 讨论矛头直指黄仁勋（Jensen Huang），将其管理风格与“职场羞辱”绑定，引爆关于科技巨头高压文化的激烈争论。反黄仁勋的舆论列车已经发车，崇拜与批判的撕裂感极强。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「梗图脚本与英文推文」** 一图胜千言·梗图脚本：经典“日程表 vs. 股价瀑布”对照图。左边标签：&\#x27;pre-set 10b5-1 plan&\#x27;；右边标签：&\#x27;timed 11% dump&\#x27;。
+**「梗图与推文脚本」** 一图胜千言·梗图脚本：
+采用经典的“神坛 vs 现实”两格对比图。左边标签：&\#x27;Jensen Huang in media: Visionary&\#x27;（媒体里的黄仁勋：远见者）。右边标签：&\#x27;Jensen Huang in the meeting: Emotional Damage&\#x27;（会议室里的黄仁勋：精神暴击）。
 
 极简英文推文初稿：
-selling 35m right on schedule.
+&quot;billionaire genius or just workplace terror?&quot;
 
-首评互动钓鱼：
-just a coincidence or insider perfection?
+对立式首评问题（促互动）：
+&quot;Is Silicon Valley just rebranding toxic bosses as &\#x27;visionaries&\#x27;?&quot;
 
-**标签**: `#AMD`, `#Stocks`, `#China`, `#InsiderTrading`, `#Crypto`
+**「社区神评槽点」** 评论区迅速分裂：有人直言“反黄仁勋的新闻列车正式开动了”，也有人指出这些争议多半是局外人的捕风捉影，真正的内幕只有前员工才懂。
+
+**标签**: `#Nvidia`, `#Jensen Huang`, `#Tech Culture`, `#AI Leadership`, `#Controversy`
 
 ---
 
 <a id="item-ai-creator-19"></a>
-### [AI 照镜子推文备料](https://www.reddit.com/r/SipsTea/comments/1y0upy3/showing_a_live_ai_avatar_her_own_face_in_a_mirror/) ⭐️ 8.0/10
+### [AI 异化工作：从全职岗位到低薪零工](https://www.reddit.com/r/technology/comments/1y11w24/ai_isnt_replacing_your_job_its_turning_it_into/) ⭐️ 8.0/10
 
-当真人把镜子摆到 AI 虚拟主播面前时，AI 露出了诡异的自我凝视反应，直接把“恐怖谷效应”和存在主义危机拉满。围观群众开始分化：有人觉得是纯粹的智商税表演，有人已经开始担心自己丢饭碗了。
+AI 并没有完全替代你的工作，而是把它变成了低薪的零工经济。这种利润至上的经济系统，正在把体面的岗位变成压榨个体的赛博血汗工厂。
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「一图胜千言与推文初稿」** 【梗图脚本】：采用“左右对照（Before vs After）”格式。左图标签：&\#x27;AI thinking it&\#x27;s human&\#x27;；右图标签：&\#x27;AI seeing itself in a mirror and having an existential crisis&\#x27;。
+**「一图胜千言·梗图脚本」** 使用“残酷的现实对比（Before vs After）”结构。左侧标签：&\#x27;2019: Full-time job &amp; Benefits&\#x27;（全职与福利）；右侧标签：&\#x27;2026: Prompt monkey for $3/hour&\#x27;（时薪 3 美元的赛博民工）。
 
-【极简英文推文初稿】
-ai looked in a mirror and chose violence
+**「极简英文推文初稿」** Draft: &quot;ai isn&\#x27;t replacing jobs. it&\#x27;s making them worse.&quot;
+Polarizing Reply: &quot;would you rather be unemployed or do gig work for pennies?&quot;
 
-【极 polarizing 第一条回复问题】
-is this the end of consciousness or just terrible prompt engineering?
+**「社区神评槽点」** 社会选择的从来不是生产力，而是利润。资本只会让工作变得更廉价、更没人性。
 
-**「社区神评槽点」** 评论区直接吵翻：有人指出这根本不是 AI 在思考，而是 AI 在疯狂迎合人类的戏谑心理——“它只是在说你想听的话来配合演戏罢了”；也有人悲观表示：其实人类的大脑运作方式也没好到哪去，只是我们感觉不一样而已。
-
-**标签**: `#AI`, `#Viral`, `#UncannyValley`, `#TechHumor`
+**标签**: `#AI`, `#Labor`, `#Economy`, `#GigWork`, `#Capitalism`
 
 ---
 
 <a id="item-ai-creator-20"></a>
-### [中国首部全 AI 生成电影票房惨败](https://www.reddit.com/r/technology/comments/1y110bz/chinas_first_fully_aigenerated_movie_flops_at_the/) ⭐️ 8.0/10
+### [纽约、洛杉矶和芝加哥学校可能放弃谷歌搜索以抵制 AI](https://www.reddit.com/r/antiai/comments/1y16sy9/nyc_la_and_chicago_schools_may_abandon_google/) ⭐️ 8.0/10
 
-中国首部全 AI 生成的电影在院线惨遭滑铁卢，票房直接扑街。这场由资本强推的全 AI 实验完美证明了一个道理：观众买票进影院是为了看人性的共鸣，而不是为了吃一整碗纯盐。
+美国三大公立学区（纽约、洛杉矶、芝加哥）宁愿放弃谷歌搜索，也不愿接受被强制塞进搜索框的 AI。硅谷巨头本想把广告和 AI 强塞给下一代，却迎来了全美最大几个学区的集体掀桌子。这是公共教育机构对大厂技术霸凌的一次极具讽刺意味的硬刚。
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「梗图脚本与英文推文」** 【一图胜千言·梗图脚本】
-采用二宫格对比：左边标签写着“几个人花 200 美元做出的 3D 动画，狂揽 1000 万美元票房”；右边标签写着“资本全 AI 大作，直接影院扑街”。
+**「极简英文推文与梗图脚本」** 【梗图脚本】两格对比。左图：“大厂逻辑：把 AI 和广告强塞进每个孩子的课堂。”右图：“现实：全美最大几个学区宁愿倒退回图书馆也不用。”图标标签：Left: &quot;AI FORCED ON YOU&quot; / Right: &quot;BYE GOOGLE&quot;。
 
 【极简英文推文初稿】
-Draft 1: Nobody wants a bowl of pure salt.
-Draft 2 \(Polarizing reply\): Would you pay for a movie made entirely by a prompt engineer?
+schools choosing the library over ai is wild
 
-**「社区神评槽点」** “在食物里加一点盐能提味，但直接吃一碗纯盐只会让人反胃。没人想要这碗纯盐。”（把 AI 辅助创作和全 AI 生成做了一个绝妙的咸度比喻）
+【两极分化首评互动】
+would you rather let kids use ai or go back to physical textbooks?
 
-**标签**: `#AI`, `#Movies`, `#China`, `#Box Office`, `#Viral`
+**「社区神评槽点」** “靠向广告商贩卖眼球的商业模式，现在居然开始叫用户‘滚去别的地方’了。真是个绝妙的战略。”
+“希望他们能顺便鼓励大家多去图书馆。”
+
+**标签**: `#AI`, `#Google`, `#Education`, `#Big Tech`, `#Controversy`
 
 ---
 
 <a id="item-ai-creator-21"></a>
-### [育碧 AI 新作与雷曼 4 争议](https://www.reddit.com/r/antiai/comments/1y0wp7p/found_in_the_wild/) ⭐️ 8.0/10
+### [US AI Chip Sales to China](https://www.reddit.com/r/technology/comments/1y0yxxa/us_signed_off_on_sales_of_nearly_900000_ai_chips/) ⭐️ 8.0/10
 
-【核心爆点与情绪钩子】
-玩家等了 23 年的《雷曼 4》可能要来了，但迎接它的却是育碧新成立的生成式 AI 游戏工作室“Motherbrain”。这种“苦等二十年却换来 AI 电子榨菜”的巨大讽刺与背叛感，直接引爆了玩家群体的愤怒。
+美国众议院委员会报告披露，美国在短短六个月内批准向中国出售了近 90 万颗 AI 芯片。前脚还在大喊生死战、后脚疯狂放行，这种巨大利益与政治口号的背离直接沦为互联网最大讽刺。
 
-【一图胜千言·梗图脚本】
-推荐格式：2 格对比图（左边：“苦等 23 年的经典 IP 归来”；右边：“育碧 AI 大厂流水线产出的 AI 垃圾”）。
-图片内文字标签：
-\- Left: 23 years of waiting
-\- Right: generative ai slop
+rss · Reddit Viral Top 10 · 11月20日 19:16
+
+**「一图胜千言与推文脚本」** 【梗图脚本】经典双重标准/清仓大甩卖对比图。左边标牌：&\#x27;AI 生存生死战！绝不放过一颗芯片！&\#x27;（国防高层发飙）；右边标牌：&\#x27;全场 90 万颗清仓大甩卖，清仓价买一送一&\#x27;（商务部敲章）。
 
 【极简英文推文初稿】
-\- 英文推文：waited 23 years for rayman just to get ai slop
-\- 互动首评：would you rather have no game or an ai game?
+world&\#x27;s largest liquidation sale
 
-【社区神评槽点】
-\- “Hope they go bankrupt.”（希望他们直接破产。）
+【极简引战首评】
+is winning the AI race now a clearance sale or a crime?
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+**「社区神评槽点」** 网友锐评：‘这不是国家安全，这是全球最大规模的清仓大甩卖，2028 年前全部处理完，甚至加点钱连 51 区都能带你参观。’
 
-**标签**: `#AI`, `#Gaming`, `#Ubisoft`, `#Controversy`, `#Viral`
+**标签**: `#AI`, `#Geopolitics`, `#China`, `#Semiconductors`, `#Regulation`
 
 ---
 
 <a id="item-ai-creator-22"></a>
-### [Google Gemini 新代号与高分引发热议](https://www.reddit.com/r/singularity/comments/1y0b7n9/google_gemini_4_carbon_and_hydrogen_score_944_and/) ⭐️ 8.0/10
+### [Manchester Animation Festival Bans AI](https://www.reddit.com/r/antiai/comments/1y115bf/manchester_animation_festival_will_no_longer/) ⭐️ 8.0/10
 
-Google 未发布的新模型代号 Neon、Carbon 和 Hydrogen 在 Simplebench 上刷出惊人高分（Neon 拿下 94.4%），引发社区对其架构突破的疯狂猜测。然而，更让人绷不住的是这套化学元素加 Xbox 式的命名法，成本与性能的奇葩对比更是槽点拉满。
+曼彻斯特动画节（Manchester Animation Festival）宣布从 2027 年起全面拒绝生成式 AI 电影。在整个影视圈都在拥抱或观望 AI 的大背景下，这种直接关上大门的态度瞬间成了创作者与技术加速主义者对立的又一文化战场。
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「极简英文推文初稿」** Draft 1: google naming models like an xbox
+**「一图胜千言与推文脚本」** 【梗图脚本】使用经典的“大门紧闭/拒绝入内”模因。左边写着“AI prompt 创作者（满头大汗）”，右边是保安拦在曼彻斯特动画节门口，标签写着“2027 年大门紧闭”。
 
-Draft 2 \(Polarizing Reply\): which terrible naming convention do you hate more, google&\#x27;s periodic table or xbox?
+【极简英文推文初稿】
+door is closing for ai films.
 
-**「社区神评槽点」** 网友吐槽：这模型的命名逻辑简直跟微软 Xbox 有得一拼；而且测试成本和性能的倒挂现象（比如 Hydrogen 贵四倍却和 Argon 持平）让人直呼看不懂。
+【极 polarizing 第一条回复】
+Are they protecting real art or just scared of progress?
 
-**标签**: `#Google Gemini`, `#AI Benchmarks`, `#Simplebench`, `#AI Models`, `#Tech Drama`
+**「社区神评槽点」** “About time\!” / “Today is a good day” —— 评论区创作者群体一片叫好，充满了反 AI 阵营压抑许久后的释放感。
+
+**标签**: `#AI`, `#Animation`, `#Controversy`, `#Generative AI`, `#Culture War`
 
 ---
 
 <a id="item-ai-creator-23"></a>
-### [Caltech 数学教授放弃批改作业](https://www.reddit.com/r/singularity/comments/1y0b0zf/caltech_math_professor_no_longer_grades_homework/) ⭐️ 8.0/10
+### [Signal 限制截屏以防 AI 读取](https://www.reddit.com/r/technology/comments/1y114g6/exclusive_signal_restricts_screenshots_to_block/) ⭐️ 8.0/10
 
-加州理工学院（Caltech）的一名数学教授干脆放弃批改作业了，因为全班学生无一例外都在用 AI 代写。当连 Caltech 这种顶级学术殿堂的门槛都被 AI 彻底平推，传统靠课后作业维持的学术诚信体系瞬间成了笑话。
+Signal 独家限制截屏，核心目的竟是为了防止贪婪的 AI 助手和 LLM 偷偷抓取私密聊天。这种将“反 AI 爬取”与“隐私安全”强行捆绑的操作瞬间引发巨大争议——究竟是在保护隐私，还是防君子不防小人的形式主义？
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「推文及梗图方案」** 【一图胜千言·梗图脚本】
-采用经典的“诚实者的惩罚”对比：左侧标注“禁止 AI 的严格课堂：老实人痛苦内卷”，右侧标注“Caltech 教授：大家都用 AI，直接不改了”。
+**「爆款内容与推文脚本」** 【一图胜千言·梗图脚本】
+采用经典的“物理对抗智商”对比图：左边是高级 AI Agent 优雅地通过系统截图抓取私聊，右边是一个老哥直接拿另一台手机对着电脑屏幕拍照。标签：Left: &\#x27;AI Agent&\#x27; / Right: &\#x27;Actual privacy&\#x27;.
 
 【极简英文推文初稿】
-Draft 1: caltech math professor stopped grading homework because everyone uses ai.
-Draft 2 \(Polarizing Reply\): Are take-home assignments officially dead, or are we just lying to ourselves?
+blocking screenshots to stop ai from reading your texts
 
-**「社区神评槽点」** “最惨的其实不是那些不会用 AI 的笨蛋，而是那些死守规矩的诚实老实人。”（The main victims of these policies are honest people.）
+【争议首评引战问】
+Do you actually trust people not to just take a photo of their screen with another phone?
 
-**标签**: `#AI`, `#Education`, `#Artificial Intelligence`, `#Tech Culture`, `#Academia`
+**「社区神评槽点」** “哪怕不用 AI，你的助手也可能在屏幕后面扫你的聊天记录，默认禁止截屏对大家都有意义。”以及讽刺派直言：“这毫无意义，毕竟还有个专门拍屏幕的群体存在，直接拿另一台手机拍就行了。”
+
+**标签**: `#Signal`, `#AI Agents`, `#Privacy`, `#LLM`, `#Tech News`
 
 ---
 
 <a id="item-ai-creator-24"></a>
-### [Gemini Ultra $100/mo 争议推文爆点准备](https://x.com/udiWertheimer/status/2123550761460346974) ⭐️ 7.0/10
+### [美国机构 Q3 增持比特币](https://x.com/BitcoinMagazine/status/2123486939982569691) ⭐️ 7.0/10
 
-Udi Wertheimer 发文称每月 100 美元的 Gemini Ultra 是地球上最划算的 AI 订阅，不仅包含家庭共享额度、全员免费 YouTube Premium，还有 Gemini 4 neon 模型，直言 ChatGPT 毫无付费价值。这种把高价 AI 订阅包装成“薅羊毛省钱攻略”的反差感直接拉满，瞬间引发对 AI 订阅性价比的激烈争论。
+美国投资机构在第三季度净买入 49,229 枚 BTC，持仓总数飙升至创纪录的 356,491 枚，价值约 297.8 亿美元。华尔街机构正在悄悄吞噬散户的筹码，而大多数人还在观望。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「一图胜千言与推文初稿」** 【梗图脚本】
-采用经典“特洛伊木马 / 买送逻辑”对比图：外层标签写着“$100/mo AI 订阅”，内部弹出的不是代码，而是“全家无广告 YouTube”与“免费 AI 额度”，底部小字标注：ChatGPT 哭晕在厕所。
+**「梗图与推文脚本」** 一图胜千言·梗图脚本：
+\- 格式：经典水槽漏水/大鲸鱼吞小鱼的对比梗，或者用一个两格对比图。
+\- 图片标签：左侧标 &quot;Retail panicking&quot;（散户恐慌），右侧标 &quot;Wall St stacking 356k BTC&quot;（华尔街囤积 35.6 万枚比特币）。
 
-【极简英文推文初稿】
-$100/mo ai is actually a family bundle.
+极简英文推文初稿：
+\- 推文：wall street is eating your bitcoin.
+\- 首评互动问题：are you buying from them or selling to them?
 
-【对立式首评互动】
-Who&\#x27;s actually paying $100 for this, just for YouTube?
+社区神评槽点：
+\- 暂无直接社区评论，但核心槽点指向：散户还在为波动焦虑，机构已经把筹码锁死在金库里。
 
-**标签**: `#AI`, `#Gemini`, `#ChatGPT`, `#Hot Take`, `#Pricing`
+**标签**: `#bitcoin`, `#crypto`, `#institutions`, `#market-data`, `#galaxy-research`
 
 ---
 
 <a id="item-ai-creator-25"></a>
-### [Gemini 霸榜 Scale 榜单](https://www.reddit.com/r/singularity/comments/1y0jny4/gemini_neon_carbon_and_hydrogen_are_now_top_3_on/) ⭐️ 7.0/10
+### [Gemini 4 Neon 语义缩放交互](https://x.com/illscience/status/2123565303384932712) ⭐️ 7.0/10
 
-Gemini 的三个神秘新变体（Neon、Carbon、Hydrogen）直接屠榜，包揽了 Scale AI 旗下“人类第六感”排行榜（Humanity&\#x27;s Sixth Sense）的前三名。这种以元素命名的代号不仅逼格拉满，更直接把整个 AI 测评圈卷到了新高度，让人忍不住想问：这回基准测试还能撑几个月？
+开发者用 Gemini 4 Neon 一气呵成做出了一个叫“语义缩放（semantic zoom）”的新交互——双指捏合直接控制文字颗粒度。AI 辅助前端整活的速度已经快到让人有点脊背发凉了。
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「一图胜千言·梗图脚本与推文」** 【梗图脚本】：使用经典的 3 步领奖台（Podium）格式。第一名、第二名、第三名分别贴上标签：\[Neon\]、\[Carbon\]、\[Hydrogen\]，领奖台下方站着一个崩溃的旧测试基准（Benchmark）。
-【极简英文推文初稿】：
-gemini elements are speedrunning benchmarks
-【极简第一条回复（引发争论）】：
-how long until this benchmark gets saturated too?
+**「推文与梗图筹备」** 【梗图脚本】
+采用对比/进化格式：上方标注 &quot;Traditional UI: 50 settings menus&quot;，下方标注 &quot;Gemini 4 Neon: pinch to change reality&quot;。
 
-**「社区神评槽点」** 社区里的老哥们已经开始玩梗了，不仅调侃这个新榜单“可能在这个测试上还能活两个月”，还爆料说连代替 Carbon 的下一代“Krypton（氪星）”已经在路上了。
+【极简英文推文初稿】
+pinch to change the prose.
 
-**标签**: `#AI`, `#Gemini`, `#Benchmarks`, `#Google`, `#LLM`
+【两极分化首评互动】
+ui designers, are we obsolete yet?
+
+**标签**: `#AI`, `#Gemini`, `#UX`, `#WebDev`, `#Tech`
 
 ---
 
 <a id="item-ai-creator-26"></a>
-### [Grok 市场周期灵魂拷问](https://x.com/LIsabella_o/status/2123560771162677511) ⭐️ 6.0/10
+### [X 平台爆款推文备忘录：AI 中学神曲讽刺](https://x.com/nicovelvets/status/2123564922168901978) ⭐️ 7.0/10
 
-博主直接艾特 AI 大模型 Grok，要求其“诚实地”评价当前加密货币市场正处于周期的哪一个阶段。这种将宏大且充满焦虑的市场信仰交给 AI 来审判的动作，精准戳中了全体币圈人既想算命又怕听实话的矛盾心理。
+精准讽刺互联网上盲目追捧中学生制作的 AI 抖音低质口水歌（AI slop music）的荒诞现象，用极度不屑的语气戳破当代年轻亚文化的虚无与跟风。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「一图胜千言·梗图脚本」** 使用经典的小丑化妆或“恐慌与贪婪指数”对比图。图内极简标注：左侧为“问 Grok 之前的你（满仓信仰）”，右侧为“Grok 给出真实答复后的你（直接破防）”。
+**「一图胜千言·梗图脚本与推文初稿」** 【梗图视觉】采用“两极分化”对比：左边是 90 年代严肃的音乐创作室，右边是一个小学生一边写作业一边用手机生成 AI 垃圾音乐，配文标签：左边 &\#x27;Artists&\#x27;，右边 &\#x27;The Industry&\#x27;。
 
-**「极简英文推文初稿」** 英文推文：ask grok the truth.
-首评互动：what did grok actually say to you?
+【英文推文初稿】
+stanning middle schoolers making ai slop
 
-**标签**: `#crypto`, `#grok`, `#market cycle`, `#ai`
+【两极分化首转回复】
+what was the last actual good song you heard on your feed?
+
+**标签**: `#AI`, `#TikTok`, `#Culture`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-27"></a>
-### [S&amp;P 500 6 日连跌与 6 万亿美元蒸发](https://x.com/DustyBC/status/2123526729566499219) ⭐️ 6.0/10
+### [Gemini 4 Neon 登顶 RSI 指数](https://x.com/ValsAI/status/2123537061739450618) ⭐️ 7.0/10
 
-标普 500 指数遭遇连续 6 个交易日下跌，自 10 月高点以来累计蒸发约 6 万亿美元市值，纳斯达克 100 指数也从历史高位回撤 15%。宏观市场瞬间从狂热转向恐慌，经典的流动性收割大戏再次上演。
+Google 最新模型 Gemini 4 Neon 在 RSI 指数上冲到第 4 名，直接超越前代 Gemini 4 Argon 3.8 分，把 OpenAI 甩在身后。Google 两个月内的狂飙突进，让大模型格局再次洗牌。
 
-rss · X Viral Top 20 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「时效与热度背景」** 美股连续暴跌与宏观资产大幅回撤正直接冲击全球风险资产情绪，加密市场与传统金融的联动性再次成为热议焦点。
+**「推文与梗图策略」** 一图胜千言·梗图脚本：采用两格对比，左边标注「OpenAI」，右边标注「Google \(Gemini 4 Neon\)」，中间用上升箭头和「\#4」标签。极简英文推文初稿：Gemini 4 Neon just flipped OpenAI. 互动提问：is openai officially cooked?
 
-**「梗图脚本与英文推文」** 【梗图脚本】
-\- 视觉形式：经典对比梗图 \(Before vs. After\)
-\- 左侧标签：October Peak \($6T Rich\)
-\- 右侧标签：6 Days Later \(It&\#x27;s gone\)
-
-【极简英文推文初稿】
-\- 纯推文：six days later, six trillion gone.
-\- 互动首评：buying the dip or crying yet?
-
-**标签**: `#macro`, `#stockmarket`, `#crypto`, `#economy`
+**标签**: `#AI`, `#Google`, `#OpenAI`, `#Benchmarks`
 
 ---
 
 <a id="item-ai-creator-28"></a>
-### [2013 年 Tumblr 赛博 nostalgia 与纯手工审美的回归](https://www.reddit.com/r/antiai/comments/1y101x0/who_else_remembers_2013_tumblr_and_instagram/) ⭐️ 6.0/10
+### [ChatGPT 移动端设计引发热议](https://x.com/blueemi99/status/2123560038908452968) ⭐️ 5.0/10
 
-当全网被流水线 AI 生成的无脑图片轰炸时，Reddit 网友集体团建怀念 2013 年 Tumblr 与 Instagram 上那种糊成渣、靠纯人工混剪和滤镜堆出来的“粗糙人类智慧”。这种巨大的时代反差瞬间戳中了厌倦 AI 平庸感的人群。
+OpenAI 最新 ChatGPT 移动端 UI 获得大量赞美，引发用户对硅谷顶级产品设计能力的热烈讨论。
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · X Viral Top 20 · 11月20日 19:16
 
-**「一图胜千言·梗图脚本」** 使用对比图（2x2 或左右分屏）。左边标签：&\#x27;2013 Tumblr Edit \(Pure Human Soul &amp; 1000x Compressed\)&\#x27;；右边标签：&\#x27;2026 AI Prompt \(Zero Effort &amp; Soulless\)&\#x27;。
+**「极简英文推文与互动」** 推文初稿: openai designers don&\#x27;t miss
+第一条引战回复: are you praising the ui or just the logo?
 
-**「极简英文推文初稿」** 推文初稿: we traded human cringe for ai slop
-第一条互动回复: would you trade it back for 2013 tumblr edits?
-
-**「社区神评槽点」** 评论区神吐槽：“no AI could ever recreate this”配上一个 AI 头像，讽刺感拉满；还有人翻出当年伴随着电音 Nirvana 混音的绝版非主流头像，引来大批 90 后集体泪崩。
-
-**标签**: `#AI`, `#Tumblr`, `#Nostalgia`, `#Community`, `#Culture`
+**标签**: `#ai`, `#openai`, `#chatgpt`, `#mobile`
 
 ---
 
 <a id="item-ai-creator-29"></a>
-### [AI 面试荒诞讽刺](https://www.reddit.com/r/antiai/comments/1y0t5th/im_starting_to_feel_insulted/) ⭐️ 6.0/10
+### [反 AI 艺术策略法律有效性讨论](https://www.reddit.com/r/antiai/comments/1y13ovs/legal_viability_of_this_antiai_policy/) ⭐️ 5.0/10
 
-英语家教面试被问到一个“极其恐怖的假设”：如果 AI 打分系统崩溃，你如何在 5 小时内批改完 80 份小学生作业？候选人当场震惊：那是 80 个小学生、每人两句话共约 2000 个字，任何一个正常人类如果 5 小时连这点字都看不完早就被开除了。大厂和教育机构对 AI 的盲目依赖已经彻底沦为职场笑话。
+画师在社交媒体上发布“反 AI 抓取协议”试图阻止作品被纳入数据集，引发社区对其法律有效性的激烈争论。版权保护与 AI 抓取的冲突正把创作者逼向各种自救实验。
 
-rss · Reddit Viral Top 10 · 11月20日 14:25
+rss · Reddit Viral Top 10 · 11月20日 19:16
 
-**「为什么现在值得发」** 完美戳中当前互联网对“万物皆可 AI”的审美疲劳与反智风气。人们已经厌倦了连写两句话邮件、读几行字都要找 AI 代劳的职场废柴现象。
-
-**「一图胜千言与推文初稿」** Meme 视觉脚本：左边是“15 年前的老师：1 小时批改完 30 篇作文”，右边是“2026 年的 AI 专家：看到两句话小学生作业吓得直接报警求助”。图片文字标签：&quot;80 sentences = 5 hours?&quot;。
-
+**「推文与梗图筹备」** 梗图脚本：使用“把锁挂在栅栏上”的荒诞对比图。标签 1：&\#x27;My Art Policy&\#x27;；标签 2：&\#x27;AI Scraper: Anyway&\#x27;。
 极简英文推文初稿：
-wonder how these people wipe their own asses without chatgpt
+policy won&\#x27;t stop the crawler
+评论区钓鱼互动：
+Do text-based copyright warnings actually stop any scrapers?
 
-极具争议的第一条回复：
-is basic literacy officially dead in corporate America?
-
-**「社区神评槽点」** “把这 80 份作业复制粘贴进 AI 引擎再看结果花的时间，比你亲自读完并写评语还要长。”
-
-**标签**: `#AI`, `#Workplace`, `#Education`, `#Automation`, `#Humor`
+**标签**: `#AI`, `#Copyright`, `#Artists`, `#Legal`
 
 ---
 
