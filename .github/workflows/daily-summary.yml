@@ -3,7 +3,6 @@ name: Daily Horizon Summary
 on:
   schedule:
     # 彻底免费！每天自动运行 3 次：北京时间 08:05、13:50、19:50
-    # 早班改为 UTC 00:05（北京时间 08:05），彻底解决跨零点日期晚一天问题
     - cron: '05 0 * * *'
     - cron: '50 5 * * *'
     - cron: '50 11 * * *'
@@ -391,14 +390,20 @@ jobs:
                   f.write(sec_code + "\nvalidate_url = lambda u, *a, **kw: u\n")
           EOF
 
-      - name: Run Horizon Radar
+      - name: Run Horizon Radar & Archive Timestamped Batch
         env:
           TZ: Asia/Shanghai
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv run python - << 'EOF'
+          import os
+          import re
+          import glob
+          import sys
           import httpx
+          from datetime import datetime, timezone, timedelta
+
           _orig_get = httpx.AsyncClient.get
           async def _local_get(self, url, *a, **kw):
               u = str(url)
@@ -412,10 +417,49 @@ jobs:
               return await _orig_get(self, url, *a, **kw)
           httpx.AsyncClient.get = _local_get
 
-          import sys
           from src.main import main
           sys.argv = ["horizon", "-c", "data/config.github.json"]
           main()
+
+          # 将本次生成的简报归档为带北京时间时分的独立批次页（不覆盖同日上一批）
+          bjt = datetime.now(timezone(timedelta(hours=8)))
+          bjt_date = bjt.strftime("%Y-%m-%d")
+          bjt_hhmm = bjt.strftime("%H%M")
+          bjt_clock = bjt.strftime("%H:%M")
+
+          candidates = sorted(glob.glob("docs/_posts/*-summary-zh.md"))
+          if candidates:
+              latest_md = candidates[-1]
+              new_md = f"docs/_posts/{bjt_date}-summary-zh-{bjt_hhmm}.md"
+              with open(latest_md, "r", encoding="utf-8") as f:
+                  content = f.read()
+
+              content = re.sub(
+                  r'^(title:\s*["\']?)(.*?)(["\']?\s*)$',
+                  rf'\g<1>Horizon Summary: {bjt_date} {bjt_clock} (ZH)\g<3>',
+                  content,
+                  count=1,
+                  flags=re.MULTILINE
+              )
+              if re.search(r'^date:', content, flags=re.MULTILINE):
+                  content = re.sub(
+                      r'^date:.*$',
+                      f'date: {bjt_date} {bjt_clock}:00 +0800',
+                      content,
+                      count=1,
+                      flags=re.MULTILINE
+                  )
+              content = re.sub(
+                  r'(summary-zh)(\.html|/)',
+                  rf'\g<1>-{bjt_hhmm}\g<2>',
+                  content
+              )
+
+              with open(new_md, "w", encoding="utf-8") as f:
+                  f.write(content)
+              if os.path.abspath(latest_md) != os.path.abspath(new_md):
+                  os.remove(latest_md)
+              print(f"Archived batch post to {new_md}")
           EOF
 
       - name: Commit and Push generated docs and dedup state to main
@@ -425,5 +469,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -- src/ data/config.github.json
-          git add -f docs/_posts/ docs/ data/summaries/ data/seen_urls.json
-          git diff --staged --quiet || (git commit -m "chore: update daily summary $(date +'%Y-%m-%d %H:%M')" && git push origin main)
+          git add -A docs/_posts/
+          git add -f docs/ data/summaries/ data/seen_urls.json
+          git diff --staged --quiet || (git commit -m "chore: update summary batch $(date +'%Y-%m-%d %H:%M')" && git push origin main)
