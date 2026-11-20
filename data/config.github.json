@@ -9,7 +9,7 @@
     "languages": ["zh"]
   },
   "collection": {
-    "time_window_hours": 48
+    "time_window_hours": 24
   },
   "sources": {
     "twitter": {
@@ -32,7 +32,7 @@
     },
     "rss": [
       {
-        "name": "X Viral Top 5",
+        "name": "X Viral Top 20",
         "url": "https://x-viral.local/feed.xml",
         "enabled": true,
         "category": "x-top",
@@ -51,19 +51,19 @@
     "profiles_dir": "profiles",
     "default_profile": "ai-creator",
     "profile_settings": {
-      "ai-creator": { "threshold": 5.5, "topic_dedup": true }
+      "ai-creator": { "threshold": 4.5, "topic_dedup": true }
     }
   },
   "digest": {
-    "max_items": 15,
+    "max_items": 30,
     "category_groups": {
       "x_viral": {
-        "name": "X (Twitter) 48h Top 5",
-        "limit": 5,
+        "name": "X (Twitter) 24h Top 20",
+        "limit": 20,
         "categories": ["x-top"]
       },
       "reddit_viral": {
-        "name": "Reddit 24h Top 10 (1000+ Votes & 100+ Comments)",
+        "name": "Reddit 24h Top 10",
         "limit": 10,
         "categories": ["reddit-top"]
       }
