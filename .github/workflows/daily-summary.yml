@@ -35,7 +35,7 @@ jobs:
           uv sync
           uv pip install -U Scweet
 
-      - name: Scrape X (24h 4-Channel Top-25) & Reddit (24h Top-13 + Top 5 Comments) with Dedup
+      - name: Scrape X (24h 4-Channel Top-30) & Reddit (24h Top-13 + Top 5 Comments) with Dedup & Safe Filter
         env:
           X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
         run: |
@@ -51,11 +51,22 @@ jobs:
           from datetime import datetime, timedelta, timezone
 
           # ==========================================
-          # 0. 方案 A：72 小时跨次历史去重配置
+          # 0. 方案 A：72 小时跨次历史去重 + 合规/防刷屏配置
           # ==========================================
           SEEN_FILE = "data/seen_urls.json"
           SEEN_TTL_HOURS = 72
           NOW_TS = time.time()
+
+          # 严禁政治与色情擦边词（守住 X 原创盈利计划合规红线）
+          BANNED_REGEX = re.compile(
+              r"\b(trump|biden|senate|congress|warren|fetterman|democrat|republican|election|troops|iran|gaza|israel|ukraine|nsfw|porn|hentai|nude|onlyfans|sexually)\b",
+              re.IGNORECASE
+          )
+
+          # 单事件/热词软上限（防止单一事件如 Anthropic IPO 占满 8 条）
+          TOPIC_BUCKETS = ["anthropic", "openai", "chatgpt", "nvidia", "gemini", "bitcoin", "btc", "solana", "ethereum", "grok"]
+          TOPIC_CAP = 3
+          topic_counts = {}
 
           def norm_url(u: str) -> str:
               return (u or "").split("?")[0].rstrip("/").lower()
@@ -75,35 +86,52 @@ jobs:
               with open(SEEN_FILE, "w", encoding="utf-8") as f:
                   json.dump(seen_dict, f, ensure_ascii=False, indent=2)
 
+          def get_topic_key(text: str) -> str:
+              low = (text or "").lower()
+              for kw in TOPIC_BUCKETS:
+                  if re.search(rf"\b{re.escape(kw)}\b", low):
+                      return "bitcoin" if kw == "btc" else ("openai" if kw == "chatgpt" else kw)
+              return ""
+
+          def can_take_topic(text: str) -> bool:
+              key = get_topic_key(text)
+              if not key:
+                  return True
+              if topic_counts.get(key, 0) >= TOPIC_CAP:
+                  return False
+              topic_counts[key] = topic_counts.get(key, 0) + 1
+              return True
+
           seen_urls = load_seen()
           print(f"Loaded {len(seen_urls)} seen URLs from last {SEEN_TTL_HOURS}h.")
 
           # ==========================================
-          # 1. X (Twitter) 4 通道配额配置（共取 25 候选 -> 页面稳出 20 条）
+          # 1. X (Twitter) 4 通道配额配置（共取 30 候选 -> 页面稳出 20 条）
           # ==========================================
+          X_NEG = "-giveaway -airdrop -trump -biden -senate -warren -fetterman -congress -politics -nsfw -porn"
           X_CHANNELS = [
               {
                   "name": "ai_breaking",
-                  "quota": 6,
-                  "query": "(Anthropic OR OpenAI OR DeepSeek OR Nvidia OR xAI OR \"Google AI\" OR Meta OR Claude OR ChatGPT OR Gemini) (IPO OR launch OR release OR raises OR billion OR acquires OR breaking OR announces OR model) min_faves:150 -filter:replies lang:en -giveaway -airdrop"
+                  "quota": 7,
+                  "query": f"(Anthropic OR OpenAI OR DeepSeek OR Nvidia OR xAI OR \"Google AI\" OR Meta OR Claude OR ChatGPT OR Gemini) (IPO OR launch OR release OR raises OR billion OR acquires OR breaking OR announces OR model) min_faves:150 -filter:replies lang:en {X_NEG}"
               },
               {
                   "name": "ai_viral",
-                  "quota": 8,
-                  "query": "(AI OR \"AI agent\" OR Claude OR Gemini OR ChatGPT OR OpenAI OR Anthropic OR Grok) min_faves:300 -filter:replies lang:en -giveaway -airdrop"
+                  "quota": 9,
+                  "query": f"(AI OR \"AI agent\" OR Claude OR Gemini OR ChatGPT OR OpenAI OR Anthropic OR Grok) min_faves:300 -filter:replies lang:en {X_NEG}"
               },
               {
                   "name": "crypto_breaking",
-                  "quota": 5,
-                  "query": "(Bitcoin OR BTC OR Ethereum OR Solana OR Coinbase OR Binance OR SEC OR crypto) (ETF OR IPO OR hack OR bill OR breaking OR rally OR crash OR billion) min_faves:150 -filter:replies lang:en -giveaway -airdrop"
+                  "quota": 7,
+                  "query": f"(Bitcoin OR BTC OR Ethereum OR Solana OR Coinbase OR Binance OR SEC OR crypto) (ETF OR IPO OR hack OR breaking OR rally OR crash OR billion OR approval) min_faves:150 -filter:replies lang:en {X_NEG}"
               },
               {
                   "name": "crypto_viral",
-                  "quota": 6,
-                  "query": "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:200 -filter:replies lang:en -giveaway -airdrop"
+                  "quota": 7,
+                  "query": f"(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:200 -filter:replies lang:en {X_NEG}"
               }
           ]
-          X_TOP_LIMIT = 25
+          X_TOP_LIMIT = 30
 
           # ==========================================
           # 2. Reddit 关键词 & 社区池配置（移除 LocalLLaMA，取 13 候选 -> 页面稳出 10 条）
@@ -133,10 +161,10 @@ jobs:
           now_utc = datetime.now(timezone.utc)
           since_date = (now_utc - timedelta(hours=24)).strftime("%Y-%m-%d")
           after_24h = int((now_utc - timedelta(hours=24)).timestamp())
-          ua = "horizon-viral-radar/3.0"
+          ua = "horizon-viral-radar/3.1"
 
           # ------------------------------------------
-          # A. 本地免费版 Scweet 抓取 X 24h 4 通道 Top 25（自动跳过历史已发）
+          # A. 本地免费版 Scweet 抓取 X 24h 4 通道 Top 30（去重 + 控单事件 + 去政治擦边）
           # ------------------------------------------
           x_entries = []
           x_token = os.environ.get("X_AUTH_TOKEN", "").strip()
@@ -151,7 +179,7 @@ jobs:
                   for ch in X_CHANNELS:
                       ch_items = []
                       try:
-                          tweets = sc.search(ch["query"], since=since_date, limit=60)
+                          tweets = sc.search(ch["query"], since=since_date, limit=70)
                           print(f"Scweet [{ch['name']}] returned {len(tweets or [])} tweets")
                           for tw in (tweets or []):
                               if not isinstance(tw, dict):
@@ -165,6 +193,8 @@ jobs:
                               n_url = norm_url(url)
                               if not url or not text or n_url in seen_urls or n_url in seen_x_run:
                                   continue
+                              if BANNED_REGEX.search(text):
+                                  continue
                               seen_x_run.add(n_url)
                               likes = int(t_obj.get("likes") or t_obj.get("favorite_count") or tw.get("likes") or 0)
                               rts = int(t_obj.get("retweets") or t_obj.get("retweet_count") or tw.get("retweets") or 0)
@@ -172,6 +202,7 @@ jobs:
                               short_t = text.replace("\n", " ")[:90]
                               ch_items.append((
                                   likes,
+                                  text,
                                   {
                                       "title": f"[X @{handle} | ❤️ {likes} 🔄 {rts}] {short_t}",
                                       "url": url,
@@ -187,23 +218,42 @@ jobs:
 
                   selected_x = []
                   for quota, items in channel_buckets:
-                      selected_x.extend(items[:quota])
-                      overflow_pool.extend(items[quota:])
+                      taken = 0
+                      for item in items:
+                          if taken < quota and can_take_topic(item[1]):
+                              selected_x.append(item)
+                              taken += 1
+                          else:
+                              overflow_pool.append(item)
 
                   if len(selected_x) < X_TOP_LIMIT and overflow_pool:
                       overflow_pool.sort(key=lambda x: x[0], reverse=True)
-                      selected_x.extend(overflow_pool[:(X_TOP_LIMIT - len(selected_x))])
+                      for item in overflow_pool:
+                          if len(selected_x) >= X_TOP_LIMIT:
+                              break
+                          if can_take_topic(item[1]):
+                              selected_x.append(item)
+
+                  # 若因主题上限略少于目标，从剩余高赞池里补足数量
+                  if len(selected_x) < X_TOP_LIMIT and overflow_pool:
+                      picked_urls = {norm_url(x[2]["url"]) for x in selected_x}
+                      for item in overflow_pool:
+                          if len(selected_x) >= X_TOP_LIMIT:
+                              break
+                          if norm_url(item[2]["url"]) not in picked_urls:
+                              selected_x.append(item)
+                              picked_urls.add(norm_url(item[2]["url"]))
 
                   selected_x.sort(key=lambda x: x[0], reverse=True)
-                  x_entries = [x[1] for x in selected_x[:X_TOP_LIMIT]]
-                  print(f"Selected Top {len(x_entries)} fresh X tweets (from {len(seen_x_run)} unseen candidates).")
+                  x_entries = [x[2] for x in selected_x[:X_TOP_LIMIT]]
+                  print(f"Selected Top {len(x_entries)} fresh X tweets (from {len(seen_x_run)} unseen safe candidates).")
               except Exception as e:
                   print("Scweet init/run error:", e)
           else:
               print("WARNING: X_AUTH_TOKEN secret is not set!")
 
           # ------------------------------------------
-          # B. 双路合流抓取 Reddit 24h 关键词 Top 13 (+ 前 5 神评，自动跳过历史已发)
+          # B. 双路合流抓取 Reddit 24h 关键词 Top 13 (+ 前 5 神评，去重 + 控单事件 + 去政治擦边)
           # ------------------------------------------
           kw_regex = re.compile(
               r"\b(" + "|".join(re.escape(k) for k in REDDIT_KEYWORDS) + r")\b",
@@ -230,7 +280,10 @@ jobs:
                   return
               title_raw = (d.get("title") or "").strip()
               selftext = (d.get("selftext") or "").strip()
-              if not kw_regex.search(title_raw + " " + selftext):
+              full_text = title_raw + " " + selftext
+              if BANNED_REGEX.search(full_text):
+                  return
+              if not kw_regex.search(full_text):
                   return
               seen_ids.add(pid)
               score = int(d.get("score") or 0)
@@ -308,11 +361,23 @@ jobs:
           backup_r.sort(key=lambda x: x[0], reverse=True)
           fallback_r.sort(key=lambda x: x[0], reverse=True)
 
-          chosen_r = [x[1] for x in strict_r[:REDDIT_TOP_LIMIT]]
+          all_r_candidates = [x[1] for x in strict_r] + [x[1] for x in backup_r] + [x[1] for x in fallback_r]
+          chosen_r = []
+          picked_r_ids = set()
+          for p in all_r_candidates:
+              if len(chosen_r) >= REDDIT_TOP_LIMIT:
+                  break
+              if can_take_topic(p["title"] + " " + p["selftext"]):
+                  chosen_r.append(p)
+                  picked_r_ids.add(p["id"])
+
           if len(chosen_r) < REDDIT_TOP_LIMIT:
-              chosen_r.extend([x[1] for x in backup_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
-          if len(chosen_r) < REDDIT_TOP_LIMIT:
-              chosen_r.extend([x[1] for x in fallback_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
+              for p in all_r_candidates:
+                  if len(chosen_r) >= REDDIT_TOP_LIMIT:
+                      break
+                  if p["id"] not in picked_r_ids:
+                      chosen_r.append(p)
+                      picked_r_ids.add(p["id"])
 
           reddit_entries = []
           for p in chosen_r:
@@ -331,7 +396,7 @@ jobs:
                       for cd in c_rows:
                           body = (cd.get("body") or "").strip().replace("\n", " ")
                           c_score = int(cd.get("score") or 0)
-                          if body and body not in ("[deleted]", "[removed]") and len(body) > 10:
+                          if body and body not in ("[deleted]", "[removed]") and len(body) > 10 and not BANNED_REGEX.search(body):
                               c_lines.append(f"- (⬆️ {c_score}) {body[:240]}")
                           if len(c_lines) >= COMMENTS_PER_POST:
                               break
