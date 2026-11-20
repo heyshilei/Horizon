@@ -2,8 +2,9 @@ name: Daily Horizon Summary
 
 on:
   schedule:
-    # 彻底免费！每天自动运行 3 次：北京时间 07:50、13:50、19:50
-    - cron: '50 23 * * *'
+    # 彻底免费！每天自动运行 3 次：北京时间 08:05、13:50、19:50
+    # 早班改为 UTC 00:05（北京时间 08:05），彻底解决跨零点日期晚一天问题
+    - cron: '05 0 * * *'
     - cron: '50 5 * * *'
     - cron: '50 11 * * *'
   workflow_dispatch:
@@ -35,7 +36,7 @@ jobs:
           uv sync
           uv pip install -U Scweet
 
-      - name: Scrape X (Free Scweet 48h Top-5 Likes) & Reddit (Keywords Top-10 + Top 5 Comments)
+      - name: Scrape X (24h 4-Channel Top-25) & Reddit (24h Top-13 + Top 5 Comments) with Dedup
         env:
           X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
         run: |
@@ -43,6 +44,7 @@ jobs:
           uv run python - << 'EOF'
           import os
           import re
+          import json
           import time
           import html
           import httpx
@@ -50,43 +52,92 @@ jobs:
           from datetime import datetime, timedelta, timezone
 
           # ==========================================
-          # 1. X (Twitter) 关键词列表 & 数量配置
+          # 0. 方案 A：72 小时跨次历史去重配置
           # ==========================================
-          X_QUERIES = [
-              "(AI OR \"AI agent\" OR Claude OR Gemini OR DeepSeek OR ChatGPT OR Grok) min_faves:30 -filter:replies lang:en -giveaway -airdrop",
-              "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:30 -filter:replies lang:en -giveaway -airdrop"
-          ]
-          X_TOP_LIMIT = 5
+          SEEN_FILE = "data/seen_urls.json"
+          SEEN_TTL_HOURS = 72
+          NOW_TS = time.time()
+
+          def norm_url(u: str) -> str:
+              return (u or "").split("?")[0].rstrip("/").lower()
+
+          def load_seen() -> dict:
+              if not os.path.exists(SEEN_FILE):
+                  return {}
+              try:
+                  with open(SEEN_FILE, "r", encoding="utf-8") as f:
+                      data = json.load(f)
+                  return {k: v for k, v in data.items() if NOW_TS - float(v) < SEEN_TTL_HOURS * 3600}
+              except Exception:
+                  return {}
+
+          def save_seen(seen_dict: dict):
+              os.makedirs(os.path.dirname(SEEN_FILE), exist_ok=True)
+              with open(SEEN_FILE, "w", encoding="utf-8") as f:
+                  json.dump(seen_dict, f, ensure_ascii=False, indent=2)
+
+          seen_urls = load_seen()
+          print(f"Loaded {len(seen_urls)} seen URLs from last {SEEN_TTL_HOURS}h.")
 
           # ==========================================
-          # 2. Reddit 关键词列表 & 数量配置
+          # 1. X (Twitter) 4 通道配额配置（共取 25 候选 -> 页面稳出 20 条）
+          # ==========================================
+          X_CHANNELS = [
+              {
+                  "name": "ai_breaking",
+                  "quota": 6,
+                  "query": "(Anthropic OR OpenAI OR DeepSeek OR Nvidia OR xAI OR \"Google AI\" OR Meta OR Claude OR ChatGPT OR Gemini) (IPO OR launch OR release OR raises OR billion OR acquires OR breaking OR announces OR model) min_faves:150 -filter:replies lang:en -giveaway -airdrop"
+              },
+              {
+                  "name": "ai_viral",
+                  "quota": 8,
+                  "query": "(AI OR \"AI agent\" OR Claude OR Gemini OR ChatGPT OR OpenAI OR Anthropic OR Grok) min_faves:300 -filter:replies lang:en -giveaway -airdrop"
+              },
+              {
+                  "name": "crypto_breaking",
+                  "quota": 5,
+                  "query": "(Bitcoin OR BTC OR Ethereum OR Solana OR Coinbase OR Binance OR SEC OR crypto) (ETF OR IPO OR hack OR bill OR breaking OR rally OR crash OR billion) min_faves:150 -filter:replies lang:en -giveaway -airdrop"
+              },
+              {
+                  "name": "crypto_viral",
+                  "quota": 6,
+                  "query": "(Bitcoin OR BTC OR Solana OR Ethereum OR crypto) min_faves:200 -filter:replies lang:en -giveaway -airdrop"
+              }
+          ]
+          X_TOP_LIMIT = 25
+
+          # ==========================================
+          # 2. Reddit 关键词 & 社区池配置（移除 LocalLLaMA，取 13 候选 -> 页面稳出 10 条）
           # ==========================================
           REDDIT_KEYWORDS = [
               "AI",
               "AI agent",
               "AI bubble",
+              "Anthropic",
               "Claude",
               "Gemini",
               "DeepSeek",
               "ChatGPT",
               "OpenAI",
+              "Nvidia",
+              "xAI",
+              "IPO",
               "Bitcoin",
               "BTC",
               "Solana",
               "Ethereum",
               "crypto"
           ]
-          REDDIT_TOP_LIMIT = 10
+          REDDIT_TOP_LIMIT = 13
           COMMENTS_PER_POST = 5
 
           now_utc = datetime.now(timezone.utc)
-          since_date = (now_utc - timedelta(hours=48)).strftime("%Y-%m-%d")
-          after_36h = int((now_utc - timedelta(hours=36)).timestamp())
-          after_72h = int((now_utc - timedelta(hours=72)).timestamp())
-          ua = "horizon-viral-radar/2.0"
+          since_date = (now_utc - timedelta(hours=24)).strftime("%Y-%m-%d")
+          after_24h = int((now_utc - timedelta(hours=24)).timestamp())
+          ua = "horizon-viral-radar/3.0"
 
           # ------------------------------------------
-          # A. 本地免费版 Scweet 抓取 X 48h 点赞最高 Top 5
+          # A. 本地免费版 Scweet 抓取 X 24h 4 通道 Top 25（自动跳过历史已发）
           # ------------------------------------------
           x_entries = []
           x_token = os.environ.get("X_AUTH_TOKEN", "").strip()
@@ -94,12 +145,15 @@ jobs:
               try:
                   from Scweet import Scweet
                   sc = Scweet(auth_token=x_token, manifest_scrape_on_init=True)
-                  seen_x = set()
-                  parsed_x = []
-                  for xq in X_QUERIES:
+                  seen_x_run = set()
+                  channel_buckets = []
+                  overflow_pool = []
+
+                  for ch in X_CHANNELS:
+                      ch_items = []
                       try:
-                          tweets = sc.search(xq, since=since_date, limit=50)
-                          print(f"Scweet query returned {len(tweets or [])} tweets")
+                          tweets = sc.search(ch["query"], since=since_date, limit=60)
+                          print(f"Scweet [{ch['name']}] returned {len(tweets or [])} tweets")
                           for tw in (tweets or []):
                               if not isinstance(tw, dict):
                                   continue
@@ -109,35 +163,48 @@ jobs:
                               handle = u_obj.get("screen_name") or u_obj.get("handle") or tw.get("username") or tw.get("screen_name") or "x_user"
                               url = t_obj.get("tweet_url") or tw.get("url") or (f"https://x.com/{handle}/status/{tid}" if tid else "")
                               text = (t_obj.get("text") or tw.get("full_text") or tw.get("text") or "").strip()
-                              if not url or not text or url in seen_x:
+                              n_url = norm_url(url)
+                              if not url or not text or n_url in seen_urls or n_url in seen_x_run:
                                   continue
-                              seen_x.add(url)
+                              seen_x_run.add(n_url)
                               likes = int(t_obj.get("likes") or t_obj.get("favorite_count") or tw.get("likes") or 0)
                               rts = int(t_obj.get("retweets") or t_obj.get("retweet_count") or tw.get("retweets") or 0)
                               comms = int(t_obj.get("comments") or t_obj.get("reply_count") or tw.get("comments") or 0)
                               short_t = text.replace("\n", " ")[:90]
-                              parsed_x.append((
+                              ch_items.append((
                                   likes,
                                   {
                                       "title": f"[X @{handle} | ❤️ {likes} 🔄 {rts}] {short_t}",
                                       "url": url,
-                                      "summary": f"Author: @{handle}\nMetrics: {likes} Likes, {rts} Retweets, {comms} Replies\n\nTweet Content:\n{text}",
+                                      "summary": f"Channel: {ch['name']} | Author: @{handle}\nMetrics: {likes} Likes, {rts} Retweets, {comms} Replies\n\nTweet Content:\n{text}",
                                       "updated": now_utc.isoformat()
                                   }
                               ))
                       except Exception as e:
-                          print("Scweet query warn:", e)
+                          print(f"Scweet [{ch['name']}] warn:", e)
+                      ch_items.sort(key=lambda x: x[0], reverse=True)
+                      channel_buckets.append((ch["quota"], ch_items))
                       time.sleep(2)
-                  parsed_x.sort(key=lambda x: x[0], reverse=True)
-                  x_entries = [x[1] for x in parsed_x[:X_TOP_LIMIT]]
-                  print(f"Selected Top {len(x_entries)} X tweets by likes (from {len(parsed_x)} unique).")
+
+                  selected_x = []
+                  for quota, items in channel_buckets:
+                      selected_x.extend(items[:quota])
+                      overflow_pool.extend(items[quota:])
+
+                  if len(selected_x) < X_TOP_LIMIT and overflow_pool:
+                      overflow_pool.sort(key=lambda x: x[0], reverse=True)
+                      selected_x.extend(overflow_pool[:(X_TOP_LIMIT - len(selected_x))])
+
+                  selected_x.sort(key=lambda x: x[0], reverse=True)
+                  x_entries = [x[1] for x in selected_x[:X_TOP_LIMIT]]
+                  print(f"Selected Top {len(x_entries)} fresh X tweets (from {len(seen_x_run)} unseen candidates).")
               except Exception as e:
                   print("Scweet init/run error:", e)
           else:
               print("WARNING: X_AUTH_TOKEN secret is not set!")
 
           # ------------------------------------------
-          # B. 双路合流抓取 Reddit 关键词 Top 10 (+ 前 5 神评)
+          # B. 双路合流抓取 Reddit 24h 关键词 Top 13 (+ 前 5 神评，自动跳过历史已发)
           # ------------------------------------------
           kw_regex = re.compile(
               r"\b(" + "|".join(re.escape(k) for k in REDDIT_KEYWORDS) + r")\b",
@@ -146,6 +213,7 @@ jobs:
           seen_ids = set()
           strict_r = []
           backup_r = []
+          fallback_r = []
 
           def process_post(d, min_ts):
               pid = str(d.get("id") or "").lower()
@@ -154,16 +222,20 @@ jobs:
               created_utc = int(d.get("created_utc") or 0)
               if created_utc < min_ts:
                   return
+              sub = d.get("subreddit") or "reddit"
+              if sub.lower() == "localllama":
+                  return
+              permalink = d.get("permalink") or f"/r/{sub}/comments/{pid}/"
+              url = "https://www.reddit.com" + permalink
+              if norm_url(url) in seen_urls:
+                  return
               title_raw = (d.get("title") or "").strip()
               selftext = (d.get("selftext") or "").strip()
               if not kw_regex.search(title_raw + " " + selftext):
                   return
               seen_ids.add(pid)
-              sub = d.get("subreddit") or "reddit"
               score = int(d.get("score") or 0)
               comms = int(d.get("num_comments") or 0)
-              permalink = d.get("permalink") or f"/r/{sub}/comments/{pid}/"
-              url = "https://www.reddit.com" + permalink
               viral_rank = score + comms * 5
               post_obj = {
                   "id": pid,
@@ -179,8 +251,11 @@ jobs:
                   strict_r.append((viral_rank, post_obj))
               elif score >= 100 and comms >= 20:
                   backup_r.append((viral_rank, post_obj))
+              elif score >= 30 and comms >= 5:
+                  fallback_r.append((viral_rank, post_obj))
 
           ddgs_queries = [
+              "Anthropic OR OpenAI OR Nvidia IPO OR breaking",
               "AI OR \"AI agent\" OR \"AI bubble\"",
               "Claude OR Gemini OR DeepSeek OR ChatGPT",
               "Bitcoin OR BTC OR Solana OR crypto"
@@ -208,33 +283,37 @@ jobs:
                   )
                   if r.status_code == 200:
                       for d in r.json().get("data", []):
-                          process_post(d, after_72h)
+                          process_post(d, after_24h)
               except Exception as e:
                   print("ArcticShift IDs warn:", e)
 
           live_pools = [
-              "technology", "wallstreetbets", "antiai", "SipsTea", "pcmasterrace", "LocalLLaMA",
-              "singularity", "SipsTea", "ClaudeAI", "memes", "OpenAI", "ChatGPT", "artificial", "CryptoCurrency", "Bitcoin"
+              "technology", "wallstreetbets", "stocks", "antiai", "SipsTea", "pcmasterrace",
+              "singularity", "ClaudeAI", "memes", "OpenAI", "ChatGPT", "artificial", "CryptoCurrency", "Bitcoin"
           ]
           for sub in live_pools:
               try:
                   r = httpx.get(
                       "https://arctic-shift.photon-reddit.com/api/posts/search",
-                      params={"subreddit": sub, "after": after_36h, "limit": 100},
+                      params={"subreddit": sub, "after": after_24h, "sort": "desc", "limit": "auto"},
                       headers={"User-Agent": ua},
-                      timeout=20.0
+                      timeout=25.0
                   )
                   if r.status_code == 200:
                       for d in r.json().get("data", []):
-                          process_post(d, after_36h)
+                          process_post(d, after_24h)
               except Exception as e:
                   print(f"ArcticShift r/{sub} warn:", e)
 
           strict_r.sort(key=lambda x: x[0], reverse=True)
           backup_r.sort(key=lambda x: x[0], reverse=True)
+          fallback_r.sort(key=lambda x: x[0], reverse=True)
+
           chosen_r = [x[1] for x in strict_r[:REDDIT_TOP_LIMIT]]
           if len(chosen_r) < REDDIT_TOP_LIMIT:
               chosen_r.extend([x[1] for x in backup_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
+          if len(chosen_r) < REDDIT_TOP_LIMIT:
+              chosen_r.extend([x[1] for x in fallback_r[:(REDDIT_TOP_LIMIT - len(chosen_r))]])
 
           reddit_entries = []
           for p in chosen_r:
@@ -268,10 +347,17 @@ jobs:
                   "summary": f"Subreddit: r/{p['sub']} | {p['score']} Upvotes, {p['comms']} Comments\n\nPost Content:\n{p['selftext']}{top_comments_text}",
                   "updated": p["updated"]
               })
-          print(f"Selected Top {len(reddit_entries)} Reddit posts (strict >=1000/100 count: {len(strict_r)}, backup: {len(backup_r)}).")
+          print(f"Selected Top {len(reddit_entries)} fresh Reddit posts (strict: {len(strict_r)}, backup: {len(backup_r)}, fallback: {len(fallback_r)}).")
 
           # ------------------------------------------
-          # C. 写入双平台本地 XML 供 Horizon 评分精炼
+          # C. 记录本轮入选链接至 data/seen_urls.json（供下次顺延去重）
+          # ------------------------------------------
+          for item in x_entries + reddit_entries:
+              seen_urls[norm_url(item["url"])] = NOW_TS
+          save_seen(seen_urls)
+
+          # ------------------------------------------
+          # D. 写入双平台本地 XML 供 Horizon 评分精炼
           # ------------------------------------------
           def write_atom(filepath, feed_title, entries):
               items_xml = []
@@ -294,7 +380,7 @@ jobs:
               with open(filepath, "w", encoding="utf-8") as f:
                   f.write(xml_str)
 
-          write_atom("/tmp/x_viral.xml", "X Viral Top 5", x_entries)
+          write_atom("/tmp/x_viral.xml", "X Viral Top 20", x_entries)
           write_atom("/tmp/reddit_viral.xml", "Reddit Viral Top 10", reddit_entries)
 
           sec_py = "src/url_security.py"
@@ -332,12 +418,12 @@ jobs:
           main()
           EOF
 
-      - name: Commit and Push generated docs to main
+      - name: Commit and Push generated docs and dedup state to main
         env:
           TZ: Asia/Shanghai
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -- src/ data/config.github.json
-          git add -f docs/_posts/ docs/ data/summaries/
+          git add -f docs/_posts/ docs/ data/summaries/ data/seen_urls.json
           git diff --staged --quiet || (git commit -m "chore: update daily summary $(date +'%Y-%m-%d %H:%M')" && git push origin main)
