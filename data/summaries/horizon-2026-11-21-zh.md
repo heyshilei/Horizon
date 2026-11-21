@@ -1,0 +1,236 @@
+# Horizon 每日速递 - 2026-11-21
+
+> 从 13 条内容中筛选出 10 条重要资讯。
+
+---
+
+**AI 创作者雷达**
+1. [Morgan Stanley &amp; Anthropic IPO Viral Pack](#item-ai-creator-1) ⭐️ 9.0/10
+2. [Anthropic 数学家声称证明黎曼猜想](#item-ai-creator-2) ⭐️ 8.0/10
+3. [Nvidia 股价创 2008 年以来最长连跌纪录](#item-ai-creator-3) ⭐️ 8.0/10
+4. [Everything Is Falling Apart, and AI&\#x27;s Fingerprints Are All Over It](#item-ai-creator-4) ⭐️ 8.0/10
+5. [黄仁勋极端辱骂员工丑闻](#item-ai-creator-5) ⭐️ 8.0/10
+6. [Nvidia 散户本周心电图](#item-ai-creator-6) ⭐️ 8.0/10
+7. [AI 智商鸿沟与赛博天书](#item-ai-creator-7) ⭐️ 8.0/10
+8. [Wall Street AI Trade Fading](#item-ai-creator-8) ⭐️ 8.0/10
+9. [Signal 阻止截屏以防 AI 扫描聊天记录](#item-ai-creator-9) ⭐️ 8.0/10
+10. [炒股亏损与心理健康危机](#item-ai-creator-10) ⭐️ 8.0/10
+
+---
+
+## AI 创作者雷达
+
+<a id="item-ai-creator-1"></a>
+### [Morgan Stanley &amp; Anthropic IPO Viral Pack](https://www.reddit.com/r/wallstreetbets/comments/1y1km0p/morgan_stanley_anthropics_ipo_bank_completely/) ⭐️ 9.0/10
+
+摩根士丹利作为 Anthropic 的 IPO 承销商，竟然在上市仅 2 个交易日内就光速清仓跑路。华尔街自己组的局，自己比谁跑得都快，讽刺拉满。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「极简推文与梗图脚本」** 【梗图脚本】
+三格对比：
+\1. 左格标着「Anthropic IPO Bank」稳坐钓鱼台；
+\2. 中格标着「Retail Buyers」疯狂冲进去接盘；
+\3. 右格标着「2 Days Later」大摩背着金库火箭逃生。
+
+【极简英文推文】
+\`ipo bank speedran exit.\`
+
+【互动回复问题】
+\`Who is actually holding the bag here?\`
+
+**「社区神评槽点」** 评论区直接锐评这结构跟庞氏骗局没差：90% 的收入来自 1% 的客户，而这 1% 的客户全都是靠 VC 输血的同行，靠补贴买彼此的产品。大摩一眼看出不对劲，开盘两秒直接开溜。
+
+**标签**: `#AI`, `#Anthropic`, `#IPO`, `#Finance`, `#WallStreetBets`
+
+---
+
+<a id="item-ai-creator-2"></a>
+### [Anthropic 数学家声称证明黎曼猜想](https://www.reddit.com/r/technology/comments/1y15wt9/anthropic_mathematician_claims_to_prove_riemann/) ⭐️ 8.0/10
+
+Anthropic 的数学家跳出来宣称自己破解了数学界最高皇冠“黎曼猜想”。全网的笑点瞬间变成了：他是不是在 Prompt 后面加了句“请确保不要犯错”？
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「梗图与推文脚本」** 【梗图脚本】：经典“加加减减”循环对照。左边：“人类花了两百年攻克数学难题”；右边：“AI 公司员工敲下回车：-p &\#x27;solve riemann hypothesis&\#x27;”。图内标签：Prompt engineering &gt; Mathematics。
+
+【英文推文初稿】：
+did you try prompting it harder
+
+【极化回复】：
+is this a breakthrough or just a very confident hallucination?
+
+**「社区神评槽点」** “没关系，他们在提示词末尾加上了‘请千万别出错’ 🤝”
+
+**标签**: `#AI`, `#Anthropic`, `#Mathematics`, `#Viral`
+
+---
+
+<a id="item-ai-creator-3"></a>
+### [Nvidia 股价创 2008 年以来最长连跌纪录](https://www.reddit.com/r/technology/comments/1y1d4r0/nvidia_stock_plunges_12_rides_longest_weekly/) ⭐️ 8.0/10
+
+Nvidia 股价暴跌 12%，遭遇自 2008 年金融危机以来最长的周线连跌纪录。作为 AI 时代的绝对霸主，这种历史级别的回调瞬间将市场情绪从狂热拉回恐慌，多空双方在社交媒体上彻底撕裂。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「推文与梗图筹备」** 一图胜千言·梗图脚本：使用经典两格对比（POV）——左边是 2008 年华尔街崩盘图表，右边是挂着 AI 牌子的服务器机房，标签分别为：&quot;2008: Lehman Brothers&quot; / &quot;2026: Jensen&\#x27;s leather jacket&quot;。
+
+极简英文推文初稿：
+nvidia longest losing streak since 2008. wild times.
+
+极具争议的第一条回复：
+are you buying the dip or panic selling?
+
+**「社区神评槽点」** 社区讨论指出，虽然连跌时间追溯到了 2008 年，但当前的股价水平其实只是回到了去年 7 月，且当年的宏观逻辑与现在的 AI 硬件周期完全不可同日而语。
+
+**标签**: `#nvidia`, `#stocks`, `#ai-hardware`, `#market-crash`, `#finance`
+
+---
+
+<a id="item-ai-creator-4"></a>
+### [Everything Is Falling Apart, and AI&\#x27;s Fingerprints Are All Over It](https://www.reddit.com/r/technology/comments/1y1ly0f/everything_is_falling_apart_and_ais_fingerprints/) ⭐️ 8.0/10
+
+公司和职场正陷入全面崩溃，而 AI 生成的无用垃圾（AI slop）就是罪魁祸首。人们用 AI 疯狂制造无人阅读的会议纪要和虚假行政泡沫，把整个现代经济变成了一个巨大的、互相发送 AI 垃圾邮件的荒诞循环。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「极简英文推文与梗图脚本」** 【梗图脚本】
+\- 格式：经典三格讽刺漫画
+\- 第一格标签：human: writes 1 email
+\- 第二格标签：ai: generates 50 pages of corporate garbage
+\- 第三格标签：everyone: drowning in slop, productivity drops to zero
+
+【极简英文推文初稿】
+we automated the fun parts away to drown in ai garbage
+
+【两极分化首转提问】
+do you actually read ai meeting notes or just pretend to?
+
+**「社区神评槽点」** “AI 输出简直永无止境，只需要一个人懒得要命地把所有东西扔给 AI，生成一堆完全错误的汇报，然后就要求大家立刻审核批准。”
+
+**标签**: `#AI`, `#workplace`, `#viral`, `#productivity`, `#controversy`
+
+---
+
+<a id="item-ai-creator-5"></a>
+### [黄仁勋极端辱骂员工丑闻](https://www.reddit.com/r/technology/comments/1y1k2lb/nyt_report_documents_exnvidia_ceo_jensen_huangs/) ⭐️ 8.0/10
+
+【核心爆点】纽约时报爆料英伟达 CEO 黄仁勋数十年间对员工进行极端言语霸凌，甚至威胁要“撕下下属的双臂并用残肢将其活活砸死”。
+
+【梗图脚本】采用“双标对比”或“疯狂老板”四格漫画形式。图片左侧标注：股价暴涨时的散户（跪谢黄总）；右侧标注：听到威胁时的实习生（瑟瑟发抖）。图片文字极简：左侧“AI savior”，右侧“psycho boss”。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「推文初稿与互动」** 【极简英文推文】
+stock goes up, arms come off
+
+【引战首评】
+would you let jensen huang rip your arms off for a million stock options?
+
+**「社区槽点」** 评论区焦点在于：只要英伟达股票和期权能让人暴富，哪怕老板在办公室化身疯狂杀手，员工似乎也觉得“只要钱到位，肢体无所谓”。
+
+**标签**: `#Nvidia`, `#Jensen Huang`, `#Tech Culture`, `#AI`, `#Drama`
+
+---
+
+<a id="item-ai-creator-6"></a>
+### [Nvidia 散户本周心电图](https://www.reddit.com/r/SipsTea/comments/1y1boe8/those_who_brought_nvidia_this_week/) ⭐️ 8.0/10
+
+散户本周冲进 Nvidia 股票惨遭大跌，亏掉的本金本可以用来直接买顶配显卡 RTX 5090，完美的韭菜自嘲局。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「极简英文推文与梗图」** 一图胜千言·梗图脚本：左边是哭泣的股票账户截图（标注：- $5,000），右边是闪闪发光的 5090 显卡（标注：or this）。
+
+极简英文推文初稿：
+could&\#x27;ve just bought the 5090.
+
+两极分化回复互动：
+Would you rather lose it in stocks or own the hardware?
+
+**「社区神评槽点」** “However, if you lose 5k in stocks you could&\#x27;ve also used that money to buy a 5090.”（亏五千刀买股票，不如直接买块 5090 显卡实在。）
+
+**标签**: `#nvidia`, `#stocks`, `#crypto`, `#memes`, `#market-volatility`
+
+---
+
+<a id="item-ai-creator-7"></a>
+### [AI 智商鸿沟与赛博天书](https://www.reddit.com/r/ChatGPT/comments/1y19i6e/is_this_what_the_beginning_of_the_ai_intelligence/) ⭐️ 8.0/10
+
+当 AI 的输出人类彻底看不懂时，这究竟是超越人类的‘智商鸿沟’，还是单纯的胡言乱语？这场围绕不可理解性（Incomprehensibility）的激烈争论，精准戳中了大众对 AI 既崇拜又焦虑的矛盾心理。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「极简英文推文与互动」** Draft 1: incomprehensible ai is just expensive gibberish.
+
+First-reply question: is an unreadable answer actually a solution?
+
+**「社区神评槽点」** “我们在一群只用 ChatGPT 改良过博洛尼亚肉酱面配方的人中间，讨论极其复杂的底层技术。”——讽刺拉满，直击伪技术爱好者痛点。
+
+**标签**: `#AI`, `#ChatGPT`, `#Intelligence Gap`, `#Viral Discussion`, `#Future of AI`
+
+---
+
+<a id="item-ai-creator-8"></a>
+### [Wall Street AI Trade Fading](https://www.reddit.com/r/technology/comments/1y1lj9n/wall_street_forecasters_are_starting_to_worry/) ⭐️ 8.0/10
+
+华尔街分析师开始焦虑：疯狂吸金的 AI 概念交易正走向强弩之末。当资本风向开始逆转，泡沫破裂前的狂欢还能持续多久？
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「推文与梗图筹备」** 【梗图脚本】两格对比：左边是华尔街分析师 2023 年高喊“AI 改变一切”的盲目狂热，右边是如今盯着财报瑟瑟发抖的惊恐脸。图片标签：左边 “AI will change the world\!”，右边 “wait, where&\#x27;s the revenue?”
+
+【极简英文推文初稿】
+wall street finally realizing the ai party is over
+
+【第一条高互动回复】
+recession or just another bagholder convention?
+
+**「社区神评槽点」** 社区高赞讽刺：这不仅仅是 AI 技术本身的问题，更是一场将底层 90%财富转移给顶层 2%的资本游戏，只要还能割，这场戏就还没完。
+
+**标签**: `#AI`, `#Wall Street`, `#Markets`, `#Tech Bubbles`, `#Viral`
+
+---
+
+<a id="item-ai-creator-9"></a>
+### [Signal 阻止截屏以防 AI 扫描聊天记录](https://www.reddit.com/r/technology/comments/1y16d1y/signal_is_blocking_screenshots_to_prevent_gemini/) ⭐️ 8.0/10
+
+Signal 直接封禁截屏功能，只为防止 Gemini 和 Siri 自动扫描你的私密聊天。当操作系统把屏幕当成自家矿区，最讽刺的是：保护隐私的唯一办法，竟然是把自己的聊天记录当成迪士尼付费电影一样防盗录。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「推文与梗图策略」** 一图胜千言·梗图脚本：经典两格对比。左图标着「Your Phone」，画面是一个开着灯随时准备偷窥的机器人；右图标着「Signal」，画面是把聊天内容打上迪士尼版权保护黑屏。英文标签：左图 &quot;Scanning your screen&quot;，右图 &quot;Nice try, AI&quot;。
+
+极简英文推文初稿：
+treating your own texts like a disney plus movie.
+
+极具争议的第一回复引战问题：
+Are you turning off Siri or just crying about it?
+
+**「社区神评槽点」** “简直像个大惊小怪的极客。” / “我烦透了被强行灌输 AI，干脆把 Siri 也关了。” / “想象一下未来的赛博朋克生活：保护隐私的唯一方式，就是把聊天记录当成迪士尼电影防翻拍。”
+
+**标签**: `#Signal`, `#AI Privacy`, `#Gemini`, `#Siri`, `#Surveillance`
+
+---
+
+<a id="item-ai-creator-10"></a>
+### [炒股亏损与心理健康危机](https://www.reddit.com/r/stocks/comments/1y1ienx/no_amount_of_loss_is_worth_your_life/) ⭐️ 8.0/10
+
+AI 概念股暴跌引发严重网民心理危机，投资社区出现绝望情绪。核心反差在于：哪怕投资清零、人生重开，也绝对比为了一个不确定的盘面搭上命要强得多。
+
+rss · Reddit Viral Top 10 · 11月21日 06:12
+
+**「梗图与推文脚本」** 【梗图脚本】两格对比。左图：“投资组合跌到 0”；右图：“还能继续吃麦当劳双层汉堡”。标签：Portfolio / Still Alive。
+
+【英文推文初稿】
+portfolio is zero. you are still breathing. win.
+
+【高互动回复提问】
+what&\#x27;s your worst bag right now?
+
+**「社区神评槽点」** 评论区呈现两极分化：有人痛斥大盘闪崩带来的真实血腥割肉与惨烈损失，也有人冷嘲热讽让人把钱塞回床底下，直言扛不住波动就别来玩市场。
+
+**标签**: `#stocks`, `#ai`, `#marketcrash`, `#trading`, `#mentalhealth`
+
+---
+
