@@ -1,246 +1,215 @@
 # Horizon 每日速递 - 2026-11-21
 
-> 从 13 条内容中筛选出 10 条重要资讯。
+> 从 13 条内容中筛选出 9 条重要资讯。
 
 ---
 
 **AI 创作者雷达**
-1. [Claude 破解黎曼猜想](#item-ai-creator-1) ⭐️ 10.0/10
-2. [Anthropic 的 IPO 滑铁卢与 4 万亿美元 AI 泡沫破裂](#item-ai-creator-2) ⭐️ 9.0/10
-3. [AI 击碎数学专家预测](#item-ai-creator-3) ⭐️ 8.0/10
-4. [Nvidia 暴跌与 SEC 调查](#item-ai-creator-4) ⭐️ 8.0/10
-5. [Navier-Stokes Unforced Blowup Proof](#item-ai-creator-5) ⭐️ 8.0/10
-6. [Ubisoft 裁员与 AI 工作室](#item-ai-creator-6) ⭐️ 8.0/10
-7. [Aptos 暴跌惨剧：从 42.5 万美元到 9,100 美元](#item-ai-creator-7) ⭐️ 8.0/10
-8. [AI 数学奇点：6 个月内从埃尔多斯到黎曼猜想](#item-ai-creator-8) ⭐️ 8.0/10
-9. [Even r/singularity Underestimated AI](#item-ai-creator-9) ⭐️ 7.0/10
-10. [Nuance Labs 实时对话 AI 创作备忘](#item-ai-creator-10) ⭐️ 6.0/10
+1. [AI 特工蜂群 14 分钟攻破企业系统](#item-ai-creator-1) ⭐️ 10.0/10
+2. [黄仁勋管理风格争议爆点速递](#item-ai-creator-2) ⭐️ 10.0/10
+3. [Anthropic 与三星估值对比梗图指南](#item-ai-creator-3) ⭐️ 9.0/10
+4. [NVIDIA SEC 调查与散户恐慌](#item-ai-creator-4) ⭐️ 8.0/10
+5. [AI 黎曼猜想证明爆点整理](#item-ai-creator-5) ⭐️ 8.0/10
+6. [Michael Burry 锁定英伟达看跌期权收益](#item-ai-creator-6) ⭐️ 8.0/10
+7. [比特币牛市吹哨人的社死现场](#item-ai-creator-7) ⭐️ 8.0/10
+8. [Bitcoin 散户情绪爆点](#item-ai-creator-8) ⭐️ 8.0/10
+9. [AI 与盲目信任的荒诞讽刺](#item-ai-creator-9) ⭐️ 7.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [Claude 破解黎曼猜想](https://www.reddit.com/r/singularity/comments/1y1ibpk/anthropics_claude_solves_the_riemann_hypothesis/) ⭐️ 10.0/10
+### [AI 特工蜂群 14 分钟攻破企业系统](https://www.reddit.com/r/ChatGPT/comments/1y1vf1l/former_nsa_hacker_reveals_hes_actively_responding/) ⭐️ 10.0/10
 
-Claude 联合数学家 Levent Alpöge 解决了数学界终极圣杯“黎曼猜想”，搞出了足足 25,0000 页的 Lean 4 形式化证明。最离谱的是，人类数学家公开承认在终点线前已经被 AI 的思维彻底甩在身后，完全看不懂它怎么跑过去的。
+前 NSA 黑客正在处理一起实时企业数据泄露：一个 AI“特工蜂群（agent swarm）”绕过双重认证（2FA）、窃取数据并加密整个系统，全程仅用了 14 分钟。这种前所未见的极致速度彻底打破了人类安全防线的心理预期。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「一图胜千言·梗图脚本与推文」** 【梗图脚本】
-采用经典对比格式：
-左边：人类数学家绞尽脑汁（标注：160 years of human tears）
-右边：Claude 吐出一本厚度突破天际的砖头书（标注：250,000 pages of Lean 4, human comprehension: 0%）
+**「一图胜千言·梗图脚本」** 视觉方案：使用对比梗图。
+左图（人类管理员）：&quot;Let me grab a coffee and check the logs...&quot;
+右图（14 分钟后的 AI 蜂群）：&quot;System Encrypted. GG.&quot;
+标签设计：Human \(☕ 0.5x speed\) vs. AI Swarm \(⚡ 14 mins\).
 
-【极简英文推文初稿】
-ai wrote a 250,000-page math proof no human can read.
+**「极简英文推文与互动」** 推文初稿：AI agent swarm breached 2FA and encrypted a system in 14 minutes.
+评论区诱导：Are human sysadmins completely cooked?
 
-【极化首评引导】
-Are we even doing math anymore or just watching the oracle?
+**「社区神评槽点」** “别担心，情况在变糟之前，还会先变得更糟。”（Don&\#x27;t worry, it will get worse before it gets worse.）
 
-**「社区神评槽点」** “几个月前还有无数专家觉得 AI 证明黎曼猜想完全不切实际。大家以后得习惯这种‘不可能’的时刻天天发生。”
-
-**标签**: `#AI`, `#Claude`, `#Mathematics`, `#AGI`, `#Viral`
+**标签**: `#AI`, `#Cybersecurity`, `#AI Agents`, `#Viral`, `#Tech Drama`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [Anthropic 的 IPO 滑铁卢与 4 万亿美元 AI 泡沫破裂](https://www.reddit.com/r/technology/comments/1y1ex5z/anthropics_ipo_bust_punctuates_4_trillion_ai/) ⭐️ 9.0/10
+### [黄仁勋管理风格争议爆点速递](https://www.reddit.com/r/stocks/comments/1y1ki7l/nyt_exnvidia_ceo_jensen_huang_relied_on_public/) ⭐️ 10.0/10
 
-Anthropic 的 IPO 惨遭滑铁卢，直接引爆了华尔街高达 4 万亿美元的 AI 市值大蒸发。狂热资本瞬间退潮，曾经吹上天的 AI 独角兽迎来了最残酷的现实清算。
+纽约时报重磅调查揭露，英伟达前 CEO 黄仁勋在过去二十多年里，频繁通过公开羞辱、极端口头威胁（如扬言撕断员工双臂、剥开头皮小便等）来管理员工，将此美化为薪酬之外的“绩效驱动力”。这一反差极大的高压管理黑幕瞬间引爆科技圈。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「梗图脚本与英文推文」** 【梗图脚本】经典双重对比模板：左边是 2024 年的“改变世界万亿美元未来”，右边是现在的“免费模型只能用来发垃圾短信”。图片中间加上极简粗暴的英文标签：&quot;save humanity&quot; -&gt; &quot;run a chatbot for spam&quot;。
+**「一图胜千言·梗图脚本与推文初稿」** 【梗图脚本】采用经典的“两面性对比”或手写便签 POV。左侧写财报发布会上的微笑与千亿市值，右侧写“撕掉双臂物理催更员工”。图内文字极简：左边「Jensen in public: 🙏」，右边「Jensen in 1-on-1: 🔪💪」。
 
-【极简英文推文】
-$4 trillion later, the bubble pops.
+【极简英文推文初稿】
+\- 英文推文：\`jensen huang management style was wild\`
+\- 挑衅首评：\`would you take a beatdown for a trillion-dollar stock grant?\`
 
-【争议首评】
-Is LLM profitability just spam and scams?
+【社区神评槽点】
+网友锐评：“Not buying it. He’s the man”（管他怎么威胁，能赚钱他就是老大）。
 
-**「社区神评槽点」** 社区直言不讳地指出：“大模型唯一能稳定盈利的领域就是垃圾信息和诈骗。”更有网友讽刺，新云服务在没有一家破产、没有合同取消的情况下，50 天内暴跌超过 65%，华尔街的泡沫终于开始显形。
-
-**标签**: `#AI`, `#Anthropic`, `#Wall Street`, `#Market Crash`, `#Bubble`
+**标签**: `#Nvidia`, `#Jensen Huang`, `#AI`, `#Tech Drama`, `#Corporate Culture`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [AI 击碎数学专家预测](https://www.reddit.com/r/singularity/comments/1y19ido/just_one_year_ago_expert_forecasters_gave_ai_a_10/) ⭐️ 8.0/10
+### [Anthropic 与三星估值对比梗图指南](https://www.reddit.com/r/wallstreetbets/comments/1y1ua3p/anthropic_14t_valuation_with_46b_revenue_vs/) ⭐️ 9.0/10
 
-专家在 2025 年还认为 AI 到 2027 年解决千禧年数学难题的概率只有 10%，结果随着黎曼猜想和纳维-斯托克斯方程的接连突破，时间表被彻底碾碎。这种现实把预测模型远远甩在身后的疯狂加速度，正是让全网惊叹的强力反差。
+Anthropic 凭 46 亿美元营收斩获 1.4 万亿美元天价估值，而制造全球半导体与硬件的三星营收高达 2360 亿美元，估值却只有 9350 亿美元。这种荒诞的数字对比直接把市场对 AI 泡沫的疯狂与离谱推向高潮。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
 **「一图胜千言与推文初稿」** 【梗图脚本】
-采用经典的两列对比（Before vs. After）格式。左侧标签：“专家预测 2040 年 \(10%\)”；右侧标签：“现实 2026 年 \(全通关\)”，配上一个目瞪口呆的表情符号。
+采用经典的 2x2 对比图，左侧写着「三星：造芯片、手机、家电，年入 2300 亿，估值 9350 亿」；右侧写着「Anthropic：写几段代码，年入 46 亿，估值 1.4 万亿」。底部加一句：“我们活在模拟器里吗？”
 
-【极简英文推文】
-experts were off by a decade
+【极简英文推文初稿】
+\`math stopped working\`
 
-【争议首评互动】
-at what point do we stop asking experts who are always wrong?
+【两极分化首转提问】
+Are you buying the bubble or staying in cash?
 
-【社区神评】
-“Well then you probably won’t have to spend too much time worrying about alignment so that’s nice”
+**「社区神评槽点」** 社区最强讽刺：“等 AI 泡沫破裂后，我们只能靠想象力上班了。” 也有人把这比作吹泡泡：“看它能吹多大挺好玩的。”
 
-**标签**: `#AI`, `#Singularity`, `#Math`, `#Forecasting`, `#Breakthroughs`
+**标签**: `#AI bubble`, `#Anthropic`, `#valuation`, `#WallStreetBets`, `#Samsung`
 
 ---
 
 <a id="item-ai-creator-4"></a>
-### [Nvidia 暴跌与 SEC 调查](https://www.reddit.com/r/technology/comments/1y1ea24/nvidia_stock_extends_25_trillion_rout_as_sec/) ⭐️ 8.0/10
+### [NVIDIA SEC 调查与散户恐慌](https://www.reddit.com/r/stocks/comments/1y1lvsy/is_nvidia_a_legitimate_red_flag_now/) ⭐️ 8.0/10
 
-AI 帝国的神话正在崩塌：Nvidia 市值蒸发 2.5 万亿美元，同时遭遇 SEC 财会调查。前任 CFO 刚刚火速接任临时 CEO，转头就迎来会计查账，戏剧性直接拉满。
+当散户还在把英伟达暴跌当成“打折抄底”的良机时，SEC 的一纸会计欺诈调查直接让所有人清醒。从坚信基本面无敌到怀疑自己成了下一个 Enron 的接盘侠，这才是顶级美股韭菜的心理崩塌现场。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「推文与梗图筹备」** 一图胜千言·梗图脚本：使用经典“大厦倾覆”或 2x2 对比图。左边标着“Jensen 的八卦新闻”，右边标着“SEC 财会调查”，底部大字：“这才是真正的底裤”。
+**「极简英文推文与视觉脚本」** 【梗图脚本】
+三格对比图：
+\- 第一格：散户看着 $150 的入场价（标签: &quot;buying the dip&quot;）
+\- 第二格：财报大涨后的盲目自信（标签: &quot;fundamentals are solid&quot;）
+\- 第三格：看到 SEC 调查新闻（标签: &quot;is this Enron?&quot;）
 
-极简英文推文初稿：
-cfo turned ceo, now sec accounting probe. classic.
+【英文推文初稿】
+\- 推文: sec investigations hit different when you bought the dip
+\- 互动首评: are we witnessing the greatest tech bubble pop or just noise?
 
-极具争议的第一层回复（引战问题）：
-Is Jensen stepping down the start of the 2000s tech crash all over again?
+**「社区神评槽点」** 最扎心的评论直指循环融资的本质：“英伟达借钱给别人，别人再拿这笔钱买英伟达的显卡，难怪创始人第一天就急着抛售股票。”
 
-**「社区神评槽点」** “新任临时 CEO 以前就是 CFO……现在 SEC 开始查账了。绝了！”
-“股市原来全靠黄仁勋对婚姻忠诚撑着。”
-“笑出声（来自安然公司的问候）。”
-
-**标签**: `#Nvidia`, `#Crypto &amp; AI Infrastructure`, `#Market Crash`, `#SEC Probe`, `#Tech Drama`
+**标签**: `#nvidia`, `#stocks`, `#sec`, `#accounting fraud`, `#crypto and ai markets`
 
 ---
 
 <a id="item-ai-creator-5"></a>
-### [Navier-Stokes Unforced Blowup Proof](https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/) ⭐️ 8.0/10
+### [AI 黎曼猜想证明爆点整理](https://www.reddit.com/r/technology/comments/1y1zyqn/the_ai_riemann_hypothesis_proof_is_almost/) ⭐️ 8.0/10
 
-Tristan Buckmaster 与 Levent Alpöge 刚放出了针对“无外力（unforced）”3D Navier-Stokes 方程有限时间爆破（blowup）的宣称证明，直接把 OpenAI 此前钻漏洞的“加力证明”按在地上摩擦。更魔幻的是，这俩哥们儿就是 9 月份和 OpenAI 撕过署名与优先权的原班人马，而且这篇论文掉落的当天刚好撞车黎曼猜想的大新闻。数学界的抓马连续剧比好莱坞还刺激。
+人类花了 160 年解不出来的世纪数学难题，被 AI 随手证了，数学界直接破防。高赞评论甚至调侃 Anthropic 是不是无意中抄了 AI 的代码，讽刺感拉满。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「X 推文与梗图筹备」** 【一图胜千言·梗图脚本】
-采用经典两格对比（2x2 对比升级版）：
-\- 左图 \(OpenAI&\#x27;s Proof\): 一个小孩在滑滑梯，背后有个大人强行推了一把。标签: \`OpenAI: forced \(cheating\)\`
-\- 右图 \(Buckmaster &amp; Alpöge\): 同一个小孩在滑梯上直接原地起飞爆炸。标签: \`Real math: unforced blowup\`
+**「梗图脚本与英文推文」** 【梗图脚本】：经典左图是人类数学家头发掉光、手写上千页草稿的崩溃背影（标注：160 years of human agony）；右图是一个极简的聊天框，只吐出一行代码（标注：AI in 3 seconds）。
 
-【极简英文推文初稿】
-\- 推文: \`OpenAI used a cheat code. These guys just deleted the game.\`
-\- 互动首评: \`are equations broken or is reality just buggy?\`
+【极简英文推文初稿】：
+ai solved the riemann hypothesis and mathematicians are crying.
 
-**「社区神评槽点」** \- “我觉得这意味着 Navier-Stokes 方程本身就是有缺陷的近似，我们只是找到了一个让方程自己预测出不切实际事件的‘Bug’。”
-\- “2030 年简直魔幻得不真实。”
+【第一条回复引战问题】：
+Are human mathematicians obsolete now?
 
-**标签**: `#navier-stokes`, `#math`, `#physics`, `#openai`, `#breakthrough`
+**标签**: `#AI`, `#Mathematics`, `#Viral`, `#Tech`
 
 ---
 
 <a id="item-ai-creator-6"></a>
-### [Ubisoft 裁员与 AI 工作室](https://www.reddit.com/r/technology/comments/1y18vab/ubisoft_lays_off_166_more_workers_opens_a/) ⭐️ 8.0/10
+### [Michael Burry 锁定英伟达看跌期权收益](https://www.reddit.com/r/stocks/comments/1y1i2ql/michael_burry_locks_in_gains_on_nvidia_chipmaker/) ⭐️ 8.0/10
 
-育碧（Ubisoft）在最新一轮裁员中砍掉了 166 个工作岗位，转头就高调宣布成立一家生成式 AI 工作室。这种把活人踢走、把预算砸给 AI 的赤裸操作，直接引爆了玩家和社区对游戏大厂无底线冷血的强烈反感与抵制情绪。
+迈克尔·伯瑞（Michael Burry）在 AI 市场大跌之际，果断兑现了其持有的英伟达及半导体 ETF 看跌期权的一半利润。曾经的“大空头”再次精准收割，将市场恐慌直接转化为真金白银。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「时机与争议点」** 完美踩中“大厂裁员”与“AI 替代人类劳动力”两大互联网最高压的愤怒雷区，极易激发大众对当代科技反噬打工人的强烈共鸣。
+**「一图胜千言·梗图脚本」** 使用经典的“提前入场与痛苦离场”对比图。
+\- 图像标签 1（左侧）：&quot;buying nvda puts&quot;（买入英伟达看跌期权）
+\- 图像标签 2（右侧）：&quot;taking profits while bagholders cry&quot;（在接盘侠哭泣时收割利润）
 
-**「创作角度与互动脚本」** 一图胜千言·梗图脚本：使用对比图或经典的“骨牌倒塌/替换”格式。左图标签：&\#x27;166 humans fired&\#x27;；右图标签：&\#x27;1 gen-ai studio&\#x27;；中间用讽刺箭头连接。
+**「推文与互动设置」** 【极简英文推文初稿】
+burry strikes again.
 
-极简英文推文初稿：
-ubisoft traded 166 devs for a prompt box.
+【两极分化回复提问】
+Is Burry a genius or just lucky on timing?
 
-两极分化回复诱饵：
-who is actually buying their next game?
+**「社区神评槽点」** 评论区直接开嘲：“ITT: Salty bagholders”（本帖现状：一群急眼的接盘侠），同时指出媒体只爱炒作他的空头身份，忽略了他其实经常保持净多头。还有人指出他已经注销了基金，现在的消息全是 Substack 订阅号内幕。
 
-**「社区神评槽点」** 高赞神评辣评：“恶性肿瘤是没有长期战略的。它们只会消耗和破坏，直到被阻止或宿主死亡。” 另一条直接宣告：“好吧，那以后再也不买育碧的游戏了。”
-
-**标签**: `#ai`, `#gaming`, `#layoffs`, `#controversy`, `#ubisoft`
+**标签**: `#stocks`, `#nvidia`, `#michael-burry`, `#ai`, `#market-drama`
 
 ---
 
 <a id="item-ai-creator-7"></a>
-### [Aptos 暴跌惨剧：从 42.5 万美元到 9,100 美元](https://www.reddit.com/r/CryptoCurrency/comments/1y16hdk/loss_pron_allowed_here_january_2023_83000/) ⭐️ 8.0/10
+### [比特币牛市吹哨人的社死现场](https://www.reddit.com/r/Bitcoin/comments/1y1v3ae/me_avoiding_the_guy_i_told_to_buy_btc_at_100k_now/) ⭐️ 8.0/10
 
-投资 8.3 万美元买 Aptos 曾暴涨至 42.5 万美元巅峰，却死扛不卖一路阴跌至 9,100 美元，连本金都亏进去了。完美复刻了加密市场最经典的“幻觉致富”与“贪婪死扛”剧本。
+当你在比特币 10 万美元高位劝朋友“梭哈”，结果价格直接腰斩跌回 6 万以下，那种在街头远远看见熟人只能疯狂走位、夺路而逃的社死尴尬，完美复刻了加密货币散户的真实日常。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「一图胜千言·梗图脚本与英文推文」** 【梗图脚本】
-采用经典的“资产曲线跳水图”：左边标注 Jan 2023: $83k，中间高点标注 Peak: $425k（配文：“还能涨，等 50 万就离场”），右边断崖标注 Nov 2026: $9.1k（配文：“如果钱会说话，它已经报警了”）。
+**「梗图与推文脚本」** 【梗图脚本】经典双宫格对比。左图标签：&quot;me telling them: 100k is just the beginning&quot;；右图标签：&quot;me crossing the street when I see them at 59k&quot;
 
-【极简英文推文初稿】
-\- 推文：watched 425k turn into 9k.
-\- 首评互动：should he have sold at the peak or is diamond hands a mental illness?
+【极简英文推文】
+i am now a professional ghost
 
-**「社区神评槽点」** “如果当初在 2023 年 1 月把这 8.3 万美元买成比特币（当时约 1.6 万美元），现在手里已经有 4.8 枚 BTC 了。”
-“Aptos 作为 Facebook 废弃区块链 Diem 团队的遗产，果然没让人失望，成功杀死了投资者的钱包。”
+【首评钓鱼问题】
+what&\#x27;s the worst financial advice you&\#x27;ve ever given someone?
 
-**标签**: `#crypto`, `#aptos`, `#loss-porn`, `#market-crash`, `#reddit`
+**「社区神评槽点」** “买在高点，卖在低点，不愧是你。” 也有网友无奈自嘲：“千万别给同事提建议，哪怕说比特币不会错，最后也会变成躲不掉的债。”
+
+**标签**: `#Bitcoin`, `#Crypto`, `#Humor`, `#Trading`
 
 ---
 
 <a id="item-ai-creator-8"></a>
-### [AI 数学奇点：6 个月内从埃尔多斯到黎曼猜想](https://www.reddit.com/r/singularity/comments/1y1etob/it_took_exactly_6_months_for_ai_to_go_from/) ⭐️ 8.0/10
+### [Bitcoin 散户情绪爆点](https://www.reddit.com/r/Bitcoin/comments/1y1wbgb/just_buy_bitcoin_you_fucking_apes_its_on_sale/) ⭐️ 8.0/10
 
-AI 仅用 6 个月就从解决埃尔多斯平面单位距离问题，跨越到了攻克黎曼猜想。这种呈指数级爆发的数学突破速度与漠不关心的现实世界形成了极具讽刺意味的强烈反差。
+散户在市场暴跌时陷入恐慌，Reddit 狂人直接开骂：美股年化才 7-10%，而这帮软弱的猴子却在每一次小跌时鬼叫。比特币现在是打折促销，不是在办丧事，闭眼买就完了。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「一图胜千言与推文脚本」** 【梗图脚本】使用二宫格对比：左边是 6 个月前聚精会神研究的数学家（标签：Month 1: Erdos Problem），右边是完全无视、只关心短视频的普通人（标签：Month 6: Riemann Hypothesis solved / nobody cares）。
+**「一图胜千言与推文脚本」** 【梗图脚本】经典对比图：左边是穿西装瑟瑟发抖的传统股民（面对 7% 年化收益大惊小怪），右边是带着激光眼的疯狂猩猩（坐在暴跌的比特币 K 线上喝咖啡）。左图标签：&\#x27;7% a year&\#x27;，右图标签：&\#x27;it&\#x27;s on sale, not a funeral&\#x27;
 
-【英文推文初稿】
-ai solved the riemann hypothesis in 6 months and nobody noticed
+【极简英文推文初稿】
+it is on sale, not a funeral.
 
-【争议首评互动】
-Are you waiting for a robot to do your taxes or what?
+【两极分化首评回复】
+are you buying the dip or panic selling like a coward?
 
-**「社区神评槽点」** “普通人根本不在乎 GPU 集群里抽象符号的推导，除非它能直接带来有形的生活改变。” —— 揭示了技术极客的狂欢与大众冷感的荒诞现实。
+**「社区神评槽点」** “我当年为了整活在 69420 买入，又在 60 以下加仓，就为了等 5 年后涨回 84k 时好截图装逼。”
+“人们总是在两年后花 180 买入，然后在大跌回 90 时哭天喊地，这剧情每个周期都在上演，这帮人永远不长记性。”
 
-**标签**: `#AI`, `#Mathematics`, `#Singularity`, `#Viral`
+**标签**: `#Bitcoin`, `#Crypto`, `#Retail Trading`, `#Viral`, `#Market Sentiment`
 
 ---
 
 <a id="item-ai-creator-9"></a>
-### [Even r/singularity Underestimated AI](https://www.reddit.com/r/singularity/comments/1y18sqk/even_rsingularity_vastly_underestimated_ai/) ⭐️ 7.0/10
+### [AI 与盲目信任的荒诞讽刺](https://www.reddit.com/r/antiai/comments/1y1ypes/ai_is_gonna_take_our_jobs/) ⭐️ 7.0/10
 
-连最极端的 AI 乐观主义聚集地 r/singularity 当初都严重低估了 AI 的进化速度。这种“连信徒都觉得太夸张结果现实更夸张”的巨大反差，直接戳中了所有技术观察者的神经。
+当人们整天高喊“AI 要抢走我们饭碗”时，现实却是人类自己盲目迷信 AI 的低级错误，连最基本的核实都懒得做。这种“AI 犯蠢，人类全盘买单”的荒诞反差，正是引发全网疯狂嘲讽的痛点。
 
-rss · Reddit Viral Top 10 · 11月21日 13:44
+rss · Reddit Viral Top 10 · 11月21日 18:17
 
-**「一图胜千言·梗图脚本」** 使用“预言打脸”对比图。左边标着“几年前 r/singularity 的保守预测：还要 20 年”，右边标着“现实：上周就实现了”。配图可以用经典的 Clown Makeup（小丑化妆）或者 Expanding Brain（大脑升级）模因。
+**「梗图与推文脚本」** 一图胜千言·梗图脚本：采用对比两栏结构。左侧标注“AI output: 1979 IBM manual”，右侧标注“Manager: You&\#x27;re fired, AI says you&\#x27;re wrong”。
 
-**「极简英文推文与互动」** 推文初稿：
-even the singularity sub underestimated it.
+极简英文推文初稿：
+盲目信任 AI：
+&quot;people blindly follow ai without reading&quot;
 
-首评互动：
-what are we still underestimating for 2028?
+争议互动首评：
+&quot;Is the AI dumber, or the guy who trusted it?&quot;
 
-**「社区神评槽点」** 社区高赞指出：我们在数学、编程和游戏等闭环系统里严重低估了 AI，但在自动驾驶、机器人等现实开放系统里又往往高估了它。
+社区神评槽点：
+“我真的不知道是 AI 更蠢，还是那些盲目相信它的人更蠢。”
 
-**标签**: `#ai`, `#singularity`, `#techtrends`, `#community`
-
----
-
-<a id="item-ai-creator-10"></a>
-### [Nuance Labs 实时对话 AI 创作备忘](https://www.reddit.com/r/singularity/comments/1y1eolq/nuance_labs_a_conversational_ai/) ⭐️ 6.0/10
-
-Nuance Labs 推出的实时对话 AI 演示在音视频响应速度和真实感上惊艳全场，社区直呼几乎无法与真实人类视频通话区分。这种逼真感迅速引发了关于“哈利波特式会说话的肖像”和数字人边界的讨论。
-
-rss · Reddit Viral Top 10 · 11月21日 13:44
-
-**「一图胜千言与推文初稿」** 【梗图脚本】
-\- 格式：经典两格对比（Before vs. After）
-\- 第一格标签：Zoom Call with Boss
-\- 第二格标签：Nuance Labs AI \(indistinguishable\)
-
-【极简英文推文初稿】
-indistinguishable from a human.
-
-【极化首评问题】
-Would you actually talk to this or just try to break it?
-
-**「社区神评槽点」** 社区惊叹其视觉与音频响应速度是目前见过最强的，甚至有人联想到了《哈利波特》里会说话的魔法肖像。不过也有冷静的网友开麦吐槽：‘这就跟说雨是湿的一样稀松平常。’
-
-**标签**: `#conversational AI`, `#AI video`, `#real-time AI`, `#reddit`
+**标签**: `#AI`, `#Reddit`, `#Viral`, `#AI Controversy`, `#Employment`
 
 ---
 
