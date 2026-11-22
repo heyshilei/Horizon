@@ -5,238 +5,217 @@
 ---
 
 **AI 创作者雷达**
-1. [黎曼猜想被证明并经机器形式化验证](#item-ai-creator-1) ⭐️ 10.0/10
-2. [Anthropic 研究员称人类将永久失业](#item-ai-creator-2) ⭐️ 9.0/10
-3. [Anthropic 拖欠记者版权费争议](#item-ai-creator-3) ⭐️ 8.0/10
-4. [Claude 协助证明数学难题](#item-ai-creator-4) ⭐️ 8.0/10
-5. [r/antiai 社区剧集：全网跨版封禁引发言论审查争议](#item-ai-creator-5) ⭐️ 8.0/10
-6. [Meta 员工被自家 AI 吓疯](#item-ai-creator-6) ⭐️ 8.0/10
-7. [AI 交易年底崩盘风向标](#item-ai-creator-7) ⭐️ 8.0/10
-8. [Japan&\#x27;s Aisin AI Chip](#item-ai-creator-8) ⭐️ 7.0/10
-9. [Alice Huang 间谍风暴与 Nvidia 舆论场](#item-ai-creator-9) ⭐️ 7.0/10
-10. [GPT-6 预测千年大奖难题](#item-ai-creator-10) ⭐️ 6.0/10
+1. [ECB finds $4.5 trillion in hidden AI debt](#item-ai-creator-1) ⭐️ 9.0/10
+2. [r/antiai 病毒式内容准备](#item-ai-creator-2) ⭐️ 8.0/10
+3. [AI 将取代所有工作的宏大叙事与现实骨感](#item-ai-creator-3) ⭐️ 8.0/10
+4. [DHS 高官因暗示 AI 引发系统崩溃被紧急撤下电视节目](#item-ai-creator-4) ⭐️ 8.0/10
+5. [Elon: AI industry facing severe funding shortage next year](#item-ai-creator-5) ⭐️ 8.0/10
+6. [AI Copilot 办公室洗脑研讨会吐槽](#item-ai-creator-6) ⭐️ 8.0/10
+7. [Situational Awareness 基金崩盘复盘](#item-ai-creator-7) ⭐️ 8.0/10
+8. [Kraken BTC/CAD 闪崩事件](#item-ai-creator-8) ⭐️ 8.0/10
+9. [Gemini 4 Neon 登顶 LiveBench](#item-ai-creator-9) ⭐️ 8.0/10
+10. [Agent AI AGI Moment](#item-ai-creator-10) ⭐️ 7.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [黎曼猜想被证明并经机器形式化验证](https://www.reddit.com/r/singularity/comments/1y21xyc/lean_and_mathlib_confirmed_that_alpoge_and/) ⭐️ 10.0/10
+### [ECB finds $4.5 trillion in hidden AI debt](https://www.reddit.com/r/wallstreetbets/comments/1y2r8ej/ecb_finds_45_trillion_in_hidden_ai_debt/) ⭐️ 9.0/10
 
-人类数学史上的终极圣杯之一——黎曼猜想，被 Levent Alpöge 联合 Claude 攻克，并通过了 1700 万行代码的 Lean 与 Mathlib 形式化机器验证。数学界的最高峰不再靠同行评议的肉眼盲审，而是直接让代码宣判死刑或生还。
+欧洲央行（ECB）最新报告称，AI 行业的隐性表外负债和承诺飙升至 4.5 万亿美元，比 2025 年激增 287%。这种把未来算力租赁和数据中心合同包装成抵押贷款的操作，像极了当年的次贷危机，直接戳破了“AI 巨头赚大钱”的美梦。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「一图胜千言·梗图脚本」** 视觉方案：使用“特洛伊木马 / 降维打击”对比图。左边标着“传统数学家卡了 160 年的草稿纸（满纸乱麻）”，右边标着“1700 万行 Lean 代码：已通过，无 Bug”。
-图内短标签：
-\- Left: 160 years of human tears
-\- Right: 17,000,000 lines of Lean: Verified.
+**「推文与梗图策略」** 一图胜千言·梗图脚本：使用经典的三段式对比或“冰山”梗图。水面上标着“AI Revenue（AI 营收）”，水面下巨大的冰山标着“$4.5T Off-balance-sheet AI Debt（4.5 万亿表外 AI 债务）”。
 
-**「极简英文推文与互动」** 推文初稿：
-riemann hypothesis solved, verified by code.
+极简英文推文初稿：
+4.5 trillion in hidden ai debt
 
-首转挑衅评论：
-still think ai can&\#x27;t do math?
+互动回复驱动：
+Are you buying puts or calling the top?
 
-**「社区神评槽点」** “不，这不是人类同行评议，这是被数学上 100% 严密的计算机程序事实核查的。”
+**「社区神评槽点」** “隐性债务”其实就是写在财报脚注里、被所有人假装看不见的惊天大雷。散户还在为虚假繁荣狂欢，华尔街和对冲基金早就把未来几年的卖身契当成优质资产抵押了。
 
-**标签**: `#AI`, `#Math`, `#Riemann Hypothesis`, `#Lean`, `#Viral`
+**标签**: `#AI`, `#Crypto`, `#WallStreetBets`, `#MarketCrash`, `#Bubble`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [Anthropic 研究员称人类将永久失业](https://www.reddit.com/r/antiai/comments/1y2g20o/pretty_much_all_humans_on_earth_will_become/) ⭐️ 9.0/10
+### [r/antiai 病毒式内容准备](https://www.reddit.com/r/antiai/comments/1y2qrmu/are_we_deadass/) ⭐️ 8.0/10
 
-Anthropic 研究员 Tao Lin 直言不讳：地球上几乎所有人类都将因 AI 彻底永久失业。这种把资本终极目标和人类生存直接对立的言论，瞬间点燃了反 AI 社区的恐慌与愤怒。
+反 AI 社区疯狂嘲讽某推特账号大肆吹嘘毫无逻辑的 AI 生成垃圾内容（slop），甚至连浮在海中央的 jet ski（水上摩托）这种一眼假的画面都敢拿来吹。人类艺术与 AI 废图的撕逼大战再次上演。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「一图胜千言·梗图脚本与推文初稿」** 梗图脚本：经典大厂高管微笑着把人类踢出办公大楼。图片标签：左侧标着“AI 降本增效”，右侧标着“所有人永久失业”。
+**「梗图脚本与英文推文」** 一图胜千言·梗图脚本：
+\- 格式：两格对比图（Before vs After / 预期与现实）
+\- 左图标签：&quot;AI bros in 5 hours&quot;，右图标签：&quot;floating jet ski in the middle of nowhere&quot;
 
 极简英文推文初稿：
-we built our own replacement
+\- 推文：&quot;floating jet ski in 2026? absolutely deadass.&quot;
+\- 评论区钓鱼提问：&quot;is this the future of art or just expensive trash?&quot;
 
-极具争议的第一条评论（用于引战）：
-if humans are 100% unemployable, who is left to buy their products?
+**「社区神评槽点」** 网友锐评：‘我不知道到底是谁对现状的误解更深。是你，还是那个觉得自己在 5 小时内克隆了 GTA 6 的家伙。’ 另一个槽点则是嘲笑对方在 2026 年居然还在用 NFT 头像。
 
-**「社区神评槽点」** 网友锐评：在资本主义的终极模型里，人类只是一个多余的成本；还有人放话：“如果真到那一步，人们会直接把数据中心全烧了。”
-
-**标签**: `#AI`, `#Employment`, `#Anthropic`, `#Viral`, `#Controversy`
+**标签**: `#AI`, `#Viral`, `#Reddit`, `#Culture War`, `#Memeable`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [Anthropic 拖欠记者版权费争议](https://www.reddit.com/r/antiai/comments/1y2l9jd/anthropic_still_hasnt_paid_back_journalists/) ⭐️ 8.0/10
+### [AI 将取代所有工作的宏大叙事与现实骨感](https://www.reddit.com/r/OpenAI/comments/1y2qvdf/ai_will_never_be_able_to_do_my_job/) ⭐️ 8.0/10
 
-Anthropic 至今仍未向记者支付任何版权费。AI 公司靠着大规模非法抓取数据起家，却一边标榜创新，一边装傻白嫖。
+“AI 永远无法替代我的工作”成了当下互联网最经典的赛博自我安慰。一边是砸了数十亿美金、动不动就崩给人类看的无能客服机器人，另一边则是坚信自己能“吃掉销毁证据文件”的会计。宏大叙事与现实骨感的强烈反差，让这个话题自带荒诞的喜剧效果。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「X 平台爆款备战」** 【梗图脚本】经典双层对比图：左边是记者熬夜秃头写稿（标签：$0），右边是 AI 公司拿着这些数据融资几百亿（标签：$Billions）。
+**「梗图脚本与英文推文」** 一图胜千言·梗图脚本：
+\- 视觉格式：两格对比（Before vs. After）
+\- 第一格标签 \(Top Label\): &quot;What investors think AI agents do&quot;
+\- 第二格标签 \(Bottom Label\): &quot;What AI customer service actually does: answers jack all and pisses you off&quot;
 
-【极简英文推文】
-\`anthropic still hasn&\#x27;t paid journalists.\`
+极简英文推文初稿：
+\- 推文初稿: \`ai will never replace the guys shredding paper while fbi knocks.\`
+\- 互动首评: \`what&\#x27;s the one job ai is 100% touching last?\`
 
-【争议首评】
-\`is intellectual property theft just a business model to you guys?\`
+**「社区神评槽点」** \- “AI 能不能在执法部门破门而入的 5 分钟内，把所有黑账文件碎掉甚至吃进肚子里？会计职位看来绝对安全。”
+\- “现在大企业的 AI 客服主打一个‘敷衍了事，把你当皮球踢’，根本解决不了任何问题。”
+\- “把你的银行账户全权交给 AI 代理，让我们看看你破产得有多快。”
 
-**「社区神评槽点」** “那些跑来洗地的 AI 拥趸一直在装傻，好像整个数据集不是靠海量非法抓取撑起来的一样。”
-
-**标签**: `#Anthropic`, `#AI ethics`, `#copyright`, `#journalism`, `#drama`
+**标签**: `#AI`, `#jobs`, `#debate`, `#automation`, `#reddit`
 
 ---
 
 <a id="item-ai-creator-4"></a>
-### [Claude 协助证明数学难题](https://www.reddit.com/r/technology/comments/1y2f2zh/two_groups_verify_mathematicians_claim_that/) ⭐️ 8.0/10
+### [DHS 高官因暗示 AI 引发系统崩溃被紧急撤下电视节目](https://www.reddit.com/r/technology/comments/1y2ro8n/dhs_chief_mullin_reportedly_pulled_from_tv_after/) ⭐️ 8.0/10
 
-两个独立团队通过形式化证明助手（Lean），正式核实了数学家关于 Claude 成功协助证明重大数学难题的声明。AI 不再只是帮写代码，而是实打实攻克了高阶数学，让还在经历“悲伤五阶段”的传统学者彻底破防。
+国土安全局长 Mullin 因在电视上暗示 AI 可能导致大面积技术故障，随即便被“紧急下台”。这种“刚说出真相就被全网禁声”的即视感瞬间拉满，完美戳中公众对权力层掩盖真相、以及 AI 失控带来的天然恐惧。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「极简英文推文与梗图」** 一图胜千言·梗图脚本：
-\- 视觉格式：经典的 4 阶段心理状态对比（否定 - 愤怒 - 谈判 - 接受）。
-\- 内部标签：
-  \- 第一格（数学家）：&quot;It&\#x27;s just autocomplete\!&quot;
-  \- 第二格（Lean 独立验证）：&quot;Wait, it actually proved it?&quot;
-  \- 第三格（痛苦面具）：&quot;...&quot;
+**「极简英文推文与梗图脚本」** 【梗图脚本】两格对比图。第一格标签：&quot;DHS Chief: AI did it&quot;，画面是正在发言的官员；第二格标签：&quot;\[CONNECTION LOST\]&quot;，画面是直播信号瞬间被切断、只剩雪花屏。
 
-极简英文推文初稿：
-\- 推文：\`claude just proved math\`
-\- 第一条回复（引战提问）：\`are pure math departments about to experience mass layoffs?\`
+【英文推文初稿】
+they pulled him off air real fast.
 
-**「社区神评槽点」** “Lots of mathematicians still in the first stages of grief.”（许多数学家仍然停留在悲伤的第一阶段。）
+【第一条高互动回复】
+what are they trying to hide?
 
-**标签**: `#AI`, `#Claude`, `#Mathematics`, `#AI Breakthrough`, `#Tech News`
+**「社区神评槽点」** 社区讨论直指 AI 在网络攻击中的不可预测性（&quot;让 AI 代理彻底失控就是黑客的最大杀伤力&quot;），甚至有人调侃本届政府自己造成的混乱比 AI 还严重。
+
+**标签**: `#AI`, `#Cybersecurity`, `#Government`, `#TechOutages`, `#ViralDrama`
 
 ---
 
 <a id="item-ai-creator-5"></a>
-### [r/antiai 社区剧集：全网跨版封禁引发言论审查争议](https://www.reddit.com/r/antiai/comments/1y2ffum/announcement_accelerate_is_now_permanently/) ⭐️ 8.0/10
+### [Elon: AI industry facing severe funding shortage next year](https://www.reddit.com/r/wallstreetbets/comments/1y2l7ju/elon_ai_industry_facing_severe_funding_shortage/) ⭐️ 8.0/10
 
-某 AI 加速主义板块宣布：只要用户在任何其他板块发表过反对 AI 的言论，就会被永久封禁。这种将审查权延伸到全站的激进操作，直接引爆了关于平台治理与言论自由的巨大争议。
+马斯克公开警告称，明年 AI 行业将面临严峻的资金短缺。这种把几千亿美金的烧钱狂欢说得像零花钱不够用的反差，瞬间戳中了 WSB 散户的讽刺雷达。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「一图胜千言·梗图脚本」** 推荐使用“思想警察/全景监狱”或“跨版连坐”的讽刺对比图。
-图片标签设计：
-\- 左侧标签：&quot;Reddit Founders: Open Dialogue&quot;
-\- 右侧标签：&quot;AI Accelerationist Mods: Banned for existing elsewhere&quot;
+**「一图胜千言·梗图脚本与英文草稿」** 梗图脚本: 经典“大麻接龙（blunt rotation）”或者乞丐比惨图。左边标签：&\#x27;Tech Billionaires&\#x27;，右边标签：&\#x27;My Wallet&\#x27;，中间文字：&\#x27;we are out of cash&\#x27;。
 
-极简英文推文初稿（双关/辛辣风格）：
-&quot;thought policing is the new roadmap&quot;
+极简英文推文初稿:
+\- 英文推文: \`ai has a funding shortage. sure.\`
+\- 互动首评: \`are tech billionaires finally going to use their own money?\`
 
-第一条互动回复（挑起站队）：
-&quot;Are they running a tech cult or a public forum?&quot;
+**「社区神评槽点」** “Why doesnt everyone hand over all their compute and all their cash at me? Are they stupid?” / “You run out of blunt in a blunt rotation”
 
-**「社区神评槽点」** 评论区直言这些 AI 狂热者就像极右翼或无政府资本主义者一样，为了崇拜技术而彻底抛弃了基本的人性与社会常识，甚至开始对持不同意见者进行全网视奸和跨版连坐。
-
-**标签**: `#ai`, `#censorship`, `#reddit`, `#controversy`, `#community-drama`
+**标签**: `#AI`, `#Elon Musk`, `#funding`, `#wallstreetbets`, `#meme`
 
 ---
 
 <a id="item-ai-creator-6"></a>
-### [Meta 员工被自家 AI 吓疯](https://www.reddit.com/r/technology/comments/1y26j0v/this_seems_like_an_extreme_privacy_violation/) ⭐️ 8.0/10
+### [AI Copilot 办公室洗脑研讨会吐槽](https://www.reddit.com/r/antiai/comments/1y2kejr/ai_is_for_lazy_people_real_people_use_their_brains/) ⭐️ 8.0/10
 
-Meta 自家员工都被自家 AI Agent“Muse”发出的诡异消息吓到了，直呼这是极端的隐私侵犯。科技巨头连自己内部员工的隐私都兜不住，讽刺效果直接拉满。
+一个打工人被迫参加公司 Copilot 认证培训后气炸开麦，怒斥微软 Copilot 培训简直是“教聪明人如何当懒惰傻瓜”的洗脑机器。核心反差在于：公司花时间教你用 AI 拒绝思考，美其名曰提效，实际上是把人类的脑子直接外包给低劣的代码。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「梗图脚本与英文推文」** 【梗图脚本】两格对比图：左边是 CEO 在大谈 AI 愿景，右边是 Meta 员工看着 AI 私信惊恐捂脸。标签文字：左图“AI IS THE FUTURE”，右图“WHY DOES IT KNOW WHAT I ATE YESTERDAY?”
+**「一图胜千言·梗图脚本」** 使用“特洛伊木马 / 职场温水煮青蛙”的左右对比图。左图：大学学位 + 辛辛苦苦掌握的脑力劳动（标签：REAl BRAINWORK）。右图：对着聊天框敲几个字然后坐收工资（标签：COPILOT MIND CONTROL）。
 
-【英文推文初稿】
-Meta employees getting spooked by their own AI is peak comedy.
+**「极简英文推文与互动」** 推文初稿：corporate ai seminars are just paid laziness training
+首评互动问题：Are we paying for actual work or just professional prompt typing now?
 
-【首评钓鱼问题】
-Would you trust an AI agent built by a company with this privacy track record?
+**「社区神评槽点」** 评论区神尖锐：‘人们总是忽略了，其实他们绝大部分工作本来就不是什么高难度脑力活，不过是一堆无聊的表格、重复的数据录入和复制粘贴罢了。’
 
-**「社区神评槽点」** “Another day, another Meta privacy scandal. What a surprise.”（又是一个日常：Meta 的隐私丑闻。真让人‘意外’啊。）
-
-**标签**: `#AI`, `#Meta`, `#Privacy`, `#AI Agents`, `#Drama`
+**标签**: `#AI`, `#Copilot`, `#OfficeWork`, `#Controversy`, `#Reddit`
 
 ---
 
 <a id="item-ai-creator-7"></a>
-### [AI 交易年底崩盘风向标](https://www.reddit.com/r/wallstreetbets/comments/1y2lmlw/markets_now_pricing_in_ai_trade_unwinding_before/) ⭐️ 8.0/10
+### [Situational Awareness 基金崩盘复盘](https://www.reddit.com/r/stocks/comments/1y293ih/the_situational_awareness_rout_is_much_worse_than/) ⭐️ 8.0/10
 
-华尔街赌场 WSB 社区最新风向显示，市场正开始计价 AI 概念交易在年底前彻底解体。当狂热的投机者们开始讨论“大退潮”，曾经高高在上的科技股估值成了最大的笑话。
+Situational Awareness 基金的公开持仓在 Q3 末从 202 亿美元暴跌至 1.58 美元，而这甚至还没算上 9 月 30 日之后的真正血洗。其重仓的 AI/科技股与大量看涨期权在三季度后迎来了 45% 到 72% 的恐怖跌幅，期权基本全部归零，完美诠释了什么叫“缺乏真正的局势感知”。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「一图胜千言·梗图脚本与英文推文」** 梗图脚本：采用两格对比。左图标签：&\#x27;NVDA to the moon&\#x27;（散户盲目冲高）；右图标签：&\#x27;Year-end margin call&\#x27;（年底爆仓清算）。
+**「极简英文推文与视觉脚本」** 【梗图脚本】
+格式：两栏对比图 \(2-column comparison\)
+左图标签：Q3 SEC Filing: $1.58
+右图标签：Post-Sep 30 Options: -100%
 
-极简英文推文初稿：
-\`ai trade unwinding by christmas.\`
+【极简英文推文初稿】
+&quot;situational awareness had zero awareness.&quot;
 
-极化首评互动：
-\`are you buying the dip or panic selling?\`
+【极简引战回复】
+&quot;Anyone still defending leveraged AI call options after this?&quot;
 
-**「社区神评槽点」** “正常人绝不会花和买饭一样多的钱去买个聊天机器人，况且现在还能在自己电脑上免费跑大模型。”
+**「社区神评槽点」** 评论区疯狂吐槽所谓“合格投资者”的门槛形同虚设，并调侃大量年入 200 万或净资产百万的职场高薪“笨蛋”如何轻易在杠杆和期权中化为乌有。
 
-**标签**: `#AI`, `#Crypto`, `#Markets`, `#WallStreetBets`, `#Viral`
+**标签**: `#stocks`, `#ai`, `#market crash`, `#options`, `#finance`
 
 ---
 
 <a id="item-ai-creator-8"></a>
-### [Japan&\#x27;s Aisin AI Chip](https://www.reddit.com/r/technology/comments/1y23qws/japans_aisin_develops_new_type_of_ai_chip_that/) ⭐️ 7.0/10
+### [Kraken BTC/CAD 闪崩事件](https://www.reddit.com/r/CryptoCurrency/comments/1y27070/kraken_says_the_btccad_crash_to_17k_was_because/) ⭐️ 8.0/10
 
-日本 Aisin 开发出新型 AI 芯片，宣称能耗直降 98%，且完全不需要外部 DRAM 或 SSD。这种把边缘计算做到极致的硬件突破，瞬间戳中了大众对“大模型耗电黑洞”的极度反感与对极端精简设计的迷恋。
+一个交易机器人连续 8 小时盲目向极度缺乏流动性的市场市价砸盘 333 枚 BTC，直接将 Kraken 上的 BTC/CAD 砸到 17K 加元，导致幕后金主瞬间血亏 740 万美元。官方确认系统无漏洞，纯属机器人发疯，买单全部算数。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「梗图与推文脚本」** 【梗图脚本】
-\- 视觉格式：左侧大图是“美国科技巨头消耗整个水库发电的巨型数据中心”（标注：frontier llms）；右侧小图是“日本汽车零件厂做的小芯片”（标注：aisin edge chip / zero dram）。
-\- 内部文字标签：巨型机房标注“NEED 10000 H100S”，小芯片标注“just id dogs and cars instantly”。
+**「一图胜千言·梗图脚本与推文」** 视觉建议：采用经典两步循环对比图。左边标着“程序员的 AI 交易策略 \(My Trading Bot\)”，右边是光速烧钱的熊熊烈火，画面中央手写便签写着：&quot;It just kept selling at any price.&quot;。
 
-【极简英文推文初稿】
-\- 推文：98% less energy. zero dram. edge ai wins.
-\- 互动首评：is this finally saving us from trillion-dollar data centers or just making smart doorbells?
+极简英文推文初稿：
+bot dumped 333 btc at any price and lost $7.4m
 
-**「社区神评槽点」** 评论区迅速冷静下来：大家指出 Aisin 本身是丰田的汽车零件供应商，这芯片压根不是为了跑千亿参数的 Frontier 大模型，而是塞进门铃或车用摄像头里，用来分清“来的是人还是狗”的边缘小芯片——快启快睡，这才是真正省电的实用主义。
+对立式首评互动：
+is this the most expensive bug in crypto history or just pure art?
 
-**标签**: `#AI hardware`, `#energy efficiency`, `#edge AI`, `#Japan tech`
+**「社区神评槽点」** “仅凭 333 枚 BTC 就能把一个主流币种砸到 17K，这流动性薄得像纸一样，太让人看衰了。”“而且这还是只能加拿大人交易的冷门交易对，套利机器人根本进不去救市，只能眼睁睁看着它原地爆炸。”
+
+**标签**: `#crypto`, `#bitcoin`, `#kraken`, `#tradingbots`, `#marketcrash`
 
 ---
 
 <a id="item-ai-creator-9"></a>
-### [Alice Huang 间谍风暴与 Nvidia 舆论场](https://www.reddit.com/r/technology/comments/1y2eeg5/alice_huang_accused_of_spying_on_nvidias_ceo_is/) ⭐️ 7.0/10
+### [Gemini 4 Neon 登顶 LiveBench](https://www.reddit.com/r/singularity/comments/1y2l92z/gemini_4_neon_ranked_a_solid_1st_at_livebench/) ⭐️ 8.0/10
 
-黄仁勋身边的女人 Alice Huang 被指控间谍案，迅速被挖出与中国军方背景企业存在“间接且模糊”的联系。一边是万亿市值 AI 帝国的核心安全焦虑，一边是媒体罗织罪名、缺乏实质指控的荒诞现实，直接将地缘政治拉满了戏剧张力。
+Gemini 4 Neon 在 LiveBench 上斩获第一，本该是一场技术大捷，结果用户集体吐槽：模型强得像怪物，却被残废的网页端和手机 App 拖了后腿，只能靠 AI Studio 勉强发挥。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「梗图脚本与英文推文」** 一图胜千言·梗图脚本：使用“六度分隔理论（Six Degrees of Separation）”的连锁反应对比图。左边标签：“Alice Huang”，右边标签：“中国军方”，中间用乱麻连线并标上：“麦当劳与 CIA 的距离”。
+**「一图胜千言·梗图脚本」** 使用“F1 赛车被套上拖拉机车身”的对比图。图上短标签：顶部标签写“Gemini 4 Neon \(LiveBench \#1\)”，底部标签写“Consumer UI / Mobile App”。
 
-极简英文推文初稿：
-everyone is a spy if you try hard enough
+**「社区神评槽点」** “模型是真 Frontier，但套上这破 UI 和限制，就像开着法拉利去犁地。”
 
-极化首评互动：
-is this actual espionage or just modern McCarthyism?
-
-**「社区神评槽点」** 评论区指出“indirect（间接）”这个词在报道里扛下了所有重量——只要你想找，麦当劳和 CIA 也能扯上关系。更有网友神吐槽：按这逻辑，她跟身为台裔美籍且走近美国总统的黄仁勋绑定，倒更像是个“美国间谍”。
-
-**标签**: `#AI`, `#Nvidia`, `#Geopolitics`, `#China`, `#Security`
+**标签**: `#AI`, `#Gemini`, `#LiveBench`, `#LLM`, `#TechDrama`
 
 ---
 
 <a id="item-ai-creator-10"></a>
-### [GPT-6 预测千年大奖难题](https://www.reddit.com/r/singularity/comments/1y21njx/asking_gpt6_without_web_search_to_predict_when_ai/) ⭐️ 6.0/10
+### [Agent AI AGI Moment](https://www.reddit.com/r/singularity/comments/1y2c7r6/ive_been_here_for_2_years_and_i_just_had_my_feel/) ⭐️ 7.0/10
 
-当网友开始无网调教假想中的 GPT-6 来预测数学千年大奖难题的攻克时间时，全网再次陷入了赛博占卜的狂欢中。这种“用不存在的模型预测不可能的问题”的荒诞感，戳中了技术乐观派与虚无主义的双重神经。
+一个普通用户在体验 AI Agent 的第一天，不仅让 AI 自动清理了爆满的 Gmail、找回了尘封 10 年且带私钥的 50 美元比特币，还顺手把日常 3 小时的枯燥工作流彻底自动化，直接多赚了 90 美元。这种“把赛博垃圾变现并顺便失业（字面意义上）”的真实体验，正是无数人一直在等待的现实版 AGI 时刻。
 
-rss · Reddit Viral Top 10 · 11月22日 13:38
+rss · Reddit Viral Top 10 · 11月22日 18:40
 
-**「一图胜千言与推文脚本」** 【梗图脚本】：采用两格对比，左边是“人类数学家头发掉光”，右边是“GPT-6 闭眼胡说八道并自信宣布下周解决黎曼猜想”。
-【英文标签】：Top: human math / Bottom: gpt6 hallucinations
+**「一图胜千言·梗图脚本」** 使用“前后对比 \(Before vs After\)”或者“2x2 步骤”的分镜。左边标着：‘过去：花 3.99 买谷歌邮箱空间，手动搬砖发账单’；右边标着：‘现在：AI 删垃圾、找远古 BTC、顺便替你把班上了’。
 
-【极简英文推文】：
-ask gpt6 when math ends.
+**「社区神评槽点」** 评论区立刻分裂成两派：一派觉得楼主刚通网，“居然现在才发现 Agent 能干这个”；另一派则发出灵魂拷问：“把邮箱全权交给第三方、甚至去搜寻老私钥，赛博裸奔的感觉爽吗？”
 
-【第一条高互动回复】：
-would you trust a model that hallucinates calculus?
-
-**「社区神评槽点」** “LMAO, THIS COMMENT IS GONNA GET SCREENSHOTTED IN THE FUTURE”（笑死，这条评论以后绝对会被截图发出来鞭尸）
-
-**标签**: `#AI`, `#GPT-6`, `#Reddit`, `#Singularity`, `#Speculation`
+**标签**: `#AI Agents`, `#Automation`, `#Cryptocurrency`, `#Productivity`, `#AGI`
 
 ---
 
