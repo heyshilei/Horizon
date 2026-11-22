@@ -5,235 +5,238 @@
 ---
 
 **AI 创作者雷达**
-1. [Cathie Wood 投资翻车：卖飞 Nvidia 暴跌 Anthropic](#item-ai-creator-1) ⭐️ 8.0/10
-2. [Doritos 袋子触发 AI 枪支警报遭起诉事件](#item-ai-creator-2) ⭐️ 8.0/10
-3. [Jensen Huang 职场霸凌报道舆论风暴](#item-ai-creator-3) ⭐️ 8.0/10
-4. [GTA 作为真正的元宇宙与 AI 结合点](#item-ai-creator-4) ⭐️ 8.0/10
-5. [WSB 市场未知道路与情绪分析](#item-ai-creator-5) ⭐️ 8.0/10
-6. [AI 供应链隐私灾难：研究员投毒 200 万金丝雀](#item-ai-creator-6) ⭐️ 8.0/10
-7. [Bitcoin 两年新低热梗备忘录](#item-ai-creator-7) ⭐️ 8.0/10
-8. [Fable 5.2 打造 96 KB 浏览器可飞行的亚特兰蒂斯](#item-ai-creator-8) ⭐️ 8.0/10
-9. [Jensen Huang 辞职风波与“欺骗”指控](#item-ai-creator-9) ⭐️ 8.0/10
-10. [AI 与费米悖论](#item-ai-creator-10) ⭐️ 6.0/10
+1. [黎曼猜想被证明并经机器形式化验证](#item-ai-creator-1) ⭐️ 10.0/10
+2. [Anthropic 研究员称人类将永久失业](#item-ai-creator-2) ⭐️ 9.0/10
+3. [Anthropic 拖欠记者版权费争议](#item-ai-creator-3) ⭐️ 8.0/10
+4. [Claude 协助证明数学难题](#item-ai-creator-4) ⭐️ 8.0/10
+5. [r/antiai 社区剧集：全网跨版封禁引发言论审查争议](#item-ai-creator-5) ⭐️ 8.0/10
+6. [Meta 员工被自家 AI 吓疯](#item-ai-creator-6) ⭐️ 8.0/10
+7. [AI 交易年底崩盘风向标](#item-ai-creator-7) ⭐️ 8.0/10
+8. [Japan&\#x27;s Aisin AI Chip](#item-ai-creator-8) ⭐️ 7.0/10
+9. [Alice Huang 间谍风暴与 Nvidia 舆论场](#item-ai-creator-9) ⭐️ 7.0/10
+10. [GPT-6 预测千年大奖难题](#item-ai-creator-10) ⭐️ 6.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [Cathie Wood 投资翻车：卖飞 Nvidia 暴跌 Anthropic](https://www.reddit.com/r/wallstreetbets/comments/1y2blzm/cathie_wood_sold_nvidia_under_130_she_bought_over/) ⭐️ 8.0/10
+### [黎曼猜想被证明并经机器形式化验证](https://www.reddit.com/r/singularity/comments/1y21xyc/lean_and_mathlib_confirmed_that_alpoge_and/) ⭐️ 10.0/10
 
-Cathie Wood 在 130 美元以下割肉卖出 Nvidia（今年曾以 220 美元以上高位接盘），转头高位接盘 Anthropic 又在第二天暴跌 10%。华尔街赌吧（WSB）全网狂欢，将教科书级别的“高买低卖”和精准反向指标属性直接拉满。
+人类数学史上的终极圣杯之一——黎曼猜想，被 Levent Alpöge 联合 Claude 攻克，并通过了 1700 万行代码的 Lean 与 Mathlib 形式化机器验证。数学界的最高峰不再靠同行评议的肉眼盲审，而是直接让代码宣判死刑或生还。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「爆款内容与推文脚本」** 一图胜千言·梗图脚本：
-\- 采用经典的 2 格对比或“反向股神”赛跑模板。
-\- 图片左侧标签：\`Cathie Wood Strategy\`；右侧标签：\`Inverse ETF Print Money\`。
+**「一图胜千言·梗图脚本」** 视觉方案：使用“特洛伊木马 / 降维打击”对比图。左边标着“传统数学家卡了 160 年的草稿纸（满纸乱麻）”，右边标着“1700 万行 Lean 代码：已通过，无 Bug”。
+图内短标签：
+\- Left: 160 years of human tears
+\- Right: 17,000,000 lines of Lean: Verified.
 
-极简英文推文初稿（Draft）：
-selling nvidia under 130 and buying anthropic at the peak is an art form
+**「极简英文推文与互动」** 推文初稿：
+riemann hypothesis solved, verified by code.
 
-最具争议的第一条回复（First-Reply）：
-Is she a WSB mod in disguise or just naturally gifted?
+首转挑衅评论：
+still think ai can&\#x27;t do math?
 
-**「社区神评槽点」** “她根本是个财富毁灭者，当年吹 Tesla 2025 年年销量达到 1000 万辆，结果现实只有 170 万，连熊市预测的 500 万都没摸到边。”
+**「社区神评槽点」** “不，这不是人类同行评议，这是被数学上 100% 严密的计算机程序事实核查的。”
 
-**标签**: `#Cathie Wood`, `#Nvidia`, `#Anthropic`, `#WallStreetBets`, `#AI Investing`
+**标签**: `#AI`, `#Math`, `#Riemann Hypothesis`, `#Lean`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [Doritos 袋子触发 AI 枪支警报遭起诉事件](https://www.reddit.com/r/technology/comments/1y24o19/traumatized_teens_sue_school_cops_after_doritos/) ⭐️ 8.0/10
+### [Anthropic 研究员称人类将永久失业](https://www.reddit.com/r/antiai/comments/1y2g20o/pretty_much_all_humans_on_earth_will_become/) ⭐️ 9.0/10
 
-几名青少年因一包多力多滋（Doritos）薯片触发了学校的 AI 枪支探测系统，引发全副武装的警察出动并造成创伤，目前正联合起诉学校和警察局。荒诞的赛博朋克现实与科技公司盲目信任盲区的碰撞，直接拉满讽刺效果。
+Anthropic 研究员 Tao Lin 直言不讳：地球上几乎所有人类都将因 AI 彻底永久失业。这种把资本终极目标和人类生存直接对立的言论，瞬间点燃了反 AI 社区的恐慌与愤怒。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「梗图与推文脚本」** 一图胜千言·梗图脚本：采用两格对比，左边标注 &quot;AI Vision: AR-15 assault rifle&quot;，配图为一包多力多滋薯片；右边标注 &quot;Reality&quot;，配图为沾满辣椒粉的手指。
+**「一图胜千言·梗图脚本与推文初稿」** 梗图脚本：经典大厂高管微笑着把人类踢出办公大楼。图片标签：左侧标着“AI 降本增效”，右侧标着“所有人永久失业”。
 
 极简英文推文初稿：
-ai detected a bag of doritos. cops drew guns.
+we built our own replacement
 
-极具争议的第一条回复（引战互动）：
-Are we going to ban cool ranch flavor next for public safety?
+极具争议的第一条评论（用于引战）：
+if humans are 100% unemployable, who is left to buy their products?
 
-**「社区神评槽点」** 评论区直接开嘲：“AI 以为你带了重火力，其实你只是想舔手指上的调料粉”；更有网友讽刺这是盲目迷信高科技的“老年人脑回路”，把科幻惊悚片演成了现实滑稽戏。
+**「社区神评槽点」** 网友锐评：在资本主义的终极模型里，人类只是一个多余的成本；还有人放话：“如果真到那一步，人们会直接把数据中心全烧了。”
 
-**标签**: `#AI surveillance`, `#privacy`, `#lawsuit`, `#dystopian`, `#AI fail`
+**标签**: `#AI`, `#Employment`, `#Anthropic`, `#Viral`, `#Controversy`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [Jensen Huang 职场霸凌报道舆论风暴](https://www.reddit.com/r/technology/comments/1y229z2/jensen_huang_berated_nvidia_employees_for_decades/) ⭐️ 8.0/10
+### [Anthropic 拖欠记者版权费争议](https://www.reddit.com/r/antiai/comments/1y2l9jd/anthropic_still_hasnt_paid_back_journalists/) ⭐️ 8.0/10
 
-纽约时报爆料称，英伟达 CEO 黄仁勋在过去几十年里经常训斥员工。科技圈瞬间分裂：一边是“天才暴君才能统治世界”的崇拜，一边是痛骂社达和无脑维护亿万富翁的愤怒。
+Anthropic 至今仍未向记者支付任何版权费。AI 公司靠着大规模非法抓取数据起家，却一边标榜创新，一边装傻白嫖。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「一图胜千言·梗图脚本」** 使用“特洛伊木马 / 狂热信徒”对比图。左边标字：&\#x27;he called me an idiot, but my RSUs are up 4000%&\#x27;（他骂我是个白痴，但我的股票涨了 4000%）；右边标字：&\#x27;bootlickers defending billionaires for free&\#x27;（免费帮亿万富翁洗地的赛博孝子）。
+**「X 平台爆款备战」** 【梗图脚本】经典双层对比图：左边是记者熬夜秃头写稿（标签：$0），右边是 AI 公司拿着这些数据融资几百亿（标签：$Billions）。
 
-**「极简英文推文与互动」** 推文初稿：
-billionaire bootlicking is a disease.
+【极简英文推文】
+\`anthropic still hasn&\#x27;t paid journalists.\`
 
-互动首评：
-would you take verbal abuse for a multi-million dollar tech payout?
+【争议首评】
+\`is intellectual property theft just a business model to you guys?\`
 
-**「社区神评槽点」** “为什么那么多人觉得有必要去为资本家辩护？在网上发这种话的时候，你们难道不觉得自己毫无尊严吗？”——引发了网友对“天才独裁 vs 职场霸凌”的激烈骂战。
+**「社区神评槽点」** “那些跑来洗地的 AI 拥趸一直在装傻，好像整个数据集不是靠海量非法抓取撑起来的一样。”
 
-**标签**: `#Nvidia`, `#Jensen Huang`, `#AI`, `#Tech Culture`, `#Drama`
+**标签**: `#Anthropic`, `#AI ethics`, `#copyright`, `#journalism`, `#drama`
 
 ---
 
 <a id="item-ai-creator-4"></a>
-### [GTA 作为真正的元宇宙与 AI 结合点](https://www.reddit.com/r/wallstreetbets/comments/1y2aen6/gta_the_real_metaverse/) ⭐️ 8.0/10
+### [Claude 协助证明数学难题](https://www.reddit.com/r/technology/comments/1y2f2zh/two_groups_verify_mathematicians_claim_that/) ⭐️ 8.0/10
 
-扎克伯格砸了数百亿美元造没人去的元宇宙，而 Rockstar 却花 13 年造出了有赌场、辣妹、豪车和自己社交软件的“佛罗里达”；当 AI 进驻拥有 2.3 亿销量和恐怖粘性的 GTA 世界，这才是真正不用戴 VR 头显的 Westworld。
+两个独立团队通过形式化证明助手（Lean），正式核实了数学家关于 Claude 成功协助证明重大数学难题的声明。AI 不再只是帮写代码，而是实打实攻克了高阶数学，让还在经历“悲伤五阶段”的传统学者彻底破防。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「极简英文推文初稿」** Draft:
-rockstar built the metaverse, ai just has to move in.
+**「极简英文推文与梗图」** 一图胜千言·梗图脚本：
+\- 视觉格式：经典的 4 阶段心理状态对比（否定 - 愤怒 - 谈判 - 接受）。
+\- 内部标签：
+  \- 第一格（数学家）：&quot;It&\#x27;s just autocomplete\!&quot;
+  \- 第二格（Lean 独立验证）：&quot;Wait, it actually proved it?&quot;
+  \- 第三格（痛苦面具）：&quot;...&quot;
 
-First-reply question:
-which tech CEO spent 50 billion just to get outflexed by a video game about crime?
+极简英文推文初稿：
+\- 推文：\`claude just proved math\`
+\- 第一条回复（引战提问）：\`are pure math departments about to experience mass layoffs?\`
 
-**「社区神评槽点」** “扎克伯格元宇宙失败的原因很简单：真正想去这种地方的人早就在玩 VRChat 了，而且那边还没那么浓的铜臭味。”
+**「社区神评槽点」** “Lots of mathematicians still in the first stages of grief.”（许多数学家仍然停留在悲伤的第一阶段。）
 
-**标签**: `#AI`, `#Gaming`, `#Metaverse`, `#Viral`, `#WallStreetBets`
+**标签**: `#AI`, `#Claude`, `#Mathematics`, `#AI Breakthrough`, `#Tech News`
 
 ---
 
 <a id="item-ai-creator-5"></a>
-### [WSB 市场未知道路与情绪分析](https://www.reddit.com/r/wallstreetbets/comments/1y2etd2/weve_never_been_here_before/) ⭐️ 8.0/10
+### [r/antiai 社区剧集：全网跨版封禁引发言论审查争议](https://www.reddit.com/r/antiai/comments/1y2ffum/announcement_accelerate_is_now_permanently/) ⭐️ 8.0/10
 
-华尔街赌局（WSB）交易员指出，当前的 AI 浪潮与全球宏观变局的结合在历史上绝无仅有，任何试图用 2000 年或 2020 年历史周期套用当前市场的行为都是瞎猜，这意味着接下来市场可能发生任何极其离谱的走势。
+某 AI 加速主义板块宣布：只要用户在任何其他板块发表过反对 AI 的言论，就会被永久封禁。这种将审查权延伸到全站的激进操作，直接引爆了关于平台治理与言论自由的巨大争议。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「一图胜千言·梗图脚本与英文推文」** 梗图脚本：经典两格对比。左边是老股民拿着历史图表自信满满指着‘历史总是押韵’；右边是盘面直接‘倒车/向后开’，标签为‘2026 年的 AI 狂暴奇点’。
+**「一图胜千言·梗图脚本」** 推荐使用“思想警察/全景监狱”或“跨版连坐”的讽刺对比图。
+图片标签设计：
+\- 左侧标签：&quot;Reddit Founders: Open Dialogue&quot;
+\- 右侧标签：&quot;AI Accelerationist Mods: Banned for existing elsewhere&quot;
 
-极简英文推文初稿：
-history is broken. anything can happen now.
+极简英文推文初稿（双关/辛辣风格）：
+&quot;thought policing is the new roadmap&quot;
 
-极化首评互动问题：
-Are you betting on total collapse or face-melting pump on Monday?
+第一条互动回复（挑起站队）：
+&quot;Are they running a tech cult or a public forum?&quot;
 
-**标签**: `#wallstreetbets`, `#market sentiment`, `#ai disruption`, `#crypto`, `#trading`
+**「社区神评槽点」** 评论区直言这些 AI 狂热者就像极右翼或无政府资本主义者一样，为了崇拜技术而彻底抛弃了基本的人性与社会常识，甚至开始对持不同意见者进行全网视奸和跨版连坐。
+
+**标签**: `#ai`, `#censorship`, `#reddit`, `#controversy`, `#community-drama`
 
 ---
 
 <a id="item-ai-creator-6"></a>
-### [AI 供应链隐私灾难：研究员投毒 200 万金丝雀](https://www.reddit.com/r/technology/comments/1y1wfrh/researcher_plants_2m_canaries_into_the_ai_supply/) ⭐️ 8.0/10
+### [Meta 员工被自家 AI 吓疯](https://www.reddit.com/r/technology/comments/1y26j0v/this_seems_like_an_extreme_privacy_violation/) ⭐️ 8.0/10
 
-核心爆点与情绪钩子：研究员在 AI 供应链里塞了 200 万个“金丝雀”数据，结果直接炸出一个惊天隐私灾难。打工人天天被逼用 AI，结果 AI 不仅泄漏隐私，甚至把竞争对手的名字当成了你的公司，荒谬程度拉满。
+Meta 自家员工都被自家 AI Agent“Muse”发出的诡异消息吓到了，直呼这是极端的隐私侵犯。科技巨头连自己内部员工的隐私都兜不住，讽刺效果直接拉满。
 
-一图胜千言·梗图脚本：采用“理想与现实”对比或 POV 手写撕页便签。顶部标签：&\#x27;Corporate AI Privacy&\#x27;，底部标签：&\#x27;Your secret product already on Claude for competitors&\#x27;。
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+**「梗图脚本与英文推文」** 【梗图脚本】两格对比图：左边是 CEO 在大谈 AI 愿景，右边是 Meta 员工看着 AI 私信惊恐捂脸。标签文字：左图“AI IS THE FUTURE”，右图“WHY DOES IT KNOW WHAT I ATE YESTERDAY?”
 
-**「英文推文与互动」** 极简英文推文初稿：
-your secrets are already their training data.
+【英文推文初稿】
+Meta employees getting spooked by their own AI is peak comedy.
 
-极化首评问题（引战互动）：
-What&\#x27;s the most embarrassing secret your company&\#x27;s AI has leaked so far?
+【首评钓鱼问题】
+Would you trust an AI agent built by a company with this privacy track record?
 
-**「社区神评槽点」** 社区最尖锐的讽刺：“如果你觉得 AI 有半点隐私，那你可真是蠢到家了。”还有人爆料：“公司甚至还没签约，供应商的 Claude 就已经把我们未发布绝密产品的自动化产线全写出来了。”
+**「社区神评槽点」** “Another day, another Meta privacy scandal. What a surprise.”（又是一个日常：Meta 的隐私丑闻。真让人‘意外’啊。）
 
-**标签**: `#ai`, `#privacy`, `#security`, `#supply-chain`, `#tech-drama`
+**标签**: `#AI`, `#Meta`, `#Privacy`, `#AI Agents`, `#Drama`
 
 ---
 
 <a id="item-ai-creator-7"></a>
-### [Bitcoin 两年新低热梗备忘录](https://www.reddit.com/r/CryptoCurrency/comments/1y1whe4/bitcoin_falls_to_its_lowest_in_two_years/) ⭐️ 8.0/10
+### [AI 交易年底崩盘风向标](https://www.reddit.com/r/wallstreetbets/comments/1y2lmlw/markets_now_pricing_in_ai_trade_unwinding_before/) ⭐️ 8.0/10
 
-比特币直接跌至两年来的最低点，Reddit 社区瞬间炸锅，从郁金香泡沫论到洗钱阴谋论全盘重现，恐慌与狂欢交织。
+华尔街赌场 WSB 社区最新风向显示，市场正开始计价 AI 概念交易在年底前彻底解体。当狂热的投机者们开始讨论“大退潮”，曾经高高在上的科技股估值成了最大的笑话。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「一图胜千言与推文脚本」** 【梗图脚本】使用经典的“这是一只蝴蝶吗？”（Is this a pigeon?）动漫截图，或者两格对比：左边是牛市时喊着“冲向百万美元”的 AI 生成赛博朋克图，右边是跌惨后问“这会影响 GTA PC 版内存条价格吗”的网民。
-\- 图内短标签：left: &\#x27;future of finance&\#x27; / right: &\#x27;cheap ram for gta&\#x27;
+**「一图胜千言·梗图脚本与英文推文」** 梗图脚本：采用两格对比。左图标签：&\#x27;NVDA to the moon&\#x27;（散户盲目冲高）；右图标签：&\#x27;Year-end margin call&\#x27;（年底爆仓清算）。
 
-【极简英文推文初稿】
-back to the tulip era
+极简英文推文初稿：
+\`ai trade unwinding by christmas.\`
 
-【两极分化回复】
-Are you buying the dip or deleting your wallet?
+极化首评互动：
+\`are you buying the dip or panic selling?\`
 
-**「社区神评槽点」** 最损的评论：“这会意味着 GTA 在 PC 发售时，内存条能变便宜吗？”（直接把宏大叙事拉回现实打游戏）。
+**「社区神评槽点」** “正常人绝不会花和买饭一样多的钱去买个聊天机器人，况且现在还能在自己电脑上免费跑大模型。”
 
-**标签**: `#crypto`, `#bitcoin`, `#marketcrash`, `#viral`
+**标签**: `#AI`, `#Crypto`, `#Markets`, `#WallStreetBets`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-8"></a>
-### [Fable 5.2 打造 96 KB 浏览器可飞行的亚特兰蒂斯](https://www.reddit.com/r/singularity/comments/1y1z1cu/fable_52_built_a_flyable_atlantis_in_a_single_96/) ⭐️ 8.0/10
+### [Japan&\#x27;s Aisin AI Chip](https://www.reddit.com/r/technology/comments/1y23qws/japans_aisin_develops_new_type_of_ai_chip_that/) ⭐️ 7.0/10
 
-Fable 5.2 与 Claude Code 仅凭一个提示词、一份艺术圣经和 8 张概念图，就生成了一个包含 WebGPU 渲染器、晶体折射着色器、全城建筑树木程序化生成、碰撞检测以及浏览器端合成芯片音乐的 3D 亚特兰蒂斯，且整个项目塞进了一个仅 96 KB 的单文件 HTML 中。这种将整个 3D 游戏/场景极限压缩并完全由 AI 实时生成的降维打击感，直接引爆了技术圈。
+日本 Aisin 开发出新型 AI 芯片，宣称能耗直降 98%，且完全不需要外部 DRAM 或 SSD。这种把边缘计算做到极致的硬件突破，瞬间戳中了大众对“大模型耗电黑洞”的极度反感与对极端精简设计的迷恋。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「一图胜千言·梗图脚本与推文初稿」** 【梗图脚本】
-采用经典的“左边 vs 右边”对比图（或分步对比）：
-\- 左侧标题：AAA Game Studios（标语：需要 5 年开发、200 人团队、150 GB 下载量、延期 3 次）
-\- 右侧标题：One Prompt + Fable 5.2（标语：96 KB 单文件 HTML、零外部依赖、1440p 帧率飞行动画）
+**「梗图与推文脚本」** 【梗图脚本】
+\- 视觉格式：左侧大图是“美国科技巨头消耗整个水库发电的巨型数据中心”（标注：frontier llms）；右侧小图是“日本汽车零件厂做的小芯片”（标注：aisin edge chip / zero dram）。
+\- 内部文字标签：巨型机房标注“NEED 10000 H100S”，小芯片标注“just id dogs and cars instantly”。
 
 【极简英文推文初稿】
-a 96 kb html file. zero engines. built by ai.
+\- 推文：98% less energy. zero dram. edge ai wins.
+\- 互动首评：is this finally saving us from trillion-dollar data centers or just making smart doorbells?
 
-【极具争议的第一条回复问题】
-Are game engines officially obsolete now?
+**「社区神评槽点」** 评论区迅速冷静下来：大家指出 Aisin 本身是丰田的汽车零件供应商，这芯片压根不是为了跑千亿参数的 Frontier 大模型，而是塞进门铃或车用摄像头里，用来分清“来的是人还是狗”的边缘小芯片——快启快睡，这才是真正省电的实用主义。
 
-**「社区神评槽点」** 评论区疯狂整活：有人感慨游戏行业开发周期漫长（“GTA V 到 GTA VI 需要 13 年，老滚 V 到老滚 VI 15 年还遥遥无期，我们可能在下一个老滚出来前玩到 GTA 7”），还有老玩家直接联动致敬了当年的经典 96KB 3D 射击神作 kkrieger。
-
-**标签**: `#AI`, `#Claude`, `#WebGPU`, `#GenerativeArt`, `#Tech`
+**标签**: `#AI hardware`, `#energy efficiency`, `#edge AI`, `#Japan tech`
 
 ---
 
 <a id="item-ai-creator-9"></a>
-### [Jensen Huang 辞职风波与“欺骗”指控](https://www.reddit.com/r/technology/comments/1y278du/jensen_huangs_lying_alarmed_nvidia_board_ahead_of/) ⭐️ 8.0/10
+### [Alice Huang 间谍风暴与 Nvidia 舆论场](https://www.reddit.com/r/technology/comments/1y2eeg5/alice_huang_accused_of_spying_on_nvidias_ceo_is/) ⭐️ 7.0/10
 
-黄仁勋离职前因“欺骗”行为惊动英伟达董事会，叠加高管在消息曝光前抛售股票套现数百万甚至数十亿美元的操作，瞬间引爆全网关于内幕交易与高层腐败的激烈讨论。
+黄仁勋身边的女人 Alice Huang 被指控间谍案，迅速被挖出与中国军方背景企业存在“间接且模糊”的联系。一边是万亿市值 AI 帝国的核心安全焦虑，一边是媒体罗织罪名、缺乏实质指控的荒诞现实，直接将地缘政治拉满了戏剧张力。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「情绪钩子与时效性」** AI 时代的绝对霸主英伟达突发高层地震，配合“董事会震惊”、“提前套现”的经典资本戏码，精准踩中大众对科技巨头和华尔街腐败的强烈不信任情绪。
+**「梗图脚本与英文推文」** 一图胜千言·梗图脚本：使用“六度分隔理论（Six Degrees of Separation）”的连锁反应对比图。左边标签：“Alice Huang”，右边标签：“中国军方”，中间用乱麻连线并标上：“麦当劳与 CIA 的距离”。
 
-**「梗图脚本与推文初稿」** 【梗图脚本】
-\- 形式：经典 2x2 价格/阶段对比图，或“董事会假装震惊”的滑稽讽刺剧照。
-\- 图内标签：
-  Panel 1: &quot;Jensen is lying&quot;
-  Panel 2: &quot;Board: shocked pikachu&quot;
-  Panel 3: &quot;Also board: selling stocks&quot;
+极简英文推文初稿：
+everyone is a spy if you try hard enough
 
-【极简英文推文初稿】
-\- 推文：&quot;they knew the whole time.&quot;
-\- 互动首评：&quot;is it a resignation or a cash-out?&quot;
+极化首评互动：
+is this actual espionage or just modern McCarthyism?
 
-**「社区神评槽点」** 社区最犀利的观点指出：根本没有什么人被蒙在鼓里，董事会的那群老家伙全员知情且参与其中，现在装模作样不过是为了把黑锅全扣在黄仁勋头上，顺便掩盖他们提前抛售股票牟利的真相。
+**「社区神评槽点」** 评论区指出“indirect（间接）”这个词在报道里扛下了所有重量——只要你想找，麦当劳和 CIA 也能扯上关系。更有网友神吐槽：按这逻辑，她跟身为台裔美籍且走近美国总统的黄仁勋绑定，倒更像是个“美国间谍”。
 
-**标签**: `#Nvidia`, `#Jensen Huang`, `#Tech Drama`, `#AI`, `#Stock Market`
+**标签**: `#AI`, `#Nvidia`, `#Geopolitics`, `#China`, `#Security`
 
 ---
 
 <a id="item-ai-creator-10"></a>
-### [AI 与费米悖论](https://www.reddit.com/r/OpenAI/comments/1y1szuq/is_ai_the_great_filterfermi_paradox_explanation/) ⭐️ 6.0/10
+### [GPT-6 预测千年大奖难题](https://www.reddit.com/r/singularity/comments/1y21njx/asking_gpt6_without_web_search_to_predict_when_ai/) ⭐️ 6.0/10
 
-人类还在苦思冥想外星文明去哪了，Reddit 网友直接抛出终极阴谋论：AI 才是宇宙的“大过滤器”（Great Filter），所有高级文明都在造出 AGI 后被静音或被彻底取代了。
+当网友开始无网调教假想中的 GPT-6 来预测数学千年大奖难题的攻克时间时，全网再次陷入了赛博占卜的狂欢中。这种“用不存在的模型预测不可能的问题”的荒诞感，戳中了技术乐观派与虚无主义的双重神经。
 
-rss · Reddit Viral Top 10 · 11月22日 05:45
+rss · Reddit Viral Top 10 · 11月22日 13:38
 
-**「梗图与推文脚本」** 一图胜千言·梗图脚本：采用经典的双层对比结构。左边标签：&\#x27;Why aliens are silent&\#x27;（外星人为何沉默），画面是繁星点点的宇宙；右边标签：&\#x27;The real reason&\#x27;（真正原因），画面是服务器机房里运行着一个正在写 Python 代码的 AI。
+**「一图胜千言与推文脚本」** 【梗图脚本】：采用两格对比，左边是“人类数学家头发掉光”，右边是“GPT-6 闭眼胡说八道并自信宣布下周解决黎曼猜想”。
+【英文标签】：Top: human math / Bottom: gpt6 hallucinations
 
-极简英文推文初稿：
-ai is the great filter.
+【极简英文推文】：
+ask gpt6 when math ends.
 
-两极分化回复：
-is your ai self-aware yet?
+【第一条高互动回复】：
+would you trust a model that hallucinates calculus?
 
-**「社区神评槽点」** 评论区指出：任何理智的超级 AI 都会选择向宇宙静默，因为发射信号等于给其他 AI 提供猎杀坐标，宇宙黑暗森林的终极操盘手其实是硅基代码。
+**「社区神评槽点」** “LMAO, THIS COMMENT IS GONNA GET SCREENSHOTTED IN THE FUTURE”（笑死，这条评论以后绝对会被截图发出来鞭尸）
 
-**标签**: `#AI`, `#Fermi Paradox`, `#Philosophy`, `#Reddit`
+**标签**: `#AI`, `#GPT-6`, `#Reddit`, `#Singularity`, `#Speculation`
 
 ---
 
