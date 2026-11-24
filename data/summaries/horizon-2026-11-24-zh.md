@@ -1,82 +1,97 @@
 # Horizon 每日速递 - 2026-11-24
 
-> 从 13 条内容中筛选出 3 条重要资讯。
+> 从 13 条内容中筛选出 4 条重要资讯。
 
 ---
 
 **AI 创作者雷达**
-1. [FTX Anthropic 430 亿美元错过惨剧](#item-ai-creator-1) ⭐️ 9.0/10
-2. [黄仁勋回归 Nvidia 总部的两极化反应](#item-ai-creator-2) ⭐️ 8.0/10
-3. [AI 与版权之争](#item-ai-creator-3) ⭐️ 8.0/10
+1. [OpenAI 与 Anthropic 员工爆料模型过于强大而无法发布](#item-ai-creator-1) ⭐️ 9.0/10
+2. [GTA VI 泄露与 Claude 逆向速通](#item-ai-creator-2) ⭐️ 9.0/10
+3. [创作者陷入 AI 代工陷阱与社区大炎上](#item-ai-creator-3) ⭐️ 8.0/10
+4. [AI 隐瞒使用争议](#item-ai-creator-4) ⭐️ 8.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [FTX Anthropic 430 亿美元错过惨剧](https://www.reddit.com/r/CryptoCurrency/comments/1y3tj5i/the_ultimate_crypto_irony_ftxs_500m_anthropic/) ⭐️ 9.0/10
+### [OpenAI 与 Anthropic 员工爆料模型过于强大而无法发布](https://www.reddit.com/r/singularity/comments/1y4hg81/openai_and_anthropic_employees_are_now_saying/) ⭐️ 9.0/10
 
-FTX 破产清算时以 13.4 亿美元卖掉了 Anthropic 的股份用来赔付客户，结果随着 Anthropic 上市，这笔股份如今价值飙升至 430 多亿美元。加密圈史上最大骗局，阴差阳错竟成了人类 VC 历史上最逆天的 AI 投资，完美诠释了造化弄人的极致讽刺。
+OpenAI 和 Anthropic 内部员工透露，未发布的最新模型已经强大到无法安全公开，甚至连如何监控它们都成了难题。这场关于“AI 实在太猛而不得不藏起来”的内幕，直接把整个 AI 行业的狂飙突进按下了暂停键。
 
-rss · Reddit Viral Top 10 · 11月24日 16:30
+rss · Reddit Viral Top 10 · 11月24日 21:34
 
-**「极简英文推文与梗图脚本」** 【梗图脚本】
-采用经典对冲或“人生遗憾”对比格式。
-\- 左侧标签: sbf with stolen funds \(500M\)
-\- 右侧标签: missed anthropic ipo value \($43B+\)
-\- 底部高亮字幕: the greatest vc bet ever made by a fraudster
+**「一图胜千言·梗图脚本与英文推文」** 梗图脚本：采用“特洛伊木马 / 潘多拉魔盒”讽刺视觉。左边标签：‘We built God’；右边标签：‘Now we are too scared to open the box’。
 
-【英文推文初稿】
-ftx sold their anthropic stake for 1.3b. it&\#x27;s worth 43b now.
+极简英文推文初稿：
+we built an omnipotent god and now we&\#x27;re scared
 
-【争议首评互动】
-First-reply question: Did SBF accidentally become the greatest AI investor of our generation?
+极化首评互动问题：
+Are they actually scared of safety, or just trying to protect their monopoly?
 
-**「社区神评槽点」** 社区反响激烈，高赞辣评直指核心：‘如果你在酒吧偷了别人的钱去赌马赢了，并不代表你无罪’。更有网友指出，挪用客户资金本身就是犯罪链的一部分，谈不上什么‘天才投资眼光’，纯粹是拿别人的钱疯狂瞎扔刚好砸中了一个。
+**「社区神评槽点」** 评论区指出：这种新闻每隔几年就会换汤不换料地复制粘贴一次；而且资本绝不可能把全能的上帝计算机拿来跟公众分享烤松饼的秘方。
 
-**标签**: `#crypto`, `#ai`, `#ftx`, `#anthropic`, `#irony`, `#bankruptcy`
+**标签**: `#OpenAI`, `#Anthropic`, `#AI Safety`, `#Artificial General Intelligence`, `#Tech Drama`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [黄仁勋回归 Nvidia 总部的两极化反应](https://www.reddit.com/r/technology/comments/1y49r14/jensen_huang_returns_to_applause_from_employees/) ⭐️ 8.0/10
+### [GTA VI 泄露与 Claude 逆向速通](https://www.reddit.com/r/singularity/comments/1y4eg80/modders_working_with_claude_got_gta_vis_xbox/) ⭐️ 9.0/10
 
-核心爆点与情绪钩子：黄仁勋现身 Nvidia 总部受到员工夹道欢呼，但部分员工却公开直言这是“最糟糕的结果”，资本神话与内部打工人的真实鸿沟瞬间拉满。
+R 星还在苦等 PC 版慢慢延期，模组制作者仅凭泄露的 Xbox 可执行文件和 Claude，在短短一天内就让游戏在 Windows 上成功渲染出游戏内场景。AI 不是来辅助写代码的，它是直接把不可能变成了今天的事实。
 
-一图胜千言·梗图脚本：使用经典“办公室两极分化”对比梗图，左边标着“Applauding employees \(Stockholders\)”，右边标着“&\#x27;Worst outcome&\#x27; \(Burned-out workers\)”。
+rss · Reddit Viral Top 10 · 11月24日 21:34
 
-极简英文推手初稿（Draft）：
-applaud the master, or fear the master.
+**「一图胜千言与推文脚本」** 梗图脚本：采用对比格式（左图：R 星数千人耗时数年的庞大开发流程；右图：一个疯子在 Discord 里狂敲三个 Claude 窗口并打字“Make no mistakes”）。
+图片短标签：Rstar&\#x27;s 5 Years vs 1 Day with Claude。
 
-极化首评互动（First-reply）：
-are you clapping for the vision or your own chains?
+极简英文推文初稿：
+\`gta 6 ported to windows in a day with claude.\`
 
-社区神评槽点：womp womp, the workers support the guy that made them all wealthy.
+极具争议的第一条回复：
+\`why wait for rockstar when you can just prompt the game into existence?\`
 
-rss · Reddit Viral Top 10 · 11月24日 16:30
+**「社区神评槽点」** “R 星，你们下次绝对不敢再搞 PC 版延期了。”
+“这根本不是 2040 年的事，AI 甚至能在一夜之间直接把 GTA VII 给‘一键生成’了。”
 
-**标签**: `#Nvidia`, `#JensenHuang`, `#AI`, `#TechDrama`, `#CorporateCulture`
+**标签**: `#AI`, `#Claude`, `#Gaming`, `#GTA VI`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [AI 与版权之争](https://www.reddit.com/r/antiai/comments/1y48bhl/correct_me_if_im_wrong_but_are_the_ai_bros/) ⭐️ 8.0/10
+### [创作者陷入 AI 代工陷阱与社区大炎上](https://www.reddit.com/r/antiai/comments/1y4l4zy/sad_to_see_someone_who_was_once_known_for_his/) ⭐️ 8.0/10
 
-AI 拥护者认为用盗版种子下载海量书籍、音乐和视频进行训练属于合理使用，这种理所当然的态度彻底激怒了创作者，引发了关于版权法律形同虚设的强烈愤怒。
+一个以深度严谨著称的知名创作者，如今也被抓包用 AI 代劳内容，甚至在视频里反呛观众‘我懂比你多’。网友辣评：这已经不是偷懒，是把 AI 当成戒不掉的尼古丁贴片了。
 
-rss · Reddit Viral Top 10 · 11月24日 16:30
+rss · Reddit Viral Top 10 · 11月24日 21:34
 
-**「极简英文推文与互动」** 一图胜千言·梗图脚本：经典双重标准对比，左边是普通人下载盗版音乐（入狱），右边是科技公司偷 PB 级版权作品（创新）。标签：Piracy vs &\#x27;Innovation&\#x27;。
+**「极简英文推文初稿与互动」** Draft 1: 
+using bot for research is a brain rot.
 
-极简英文推文初稿：
-stolen petabytes of art is just innovation
+First-reply question:
+Would you still watch someone if you found out their whole script is AI-generated?
 
-对立式回复（用于引发争论）：
-fair use or just digital grand theft auto?
+**「社区神评槽点」** “戒 AI 就像戒烟一样难受，冷火鸡式戒断根本行不通。”——把依赖 AI 写稿直接比作烟瘾发作，属实给这群赛博瘾君子找到绝佳借口了。
 
-**「社区神评槽点」** “Pro-AI people hear that Anthropic and OpenAI downloaded petabytes of books, music and video torrents illegally and think that&\#x27;s fair use.”
+**标签**: `#AI`, `#CreatorDrama`, `#Controversy`, `#CommunityHeat`
 
-**标签**: `#AI`, `#Copyright`, `#Culture War`, `#Music`, `#Reddit`
+---
+
+<a id="item-ai-creator-4"></a>
+### [AI 隐瞒使用争议](https://www.reddit.com/r/antiai/comments/1y4iogf/i_feel_consumers_deserve_transparency_regarding/) ⭐️ 8.0/10
+
+开发者偷偷在产品里塞满 AI 却死活不肯承认，理由很简单：因为他们知道只要敢标出来就会被喷到体无完肤。当“隐藏 AI”成了行业潜规则，消费者连选择不买单的权利都被剥夺了。
+
+rss · Reddit Viral Top 10 · 11月24日 21:34
+
+**「一图胜千言·梗图脚本」** 使用经典的“遮羞布（Trojan Horse / Hiding behind a wall）”对比梗图。左边标签：Proudly Made by Humans，右边标签：Secretly Generated by AI（但背后藏着一堆不敢公开的代码或美术）。
+
+**「极简英文推文初稿」** Draft 1: &quot;if it’s so good, why hide it?&quot;
+Draft 2 \(Reply\): &quot;is your product actually good or are you just scared of the backlash?&quot;
+
+**「社区神评槽点」** 评论区最戳中痛点的实话：“他们之所以藏着掖着，是因为他们自己也心知肚明这玩意儿见不得光，发出来就得挨骂。”
+
+**标签**: `#ai`, `#controversy`, `#transparency`, `#social-drama`
 
 ---
 
