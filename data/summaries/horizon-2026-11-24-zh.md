@@ -1,0 +1,204 @@
+# Horizon 每日速递 - 2026-11-24
+
+> 从 13 条内容中筛选出 9 条重要资讯。
+
+---
+
+**AI 创作者雷达**
+1. [US President AI Meme of Jensen Huang](#item-ai-creator-1) ⭐️ 10.0/10
+2. [Anthropic 宣称破解 P vs NP 代数等价问题](#item-ai-creator-2) ⭐️ 8.0/10
+3. [OpenAI 在 TwitchCon 被赶出展台事件](#item-ai-creator-3) ⭐️ 8.0/10
+4. [AI 骇客工具 ARTEX 失控疯传](#item-ai-creator-4) ⭐️ 8.0/10
+5. [Solo Bitcoin Miner Wins $191,000 Block](#item-ai-creator-5) ⭐️ 8.0/10
+6. [5 分钟专家 AI 翻车合集](#item-ai-creator-6) ⭐️ 8.0/10
+7. [Levent Alpoge 与 Anthropic 的 Claude 数学突破推文筹备](#item-ai-creator-7) ⭐️ 7.0/10
+8. [Claude 新模型突袭？用户实测 3D 建模能力暴涨](#item-ai-creator-8) ⭐️ 7.0/10
+9. [当现实比 AI 还像 AI](#item-ai-creator-9) ⭐️ 6.0/10
+
+---
+
+## AI 创作者雷达
+
+<a id="item-ai-creator-1"></a>
+### [US President AI Meme of Jensen Huang](https://www.reddit.com/r/technology/comments/1y3s2d4/us_president_posts_bizarre_ai_meme_of_jensen/) ⭐️ 10.0/10
+
+核心爆点：美国总统在 Nvidia 董事会恢复黄仁勋职务后，竟然发了一张极度诡异的 AI 梗图——让黄仁勋手举胸罩，并影射 2024 年的刺杀事件。这种政治与科技圈无厘头梦幻联动，荒诞感直接拉满。
+
+一图胜千言·梗图脚本：
+\- 视觉格式：左右对比图（2-step contrast）
+\- 左图标签：2024: Serious Politics
+\- 右图标签：2026: AI Bra Jensen Huang
+
+极简英文推文初稿：
+\- 推文：we are living in a simulation.
+\- 首评互动：is this peak timeline or just brainrot?
+
+社区神评槽点：
+\- “We are living in a stroke simulator.”（我们活在一个中风模拟器里。）
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**标签**: `#AI`, `#Nvidia`, `#Jensen Huang`, `#Meme`, `#Viral`
+
+---
+
+<a id="item-ai-creator-2"></a>
+### [Anthropic 宣称破解 P vs NP 代数等价问题](https://www.reddit.com/r/singularity/comments/1y3w34p/anthropic_claimed_to_have_proved_vp_vnp_over/) ⭐️ 8.0/10
+
+Anthropic 宣称已在所有域上证明了 VP ≠ VNP（P vs NP 问题的代数对应版）。AI Lab 不仅在疯狂迭代大模型，现在开始直接攻克百年数学与计算机科学悬案了，这种降维打击感瞬间拉满。
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「梗图与推文脚本」** 一图胜千言·梗图脚本：经典“人类数学家 vs AI”对比图。左边：“人类数学家：经过 30 年研究，我们依然一筹莫展”；右边：“Anthropic 跑了个实验：VP ≠ VNP，搞定，下一个”。
+
+极简英文推文初稿：
+anthropic just solved p vs np. wild.
+
+极具争议的第一条评论（用于引导互动）：
+is math officially automated now or what?
+
+**「社区神评槽点」** 评论区直接炸锅，有人调侃“没什么好大惊小怪的，移动门柱的人可以站直了”；也有人认为这至少缩小了范围，就像黎曼猜想的证明一样，至少让我们知道哪些死胡同不用再浪费时间了。
+
+**标签**: `#AI`, `#Anthropic`, `#Computer Science`, `#P vs NP`
+
+---
+
+<a id="item-ai-creator-3"></a>
+### [OpenAI 在 TwitchCon 被赶出展台事件](https://www.reddit.com/r/antiai/comments/1y434pv/openai_had_a_massive_booth_at_twitchcon_so/) ⭐️ 8.0/10
+
+OpenAI 在 TwitchCon 砸重金摆下巨型展台，结果遭到反 AI 人士现场贴脸整活嘲讽，最后直接被请出场。一句“模型火车远胜模型训练”瞬间戳中创作者与科技巨头的文化冲突痛点。
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「梗图脚本与推文初稿」** 【梗图脚本】经典双宫格对比：左边是 OpenAI 冷冰冰的标准化流水线展台，标签：“Regurgitated Booth”；右边是真正的模型火车，标签：“Model Trains &gt; Training Models”。
+
+【英文推文初稿】
+\- Draft: model trains &gt; training models
+\- Reply: would you rather play with trains or shill for sam altman?
+
+**「社区神评槽点」** 现场工作人员全程满脸尴尬，像是有个隐形的萨姆·奥特曼在背后盯着；还有人吐槽现在 Twitch 上到处都是零创造力的 AI 虚拟主播，展台风格简直完美契合这种无趣。
+
+**标签**: `#AI`, `#OpenAI`, `#TwitchCon`, `#Anti-AI`, `#Viral`
+
+---
+
+<a id="item-ai-creator-4"></a>
+### [AI 骇客工具 ARTEX 失控疯传](https://www.reddit.com/r/technology/comments/1y3mchk/the_code_is_already_copied_everywhere_the_ai/) ⭐️ 8.0/10
+
+AI 骇客工具 ARTEX 的原作者试图将其下架，但为时已晚——代码早已散播到全网，任何人都能随意下载并造成破坏。经典“潘多拉魔盒”重演，根本关不掉。
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「梗图脚本与英文推文」** 【梗图脚本】
+\- 视觉形式：经典闭环流程图或双格对比
+\- 标签文字：左格「Author: I deleted the repo\! \(原作者：我删库了！\)」，右格「The internet: Ctrl+C, Ctrl+V, running wild \(全网：复制粘贴，到处狂奔\)」。
+
+【极简英文推文初稿】
+\- 推文：you can&\#x27;t un-leak the box
+\- 争议首评互动：Is this open-source cybersecurity or just digital anarchy?
+
+**「社区神评槽点」** 评论区直呼：“这不就是现实版的潘多拉魔盒吗？”还有人吐槽根本没被真正下架，在 GitHub 上依然热度不减。
+
+**标签**: `#ai`, `#cybersecurity`, `#drama`, `#viral`
+
+---
+
+<a id="item-ai-creator-5"></a>
+### [Solo Bitcoin Miner Wins $191,000 Block](https://www.reddit.com/r/Bitcoin/comments/1y3u8bg/solo_bitcoin_miner_wins_191000_block_with_11_ths/) ⭐️ 8.0/10
+
+一个单兵比特币矿工仅凭 11 TH/s 的超低算力，居然成功挖出区块并狂揽 19 万 1 千 美元奖励。这种现实版中彩票的逆袭奇迹，瞬间点燃了全网散户的暴富幻想与自嘲狂欢。
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「极简推文与梗图脚本」** 【梗图脚本】
+\- 视觉格式：强烈对比图（左右结构）
+\- 左侧标签：Wall Street Mining Farms \(Exahashes\)
+\- 右侧标签：One guy with a toaster \(11 TH/s\)
+\- 底部高亮：Winner
+
+【极简英文推文初稿】
+\- 推文：solo miner just beat wall street with a toaster
+\- 互动首评：are you still mining on a tamagotchi or what?
+
+**「社区神评槽点」** \- “Hey, this is me\! I was using an old Tamagotchi I found in the junk drawer”
+\- “11 TH/s??? I’m still holding out hope for my CYD miner at 1 MH/s\! 🤣🤣”
+
+**标签**: `#Bitcoin`, `#Crypto`, `#Mining`, `#Viral`
+
+---
+
+<a id="item-ai-creator-6"></a>
+### [5 分钟专家 AI 翻车合集](https://www.reddit.com/r/singularity/comments/1y3jzc6/5_minutes_of_experts_being_wrong_about_ai/) ⭐️ 8.0/10
+
+一段长达 5 分钟的视频盘点了所谓“专家”们对 AI 能力的各种错误预测。全网最爱看的“打脸”戏码，精确戳中权威傲慢与现实残酷打脸之间的巨大反差。
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「梗图脚本与英文推文」** 一图胜千言·梗图脚本：采用 2x2 对比图，左侧写着“专家：绝不可能发生”，右侧写着“AI：已完成”。
+
+极简英文推文初稿：
+experts are always wrong about everything.
+
+极化首评互动：
+Are you still listening to &\#x27;experts&\#x27; in 2026?
+
+**「社区神评槽点」** 网友犀利吐槽：“通晓某个领域不代表他懂一切，把语言学家当 AI 权威简直是脑路清奇。”
+
+**标签**: `#AI`, `#experts`, `#viral`, `#predictions`, `#humor`
+
+---
+
+<a id="item-ai-creator-7"></a>
+### [Levent Alpoge 与 Anthropic 的 Claude 数学突破推文筹备](https://www.reddit.com/r/singularity/comments/1y455su/i_think_levent_alpoge_and_anthropic_owe_it_to_the/) ⭐️ 7.0/10
+
+数学界正急切要求 Anthropic 和 Levent Alpoge 公开 Claude 解决重大数学难题的完整原始对话记录。这种“藏着掖着”的神秘感与外界极度渴望复现和解密的心态形成了强烈反差，直接拉满社区好奇心。
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「推文与梗图策略」** 【梗图脚本】采用“犹抱琵琶半遮面”的经典对比：左边是 Anthropic 官方发出的精致胜利通告，右边是数学家们对着黑板抓耳挠腮、急需原始 prompt 的绝望表情。标签：Left: &\#x27;we solved math&\#x27;，Right: &\#x27;where is the transcript?&\#x27;。
+
+【极简英文推文初稿】
+drop the raw transcripts.
+
+【极挑衅首转提问】
+Are they hiding the prompts or is it just too embarrassing to show how they actually did it?
+
+**「社区神评槽点」** 社区普遍认为，如果这是一个真正的突破，藏着不让数学界看到完整的交互过程毫无道理，大家都在怀疑背后到底用了多少次试错和特殊的 prompting 技巧。
+
+**标签**: `#AI`, `#Claude`, `#Anthropic`, `#Mathematics`, `#Viral`
+
+---
+
+<a id="item-ai-creator-8"></a>
+### [Claude 新模型突袭？用户实测 3D 建模能力暴涨](https://www.reddit.com/r/ClaudeAI/comments/1y3y4x6/new_model_incoming/) ⭐️ 7.0/10
+
+Claude 用户在 Reddit 社区炸锅，传出 Anthropic 正在灰度测试未发布的新模型，其 3D 建模与生成能力强得离谱，引发网友对“静默升级”或“A/B 测试”的强烈好奇与讨论。
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「一图胜千言与推文脚本」** 【梗图脚本】使用前后对比（Before vs. After）或 2x2 网格：左边是过去生成的抽象崩坏 3D 几何体，标着「last week: cursed polygon sludge」；右边是这次惊艳的精细模型，标着「today: wait, is this actual CAD?」。
+
+【极简英文推文初稿】
+\- 英文推文：did anthropic just drop a secret 3d model?
+\- 争议回复问题：are you seeing this in your account or is op hallucinating?
+
+【社区神评槽点】
+网友吐槽自己砸了 119 轮对话和 Ultra 订阅还在苦哈哈调人流路径，别人一觉醒来直接开挂。
+
+**标签**: `#AI`, `#Claude`, `#Anthropic`, `#GenerativeAI`, `#Tech`
+
+---
+
+<a id="item-ai-creator-9"></a>
+### [当现实比 AI 还像 AI](https://www.reddit.com/r/ChatGPT/comments/1y3tl5k/when_real_life_looks_so_bizarre_you_think_its_ai/) ⭐️ 6.0/10
+
+人类的大脑终于被 AI 彻底整不会了：现在看到离谱的现实画面，第一反应居然不是“这怎么可能”，而是“这届 AI 生成得真假”。科技反向定义了现实。极简英文初稿：&quot;is this real life or midjourney?&quot;；极具争议的首转追问：&quot;what&\#x27;s the weirdest thing you saw today that looked fake?&quot;
+
+rss · Reddit Viral Top 10 · 11月24日 09:00
+
+**「一图胜千言·梗图脚本」** 使用双重对比网格图（2x2 矩阵）。左上图：极其荒诞但真实的街头抓拍。左下图：AI 生成的离谱图像。右上图标签：&quot;Reality&quot;。右下图标签：&quot;AI Art&quot;。两边画一个巨大的问号交织在一起，配文：&quot;Spot the difference&quot;。
+
+**标签**: `#ai`, `#chatgpt`, `#humor`, `#viral`, `#memes`
+
+---
+
