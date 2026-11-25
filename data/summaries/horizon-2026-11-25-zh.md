@@ -1,80 +1,192 @@
 # Horizon 每日速递 - 2026-11-25
 
-> 从 13 条内容中筛选出 3 条重要资讯。
+> 从 13 条内容中筛选出 8 条重要资讯。
 
 ---
 
 **AI 创作者雷达**
-1. [英伟达隐蔽影响力行动与 CEO 卸任](#item-ai-creator-1) ⭐️ 8.0/10
-2. [OpenAI 前董事警告：AI 根本没有“急停开关”](#item-ai-creator-2) ⭐️ 8.0/10
-3. [Claude, make no mistakes\!](#item-ai-creator-3) ⭐️ 7.0/10
+1. [OpenAI/Anthropic RSA 谣言](#item-ai-creator-1) ⭐️ 9.0/10
+2. [Nick Bostrom: ASI 1200 岁寿命论](#item-ai-creator-2) ⭐️ 8.0/10
+3. [Schumer 控诉 Nvidia CEO 违反出口管制](#item-ai-creator-3) ⭐️ 8.0/10
+4. [Anthropic 史上最大 IPO 光速崩盘](#item-ai-creator-4) ⭐️ 8.0/10
+5. [Google AI 攻克数十年数学难题](#item-ai-creator-5) ⭐️ 8.0/10
+6. [AI 数据中心与过早死亡：惊悚新闻还是科学断章取义？](#item-ai-creator-6) ⭐️ 8.0/10
+7. [METR 预测 AI 真实世界能力加速爆发](#item-ai-creator-7) ⭐️ 6.0/10
+8. [AI 数据中心与农田冲突梗图脚本](#item-ai-creator-8) ⭐️ 6.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [英伟达隐蔽影响力行动与 CEO 卸任](https://www.reddit.com/r/technology/comments/1y4z0ea/days_after_nvidia_ceo_jensen_huang_resigned/) ⭐️ 8.0/10
+### [OpenAI/Anthropic RSA 谣言](https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/) ⭐️ 9.0/10
 
-英伟达 CEO 黄仁勋刚卸任几天，媒体就扒出了一起暗中运作的舆论操纵案：80 多名网红收钱通过右翼媒体洗地，疯狂鼓吹向中国出口 AI 芯片。资本和舆论的钞能力毫无底线，吃相极其难看。
+OpenAI 与 Anthropic 疑似破解 RSA 加密（多位顶级学者与爆料人下场）的传闻疯传，全网陷入“互联网要炸”或“银行业瞬间蒸发”的强烈焦虑与黑色幽默中。
 
-rss · Reddit Viral Top 10 · 11月25日 16:10
+rss · Reddit Viral Top 10 · 11月25日 20:42
 
-**「梗图脚本与英文推文」** 【一图胜千言·梗图脚本】
-采用经典的“双重标准/幕后交易”对比图。左边标签：‘What Jensen says: Innovation’；右边标签：‘What the cash says: Ship GPUs to China’。
+**「推文及梗图方案」** 【一图胜千言·梗图脚本】
+使用灾难/金融崩溃的 2 格对比：
+\- 左图 \(Normal Life\): “Bitcoin &amp; Bank Accounts”
+\- 右图 \(OpenAI Lab\): “O\(n^100\) algorithm goes brrrr”
 
 【极简英文推文初稿】
-\- 3-12 words 英文推文：
-80 influencers paid to ship chips.
+\- 文本：\`rsa is officially cooked\`
+\- 互动首评：\`selling your crypto or staying to watch the world burn?\`
 
-\- 极化首评互动问题：
-Name one influencer who wouldn&\#x27;t sell out for a cluster of H100s.
+**「社区神评槽点」** 社区最强吐槽：“要是真在 P 复杂度里解出来了，但常数因子大到宇宙毁灭，那就搞笑了。” 也有人戏称：“OpenAI：虽然复杂度是 $O\(n^\{100\}\)$，但我们还是直接开源吧。”
 
-**「社区神评槽点」** 网友吐槽：“难怪他之前对中期选举一副无所谓的态度，原来是想赶紧捞够现金然后退休润了。”
-
-**标签**: `#Nvidia`, `#AI Chips`, `#China`, `#Tech Drama`, `#Influence Operation`
+**标签**: `#AI`, `#OpenAI`, `#Anthropic`, `#Crypto`, `#Security`, `#Rumor`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [OpenAI 前董事警告：AI 根本没有“急停开关”](https://www.reddit.com/r/technology/comments/1y4lixl/no_kill_switch_can_stop_rogue_ai_former_openai/) ⭐️ 8.0/10
+### [Nick Bostrom: ASI 1200 岁寿命论](https://www.reddit.com/r/singularity/comments/1y5cqvw/nick_bostrom_if_nobody_builds_asi_everyone_dies/) ⭐️ 8.0/10
 
-前 OpenAI 董事会成员公开警告称，没有任何“急停开关”能阻止失控的 AI。这不仅再度挑动了公众对 AI 末日论的神经，也精准戳中了硅谷资本为了技术狂飙而强行关闭安全防线的傲慢讽刺。
+Nick Bostrom 宣称“如果不造超级人工智能 ASI，所有人都会死”，并放话称 ASI 能把人类寿命延长到 1200 岁以上。这种将 AI 狂热与终极长生绑架的言论，瞬间点燃了赛博邪教与反智论战。
 
-rss · Reddit Viral Top 10 · 11月25日 16:10
+rss · Reddit Viral Top 10 · 11月25日 20:42
 
-**「一图胜千言·梗图脚本与推文初稿」** 【梗图脚本】
-采用经典的“双重标准/盲目自信”两格对比图：
-\- 第一格（标签）：&quot;Building AI with no kill switch&quot;（造个没刹车的 AI）
-\- 第二格（标签）：&quot;Trust me bro, it will behave&quot;（兄弟信我，它会听话的）
+**「极简英文推文初稿」** Draft 1: build asi or die at 80.
 
-【极简英文推文初稿】
-\- 推文初稿: &quot;there is no brake pedal.&quot;
-\- 互动首评: &quot;should we hold the board legally liable or just wait for the matrix?&quot;
+First-reply question: would you trust a 1200-year-old tech bro?
 
-【社区神评槽点】
-&quot;AI 就像是帕斯卡赌局：要么它超神把我们全灭了，要么它只是泡沫破裂引发一场经济衰退——反正横竖都是死，不如直接信它会毁灭世界。&quot;
+**「一图胜千言·梗图脚本」** 使用“邪教传教 vs 正常人”对比模板。左侧标签：&\#x27;AI bros: 1200 years old or you hate humanity&\#x27;。右侧标签：&\#x27;Normal people: I just want rent to be cheaper&\#x27;
 
-**标签**: `#ai`, `#openai`, `#safety`, `#existential-risk`
+**「社区神评槽点」** 评论区直接吐槽：“这帮 AI 兄弟听起来就像个规模庞大的邪教在胡说八道”，还有人反讽“如果你想死随时可以自愿去死”。
+
+**标签**: `#ASI`, `#Nick Bostrom`, `#Longevity`, `#Existential Risk`, `#AI Debate`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [Claude, make no mistakes\!](https://www.reddit.com/r/pcmasterrace/comments/1y56tf4/claude_make_no_mistakes/) ⭐️ 7.0/10
+### [Schumer 控诉 Nvidia CEO 违反出口管制](https://www.reddit.com/r/technology/comments/1y56ko1/schumer_accuses_nvidia_ceo_of_violating_us_export/) ⭐️ 8.0/10
 
-当玩家开始用 AI 对大厂代码实施高风险破坏，赛博朋克照进现实：用 AI 搞企业破坏，逼得整个行业大地震、监管收紧，这操作朋克得过头了。
+舒默公开指控英伟达 CEO 违反美国出口管制法，引发网友对“政客只会打雷不下雨”以及巨头合规风险的强力群嘲。
 
-rss · Reddit Viral Top 10 · 11月25日 16:10
+rss · Reddit Viral Top 10 · 11月25日 20:42
 
-**「一图胜千言·梗图脚本」** 推荐两格对比图：左边标签写着『Ordinary use: write CRUD app』，右边标签写着『Cyberpunk use: AI-powered corporate code sabotage』。
+**「一图胜千言与推文初稿」** 【梗图脚本】
+\- 格式：经典“最强手指摇”或“雷声大雨点小”讽刺动图/对比图
+\- 内部标签：左边标着 &quot;Schumer&\#x27;s Finger Wag&quot;，右边标着 &quot;Zero Consequences&quot;
 
-**「极简英文推文初稿」** Draft 1: using AI for corporate sabotage is peak cyberpunk.
+【极简英文推文】
+strong words, zero action
 
-Draft 2: are we coding or launching a cyberattack?
+【第一条高互动回复提问】
+Is this a real investigation or just another fundraising email?
 
-**「社区神评槽点」** 用 AI 对大公司搞代码破坏，逼迫整个科技行业和 AI 巨头接受更严苛的审查，这种反向操作简直是赛博朋克本克。
+**「社区神评槽点」** \- &quot;Me when I lie&quot;
+\- &quot;He&\#x27;s winding up his most powerful finger wag&quot;
+\- &quot;Doesnt matter unless he actually does something about it.&quot;
 
-**标签**: `#AI`, `#Claude`, `#Reddit`, `#Cyberpunk`, `#TechDrama`
+**标签**: `#Nvidia`, `#Regulation`, `#AI Tech`, `#Politics`, `#Export Controls`
+
+---
+
+<a id="item-ai-creator-4"></a>
+### [Anthropic 史上最大 IPO 光速崩盘](https://www.reddit.com/r/stocks/comments/1y563ql/anthropic_had_the_biggest_ipo_in_history_the/) ⭐️ 8.0/10
+
+Anthropic 刚刚完成了史上最大规模的 IPO，结果转眼就光速崩盘。上市第二天华尔街就开启甩锅大战，绿鞋机制瞬间用完，连承护盘工具都没了，活脱脱一出资本泡沫的荒诞喜剧。
+
+rss · Reddit Viral Top 10 · 11月25日 20:42
+
+**「推文与梗图策略」** 【梗图脚本】
+两格对比：
+图 1 标签：&quot;Biggest IPO in history&quot;
+图 2 标签：&quot;No moat, Chinese distillation in 2 weeks, stock dead&quot;
+
+【极简英文推文初稿】
+Draft: biggest ipo ever, dead in days
+First-reply: is the ai bubble finally popping or what?
+
+【社区神评槽点】
+&quot;They can come out with an amazing cutting edge model and then Chinese companies have a very similar model a couple of weeks later. Anthropic has no moat.&quot;
+
+**标签**: `#Anthropic`, `#IPO`, `#AI`, `#Stocks`, `#Market Drama`
+
+---
+
+<a id="item-ai-creator-5"></a>
+### [Google AI 攻克数十年数学难题](https://www.reddit.com/r/singularity/comments/1y5635t/one_prompt_no_human_help_googles_ai_took_on_math/) ⭐️ 8.0/10
+
+Google 的 AI 仅凭一个 Prompt、零人类协助，就拿下了尘封自 1964 年和 1988 年的数学难题，并给出了全部六个 Lean 形式化证明。这种降维打击的速度直接让数学界和打工人陷入了存在主义焦虑。
+
+rss · Reddit Viral Top 10 · 11月25日 20:42
+
+**「一图胜千言·梗图脚本与英文推文」** 梗图脚本：使用对比图。左边标着“人类数学家熬夜 40 年痛苦抓头”，右边标着“AI 复制粘贴 1 个 Prompt 顺便解决 1964 年难题”。
+
+极简英文推文初稿：
+one prompt. decades of math solved.
+
+极化首评互动：
+Are mathematicians ready to become full-time prompt engineers?
+
+**「社区神评槽点」** 评论区直接炸锅：一部分人开始为传统学术和人类职业生涯的崩塌感到恐慌，另一部分人则疯狂争论这到底是划时代突破还是又一次夸大其词的炒作。
+
+**标签**: `#AI`, `#Google`, `#Mathematics`, `#Viral`, `#Singularity`
+
+---
+
+<a id="item-ai-creator-6"></a>
+### [AI 数据中心与过早死亡：惊悚新闻还是科学断章取义？](https://www.reddit.com/r/technology/comments/1y5djrs/ai_data_centers_linked_to_650_premature_deaths_in/) ⭐️ 8.0/10
+
+一篇将 AI 数据中心与 2023 年 650 起过早死亡挂钩的报道引发热议。评论区迅速指出这是典型的“耸人听闻式新闻”——将 MIT 关于电力消耗的科学模型强行曲解并进行不负责任的因果推断。
+
+rss · Reddit Viral Top 10 · 11月25日 20:42
+
+**「爆款推文与互动剧本」** 【梗图脚本】
+\- 视觉格式：左右两格对比（Trojan Horse 讽刺结构）
+\- 左图（MIT 真实研究）：\`4% electricity usage model\`
+\- 右图（媒体报道标题）：\`AI MURDERING 650 PEOPE\`
+
+【极简英文推文初稿】
+journalism is just statistical fanfiction now
+
+【两极分化回复勾子】
+do you actually read the studies or just the headlines?
+
+**「社区神评与槽点」** “这不是 650 起由 AI 导致的真实死亡病例，而是基于电力消耗模型的统计学推算过早死亡。合法科学研究被包装成贩卖焦虑的垃圾新闻。”
+
+**标签**: `#AI`, `#Data Centers`, `#Controversy`, `#Environment`
+
+---
+
+<a id="item-ai-creator-7"></a>
+### [METR 预测 AI 真实世界能力加速爆发](https://www.reddit.com/r/singularity/comments/1y4vzco/metr_expect_a_broadbased_acceleration_in/) ⭐️ 6.0/10
+
+METR 预测未来六个月内真实世界的 AI 能力将迎来全面加速，直接戳中社区对“技术指标狂飙与生活毫无改变”的巨大焦虑与反差。
+
+rss · Reddit Viral Top 10 · 11月25日 20:42
+
+**「梗图脚本与推文初稿」** 【梗图脚本】使用二分屏对比图：左边标签“benchmark numbers（基准测试数字狂飙）”，画面是火箭升空；右边标签“my actual daily job（我的实际工作）”，画面是原地踏步的堂吉诃德。
+【极简英文推文】
+more benchmarks, same emails.
+【第一条高互动回复】
+Will this actually change my life or just make the graphs look cooler?
+
+**「社区神评槽点」** “我的生活会有任何实质改变，还是只有测试小方框里的数字变得更高了？” —— 社区高亮热评精准捕捉了大众对虚高跑分的审美疲劳。
+
+**标签**: `#AI`, `#METR`, `#Future Predictions`, `#Real-World AI`, `#Singularity`
+
+---
+
+<a id="item-ai-creator-8"></a>
+### [AI 数据中心与农田冲突梗图脚本](https://www.reddit.com/r/memes/comments/1y5c9ub/blow_up_the_lead_and_contaminate_the_farmland_for/) ⭐️ 6.0/10
+
+为了给 AI 数据中心腾地方，不惜污染农田和破坏资源，赛博朋克式的荒谬现实正在上演。
+
+rss · Reddit Viral Top 10 · 11月25日 20:42
+
+**「极简英文推文与视觉脚本」** 梗图视觉：左边是真实的农田与废墟，右边是赛博未来风闪闪发光的服务器集群。左图标注：&\#x27;Real Food&\#x27;，右图标注：&\#x27;More AI&\#x27;。
+
+极简英文推文初稿：
+eat data centers instead of food
+
+争议性首评提问：
+would you trade your local farm for a slightly faster chatbot?
+
+**标签**: `#AI`, `#Datacenters`, `#Memes`, `#Skepticism`
 
 ---
 
