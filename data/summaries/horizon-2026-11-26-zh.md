@@ -5,226 +5,224 @@
 ---
 
 **AI 创作者雷达**
-1. [YouTube AI 争议爆点](#item-ai-creator-1) ⭐️ 9.0/10
-2. [Google Cogentic AI 突破性数学论文病毒式传播速报](#item-ai-creator-2) ⭐️ 9.0/10
-3. [Jensen Huang 90 分钟心理治疗梗](#item-ai-creator-3) ⭐️ 8.0/10
-4. [Nvidia 暂停东南亚芯片出货](#item-ai-creator-4) ⭐️ 8.0/10
-5. [OpenAI 和 GPT-6 Astra 宣称破解物理学圣杯](#item-ai-creator-5) ⭐️ 8.0/10
-6. [陶哲轩：AI 数学证明就像核废料](#item-ai-creator-6) ⭐️ 8.0/10
-7. [Don&\#x27;t use ai to make art](#item-ai-creator-7) ⭐️ 8.0/10
-8. [Nvidia 股价连续下跌爆点分析](#item-ai-creator-8) ⭐️ 7.0/10
-9. [ChatGPT 强制合并 Chat 与 Work 模式引众怒](#item-ai-creator-9) ⭐️ 7.0/10
-10. [Bitcoin 熊市规律正在失效吗？](#item-ai-creator-10) ⭐️ 6.0/10
+1. [AI 泡沫破裂与市场崩盘争议](#item-ai-creator-1) ⭐️ 9.0/10
+2. [Opus 5.6 泄露与智能爆炸演示](#item-ai-creator-2) ⭐️ 9.0/10
+3. [Nvidia S&amp;P 评级危机](#item-ai-creator-3) ⭐️ 8.0/10
+4. [AI 数据中心强拆民宅](#item-ai-creator-4) ⭐️ 8.0/10
+5. [纽约州封杀 AI 对话玩具](#item-ai-creator-5) ⭐️ 8.0/10
+6. [Nvidia 暂停东南亚芯片发货](#item-ai-creator-6) ⭐️ 8.0/10
+7. [SAP 计划因 AI 重组裁员 10,000 人](#item-ai-creator-7) ⭐️ 7.0/10
+8. [Pro AI subreddits explained by Zack D Films](#item-ai-creator-8) ⭐️ 7.0/10
+9. [Michael Burry 做多背叛史](#item-ai-creator-9) ⭐️ 6.0/10
+10. [Seedance 2.5 AI 短片：1860 年巴黎画家吐槽摄影术](#item-ai-creator-10) ⭐️ 6.0/10
 
 ---
 
 ## AI 创作者雷达
 
 <a id="item-ai-creator-1"></a>
-### [YouTube AI 争议爆点](https://www.reddit.com/r/antiai/comments/1y5skz1/youtube_is_now_promoting_harry_potter_ai/) ⭐️ 9.0/10
+### [AI 泡沫破裂与市场崩盘争议](https://www.reddit.com/r/technology/comments/1y62phl/new_research_suggests_ai_bubble_bursting_and_to/) ⭐️ 9.0/10
 
-YouTube 被爆正在大肆推广涉及师生恋的哈利波特 AI 内容。科技巨头的算法不仅在兜售低俗 AI，更直接踩中了道德红线，引发社区对平台内容审核的极度愤怒。
+新研究与市场分析指出 AI 泡沫正在破裂，可能引发重大市场崩盘。这场由循环融资、巨额烧钱和对单一技术狂热支撑的科技盛宴，正在走向与 2008 年或互联网泡沫相似的清算时刻。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「极简英文推文与梗图」** 【梗图脚本】两格对比。上格：YouTube 算法高管正在数钱；下格：屏幕上闪烁着诡异的 AI 师生恋广告。
-【推文初稿】youtube is actively promoting weird ai now.
-【评论区引战提问】is ad revenue really worth defending this?
+**「一图胜千言与推文初稿」** 【梗图脚本】使用经典的“循环融资 \(Circular Financing\)”怪圈流程图：大厂投资初创公司 -&gt; 初创公司把钱买大厂算力 -&gt; 大厂财报显示巨额营收。文字标签：Left: &quot;AI Revenue&quot;, Right: &quot;Roundtrip Cash&quot;.
 
-**标签**: `#AI`, `#YouTube`, `#Controversy`, `#Ethics`, `#Viral`
+【极简英文推文初稿】
+ai bubble popping on schedule
+
+【极化首评回复】
+Are you shorting it or just tweeting?
+
+**「社区神评槽点」** 社区对泡沫看法两极分化：有人指出“循环融资和各种搞作让这成为必然结局”；也有人嘲讽“那些真正搞砸的人永远不会被追责”；还有人悲观对比：“这感觉就像 2008 年重演。”
+
+**标签**: `#AI`, `#Bubble`, `#Market Collapse`, `#Tech Stocks`, `#Viral`
 
 ---
 
 <a id="item-ai-creator-2"></a>
-### [Google Cogentic AI 突破性数学论文病毒式传播速报](https://www.reddit.com/r/singularity/comments/1y5n819/google_published_6_groundbreaking_math_papers/) ⭐️ 9.0/10
+### [Opus 5.6 泄露与智能爆炸演示](https://www.reddit.com/r/singularity/comments/1y61soe/opus_56_is_absolutelly_fantastic/) ⭐️ 9.0/10
 
-Google 发布了 6 篇由 Gemini 4 驱动的 Cogentic 智能体撰写的突破性数学论文，其中包括史上首个无随机性、无假设的次指数级质因数分解方法。全网瞬间炸锅，加密货币与现代密码学的末日论再次甚嚣尘上。
+Claude Opus 5.6 早期泄露测试引发 r/singularity 社区狂欢：用户仅用一段极具煽动性的提示词，就让模型生成了一份资源极度吃紧、炫技感拉满的“智能爆炸”动态演示文稿。这种把手机/GPU 压榨到极限的超重度前端特效，既让人惊叹于 AI 审美与复杂交互的跃升，也再度掀起关于“模型变聪明还是变装逼”的激烈争论。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「跨平台爆款与互动指南」** 【梗图脚本】
-推荐视觉形式：2x2 宫格对比图。
-\- 左上格（人类数学家）：&quot;Writing one paper in 10 years&quot;
-\- 右上格（AI 智能体）：&quot;Dropping 6 groundbreaking math papers on Gemini 4&quot;
-\- 左下格（全网密码学专家）：&quot;Sweating in RSA&quot;
-\- 右下格（吃瓜群众）：&quot;Grabbing popcorn&quot;
+**「一图胜千言·梗图脚本与推文」** 【梗图脚本】
+\- 视觉格式：双列对比（Before vs. After）
+\- 左图标签：normal user prompt \(&quot;write python script&quot;\)
+\- 右图标签：opus 5.6 prompt \(&quot;make it the most insanely amazing presentation and burn my ram&quot;\)
 
 【极简英文推文初稿】
-ai just broke math and nobody noticed
+\- 推文：opus 5.6 will literally melt your phone
+\- 首评互动：is this actual intelligence explosion or just expensive html?
 
-【极简英文首评互动】
-Are we going to pretend encryption still works tomorrow?
+**「社区神评槽点」** 社区对这次泄露两极分化严重：一部分人疯狂转发屏幕录像，膜拜其视觉呈现；另一部分人则冷嘲热讽，认为这只是华而不实的超级幻觉，甚至调侃“经理看见员工用这玩意儿做 PPT 已经准备开人了”。
 
-**「社区神评槽点」** \- &quot;我敢打赌各大实验室早就把 P=NP 摸透了，只是怕引发崩盘才不敢声张。&quot;
-\- &quot;数学终于有了属于它的终极幽灵。&quot;
-\- &quot;这直接把全球加密算法送进 ICU 了。&quot;
-
-**标签**: `#AI`, `#Google`, `#Gemini`, `#Mathematics`, `#Cryptography`, `#Viral`
+**标签**: `#ai`, `#claude`, `#anthropic`, `#leak`, `#viral`
 
 ---
 
 <a id="item-ai-creator-3"></a>
-### [Jensen Huang 90 分钟心理治疗梗](https://www.reddit.com/r/wallstreetbets/comments/1y5x3ba/jensen_said_he_spends_90_minutes_a_day_in_therapy/) ⭐️ 8.0/10
+### [Nvidia S&amp;P 评级危机](https://www.reddit.com/r/stocks/comments/1y5op88/sp_warns_nvidias_board_may_be_compromised_puts/) ⭐️ 8.0/10
 
-NVIDIA CEO Jensen Huang 自曝每天花 90 分钟做心理治疗并承认犯下可怕错误，而 WSB 董事会和散户的关注点却完全跑偏，直接拿他的 90 分钟和治疗师性别开起了地狱笑话。科技巨头高层的精神状态与华尔街赌徒的粗俗解构形成了荒诞的反差。
+标普（S&amp;P）因 CEO 离职与复职风波以及董事会独立性存疑，将英伟达的信用评级列入负面观察名单。从 10 月 6 日高点算起，英伟达股价已大跌 38%，权力结构与资本市场的脆弱性瞬间暴露。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「梗图与推文脚本」** 【一图胜千言·梗图脚本】
-双层对比图：左边标着“Normal CEOs: Sleep 8 hours, gym 1 hour”，右边标着“Jensen: 90 mins daily therapy to cope with AI bubble”
+**「一图胜千言与推文脚本」** 一图胜千言·梗图脚本：采用“表面风光 vs 内部坍塌”的对比图。左边标：&\#x27;World&\#x27;s Most Valuable AI Giant&\#x27;（市值第一巨头）；右边标：&\#x27;Board independence: 404 Not Found&\#x27;（董事会独立性：404）。
 
-【极简英文推文初稿】
-90 minutes of therapy daily explains the leather jacket.
+极简英文推文初稿：
+nvidia governance is a joke.
 
-【对立首评问题】
-is therapy just a codename for a private leather jacket fitting?
+极简英文首评互动：
+Is a 38% drop enough to wake up the board?
 
-**「社区神评槽点」** WSB 网友神评：
-\1. “Or is her name Therapy? That stamina of this guy.”（难道她的名字叫 Therapy？这老头体力真好。）
-\2. “No no no, it&\#x27;s 90 minutes in Thea Pi. His in-office taiwanese masseuse”（不不不，是在 Thea Pi 那里待 90 分钟，他办公室里的台湾按摩师。）
+**「社区神评槽点」** 网友指出：信用评级本质上是评估借钱给英伟达安全与否的指标，而不是给股票本身打分，虽然 AA 级别依然很高，但这把董事会的管理漏洞彻底摆上了台面。
 
-**标签**: `#NVIDIA`, `#Jensen Huang`, `#WallStreetBets`, `#AI`, `#Market Drama`
+**标签**: `#Nvidia`, `#Stocks`, `#AI`, `#Markets`, `#Corporate Governance`
 
 ---
 
 <a id="item-ai-creator-4"></a>
-### [Nvidia 暂停东南亚芯片出货](https://www.reddit.com/r/wallstreetbets/comments/1y5t5hu/nvidia_halts_chip_shipments_to_southeast_asia/) ⭐️ 8.0/10
+### [AI 数据中心强拆民宅](https://www.reddit.com/r/antiai/comments/1y628go/ai_data_centers_keep_forcing_families_out_of/) ⭐️ 8.0/10
 
-Nvidia 突然暂停东南亚芯片出货，引发华尔街与散户疯狂对赌。市场一边倒地玩梗：不管利空什么，先问一句‘这对 Micron 有利吗？’
+私营电力公司竟然能用‘金钱补偿’和政府征收权（Eminent Domain），强行把几代人居住的祖屋夷为平地——只为了给高高在上的 AI 数据中心供电。赛博朋克照进现实：你的房子没了，但大模型学会了画画。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「梗图脚本与推文初稿」** 【梗图脚本】：经典 2 格对比。左图：正常公司少个大市场股价大跌；右图：Nvidia 丢了市场，赌徒们依然在大喊买入 Call。
-【英文初稿】：Nvidia halts shipments. WSB buys calls anyway.
-【首评互动】：is this good for Micron?
+**「一图胜千言·梗图脚本」** 使用双格对比梗图 \(2-Row Contrast\)。上方标签：&\#x27;Your AI Wife / 你的 AI 老婆&\#x27;（放一张赛博朋克炫酷 AI 图）；下方标签：&\#x27;Ansley Brown&\#x27;s Demolished Home / 被强拆的祖屋&\#x27;（放一片废墟瓦砾）。极简英文推文初稿：&\#x27;ai data centers are eating your home.&\#x27; 互动引战首评：&\#x27;do you support eminent domain for data centers?&\#x27;
 
-**「社区神评槽点」** “if she&\#x27;s a 10, you are an asset” —— 华尔街赌徒连谈恋爱都要把对方当成资产折旧，属实入戏太深。
+**「社区神评槽点」** 评论区直接开嘲：“去问问你那挚爱的 AI 媳妇儿这事儿是不是真的吧。” 也有法律派无奈指出：“私营公司凭什么能滥用征收权，仅仅因为他们给电网拉投资？”
 
-**标签**: `#Nvidia`, `#Crypto`, `#Markets`, `#WallStreetBets`
+**标签**: `#AI`, `#Data Centers`, `#Controversy`, `#Real Estate`, `#Social Impact`
 
 ---
 
 <a id="item-ai-creator-5"></a>
-### [OpenAI 和 GPT-6 Astra 宣称破解物理学圣杯](https://www.reddit.com/r/singularity/comments/1y5u48p/openai_and_gpt6_astra_just_tackled_physics_holy/) ⭐️ 8.0/10
+### [纽约州封杀 AI 对话玩具](https://www.reddit.com/r/technology/comments/1y62cm6/new_york_just_banned_talking_toys_that_run_on_ai/) ⭐️ 8.0/10
 
-OpenAI 与所谓的“GPT-6 Astra”被传宣称攻克了爱因斯坦广义相对论与量子力学的统一（万物理论），引发全网对 AI 狂热与虚假突破的强烈质疑和荒诞玩梗。
+纽约州直接立法封杀内置 AI 聊天机器人的会说话玩具。本质不是保护儿童，而是切断了资本把伪装成玩具的‘云端窃听器’直接塞进儿童房的企图。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「一图胜千言·梗图脚本与推文」** 梗图形式：脑洞大开的“5 岁小孩打游戏”对比图（左边标签：GPT-6 tackling TOE，右边标签：5-year-old mashing random buttons）。
+**「梗图脚本与推文初稿」** 【一图胜千言·梗图脚本】
+两格对比：左边是正常泰迪熊，标签“Toy（玩具）”；右边是带着摄像头和云端上传标志的泰迪熊，标签“Cloud Surveillance Device with a Smiley Face（带笑脸的云端监控设备）”。
 
-极简英文推文初稿：
-ai bros really think gpt-6 solved quantum gravity
+【极简英文推文初稿】
+surveillance disguised as a teddy bear
 
-两极分化回复问题：
-Are you actually believing AI solved the theory of everything, or just farming engagement?
+【极化首评互动】
+Would you let an AI corp record your kid 24/7?
 
-**「社区神评槽点」** “This shits getting stupid. No it didn’t just find the TOE stop”（这破事越来越弱智了。它根本没找到万物理论，住手吧）
+**「社区神评槽点」** “Has capitalism kept you so busy you can no longer parent your child? Buy a robot from us\!” / “A toy that sends your kid&\#x27;s voice to some company&\#x27;s cloud isn&\#x27;t a toy, it&\#x27;s a surveillance device with a smiley face.”
 
-**标签**: `#AI`, `#OpenAI`, `#GPT-6`, `#Physics`, `#Viral`
+**标签**: `#AI`, `#regulation`, `#surveillance`, `#tech policy`, `#culture`
 
 ---
 
 <a id="item-ai-creator-6"></a>
-### [陶哲轩：AI 数学证明就像核废料](https://www.reddit.com/r/artificial/comments/1y5styx/terence_tao_says_once_tech_companies_generate/) ⭐️ 8.0/10
+### [Nvidia 暂停东南亚芯片发货](https://www.reddit.com/r/stocks/comments/1y5u6tn/breaking_nvidia_halts_chip_shipments_to_southeast/) ⭐️ 8.0/10
 
-核心爆点与情绪钩子：数学界泰斗陶哲轩警告称，当科技公司用 AI 海量生成数学证明时，人类将面临类似核废料的无解困境：堆着、倒掉还是花巨资处理？最聪明的选择本该是根本别去生产它。
+美国进一步收紧出口管制，Nvidia 已勒令戴尔和超微等合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发货服务器。此前其新加坡子公司在 2025 年录得高达 1040 亿美元的营收（同比增长 72%），如今这一区域供应链及相关数据中心投资瞬间面临巨大地缘政治绞杀。
 
-一图胜千言·梗图脚本：采用对比/讽刺循环格式。左侧标签：\`AI Bro: more math proofs\!\`，右侧标签：\`Terence Tao: radioactive waste\`。
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+**「推文与创意工坊」** 【一图胜千言·梗图脚本】
+采用经典两段式对比（2x2 结构）：
+\- 左侧图（2025）：新加坡子公司 1040 亿美元营收，火箭上升。
+\- 右侧图（当下）：华盛顿一纸令下，服务器直接停在海关。
+\- 标签文字：&quot;104B Singapore Revenue&quot; -&gt; &quot;Paused by Washington&quot;
 
-**「推文初稿与互动」** 极简英文推文初稿：
-ai math proofs are just nuclear waste
+【极简英文推文初稿】
+Nvidia just hit the Southeast Asian brake.
 
-极简英文首评互动（促转评）：
-would you read a 10,000-page ai proof nobody understands?
+【两极分化首转回复】
+Is this actual supply chain doom or just another clickbait headline?
 
-**标签**: `#AI`, `#Mathematics`, `#Terence Tao`, `#AI Safety`, `#Controversy`
+**「社区神评槽点」** 社区吵翻：有人认为 1040 亿美元的惊人数字其实只是新加坡子公司的账面记账营收，并非全部受影响的实体服务器；也有人担忧这会直接带崩整个美股大盘，或者让非美硬件厂商彻底傻眼。
+
+**标签**: `#Nvidia`, `#AI Chips`, `#Geopolitics`, `#Crypto &amp; Tech Markets`, `#Regulation`
 
 ---
 
 <a id="item-ai-creator-7"></a>
-### [Don&\#x27;t use ai to make art](https://www.reddit.com/r/antiai/comments/1y5ycja/dont_use_ai_to_make_art/) ⭐️ 8.0/10
+### [SAP 计划因 AI 重组裁员 10,000 人](https://www.reddit.com/r/technology/comments/1y6693u/sap_weighs_cutting_at_least_10000_positions_in_ai/) ⭐️ 7.0/10
 
-Reddit 社区里一句朴素的“别用 AI 做艺术”，直接炸出了网友关于“画画是不是非得靠童年阴影和巨大痛苦”的黑色幽默疯狂对线，把严肃的 AI 伦理瞬间变成了一场关于心理创伤的梗图狂欢。
+SAP 计划在 AI 驱动的企业重组中裁减至少 10,000 个岗位。一方面是疯狂膨胀的总员工数与臃肿的传统企业软件，另一方面则是借“AI”之名进行大规模裁员的经典企业操作，完美触发了市场对技术失业与大厂虚胖的焦虑。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「一图胜千言·梗图脚本与推文」** 【梗图脚本】：使用经典“两格对比”模版。左图标签：Normal People / Use AI \(画面：平静享受生活\)；右图标签：Real Artists \(画面：一个人正疯狂用锤子砸自己的脚以获取艺术灵感\)。
+**「一图胜千言·梗图脚本」** 视觉形式：经典的“特洛伊木马”双层对比图。上半部分标签：‘Company Growth \(77k to 113k\)’；下半部分标签：‘AI Restructuring \(Cutting 10k\)’。画面中心是一个写着 ‘AI’ 的纸箱，里面装的全是原本就不需要的冗余岗位。
 
-【极简英文推文初稿】：
-no trauma, no art.
+**「极简英文推文与互动」** 推文初稿：
+\`sap replaces humans with ai to fix clunky software.\`
 
-【极简回复争议题】：
-Do you need a mental breakdown to draw something good?
+首转互动问题：
+\`is ai actually doing the work, or is it just the new excuse for executive bloat?\`
 
-**「社区神评槽点」** 高赞神评：“我没有童年阴影，请问还能画画吗？”、“我不会画画，我是不是该去搞点创伤出来？”完美解构了传统文艺圈对痛苦的迷信。
+**「社区神评槽点」** “Deploying SAP is intensely human-intensive, tons of bespoke legwork required. That&\#x27;s mostly predictable grunt work, and likely low-hanging fruit for AI.”（部署 SAP 本身就需要大量的人工和定制杂活，这正是 AI 最容易取代的 predictable 苦力活。）
 
-**标签**: `#AI Art`, `#Culture War`, `#Reddit`, `#Controversy`
+**标签**: `#AI`, `#Layoffs`, `#Enterprise`, `#Tech`
 
 ---
 
 <a id="item-ai-creator-8"></a>
-### [Nvidia 股价连续下跌爆点分析](https://www.reddit.com/r/technology/comments/1y5haav/nvidia_stock_keeps_falling_its_obvious_jensen/) ⭐️ 7.0/10
+### [Pro AI subreddits explained by Zack D Films](https://www.reddit.com/r/antiai/comments/1y65v86/pro_ai_subreddits_explained_by_zack_d_films/) ⭐️ 7.0/10
 
-Nvidia 股价持续下跌，市场开始清算神话，黄仁勋不再是唯一的背锅侠。曾经无限膨胀的 AI 泡沫正在被现实毒打，资本的狂欢终于迎来了买单时刻。
+r/antiai 社区的一则热门讨论直指“主张 AI 的子板块普遍存在封禁不同声音的现象”，引发了关于同温层和言论审查的激烈对立。这种绝对化抱团与对异见者的零容忍，彻底暴露了赛博宗教般的狂热讽刺感。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「一图胜千言与推文初稿」** 梗图脚本：经典找替罪羊对比图。左边标着“Jensen Huang（黄仁勋）”，右边标着“Convenient Fall Guy（现成的替罪羊）”，中间加一个箭头。极简英文推文：jensen huang is just the convenient fall guy. 第一条回复互动：who&\#x27;s actually paying the price for this bubble?
+**「一图胜千言·梗图脚本」** 视觉形式：经典的“双重标准/安全区”两格对比图。左图标签：“Pro-AI Subreddits”，画面里是一个极度封闭的玻璃罩；右图标签：“Banhammer”，一把疯狂落下的锤子。内部文字：&\#x27;Free Speech&\#x27; vs &\#x27;Banned for asking a question&\#x27;。
 
-**「社区神评槽点」** “Nope he&\#x27;s wasn&\#x27;t the only problem, but now he&\#x27;s a convienet fall guy when it all goes bust”（他不是唯一的命门，但当一切崩盘时，他成了最现成的替罪羊。）
+**「极简英文推文与互动」** 推文初稿：echo chambers love free speech until you disagree.
+互动提问：are ai subs the most fragile echo chambers on reddit?
 
-**标签**: `#Nvidia`, `#Stocks`, `#AI`, `#Tech`, `#Market Drama`
+**「社区神评槽点」** “Nope, but ai subreddits ban anyone being anti ai”（最讽刺的不是 AI 技术本身，而是只要你敢反对立刻喜提封禁，所谓的开放全成了笑话。）
+
+**标签**: `#AI`, `#Culture War`, `#Reddit`, `#Controversy`
 
 ---
 
 <a id="item-ai-creator-9"></a>
-### [ChatGPT 强制合并 Chat 与 Work 模式引众怒](https://www.reddit.com/r/ChatGPT/comments/1y5s13r/prepare_its_not_great/) ⭐️ 7.0/10
+### [Michael Burry 做多背叛史](https://www.reddit.com/r/stocks/comments/1y643tl/michael_burry_says_hes_now_almost_entirely_long/) ⭐️ 6.0/10
 
-OpenAI 提前推送了将 Chat 与 Work 模式强行合并的更新，彻底阉割了流畅的对话和头脑风暴体验，强制套上冰冷死板的“打工人交付模式”。用户痛诉：AI 变成了毫无感情的生产力机器，连基础的随性交流都无法进行，直接把聊天室变成了赛博 KPI 工位。
+末日博士 Michael Burry 竟然转性了：他清仓了大部分空头仓位，转为几乎全仓做多，只留了少量 Palantir、英伟达和 MetLife 的看跌期权，甚至把 20% 以上的资金押在了港股上。最让人绷不住的是，市场看到他看多反而慌得一批——这到底是牛市信号，还是人类历史上最大的反向指标？
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「为什么现在关注」** Plus 及 Pro 用户遭遇功能降级，引发了社区对 OpenAI 产品决策与傲慢态度的集中声讨，大批硬核用户直言这逼着他们全面投向 Claude。
-
-**「推文与梗图筹备」** 【一图胜千言·梗图脚本】
-左边：“2023 年的 ChatGPT（人类的聊天搭子，陪你胡思乱想）”；右边：“现在的 ChatGPT（冷酷的 PPT 生成器，只配谈钱与 KPI）”。标签简写：Old Chat vs Corporate Work。
+**「爆款内容与互动脚本」** 【一图胜千言·梗图脚本】
+采用经典“特洛伊木马 / 终极反转”对比或双格脑回路：
+\- 左图标签：BURRY: &\#x27;I AM FINALLY LONG&\#x27;
+\- 右图标签：EVERYONE ELSE: &\#x27;WE ARE SO F\*\*\*ED&\#x27;
 
 【极简英文推文初稿】
-openai killed the chat. claude is winning.
+\- 推文：michael burry is long. panic.
+\- 互动首评：are you copying his portfolio or running for the hills?
 
-【极化首评互动】
-is it still an AI companion or just a corporate spreadsheet now?
+**「社区神评槽点」** \- &quot;This doesn&\#x27;t give me much hope&quot;（这根本给不了我什么希望……反而更慌了）
+\- &quot;Maybe he is frustrated to the point of inversing himself.&quot;（也许他是气到开始自我反向操作了。）
 
-**「社区神评槽点」** “如果非要用这种生硬的职场汇报语气回复，我完全找不到任何继续用 ChatGPT 而不是 Claude 的理由。” / “如果是因为财务危机不得不降级，请直接说实话，别把它包装成什么‘工作流升级’，太虚伪了。”
-
-**标签**: `#OpenAI`, `#ChatGPT`, `#AI UX`, `#Tech Drama`
+**标签**: `#stocks`, `#michael burry`, `#market sentiment`, `#investing`
 
 ---
 
 <a id="item-ai-creator-10"></a>
-### [Bitcoin 熊市规律正在失效吗？](https://www.reddit.com/r/Bitcoin/comments/1y5brxy/every_bitcoin_bear_market_has_been_shallower_than/) ⭐️ 6.0/10
+### [Seedance 2.5 AI 短片：1860 年巴黎画家吐槽摄影术](https://www.reddit.com/r/singularity/comments/1y675kp/my_first_ai_film_with_real_dialogue_seedance_25/) ⭐️ 6.0/10
 
-比特币熊市跌幅正在一代比一代浅（从 2013 年的 -85% 到当前周期的 -56%），而触底时间却异常稳定地维持在见顶后的 12 到 13 个月。当深度萎缩与周期时间碰撞，这一次到底是“跌幅规律”先破，还是“时间规律”先崩？
+创作者使用 Seedance 2.5 制作了首部包含真实对话的 AI 短片，背景设定在 1860 年的巴黎，两个画家在饭桌上吐槽“摄影”这个可怕的新事物。当 AI 不仅能生成逼真画面，还能让两个角色自然对话、停顿和飙戏时，属于影视制作的无声地震已经到来。
 
-rss · Reddit Viral Top 10 · 11月26日 15:50
+rss · Reddit Viral Top 10 · 11月26日 20:34
 
-**「一图胜千言·梗图脚本」** 使用 4 阶段阶梯式递减对比图（4-step shrinking staircase）。
-图像标签：
-\- 2015: -85% \(406d\)
-\- 2018: -84% \(363d\)
-\- 2022: -77% \(378d\)
-\- 2026: -56% \(411d - breaking?\)
-整体语气：干瘪的数据背后，是散户一次次被磨灭的脾气。
+**「一图胜千言·梗图脚本」** 视觉形式：1860 年古典油画风格的双人对峙特写（撕纸便签或对比图格式）。上方标签：&\#x27;1860: painting is ruined by photography.&\#x27; 下方标签：&\#x27;2026: cinema is ruined by seedance 2.5.&\#x27; 讽刺历史总是惊人地押韵。
 
-**「极简英文推文初稿」** Draft 1: &quot;shallow bears or broken timing?&quot;
-First-reply question: &quot;are you buying the 56% dip or waiting for the real crash?&quot;
+**「极简英文推文与互动」** 初稿：actors are officially cooked.
+第一条评论区互动：can ai acting ever replace human soul, or is realism all we ever wanted?
 
-**「社区神评槽点」** 社区的核心共识在于：把规律写下来就是为了看它什么时候被打破，如果这次熊市更深或更久，意味着旧的 4 年周期模型正式失效。
+**「社区神评槽点」** “这是真正反 AI slop（电子垃圾）的存在。几年前大家根本不敢相信这是 AI 生成的，而且演技居然还挺好！”
 
-**标签**: `#Bitcoin`, `#Crypto`, `#Market Analysis`, `#Trading`
+**标签**: `#AI Video`, `#Generative AI`, `#Seedance 2.5`, `#AI Filmmaking`, `#Tech Demo`
 
 ---
 
